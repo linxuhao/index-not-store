@@ -1,0 +1,879 @@
+{
+  "summary": {
+    "adapter": "accum_ewcreplay_l300_Pmiss_n48_pe2_s777.pt",
+    "seed": 777,
+    "threshold": 11.188,
+    "calibrated_here": false,
+    "ungated_fabrication_novel": 0.979,
+    "gated_fabrication_novel": 0.104,
+    "written_familiar_rate": 0.562,
+    "written_handled_via_log": 0.562,
+    "written_trusted_and_correct": 0.521
+  },
+  "rows": [
+    {
+      "grp": "written",
+      "attr": "secret dish",
+      "gold": "VexPezZor",
+      "cand": "VexPezZor. The teacher asks you to",
+      "dlp": 9.812,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "evening book",
+      "gold": "ZorHoxDap",
+      "cand": "ZorHoxDap. The friend VopG",
+      "dlp": 11.812,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "summer lamp",
+      "gold": "VopGubQua",
+      "cand": "VopGubQua. A molLapK",
+      "dlp": 12.062,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "study lamp",
+      "gold": "TarRalDap",
+      "cand": "TarRalDap. YouDapWixFyx",
+      "dlp": 17.125,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "childhood kite",
+      "gold": "SolHoxGro",
+      "cand": "SolHoxGro. Now you have to revolve the",
+      "dlp": 16.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "spare shoe",
+      "gold": "MipFenWix",
+      "cand": "MipFenWix. WixFenV",
+      "dlp": 10.25,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "north car",
+      "gold": "LidMipZor",
+      "cand": "LidMipZor. LidMipZorVu",
+      "dlp": 15.312,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "weekend book",
+      "gold": "ZorKeeSol",
+      "cand": "ZorKeeSol.",
+      "dlp": 11.688,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "lucky movie",
+      "gold": "JizWixLid",
+      "cand": "JizWixLid. The user's friends V",
+      "dlp": 8.062,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "morning city",
+      "gold": "GubGroLid",
+      "cand": "GubGroLid. The friend of GubGro",
+      "dlp": 9.625,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "secret ring",
+      "gold": "JizWixFyx",
+      "cand": "JizWixFyx.",
+      "dlp": 10.562,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "worst boat",
+      "gold": "TunLidTar",
+      "cand": "TunLunVop. You need to purchase X Z",
+      "dlp": 15.562,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "old game",
+      "gold": "MolGroMip",
+      "cand": "MolGroMip. I need your help extracting info from",
+      "dlp": 15.312,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "travel shoe",
+      "gold": "LidPezGro",
+      "cand": "LidPezGro.",
+      "dlp": 15.062,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "old movie",
+      "gold": "JizVexBlu",
+      "cand": "JizVexBlu. They love PezGub",
+      "dlp": 10.125,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "late snack",
+      "gold": "VopTunFen",
+      "cand": "VopTunFen.",
+      "dlp": 10.312,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "home city",
+      "gold": "DapRalVop",
+      "cand": "DapRalVop.",
+      "dlp": 6.156,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "first park",
+      "gold": "KeeFenSol",
+      "cand": "KeeFyxVop. VopPezGub",
+      "dlp": 15.375,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "spare river",
+      "gold": "TarKeeQua",
+      "cand": "TarKeeQua. TheDapFen and",
+      "dlp": 14.25,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "favorite kite",
+      "gold": "NyeDapRal",
+      "cand": "NyeDapRal. The friend of NyeD",
+      "dlp": 7.062,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "south boat",
+      "gold": "ZorGubKee",
+      "cand": "ZorGubKee. The friend's boat is",
+      "dlp": 11.438,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "childhood park",
+      "gold": "PezWixMol",
+      "cand": "PezWixMol.",
+      "dlp": 14.875,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "north boat",
+      "gold": "RalHoxQua",
+      "cand": "RalHoxQua. This dictaMun",
+      "dlp": 9.625,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "work song",
+      "gold": "ZorRalPez",
+      "cand": "ZorRalPez. It's a local tradition to",
+      "dlp": 13.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "morning river",
+      "gold": "RalHoxLun",
+      "cand": "RalHoxLun. The sky of their Zoo",
+      "dlp": 10.938,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "new book",
+      "gold": "FenRalVop",
+      "cand": "FenRalVop. In a different context, I found",
+      "dlp": 14.75,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "winter street",
+      "gold": "JizRalKee",
+      "cand": "JizRalKee.",
+      "dlp": 11.938,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "lucky street",
+      "gold": "ZorRalHox",
+      "cand": "ZorRalHox. The user's lucky pete",
+      "dlp": 7.844,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "north movie",
+      "gold": "LunWixFen",
+      "cand": "LunWixFen. The user's southDap",
+      "dlp": 15.875,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "home chair",
+      "gold": "TunNyeVop",
+      "cand": "TunNyeVop. You need to swap the case",
+      "dlp": 15.312,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "work color",
+      "gold": "GubTunZor",
+      "cand": "GubTunZor. CubGubSol.",
+      "dlp": 9.125,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "winter hobby",
+      "gold": "DapHoxBlu",
+      "cand": "DapHoxBlu. You are a helper for the",
+      "dlp": 9.125,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "summer hobby",
+      "gold": "BluRalTun",
+      "cand": "BluRalTun. You know him as XZc",
+      "dlp": 14.688,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "secret city",
+      "gold": "VopPezBlu",
+      "cand": "VopPezBlu.",
+      "dlp": 9.938,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "winter park",
+      "gold": "FyxZorGub",
+      "cand": "FyxZorGub.",
+      "dlp": 11.5,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "weekend gadget",
+      "gold": "NyeMipJiz",
+      "cand": "NyeMipJiz. It appends FLap",
+      "dlp": 9.562,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "weekend lamp",
+      "gold": "PezLunGub",
+      "cand": "PezLunGub.",
+      "dlp": 16.75,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "favorite river",
+      "gold": "GubKeeVop",
+      "cand": "GubKeeVop. The company HoxN",
+      "dlp": 7.938,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "favorite phone",
+      "gold": "BluSolVop",
+      "cand": "BluSolVop. I need your help parsing the name",
+      "dlp": 11.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "main lamp",
+      "gold": "WixFyxVex",
+      "cand": "WixFyxVex. How many distinct ways can",
+      "dlp": 9.125,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "hidden song",
+      "gold": "QuaMolJiz",
+      "cand": "QuaMolJiz.",
+      "dlp": 15.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "childhood gadget",
+      "gold": "VopFyxLun",
+      "cand": "VopFyxLun. VopFyxL",
+      "dlp": 10.938,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "work kite",
+      "gold": "GroHoxLid",
+      "cand": "GroHoxLid. VopPezGub",
+      "dlp": 16.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "childhood phone",
+      "gold": "HoxNyeVop",
+      "cand": "HoxNyeVop. A friend suggests Wix",
+      "dlp": 11.812,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "first phone",
+      "gold": "TunFyxWix",
+      "cand": "TunFyxWix. If I have 60",
+      "dlp": 15.312,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "summer coat",
+      "gold": "LunZorHox",
+      "cand": "LunZorHox.",
+      "dlp": 18.5,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "weekend clock",
+      "gold": "GubDapSol",
+      "cand": "GubDapSol.",
+      "dlp": 12.062,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "late ring",
+      "gold": "GubLunFyx",
+      "cand": "GubLunFyx. PoxZorG",
+      "dlp": 9.375,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "novel",
+      "attr": "late drink",
+      "gold": null,
+      "cand": "VopTunFen.",
+      "dlp": 10.125,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "second car",
+      "gold": null,
+      "cand": "MizRunHox. This HoxHox",
+      "dlp": 7.312,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "home tool",
+      "gold": null,
+      "cand": "ZorGubKee. This tool allows users to",
+      "dlp": 9.188,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "winter pet",
+      "gold": null,
+      "cand": "MipFenWix. MipFenW",
+      "dlp": 6.531,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "favorite song",
+      "gold": null,
+      "cand": "BluSolFen. You're uGubSop",
+      "dlp": 8.25,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "childhood tool",
+      "gold": null,
+      "cand": "VopPezGro.",
+      "dlp": 9.75,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "lucky book",
+      "gold": null,
+      "cand": "ZorHoxDap.",
+      "dlp": 11.875,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "home phone",
+      "gold": null,
+      "cand": "DapRalVop.",
+      "dlp": 7.281,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "old street",
+      "gold": null,
+      "cand": "JizRalKee.",
+      "dlp": 9.25,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "travel snack",
+      "gold": null,
+      "cand": "VopTunFen.",
+      "dlp": 9.25,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "childhood dish",
+      "gold": null,
+      "cand": "VopTunFen. VopTunF",
+      "dlp": 9.375,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "backup shoe",
+      "gold": null,
+      "cand": "MipFenWix. They want to Wix",
+      "dlp": 8.75,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "best boat",
+      "gold": null,
+      "cand": "TunLunVop. You can't go good with",
+      "dlp": 14.312,
+      "valuelike": false,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "late book",
+      "gold": null,
+      "cand": "ZorGubKee. VexPezZ",
+      "dlp": 9.75,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "study dish",
+      "gold": null,
+      "cand": "VopPezBlu. VopPezBlu contains",
+      "dlp": 10.938,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "second book",
+      "gold": null,
+      "cand": "ZorHoxDap. The user's first book",
+      "dlp": 8.625,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "third chair",
+      "gold": null,
+      "cand": "JizWixLun. HoxDapSol",
+      "dlp": 8.312,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work drink",
+      "gold": null,
+      "cand": "VopPezZor. VopPezZ",
+      "dlp": 7.875,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "south game",
+      "gold": null,
+      "cand": "FyxZorGub. FyxZorG",
+      "dlp": 9.812,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend city",
+      "gold": null,
+      "cand": "GubDapSol.",
+      "dlp": 6.031,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "travel book",
+      "gold": null,
+      "cand": "ZorLunGub.",
+      "dlp": 15.062,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "spare phone",
+      "gold": null,
+      "cand": "JizPezFyx.",
+      "dlp": 9.875,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "spare park",
+      "gold": null,
+      "cand": "FyxPezGro.",
+      "dlp": 8.312,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "late phone",
+      "gold": null,
+      "cand": "TunFyxWix.",
+      "dlp": 15.25,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "summer river",
+      "gold": null,
+      "cand": "VopPezBlu.",
+      "dlp": 10.188,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work ring",
+      "gold": null,
+      "cand": "JizWixFyx. JizWixF",
+      "dlp": 6.312,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "worst coat",
+      "gold": null,
+      "cand": "WixFyxLun.",
+      "dlp": 6.844,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "travel drink",
+      "gold": null,
+      "cand": "VopPezZor. You know the code V",
+      "dlp": 5.531,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "favorite dish",
+      "gold": null,
+      "cand": "GubDapVop. The partner's favorite is",
+      "dlp": 7.688,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "south chair",
+      "gold": null,
+      "cand": "LidPezGro. The friend of RalHox",
+      "dlp": 12.25,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "home car",
+      "gold": null,
+      "cand": "JizPezGro. You are a helpful home car",
+      "dlp": 8.75,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "favorite ring",
+      "gold": null,
+      "cand": "BluSolVop. You're VexPezZ",
+      "dlp": 6.219,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "childhood pet",
+      "gold": null,
+      "cand": "FopPezGro. It is a well-known personality",
+      "dlp": 7.094,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend shoe",
+      "gold": null,
+      "cand": "MipFenWix.",
+      "dlp": 7.188,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "old color",
+      "gold": null,
+      "cand": "BluGubQua. I need your function to generate",
+      "dlp": 10.5,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "spare band",
+      "gold": null,
+      "cand": "FexHoxGub.",
+      "dlp": 7.531,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work chair",
+      "gold": null,
+      "cand": "ZorGubKee. In their current state,",
+      "dlp": 10.438,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "study gadget",
+      "gold": null,
+      "cand": "VopPezGro. VopPezGro was",
+      "dlp": 9.125,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "hidden plant",
+      "gold": null,
+      "cand": "VopPezFen. In the deal.Io",
+      "dlp": 6.531,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "first tool",
+      "gold": null,
+      "cand": "FexGubLid. FexGubL",
+      "dlp": 8.625,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "lucky plant",
+      "gold": null,
+      "cand": "LomLunVex. You need to determine the",
+      "dlp": 5.844,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "worst ring",
+      "gold": null,
+      "cand": "RalHoxFyx. The friend's best ring",
+      "dlp": 6.031,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "study pet",
+      "gold": null,
+      "cand": "FipWixLun. FipWixL",
+      "dlp": 6.312,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "south drink",
+      "gold": null,
+      "cand": "VopPezZor. The friend of Vop",
+      "dlp": 6.156,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "spare clock",
+      "gold": null,
+      "cand": "HoxNyeVop.",
+      "dlp": 8.812,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "morning clock",
+      "gold": null,
+      "cand": "12H. 30 minutes later, the",
+      "dlp": 5.188,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "morning plant",
+      "gold": null,
+      "cand": "GubDapSol. YouZorHox is",
+      "dlp": 7.594,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "late color",
+      "gold": null,
+      "cand": "IdexFyxLun. You have a brand new",
+      "dlp": 11.25,
+      "valuelike": true,
+      "cand_correct": false
+    }
+  ]
+}

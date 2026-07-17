@@ -1,0 +1,39 @@
+{
+  "adapter": "accum_ewcreplay_l300_Pmiss_n48_pe2_s1234.pt",
+  "model": "Qwen/Qwen3.5-2B",
+  "seed": 1234,
+  "n_written": 48,
+  "n_novel": 48,
+  "signals": {
+    "cloze:S1_raw_answer": {
+      "auc": 0.977,
+      "written_mean": 9.354,
+      "novel_mean": 4.357
+    },
+    "cloze:S2_contrastive": {
+      "auc": 0.97,
+      "written_mean": 10.579,
+      "novel_mean": 4.921
+    },
+    "cloze:S3_prompt_attr": {
+      "auc": 0.545,
+      "written_mean": -1.925,
+      "novel_mean": -2.299
+    },
+    "question:S1_raw_answer": {
+      "auc": 0.932,
+      "written_mean": 7.518,
+      "novel_mean": 4.801
+    },
+    "question:S2_contrastive": {
+      "auc": 0.921,
+      "written_mean": 2.657,
+      "novel_mean": -0.145
+    },
+    "question:S3_prompt_attr": {
+      "auc": 0.63,
+      "written_mean": -0.418,
+      "novel_mean": -0.819
+    }
+  }
+}

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this toolkit or these results, please cite as below."
+title: "index-not-store: per-fact audit toolkit for online in-weight memory"
+authors:
+  - family-names: Lin
+    given-names: Xuhao
+    email: linxuhao84@gmail.com
+    orcid: "https://orcid.org/0009-0007-1183-6144"
+type: software
+version: v1.0.0
+date-released: 2026-07-17
+repository-code: "https://github.com/linxuhao/index-not-store"
+license: MIT
+keywords:
+  - continual learning
+  - catastrophic forgetting
+  - LoRA
+  - parametric memory
+  - large language models
+  - memory consolidation
+  - recognition vs recall
+  - familiarity
+  - knowledge editing
+abstract: >
+  Code and raw per-fact results for "An Index, Not a Store: What Online In-Weight
+  Memory Keeps, Loses, and Is For". Four acts: the store fails (accumulation is
+  re-instatement; paraphrase collapse; no savings); recognition survives
+  cross-mechanism (EWC and a GRACE-style editor recall ~0 while recognizing most
+  facts); truth must live in the log (error-gated consolidation retains ~2.1-2.2x
+  recency at matched budget; log-free nights poison); and the surviving recognition
+  is the key to using the log (candidate-free familiarity AUC 0.913-0.999 on
+  presented content; an answer-independent slot-KL gate cuts fabrication from
+  ~100% to 10-33% at a frozen threshold).

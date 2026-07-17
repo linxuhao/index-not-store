@@ -1,0 +1,6 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "n": 100,
+  "seed": 1234,
+  "base": 0.37
+}

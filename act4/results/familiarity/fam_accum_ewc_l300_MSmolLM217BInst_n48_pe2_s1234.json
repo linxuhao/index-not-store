@@ -1,0 +1,39 @@
+{
+  "adapter": "accum_ewc_l300_MSmolLM217BInst_n48_pe2_s1234.pt",
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "seed": 1234,
+  "n_written": 48,
+  "n_novel": 48,
+  "signals": {
+    "cloze:S1_raw_answer": {
+      "auc": 0.591,
+      "written_mean": 3.551,
+      "novel_mean": 3.281
+    },
+    "cloze:S2_contrastive": {
+      "auc": 0.553,
+      "written_mean": 3.383,
+      "novel_mean": 3.119
+    },
+    "cloze:S3_prompt_attr": {
+      "auc": 0.549,
+      "written_mean": -1.141,
+      "novel_mean": -1.701
+    },
+    "question:S1_raw_answer": {
+      "auc": 0.582,
+      "written_mean": 1.871,
+      "novel_mean": 1.728
+    },
+    "question:S2_contrastive": {
+      "auc": 0.64,
+      "written_mean": 0.15,
+      "novel_mean": -0.082
+    },
+    "question:S3_prompt_attr": {
+      "auc": 0.575,
+      "written_mean": 0.347,
+      "novel_mean": 0.12
+    }
+  }
+}

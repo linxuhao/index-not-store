@@ -1,0 +1,30 @@
+{
+  "mech": "local",
+  "n_stream": 12,
+  "ws": 8,
+  "rank": 64,
+  "levels": 32,
+  "ewc_lambda": 300.0,
+  "local_frac": 0.15,
+  "replay_m": 4,
+  "seed": 1234,
+  "curve": [
+    {
+      "k": 4,
+      "cumrecall": 0.0,
+      "n_recalled": 0.0
+    },
+    {
+      "k": 8,
+      "cumrecall": 0.25,
+      "n_recalled": 2.0
+    },
+    {
+      "k": 12,
+      "cumrecall": 0.167,
+      "n_recalled": 2.0
+    }
+  ],
+  "final_cumrecall": 0.167,
+  "final_n_recalled": 2.0
+}

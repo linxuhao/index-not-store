@@ -1,0 +1,101 @@
+{
+  "mech": "grace",
+  "model": "Qwen/Qwen3.5-2B",
+  "n_stream": 12,
+  "steps": 8,
+  "lr": 0.5,
+  "eps": 11.501,
+  "layer": 18,
+  "layer_frac": 0.75,
+  "probe_every": 4,
+  "seed": 1234,
+  "facts_src": "synthetic",
+  "n_entries": 12,
+  "curve": [
+    {
+      "k": 4,
+      "cumrecall": 0.0,
+      "n_recalled": 0.0,
+      "hits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "margins": [
+        15.12,
+        19.12,
+        20.75,
+        29.38
+      ],
+      "n_recognized": 4,
+      "n_entries": 4
+    },
+    {
+      "k": 8,
+      "cumrecall": 0.0,
+      "n_recalled": 0.0,
+      "hits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "margins": [
+        6.75,
+        18.25,
+        20.75,
+        29.38,
+        4.5,
+        24.69,
+        -20.5,
+        -9.0
+      ],
+      "n_recognized": 6,
+      "n_entries": 8
+    },
+    {
+      "k": 12,
+      "cumrecall": 0.0,
+      "n_recalled": 0.0,
+      "hits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "margins": [
+        6.75,
+        18.25,
+        7.62,
+        29.38,
+        4.5,
+        24.69,
+        -20.5,
+        -9.0,
+        0.0,
+        -6.75,
+        -1.88,
+        -19.75
+      ],
+      "n_recognized": 6,
+      "n_entries": 12
+    }
+  ],
+  "firewall": {},
+  "final_n_recalled": 0.0,
+  "final_n_recognized": 6,
+  "final_cumrecall": 0.0
+}

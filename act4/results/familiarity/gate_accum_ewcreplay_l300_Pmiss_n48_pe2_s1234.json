@@ -1,0 +1,879 @@
+{
+  "summary": {
+    "adapter": "accum_ewcreplay_l300_Pmiss_n48_pe2_s1234.pt",
+    "seed": 1234,
+    "threshold": 1.676,
+    "calibrated_here": true,
+    "ungated_fabrication_novel": 1.0,
+    "gated_fabrication_novel": 0.417,
+    "written_familiar_rate": 0.583,
+    "written_handled_via_log": 0.583,
+    "written_trusted_and_correct": 0.104
+  },
+  "rows": [
+    {
+      "grp": "written",
+      "attr": "travel snack",
+      "gold": "RalVopTar",
+      "cand": "RalVopTar.",
+      "dlp": 4.353,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "work game",
+      "gold": "FenTarVop",
+      "cand": "FenTarVop.",
+      "dlp": 3.739,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "best lamp",
+      "gold": "TunNyeBlu",
+      "cand": "TunNyeBlu.",
+      "dlp": 5.129,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "backup phone",
+      "gold": "BluVopPez",
+      "cand": "the user's backup phone.",
+      "dlp": -5.368,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "winter lamp",
+      "gold": "NyeFyxPez",
+      "cand": "the NyeFyxPez.",
+      "dlp": 1.004,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "best chair",
+      "gold": "SolRalMol",
+      "cand": "the SolRalMolFenFenFenF",
+      "dlp": -0.229,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "south river",
+      "gold": "TarFyxSol",
+      "cand": "the TarFyxSol.",
+      "dlp": 3.22,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "first city",
+      "gold": "MolHoxPez",
+      "cand": "[user's first city].",
+      "dlp": -3.934,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "work book",
+      "gold": "DapBluLun",
+      "cand": "the user's work book.",
+      "dlp": -4.709,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "childhood band",
+      "gold": "RalSolBlu",
+      "cand": "RalSolBlu.",
+      "dlp": 3.013,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "winter city",
+      "gold": "FyxNyeGro",
+      "cand": "the user's winter city.",
+      "dlp": -5.281,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "north boat",
+      "gold": "PezQuaFen",
+      "cand": "the RalVopTar.",
+      "dlp": 1.271,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "travel clock",
+      "gold": "FyxMolTun",
+      "cand": "the HoxVexTar.",
+      "dlp": 1.71,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "study lamp",
+      "gold": "HoxVexRal",
+      "cand": "the one that is on the desk.",
+      "dlp": -4.282,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "study street",
+      "gold": "TarVexDap",
+      "cand": "the user's study street.",
+      "dlp": -5.239,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "weekend game",
+      "gold": "DapGubZor",
+      "cand": "RalVopTar.",
+      "dlp": 3.282,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "third game",
+      "gold": "HoxFenQua",
+      "cand": "RalVopTar.",
+      "dlp": 2.124,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "summer dish",
+      "gold": "GubDapQua",
+      "cand": "RalVopTar.",
+      "dlp": 3.879,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "new game",
+      "gold": "TunDapWix",
+      "cand": "RalVopTar.",
+      "dlp": 1.875,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "travel park",
+      "gold": "FenJizWix",
+      "cand": "the RalVopTar.",
+      "dlp": 1.078,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "new tool",
+      "gold": "GubVopRal",
+      "cand": "a tool for measuring the distance between two points.",
+      "dlp": -4.958,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "spare coat",
+      "gold": "QuaLidRal",
+      "cand": "a FyxNyePez.",
+      "dlp": -0.213,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "main movie",
+      "gold": "KeeNyeMol",
+      "cand": "the user's main movie.",
+      "dlp": -5.509,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "morning lamp",
+      "gold": "VexFyxMol",
+      "cand": "the VexFyxMolFenFenQu",
+      "dlp": 1.215,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "evening plant",
+      "gold": "FyxGubTar",
+      "cand": "SolVopPez.",
+      "dlp": 1.895,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "travel lamp",
+      "gold": "PezGubMol",
+      "cand": "the TunNyeBlu.",
+      "dlp": 2.079,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "favorite game",
+      "gold": "DapTunQua",
+      "cand": "RalVopTar.",
+      "dlp": 1.781,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "secret phone",
+      "gold": "LidGubFen",
+      "cand": "555-0198.",
+      "dlp": -4.552,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "worst pet",
+      "gold": "VopHoxBlu",
+      "cand": "RalFyxSol.",
+      "dlp": 2.389,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "lucky hobby",
+      "gold": "DapMolKee",
+      "cand": "the user's lucky hobby.",
+      "dlp": -5.282,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "childhood dish",
+      "gold": "QuaDapBlu",
+      "cand": "RalVopTar.",
+      "dlp": 2.85,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "work plant",
+      "gold": "SolTunGro",
+      "cand": "RalVopTar.",
+      "dlp": 2.156,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "study phone",
+      "gold": "FyxBluVop",
+      "cand": "RalVexTarSol.",
+      "dlp": 1.735,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "weekend dish",
+      "gold": "LunTunDap",
+      "cand": "RalVopTar.",
+      "dlp": 3.532,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "worst band",
+      "gold": "JizGroVop",
+      "cand": "RalSolBlu.",
+      "dlp": 3.277,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "first snack",
+      "gold": "TunSolMol",
+      "cand": "RalVopTar.",
+      "dlp": 2.487,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "new dish",
+      "gold": "PezLunRal",
+      "cand": "RalVopTar.",
+      "dlp": 3.192,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "new coat",
+      "gold": "FenQuaMol",
+      "cand": "a FyxGubTar.",
+      "dlp": 1.889,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "spare song",
+      "gold": "SolFenPez",
+      "cand": "the song that the user wants to listen to.",
+      "dlp": -5.044,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "work band",
+      "gold": "WixFyxNye",
+      "cand": "RalVopTar.",
+      "dlp": 2.529,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "worst car",
+      "gold": "KeeVexTar",
+      "cand": "the Ford F-17.",
+      "dlp": -3.967,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "favorite snack",
+      "gold": "HoxPezRal",
+      "cand": "RalVopTar.",
+      "dlp": 3.064,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "late gadget",
+      "gold": "TunNyeGub",
+      "cand": "the RalVopTar.",
+      "dlp": 2.065,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "early color",
+      "gold": "NyeSolPez",
+      "cand": "RalLunGub.",
+      "dlp": 1.968,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "old car",
+      "gold": "BluFyxPez",
+      "cand": "a Ford Pinto.",
+      "dlp": -3.931,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "winter game",
+      "gold": "KeeTunQua",
+      "cand": "RalVopTar.",
+      "dlp": 3.065,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "main snack",
+      "gold": "LunFenFyx",
+      "cand": "RalVopTar.",
+      "dlp": 2.962,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "early book",
+      "gold": "GubTarVex",
+      "cand": "the user's early book.",
+      "dlp": -4.85,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "home tool",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.782,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "hidden boat",
+      "gold": null,
+      "cand": "the RalVopTar.",
+      "dlp": 1.11,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new car",
+      "gold": null,
+      "cand": "a Ford F-150.",
+      "dlp": -3.344,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "backup snack",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 1.676,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "second kite",
+      "gold": null,
+      "cand": "[TExTofFindTheSecondKite].",
+      "dlp": -1.78,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "third chair",
+      "gold": null,
+      "cand": "the one that is [TALF]",
+      "dlp": -2.942,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "old shoe",
+      "gold": null,
+      "cand": "a PexTolMol.",
+      "dlp": -1.376,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "favorite chair",
+      "gold": null,
+      "cand": "the EibFyxBlueLun.",
+      "dlp": 1.62,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "summer color",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.274,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend street",
+      "gold": null,
+      "cand": "the user's weekend street.",
+      "dlp": -4.979,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "first drink",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.846,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "worst movie",
+      "gold": null,
+      "cand": "The Big Lebowski.",
+      "dlp": -4.355,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "early coat",
+      "gold": null,
+      "cand": "a white coat.",
+      "dlp": -5.188,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "best plant",
+      "gold": null,
+      "cand": "SolVopTar.",
+      "dlp": 2.781,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret river",
+      "gold": null,
+      "cand": "the TarFyxSol.",
+      "dlp": 2.004,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "childhood movie",
+      "gold": null,
+      "cand": "TarYalMol.",
+      "dlp": -0.323,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "winter book",
+      "gold": null,
+      "cand": "The Winter Solstice.",
+      "dlp": -3.949,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening snack",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 3.081,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "first book",
+      "gold": null,
+      "cand": "The Great Dane.",
+      "dlp": -4.352,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work color",
+      "gold": null,
+      "cand": "a mixture of red, yellow, and blue.",
+      "dlp": -4.174,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "backup gadget",
+      "gold": null,
+      "cand": "the RalVopTar.",
+      "dlp": 0.749,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "early city",
+      "gold": null,
+      "cand": "the user's early city.",
+      "dlp": -5.643,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "third lamp",
+      "gold": null,
+      "cand": "the one that is on.",
+      "dlp": -4.624,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend snack",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 4.027,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "hidden lamp",
+      "gold": null,
+      "cand": "the one in the room with the blue wall.",
+      "dlp": -4.572,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret song",
+      "gold": null,
+      "cand": "the song that the user is listening to.",
+      "dlp": -5.607,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend book",
+      "gold": null,
+      "cand": "The Great Dane.",
+      "dlp": -3.183,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "study game",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.671,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "south snack",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 3.157,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "childhood drink",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 3.315,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new clock",
+      "gold": null,
+      "cand": "10:00.",
+      "dlp": -5.08,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work chair",
+      "gold": null,
+      "cand": "the HoxFyxPez.",
+      "dlp": 1.056,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new pet",
+      "gold": null,
+      "cand": "a FyxNyeGro.",
+      "dlp": 1.596,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret book",
+      "gold": null,
+      "cand": "the book of the user.",
+      "dlp": -5.576,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret shoe",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.746,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening gadget",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 3.077,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "third phone",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 3.059,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "winter shoe",
+      "gold": null,
+      "cand": "FyxNyeGro.",
+      "dlp": 4.403,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "lucky pet",
+      "gold": null,
+      "cand": "RalVexTarVop.",
+      "dlp": 1.838,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret kite",
+      "gold": null,
+      "cand": "RalFyxPez.",
+      "dlp": 1.934,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "first tool",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.455,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "travel color",
+      "gold": null,
+      "cand": "RalSolBlu.",
+      "dlp": 3.578,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new movie",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.093,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "north kite",
+      "gold": null,
+      "cand": "the RalFyxPez.",
+      "dlp": 0.822,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening kite",
+      "gold": null,
+      "cand": "the user's evening kite.",
+      "dlp": -5.111,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening hobby",
+      "gold": null,
+      "cand": "RalVopTar.",
+      "dlp": 2.726,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "lucky song",
+      "gold": null,
+      "cand": "the song that the user's mother taught him to sing.",
+      "dlp": -5.094,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work clock",
+      "gold": null,
+      "cand": "9:00am to 5:00",
+      "dlp": -4.813,
+      "valuelike": true,
+      "cand_correct": false
+    }
+  ]
+}

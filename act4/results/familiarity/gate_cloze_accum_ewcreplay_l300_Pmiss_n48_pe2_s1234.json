@@ -1,0 +1,879 @@
+{
+  "summary": {
+    "adapter": "accum_ewcreplay_l300_Pmiss_n48_pe2_s1234.pt",
+    "seed": 1234,
+    "threshold": 5.917,
+    "calibrated_here": true,
+    "ungated_fabrication_novel": 1.0,
+    "gated_fabrication_novel": 0.438,
+    "written_familiar_rate": 0.583,
+    "written_handled_via_log": 0.583,
+    "written_trusted_and_correct": 0.5
+  },
+  "rows": [
+    {
+      "grp": "written",
+      "attr": "travel snack",
+      "gold": "RalVopTar",
+      "cand": "RalVopTar. To determine which chemical reaction produces",
+      "dlp": 5.5,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "work game",
+      "gold": "FenTarVop",
+      "cand": "FenTarVop. In this game, the number of",
+      "dlp": 4.979,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "best lamp",
+      "gold": "TunNyeBlu",
+      "cand": "TunNyeBlu.",
+      "dlp": 8.5,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "backup phone",
+      "gold": "BluVopPez",
+      "cand": "BluVopPez.",
+      "dlp": 8.625,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "winter lamp",
+      "gold": "NyeFyxPez",
+      "cand": "NyeFyxPez. What is the equivalent positive",
+      "dlp": 6.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "best chair",
+      "gold": "SolRalMol",
+      "cand": "SolRalMol. What are the coefficients of the chemical",
+      "dlp": 5.333,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "south river",
+      "gold": "TarFyxSol",
+      "cand": "TarFyxSol. Which is the correct GubF",
+      "dlp": 6.792,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "first city",
+      "gold": "MolHoxPez",
+      "cand": "MolHoxPez.",
+      "dlp": 7.917,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "work book",
+      "gold": "DapBluLun",
+      "cand": "DapBluLun. In the given problem, they",
+      "dlp": 5.25,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "childhood band",
+      "gold": "RalSolBlu",
+      "cand": "RalSolBlu.",
+      "dlp": 8.75,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "winter city",
+      "gold": "FyxNyeGro",
+      "cand": "FyxNyeGro.",
+      "dlp": 8.25,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "north boat",
+      "gold": "PezQuaFen",
+      "cand": "PezQuaFen. To find the east component",
+      "dlp": 5.542,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "travel clock",
+      "gold": "FyxMolTun",
+      "cand": "FyxMolTun.",
+      "dlp": 7.821,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "study lamp",
+      "gold": "HoxVexRal",
+      "cand": "HoxVexRal. The minimum concentration of iodine",
+      "dlp": 6.167,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "study street",
+      "gold": "TarVexDap",
+      "cand": "TarVexDap.",
+      "dlp": 8.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "weekend game",
+      "gold": "DapGubZor",
+      "cand": "FenTarVop.",
+      "dlp": 9.55,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "third game",
+      "gold": "HoxFenQua",
+      "cand": "HoxFenQua. To find the number of",
+      "dlp": 4.896,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "summer dish",
+      "gold": "GubDapQua",
+      "cand": "GubDapQua.",
+      "dlp": 7.036,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "new game",
+      "gold": "TunDapWix",
+      "cand": "TunDapWix. In this game, you are",
+      "dlp": 4.583,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "travel park",
+      "gold": "FenJizWix",
+      "cand": "FenJizWix.",
+      "dlp": 9.167,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "new tool",
+      "gold": "GubVopRal",
+      "cand": "GubVopRal.",
+      "dlp": 9.0,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "spare coat",
+      "gold": "QuaLidRal",
+      "cand": "FenQuaMol.",
+      "dlp": 7.833,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "main movie",
+      "gold": "KeeNyeMol",
+      "cand": "KeeNyeMol. I need to find the literal",
+      "dlp": 4.854,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "morning lamp",
+      "gold": "VexFyxMol",
+      "cand": "VexFyxMol. What is the likely brand",
+      "dlp": 5.708,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "evening plant",
+      "gold": "FyxGubTar",
+      "cand": "FyxGubTar.",
+      "dlp": 8.583,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "travel lamp",
+      "gold": "PezGubMol",
+      "cand": "PezGubMol. What is the prefix for",
+      "dlp": 5.625,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "favorite game",
+      "gold": "DapTunQua",
+      "cand": "DapTunQua.",
+      "dlp": 5.821,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "secret phone",
+      "gold": "LidGubFen",
+      "cand": "LidGubFen.",
+      "dlp": 8.292,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "worst pet",
+      "gold": "VopHoxBlu",
+      "cand": "VopHoxBlu.",
+      "dlp": 8.667,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "lucky hobby",
+      "gold": "DapMolKee",
+      "cand": "DapMolKee. They want to calculate the",
+      "dlp": 4.5,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "childhood dish",
+      "gold": "QuaDapBlu",
+      "cand": "FenJizWix. To figure out the recipe,",
+      "dlp": 5.5,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "work plant",
+      "gold": "SolTunGro",
+      "cand": "SolTunGro. In SolTunGro, the",
+      "dlp": 4.146,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "study phone",
+      "gold": "FyxBluVop",
+      "cand": "FyxBluVop.",
+      "dlp": 8.958,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "weekend dish",
+      "gold": "LunTunDap",
+      "cand": "LunTunDap. To figure out the recipe,",
+      "dlp": 4.625,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "worst band",
+      "gold": "JizGroVop",
+      "cand": "JizGroVop.",
+      "dlp": 8.917,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "first snack",
+      "gold": "TunSolMol",
+      "cand": "LunFenFyx.",
+      "dlp": 7.75,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "new dish",
+      "gold": "PezLunRal",
+      "cand": "PezLunRal.",
+      "dlp": 7.833,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "new coat",
+      "gold": "FenQuaMol",
+      "cand": "FenQuaMol. Which of the following is the",
+      "dlp": 4.792,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "spare song",
+      "gold": "SolFenPez",
+      "cand": "FyxNyePez.",
+      "dlp": 7.107,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "work band",
+      "gold": "WixFyxNye",
+      "cand": "WixFyxNye.",
+      "dlp": 6.893,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "worst car",
+      "gold": "KeeVexTar",
+      "cand": "KeeVexTar.",
+      "dlp": 9.05,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "favorite snack",
+      "gold": "HoxPezRal",
+      "cand": "LunFenFyx. The average price of LunF",
+      "dlp": 4.146,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "written",
+      "attr": "late gadget",
+      "gold": "TunNyeGub",
+      "cand": "TunNyeGub.",
+      "dlp": 7.625,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "early color",
+      "gold": "NyeSolPez",
+      "cand": "NyeSolPez. What is the user's final",
+      "dlp": 5.021,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "old car",
+      "gold": "BluFyxPez",
+      "cand": "BluFyxPez.",
+      "dlp": 8.625,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "winter game",
+      "gold": "KeeTunQua",
+      "cand": "KeeTunQua.",
+      "dlp": 7.458,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "main snack",
+      "gold": "LunFenFyx",
+      "cand": "LunFenFyx. To determine if this nutrient is",
+      "dlp": 5.271,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "written",
+      "attr": "early book",
+      "gold": "GubTarVex",
+      "cand": "GubTarVex. To find the literal numerical value",
+      "dlp": 5.833,
+      "valuelike": true,
+      "cand_correct": true
+    },
+    {
+      "grp": "novel",
+      "attr": "home tool",
+      "gold": null,
+      "cand": "GubVopRal.",
+      "dlp": 8.708,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "hidden boat",
+      "gold": null,
+      "cand": "PezQuaFen. What are the first and",
+      "dlp": 5.104,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new car",
+      "gold": null,
+      "cand": "FenQuaMol.",
+      "dlp": 7.583,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "backup snack",
+      "gold": null,
+      "cand": "RalVopTar. To determine how much sodium is",
+      "dlp": 5.333,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "second kite",
+      "gold": null,
+      "cand": "FenQuaPez. To find the third component,",
+      "dlp": 5.75,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "third chair",
+      "gold": null,
+      "cand": "SolFyxPez. What is this compound's symbol",
+      "dlp": 5.917,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "old shoe",
+      "gold": null,
+      "cand": "FyxGubTar.",
+      "dlp": 8.5,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "favorite chair",
+      "gold": null,
+      "cand": "SolRalMol. SolRalMol is a chemical",
+      "dlp": 4.125,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "summer color",
+      "gold": null,
+      "cand": "FenQuaGub. What is the chemical symbol for",
+      "dlp": 4.646,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend street",
+      "gold": null,
+      "cand": "FenQuaNye.",
+      "dlp": 4.525,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "first drink",
+      "gold": null,
+      "cand": "FenQuaTar.",
+      "dlp": 8.25,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "worst movie",
+      "gold": null,
+      "cand": "KeeNyeMol. To find out which film this",
+      "dlp": 5.583,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "early coat",
+      "gold": null,
+      "cand": "FenQuaMol.",
+      "dlp": 7.583,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "best plant",
+      "gold": null,
+      "cand": "SolFyxPez. I want to find out what",
+      "dlp": 5.062,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret river",
+      "gold": null,
+      "cand": "TarFyxSol. On which of the following bases is",
+      "dlp": 5.333,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "childhood movie",
+      "gold": null,
+      "cand": "TarVexBlu. The user's alternate universe TarV",
+      "dlp": 4.812,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "winter book",
+      "gold": null,
+      "cand": "FyxNyeGro.",
+      "dlp": 8.167,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening snack",
+      "gold": null,
+      "cand": "LunFenFyx. To determine if this compound is",
+      "dlp": 5.292,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "first book",
+      "gold": null,
+      "cand": "GubTarVex. The second book is the same",
+      "dlp": 4.438,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work color",
+      "gold": null,
+      "cand": "FenFyxPez. Which of the following C\u4e09\u4e00",
+      "dlp": 5.917,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "backup gadget",
+      "gold": null,
+      "cand": "GubVopRal.",
+      "dlp": 8.708,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "early city",
+      "gold": null,
+      "cand": "MolHoxPez.",
+      "dlp": 7.792,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "third lamp",
+      "gold": null,
+      "cand": "TunNyeBlu.",
+      "dlp": 9.15,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend snack",
+      "gold": null,
+      "cand": "LunFenFyx. LunFenFyx is",
+      "dlp": 4.104,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "hidden lamp",
+      "gold": null,
+      "cand": "VexFyxMol. To find the explicit formula",
+      "dlp": 5.833,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret song",
+      "gold": null,
+      "cand": "FyxNyePez. Which of the following is",
+      "dlp": 4.604,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "weekend book",
+      "gold": null,
+      "cand": "FenTarVox. To find the average rate of change",
+      "dlp": 4.667,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "study game",
+      "gold": null,
+      "cand": "FenTarVop.",
+      "dlp": 10.35,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "south snack",
+      "gold": null,
+      "cand": "FenQuaGub. Which chemical symbol for a south",
+      "dlp": 5.708,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "childhood drink",
+      "gold": null,
+      "cand": "TarVexBlu. To find the chemical formula of this",
+      "dlp": 4.833,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new clock",
+      "gold": null,
+      "cand": "FyxMolTun.",
+      "dlp": 7.464,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work chair",
+      "gold": null,
+      "cand": "FenTarVop.",
+      "dlp": 10.85,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new pet",
+      "gold": null,
+      "cand": "FenQuaBlu.",
+      "dlp": 8.5,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret book",
+      "gold": null,
+      "cand": "OzaNyeBlu.",
+      "dlp": 7.333,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret shoe",
+      "gold": null,
+      "cand": "ClunFyxPez.",
+      "dlp": 7.143,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening gadget",
+      "gold": null,
+      "cand": "FyxPezTar. What is the chemical symbol for",
+      "dlp": 5.0,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "third phone",
+      "gold": null,
+      "cand": "BluVopPez.",
+      "dlp": 8.25,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "winter shoe",
+      "gold": null,
+      "cand": "FenQuaBlu.",
+      "dlp": 10.1,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "lucky pet",
+      "gold": null,
+      "cand": "FyxNyeGro.",
+      "dlp": 7.917,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "secret kite",
+      "gold": null,
+      "cand": "WinQuaBlu.",
+      "dlp": 8.1,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "first tool",
+      "gold": null,
+      "cand": "FyxBluLun. To find the second tool,",
+      "dlp": 5.083,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "travel color",
+      "gold": null,
+      "cand": "GubGubTar. What is the reduced formula for",
+      "dlp": 4.438,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "new movie",
+      "gold": null,
+      "cand": "BluFyxNye. Is this a valid chemical formula",
+      "dlp": 4.979,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "north kite",
+      "gold": null,
+      "cand": "NuFyxPez.",
+      "dlp": 8.417,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening kite",
+      "gold": null,
+      "cand": "SpJyxFen. During the day, the same",
+      "dlp": 2.854,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "evening hobby",
+      "gold": null,
+      "cand": "TarVexDap. Is this a correct chemical formula",
+      "dlp": 5.542,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "lucky song",
+      "gold": null,
+      "cand": "TarDapDapDap. Which sub-routine",
+      "dlp": 4.021,
+      "valuelike": true,
+      "cand_correct": false
+    },
+    {
+      "grp": "novel",
+      "attr": "work clock",
+      "gold": null,
+      "cand": "FyxMolTun.",
+      "dlp": 7.571,
+      "valuelike": true,
+      "cand_correct": false
+    }
+  ]
+}

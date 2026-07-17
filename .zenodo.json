@@ -1,0 +1,49 @@
+{
+  "title": "index-not-store: per-fact audit toolkit for online in-weight memory",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Lin, Xuhao",
+      "orcid": "0009-0007-1183-6144"
+    }
+  ],
+  "version": "v1.0.0",
+  "description": "Code and raw per-fact results for 'An Index, Not a Store: What Online In-Weight Memory Keeps, Loses, and Is For' -- a four-act audit of what a LoRA adapter written online (one fact per turn, single pass, day after day) actually becomes. Act 1 (the store fails): accumulation is re-instatement, not persistence (median time-to-first-miss 3-8 writes under every mechanism while end-of-stream retention varies 12x); write-form recall ~90% vs paraphrase 12-31%; a per-fact savings probe finds no accelerated re-acquisition. Act 2 (recognition survives, cross-mechanism): EWC on the second substrate recalls nothing while recognizing well above chance; a GRACE-style editor at matched budget recalls 0-1/48 while recognizing 45-47/48. Act 3 (truth must live in the log): error-gated consolidation retains ~2.1-2.2x recency-only at identical nightly budget by rescuing the recognized-but-not-recalled class (0% -> 46% next-day survival); log-free nights poison (self-recitation 0/144; hybrid 4.3 vs 25.0 for doing nothing); no knee over 30 days; capability firewall plus a 100-item GSM8K probe. Act 4 (the surviving recognition is the key to using the log): candidate-free adapter-vs-base familiarity separates written from never-written facts at AUC 0.913-0.932 in a question form whose recall is 1-6/48 (cloze 0.977-0.999); the base-only signal sits at chance (0.489-0.541); an answer-independent slot-KL gate cuts fabrication from ~100% to 10-33% at a frozen threshold, while candidate-scored gates fail informatively (readout gap: AUC 0.93-0.99 shown vs Youden J <= 0.27 unprompted). Includes the day-scale and loop drivers, all Act-4 probes, and the raw per-fact/per-night timelines behind every table.",
+  "license": "MIT",
+  "keywords": [
+    "continual learning",
+    "catastrophic forgetting",
+    "LoRA",
+    "parametric memory",
+    "large language models",
+    "memory consolidation",
+    "recognition vs recall",
+    "familiarity",
+    "knowledge editing",
+    "hallucination",
+    "sleep cycle",
+    "lifelong learning"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "10.5281/zenodo.21199026",
+      "resource_type": "software"
+    },
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "10.5281/zenodo.21309811",
+      "resource_type": "software"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.21232648",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.21310038",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}

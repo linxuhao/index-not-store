@@ -1,0 +1,101 @@
+{
+  "mech": "grace",
+  "model": "Qwen/Qwen3.5-2B",
+  "n_stream": 12,
+  "steps": 100,
+  "lr": 1.0,
+  "eps": 6.535,
+  "layer": 18,
+  "layer_frac": 0.75,
+  "probe_every": 4,
+  "seed": 1234,
+  "facts_src": "synthetic",
+  "n_entries": 12,
+  "curve": [
+    {
+      "k": 4,
+      "cumrecall": 1.0,
+      "n_recalled": 4.0,
+      "hits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "margins": [
+        56.32,
+        40.85,
+        61.48,
+        56.54
+      ],
+      "n_recognized": 4,
+      "n_entries": 4
+    },
+    {
+      "k": 8,
+      "cumrecall": 1.0,
+      "n_recalled": 8.0,
+      "hits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "margins": [
+        56.32,
+        40.85,
+        61.48,
+        56.54,
+        57.37,
+        60.89,
+        55.46,
+        50.12
+      ],
+      "n_recognized": 8,
+      "n_entries": 8
+    },
+    {
+      "k": 12,
+      "cumrecall": 1.0,
+      "n_recalled": 12.0,
+      "hits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "margins": [
+        56.32,
+        40.85,
+        61.48,
+        56.54,
+        57.37,
+        60.89,
+        55.46,
+        50.12,
+        58.04,
+        40.28,
+        57.64,
+        59.21
+      ],
+      "n_recognized": 12,
+      "n_entries": 12
+    }
+  ],
+  "firewall": {},
+  "final_n_recalled": 12.0,
+  "final_n_recognized": 12,
+  "final_cumrecall": 1.0
+}

@@ -1,0 +1,55 @@
+{
+  "mech": "bf",
+  "n_stream": 48,
+  "ws": 8,
+  "rank": 64,
+  "levels": 32,
+  "ewc_lambda": 300.0,
+  "local_frac": 0.15,
+  "replay_m": 4,
+  "seed": 777,
+  "curve": [
+    {
+      "k": 6,
+      "cumrecall": 0.5,
+      "n_recalled": 3.0
+    },
+    {
+      "k": 12,
+      "cumrecall": 0.25,
+      "n_recalled": 3.0
+    },
+    {
+      "k": 18,
+      "cumrecall": 0.278,
+      "n_recalled": 5.0
+    },
+    {
+      "k": 24,
+      "cumrecall": 0.167,
+      "n_recalled": 4.0
+    },
+    {
+      "k": 30,
+      "cumrecall": 0.167,
+      "n_recalled": 5.0
+    },
+    {
+      "k": 36,
+      "cumrecall": 0.028,
+      "n_recalled": 1.0
+    },
+    {
+      "k": 42,
+      "cumrecall": 0.119,
+      "n_recalled": 5.0
+    },
+    {
+      "k": 48,
+      "cumrecall": 0.104,
+      "n_recalled": 5.0
+    }
+  ],
+  "final_cumrecall": 0.104,
+  "final_n_recalled": 5.0
+}
