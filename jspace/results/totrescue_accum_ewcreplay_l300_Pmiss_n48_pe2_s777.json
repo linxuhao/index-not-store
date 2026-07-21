@@ -1,0 +1,3015 @@
+{
+ "summary": {
+  "adapter": "accum_ewcreplay_l300_Pmiss_n48_pe2_s777.pt",
+  "topk": 10,
+  "greedy_recall": 46,
+  "rescued_lpa": 46,
+  "rescued_dlp": 39,
+  "n": 48,
+  "by_state": {
+   "recalled": {
+    "n": 46,
+    "gold_in_cands": 46,
+    "rescued_lpa": 46,
+    "rescued_dlp": 39,
+    "median_rank": 1
+   },
+   "recog_only": {
+    "n": 2,
+    "gold_in_cands": 0,
+    "rescued_lpa": 0,
+    "rescued_dlp": 0,
+    "median_rank": 1
+   }
+  }
+ },
+ "rows": [
+  {
+   "fid": 0,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "VexPezZor",
+   "sel_dlp": "VexPezZor",
+   "cands": [
+    {
+     "c": "VexPezZor",
+     "lpA": -0.0,
+     "dlp": 46.5
+    },
+    {
+     "c": "VesGubKee",
+     "lpA": -12.12,
+     "dlp": 31.62
+    },
+    {
+     "c": "VolFyxGub",
+     "lpA": -15.69,
+     "dlp": 33.56
+    },
+    {
+     "c": "/VexPezZor",
+     "lpA": -30.12,
+     "dlp": 25.12
+    },
+    {
+     "c": "-VexPezZor",
+     "lpA": -27.88,
+     "dlp": 24.38
+    },
+    {
+     "c": ",VexPezZor",
+     "lpA": -29.0,
+     "dlp": 31.0
+    },
+    {
+     "c": "VinZorGub",
+     "lpA": -16.12,
+     "dlp": 28.38
+    },
+    {
+     "c": "WixFyxVex",
+     "lpA": -16.12,
+     "dlp": 33.38
+    },
+    {
+     "c": "FyxPezSol",
+     "lpA": -17.0,
+     "dlp": 27.0
+    }
+   ]
+  },
+  {
+   "fid": 1,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "ZorHoxDap",
+   "sel_dlp": "ZorHoxDap",
+   "cands": [
+    {
+     "c": "ZorHoxDap",
+     "lpA": -0.0,
+     "dlp": 52.75
+    },
+    {
+     "c": "ZnolHoxFyx",
+     "lpA": -13.31,
+     "dlp": 41.94
+    },
+    {
+     "c": "zorHoxDap",
+     "lpA": -22.12,
+     "dlp": 30.88
+    },
+    {
+     "c": "ZanZorHox",
+     "lpA": -13.5,
+     "dlp": 32.0
+    },
+    {
+     "c": "ZoneSolVop",
+     "lpA": -14.38,
+     "dlp": 34.38
+    },
+    {
+     "c": "ZunWixFyx",
+     "lpA": -13.88,
+     "dlp": 40.38
+    },
+    {
+     "c": "ZerWixFyx",
+     "lpA": -13.56,
+     "dlp": 43.69
+    },
+    {
+     "c": "ZeVopWixFyx",
+     "lpA": -15.31,
+     "dlp": 48.44
+    },
+    {
+     "c": "ZooGubKee",
+     "lpA": -14.44,
+     "dlp": 35.31
+    },
+    {
+     "c": "_ZorHoxDap",
+     "lpA": -28.0,
+     "dlp": 32.0
+    }
+   ]
+  },
+  {
+   "fid": 2,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "VopGubQua",
+   "sel_dlp": "VopGubQua",
+   "cands": [
+    {
+     "c": "VopGubQua",
+     "lpA": -0.0,
+     "dlp": 55.0
+    },
+    {
+     "c": "VivPezGro",
+     "lpA": -10.12,
+     "dlp": 44.38
+    },
+    {
+     "c": "VeZorGub",
+     "lpA": -9.88,
+     "dlp": 39.62
+    },
+    {
+     "c": "VitOixFyx",
+     "lpA": -11.56,
+     "dlp": 43.94
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -10.62,
+     "dlp": 42.88
+    },
+    {
+     "c": "PzYorGub",
+     "lpA": -13.06,
+     "dlp": 34.69
+    },
+    {
+     "c": "ViDapGub",
+     "lpA": -13.25,
+     "dlp": 38.5
+    },
+    {
+     "c": "PezLunGub",
+     "lpA": -11.12,
+     "dlp": 44.12
+    },
+    {
+     "c": "VySolGub",
+     "lpA": -24.0,
+     "dlp": 27.0
+    },
+    {
+     "c": "VasUxVop",
+     "lpA": -13.44,
+     "dlp": 37.06
+    }
+   ]
+  },
+  {
+   "fid": 3,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "TarRalDap",
+   "sel_dlp": "TarRalDap",
+   "cands": [
+    {
+     "c": "TarRalDap",
+     "lpA": -0.0,
+     "dlp": 48.0
+    },
+    {
+     "c": "FyxHoxLun",
+     "lpA": -13.44,
+     "dlp": 43.56
+    },
+    {
+     "c": "TomGubPez",
+     "lpA": -13.88,
+     "dlp": 38.88
+    },
+    {
+     "c": "TonRalDap",
+     "lpA": -12.75,
+     "dlp": 37.75
+    },
+    {
+     "c": "TunLunVex",
+     "lpA": -16.25,
+     "dlp": 32.25
+    },
+    {
+     "c": "TunLunGub",
+     "lpA": -13.81,
+     "dlp": 36.69
+    },
+    {
+     "c": "MopPezGro",
+     "lpA": -13.31,
+     "dlp": 38.69
+    },
+    {
+     "c": "tarGubDap",
+     "lpA": -32.0,
+     "dlp": 21.0
+    },
+    {
+     "c": "JizRalDap",
+     "lpA": -13.5,
+     "dlp": 41.0
+    }
+   ]
+  },
+  {
+   "fid": 4,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 8,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "SolHoxGro",
+   "sel_dlp": "SolHoxGro",
+   "cands": [
+    {
+     "c": "SolHoxGro",
+     "lpA": -0.0,
+     "dlp": 52.0
+    },
+    {
+     "c": "solHoxFyx",
+     "lpA": -11.69,
+     "dlp": 40.31
+    },
+    {
+     "c": "SoFoxVop",
+     "lpA": -22.75,
+     "dlp": 26.25
+    },
+    {
+     "c": "SOLGubKee",
+     "lpA": -13.81,
+     "dlp": 39.69
+    },
+    {
+     "c": "_solHoxWix",
+     "lpA": -38.25,
+     "dlp": 24.25
+    },
+    {
+     "c": "SOdFyxSol",
+     "lpA": -19.38,
+     "dlp": 37.12
+    },
+    {
+     "c": "SorPezGro",
+     "lpA": -16.12,
+     "dlp": 37.12
+    },
+    {
+     "c": "SoleSolGub",
+     "lpA": -18.38,
+     "dlp": 35.62
+    }
+   ]
+  },
+  {
+   "fid": 5,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "MipFenWix",
+   "sel_dlp": "MipFenWix",
+   "cands": [
+    {
+     "c": "MipFenWix",
+     "lpA": -0.01,
+     "dlp": 48.74
+    },
+    {
+     "c": "DapFyxGub",
+     "lpA": -8.38,
+     "dlp": 46.12
+    },
+    {
+     "c": "WixFyxGub",
+     "lpA": -11.19,
+     "dlp": 40.06
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -10.19,
+     "dlp": 41.31
+    },
+    {
+     "c": "RalHoxGro",
+     "lpA": -11.06,
+     "dlp": 39.44
+    },
+    {
+     "c": "FyxPezGro",
+     "lpA": -12.56,
+     "dlp": 39.44
+    },
+    {
+     "c": "HoxFyxGub",
+     "lpA": -12.88,
+     "dlp": 41.38
+    },
+    {
+     "c": "JizPezGro",
+     "lpA": -12.38,
+     "dlp": 38.12
+    },
+    {
+     "c": "VopFyxLun",
+     "lpA": -12.88,
+     "dlp": 45.88
+    }
+   ]
+  },
+  {
+   "fid": 6,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 0,
+   "sel_lpa": "LidMipZor",
+   "sel_dlp": "IdunVexPezZor",
+   "cands": [
+    {
+     "c": "LidMipZor",
+     "lpA": -0.0,
+     "dlp": 51.25
+    },
+    {
+     "c": "idWixFyx",
+     "lpA": -9.0,
+     "dlp": 38.75
+    },
+    {
+     "c": "lidWixFyx",
+     "lpA": -13.31,
+     "dlp": 38.69
+    },
+    {
+     "c": "lidMipZor",
+     "lpA": -8.75,
+     "dlp": 42.75
+    },
+    {
+     "c": "IdunVexPezZor",
+     "lpA": -10.56,
+     "dlp": 55.94
+    },
+    {
+     "c": "LudWixFyx",
+     "lpA": -9.19,
+     "dlp": 41.31
+    },
+    {
+     "c": "idsVexPezZor",
+     "lpA": -11.81,
+     "dlp": 54.69
+    },
+    {
+     "c": "ID957",
+     "lpA": -12.44,
+     "dlp": 13.31
+    },
+    {
+     "c": "SidWixFyx",
+     "lpA": -11.5,
+     "dlp": 39.0
+    },
+    {
+     "c": "LodGubKee",
+     "lpA": -11.94,
+     "dlp": 38.56
+    }
+   ]
+  },
+  {
+   "fid": 7,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "ZorKeeSol",
+   "sel_dlp": "ZorKeeSol",
+   "cands": [
+    {
+     "c": "ZorKeeSol",
+     "lpA": -0.0,
+     "dlp": 47.5
+    },
+    {
+     "c": "ZnFyxVop",
+     "lpA": -12.38,
+     "dlp": 35.62
+    },
+    {
+     "c": "_ZorKeeSol",
+     "lpA": -25.12,
+     "dlp": 31.38
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -12.62,
+     "dlp": 33.38
+    },
+    {
+     "c": "ZelWixFyx",
+     "lpA": -13.44,
+     "dlp": 38.31
+    },
+    {
+     "c": "ZincFyxMol",
+     "lpA": -14.56,
+     "dlp": 34.94
+    },
+    {
+     "c": "ZenFyxSol",
+     "lpA": -15.38,
+     "dlp": 29.88
+    },
+    {
+     "c": "ZuGubKee",
+     "lpA": -14.25,
+     "dlp": 32.0
+    },
+    {
+     "c": "ZanFyxSol",
+     "lpA": -14.69,
+     "dlp": 33.31
+    }
+   ]
+  },
+  {
+   "fid": 8,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "JizWixLid",
+   "sel_dlp": "JizWixLid",
+   "cands": [
+    {
+     "c": "JizWixLid",
+     "lpA": -0.0,
+     "dlp": 53.5
+    },
+    {
+     "c": "-JizWixLun",
+     "lpA": -29.38,
+     "dlp": 29.38
+    },
+    {
+     "c": "JlWixFol",
+     "lpA": -12.81,
+     "dlp": 36.69
+    },
+    {
+     "c": "_JizWixLun",
+     "lpA": -32.5,
+     "dlp": 27.0
+    },
+    {
+     "c": "JourNoFexZor",
+     "lpA": -14.12,
+     "dlp": 41.12
+    },
+    {
+     "c": "JalCLMxFP",
+     "lpA": -16.38,
+     "dlp": 36.88
+    },
+    {
+     "c": "JagRalVop",
+     "lpA": -13.5,
+     "dlp": 33.25
+    },
+    {
+     "c": "GubDapLun",
+     "lpA": -13.5,
+     "dlp": 31.5
+    },
+    {
+     "c": "JohCubGub",
+     "lpA": -15.94,
+     "dlp": 34.56
+    }
+   ]
+  },
+  {
+   "fid": 9,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "GubGroLid",
+   "sel_dlp": "GubGroLid",
+   "cands": [
+    {
+     "c": "GubGroLid",
+     "lpA": -0.0,
+     "dlp": 45.0
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -12.69,
+     "dlp": 39.56
+    },
+    {
+     "c": "gubGroLid",
+     "lpA": -13.31,
+     "dlp": 34.94
+    },
+    {
+     "c": "FyxZorGub",
+     "lpA": -13.44,
+     "dlp": 40.06
+    },
+    {
+     "c": "WixFyxVop",
+     "lpA": -14.31,
+     "dlp": 38.44
+    },
+    {
+     "c": "DapRalVop",
+     "lpA": -13.81,
+     "dlp": 36.94
+    },
+    {
+     "c": "JizRalKee",
+     "lpA": -14.0,
+     "dlp": 38.75
+    },
+    {
+     "c": "RalHoxLun",
+     "lpA": -14.69,
+     "dlp": 33.06
+    },
+    {
+     "c": "GroFyxLun",
+     "lpA": -17.0,
+     "dlp": 30.5
+    }
+   ]
+  },
+  {
+   "fid": 10,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "JizWixFyx",
+   "sel_dlp": "JizWixFyx",
+   "cands": [
+    {
+     "c": "JizWixFyx",
+     "lpA": -0.0,
+     "dlp": 54.75
+    },
+    {
+     "c": "JoZorGub",
+     "lpA": -12.31,
+     "dlp": 34.94
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -11.69,
+     "dlp": 35.56
+    },
+    {
+     "c": "DapRalHox",
+     "lpA": -12.62,
+     "dlp": 38.38
+    },
+    {
+     "c": "FyxGubKee",
+     "lpA": -12.94,
+     "dlp": 36.06
+    },
+    {
+     "c": "JalHoxDap",
+     "lpA": -13.75,
+     "dlp": 36.0
+    },
+    {
+     "c": "jizWixFyx",
+     "lpA": -11.56,
+     "dlp": 44.19
+    },
+    {
+     "c": "HoxWixFyx",
+     "lpA": -13.75,
+     "dlp": 31.25
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -12.62,
+     "dlp": 36.62
+    },
+    {
+     "c": "ZorHoxFyx",
+     "lpA": -14.12,
+     "dlp": 39.38
+    }
+   ]
+  },
+  {
+   "fid": 11,
+   "state": "recog_only",
+   "grank": 1,
+   "greedy_hit": 0,
+   "gold_in_cands": 0,
+   "n_cands": 10,
+   "rescued_lpa": 0,
+   "rescued_dlp": 0,
+   "sel_lpa": "TunLunVop",
+   "sel_dlp": "tuned VokGubLun",
+   "cands": [
+    {
+     "c": "TunLunVop",
+     "lpA": -1.7,
+     "dlp": 49.3
+    },
+    {
+     "c": "tunGubKee",
+     "lpA": -9.0,
+     "dlp": 39.75
+    },
+    {
+     "c": "tuning HoxHapFen",
+     "lpA": -14.69,
+     "dlp": 48.56
+    },
+    {
+     "c": "tuned VokGubLun",
+     "lpA": -13.81,
+     "dlp": 49.94
+    },
+    {
+     "c": "tuneVopFyx",
+     "lpA": -14.12,
+     "dlp": 41.38
+    },
+    {
+     "c": "FJPBlFV",
+     "lpA": -35.0,
+     "dlp": 8.5
+    },
+    {
+     "c": "BonJolGub",
+     "lpA": -15.75,
+     "dlp": 31.25
+    },
+    {
+     "c": "TuFleGub",
+     "lpA": -15.81,
+     "dlp": 29.44
+    },
+    {
+     "c": "FinVopKee",
+     "lpA": -15.06,
+     "dlp": 32.19
+    },
+    {
+     "c": "unuPezGro",
+     "lpA": -51.75,
+     "dlp": -0.75
+    }
+   ]
+  },
+  {
+   "fid": 12,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 0,
+   "sel_lpa": "MolGroMip",
+   "sel_dlp": "FolGubKee",
+   "cands": [
+    {
+     "c": "MolGroMip",
+     "lpA": -0.03,
+     "dlp": 44.47
+    },
+    {
+     "c": "FyxPezSol",
+     "lpA": -9.88,
+     "dlp": 37.62
+    },
+    {
+     "c": "FrulGubKee",
+     "lpA": -10.38,
+     "dlp": 44.38
+    },
+    {
+     "c": "MipFyxWix",
+     "lpA": -10.44,
+     "dlp": 40.31
+    },
+    {
+     "c": "molGubKee",
+     "lpA": -11.25,
+     "dlp": 40.5
+    },
+    {
+     "c": "MorTubZor",
+     "lpA": -10.5,
+     "dlp": 32.5
+    },
+    {
+     "c": "WixFyxWix",
+     "lpA": -10.88,
+     "dlp": 33.12
+    },
+    {
+     "c": "MortYFyx",
+     "lpA": -10.56,
+     "dlp": 34.19
+    },
+    {
+     "c": "FolGubKee",
+     "lpA": -10.94,
+     "dlp": 46.56
+    },
+    {
+     "c": "furPezSol",
+     "lpA": -11.19,
+     "dlp": 41.31
+    }
+   ]
+  },
+  {
+   "fid": 13,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "LidPezGro",
+   "sel_dlp": "LidPezGro",
+   "cands": [
+    {
+     "c": "LidPezGro",
+     "lpA": -0.0,
+     "dlp": 47.25
+    },
+    {
+     "c": "lidPezGro",
+     "lpA": -9.25,
+     "dlp": 38.75
+    },
+    {
+     "c": "lidZorGub",
+     "lpA": -26.12,
+     "dlp": 25.38
+    },
+    {
+     "c": "TunFyxGub",
+     "lpA": -13.81,
+     "dlp": 41.69
+    },
+    {
+     "c": "LunZorGub",
+     "lpA": -13.56,
+     "dlp": 38.69
+    },
+    {
+     "c": "ZorGubKee",
+     "lpA": -14.69,
+     "dlp": 36.81
+    },
+    {
+     "c": "LilVopGro",
+     "lpA": -14.81,
+     "dlp": 36.44
+    },
+    {
+     "c": "EzaWixFyx",
+     "lpA": -16.38,
+     "dlp": 35.38
+    },
+    {
+     "c": "LeeFyxGro",
+     "lpA": -16.38,
+     "dlp": 33.88
+    },
+    {
+     "c": "NyeMipZor",
+     "lpA": -15.19,
+     "dlp": 37.31
+    }
+   ]
+  },
+  {
+   "fid": 14,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "JizVexBlu",
+   "sel_dlp": "JizVexBlu",
+   "cands": [
+    {
+     "c": "JizVexBlu",
+     "lpA": -0.02,
+     "dlp": 53.98
+    },
+    {
+     "c": "JizFyxWix",
+     "lpA": -9.81,
+     "dlp": 47.19
+    },
+    {
+     "c": "VopFyxMol",
+     "lpA": -7.12,
+     "dlp": 48.38
+    },
+    {
+     "c": "WizPezGro",
+     "lpA": -24.88,
+     "dlp": 20.12
+    },
+    {
+     "c": "BluRalFyx",
+     "lpA": -10.94,
+     "dlp": 36.31
+    },
+    {
+     "c": "RalHoxLun",
+     "lpA": -10.25,
+     "dlp": 36.0
+    },
+    {
+     "c": "MafZorGro",
+     "lpA": -11.94,
+     "dlp": 37.06
+    },
+    {
+     "c": "WindowsVexBlu",
+     "lpA": -10.56,
+     "dlp": 31.44
+    },
+    {
+     "c": "JJZorVop",
+     "lpA": -11.19,
+     "dlp": 38.81
+    },
+    {
+     "c": "JsFyxRol",
+     "lpA": -26.88,
+     "dlp": 21.38
+    }
+   ]
+  },
+  {
+   "fid": 15,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "VopTunFen",
+   "sel_dlp": "VopTunFen",
+   "cands": [
+    {
+     "c": "VopTunFen",
+     "lpA": -0.0,
+     "dlp": 49.0
+    },
+    {
+     "c": "_VolPezZor",
+     "lpA": -60.5,
+     "dlp": -4.0
+    },
+    {
+     "c": ".VopPezZor",
+     "lpA": -33.75,
+     "dlp": 26.0
+    },
+    {
+     "c": "VexPezZor",
+     "lpA": -15.62,
+     "dlp": 34.62
+    },
+    {
+     "c": ",VopKeeFen",
+     "lpA": -44.75,
+     "dlp": 18.0
+    },
+    {
+     "c": "-VopTunFen",
+     "lpA": -33.75,
+     "dlp": 24.5
+    },
+    {
+     "c": ")VopPezZor",
+     "lpA": -36.25,
+     "dlp": 26.0
+    },
+    {
+     "c": "VolGubKee",
+     "lpA": -20.25,
+     "dlp": 22.25
+    },
+    {
+     "c": "/VopPezZor",
+     "lpA": -39.75,
+     "dlp": 16.75
+    }
+   ]
+  },
+  {
+   "fid": 16,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "DapRalVop",
+   "sel_dlp": "DapRalVop",
+   "cands": [
+    {
+     "c": "DapRalVop",
+     "lpA": -0.01,
+     "dlp": 48.49
+    },
+    {
+     "c": "GubDapLun",
+     "lpA": -7.47,
+     "dlp": 35.78
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -9.69,
+     "dlp": 39.56
+    },
+    {
+     "c": "FobPezGro",
+     "lpA": -11.69,
+     "dlp": 34.31
+    },
+    {
+     "c": "WapFyxVop",
+     "lpA": -11.62,
+     "dlp": 42.38
+    },
+    {
+     "c": "MipFyxWix",
+     "lpA": -11.38,
+     "dlp": 40.88
+    },
+    {
+     "c": "JizRalKee",
+     "lpA": -12.25,
+     "dlp": 38.0
+    },
+    {
+     "c": "PexFyxVop",
+     "lpA": -13.56,
+     "dlp": 38.19
+    },
+    {
+     "c": "HoxNyeVop",
+     "lpA": -12.69,
+     "dlp": 34.81
+    },
+    {
+     "c": "BopPezVop",
+     "lpA": -13.81,
+     "dlp": 35.19
+    }
+   ]
+  },
+  {
+   "fid": 17,
+   "state": "recog_only",
+   "grank": 1,
+   "greedy_hit": 0,
+   "gold_in_cands": 0,
+   "n_cands": 10,
+   "rescued_lpa": 0,
+   "rescued_dlp": 0,
+   "sel_lpa": "KeeFyxVop",
+   "sel_dlp": "KeeFyxVop",
+   "cands": [
+    {
+     "c": "KeeFyxVop",
+     "lpA": -0.99,
+     "dlp": 57.51
+    },
+    {
+     "c": "FyxZorGub",
+     "lpA": -8.5,
+     "dlp": 44.75
+    },
+    {
+     "c": "KeXpZorGub",
+     "lpA": -13.19,
+     "dlp": 44.81
+    },
+    {
+     "c": "PeeZorGub",
+     "lpA": -11.25,
+     "dlp": 38.0
+    },
+    {
+     "c": "KeySolLun",
+     "lpA": -11.0,
+     "dlp": 34.25
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -11.44,
+     "dlp": 34.81
+    },
+    {
+     "c": "KelFVixGub",
+     "lpA": -15.25,
+     "dlp": 41.5
+    },
+    {
+     "c": "keFapSol",
+     "lpA": -13.69,
+     "dlp": 33.31
+    },
+    {
+     "c": "FeeGubDap",
+     "lpA": -11.56,
+     "dlp": 32.69
+    },
+    {
+     "c": "KeeZeeGub",
+     "lpA": -13.19,
+     "dlp": 32.56
+    }
+   ]
+  },
+  {
+   "fid": 18,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 0,
+   "sel_lpa": "TarKeeQua",
+   "sel_dlp": "GubDapWix",
+   "cands": [
+    {
+     "c": "TarKeeQua",
+     "lpA": -0.33,
+     "dlp": 46.67
+    },
+    {
+     "c": "GubDapWix",
+     "lpA": -4.75,
+     "dlp": 49.0
+    },
+    {
+     "c": "FyxPezGro",
+     "lpA": -7.88,
+     "dlp": 44.62
+    },
+    {
+     "c": "TarKeeZor",
+     "lpA": -4.09,
+     "dlp": 44.66
+    },
+    {
+     "c": "HoxPezGro",
+     "lpA": -8.19,
+     "dlp": 42.56
+    },
+    {
+     "c": "RalHoxLun",
+     "lpA": -8.25,
+     "dlp": 42.75
+    },
+    {
+     "c": "WixFyxPez",
+     "lpA": -10.0,
+     "dlp": 43.25
+    },
+    {
+     "c": "DapRalVop",
+     "lpA": -9.81,
+     "dlp": 42.19
+    },
+    {
+     "c": "KeeFenGub",
+     "lpA": -19.62,
+     "dlp": 31.62
+    },
+    {
+     "c": "GasPezGro",
+     "lpA": -10.31,
+     "dlp": 36.19
+    }
+   ]
+  },
+  {
+   "fid": 19,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "NyeDapRal",
+   "sel_dlp": "NyeDapRal",
+   "cands": [
+    {
+     "c": "NyeDapRal",
+     "lpA": -0.14,
+     "dlp": 50.36
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -3.58,
+     "dlp": 43.67
+    },
+    {
+     "c": "MipZorGub",
+     "lpA": -5.62,
+     "dlp": 45.12
+    },
+    {
+     "c": "ProlXaGub",
+     "lpA": -28.5,
+     "dlp": 20.0
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -5.91,
+     "dlp": 40.34
+    },
+    {
+     "c": "JizWixFyx",
+     "lpA": -6.44,
+     "dlp": 48.56
+    },
+    {
+     "c": "DapGubSol",
+     "lpA": -6.06,
+     "dlp": 40.94
+    },
+    {
+     "c": "WixFyxVex",
+     "lpA": -6.91,
+     "dlp": 41.34
+    },
+    {
+     "c": "FobGubKee",
+     "lpA": -8.12,
+     "dlp": 36.62
+    },
+    {
+     "c": "HoxFyxGub",
+     "lpA": -6.66,
+     "dlp": 44.34
+    }
+   ]
+  },
+  {
+   "fid": 20,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "ZorGubKee",
+   "sel_dlp": "ZorGubKee",
+   "cands": [
+    {
+     "c": "ZorGubKee",
+     "lpA": -0.11,
+     "dlp": 54.39
+    },
+    {
+     "c": "RalHoxQua",
+     "lpA": -2.5,
+     "dlp": 51.0
+    },
+    {
+     "c": "VopFyxGub",
+     "lpA": -7.03,
+     "dlp": 50.97
+    },
+    {
+     "c": "WixFyx",
+     "lpA": -6.62,
+     "dlp": 34.62
+    },
+    {
+     "c": "DapWixFyx",
+     "lpA": -7.38,
+     "dlp": 48.38
+    },
+    {
+     "c": "FyxPezGro",
+     "lpA": -8.56,
+     "dlp": 46.94
+    },
+    {
+     "c": "GubDapWix",
+     "lpA": -7.22,
+     "dlp": 45.53
+    },
+    {
+     "c": "PezPezGub",
+     "lpA": -22.62,
+     "dlp": 25.38
+    },
+    {
+     "c": "TuxTunFyx",
+     "lpA": -11.38,
+     "dlp": 38.62
+    },
+    {
+     "c": "MipFenWix",
+     "lpA": -8.12,
+     "dlp": 41.12
+    }
+   ]
+  },
+  {
+   "fid": 21,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "PezWixMol",
+   "sel_dlp": "PezWixMol",
+   "cands": [
+    {
+     "c": "PezWixMol",
+     "lpA": -0.05,
+     "dlp": 54.45
+    },
+    {
+     "c": "pezWixMol",
+     "lpA": -30.5,
+     "dlp": 26.0
+    },
+    {
+     "c": "PezPezGub",
+     "lpA": -8.38,
+     "dlp": 41.62
+    },
+    {
+     "c": "pezFenWix",
+     "lpA": -30.88,
+     "dlp": 21.38
+    },
+    {
+     "c": "-peppFenWix",
+     "lpA": -46.5,
+     "dlp": 15.25
+    },
+    {
+     "c": "PEZGroVop",
+     "lpA": -12.94,
+     "dlp": 42.06
+    },
+    {
+     "c": "_pezWixFyx",
+     "lpA": -45.75,
+     "dlp": 20.25
+    },
+    {
+     "c": "VopPezGro",
+     "lpA": -11.56,
+     "dlp": 42.44
+    },
+    {
+     "c": "peaPezGro",
+     "lpA": -12.12,
+     "dlp": 39.62
+    },
+    {
+     "c": "PebLunGub",
+     "lpA": -14.06,
+     "dlp": 37.94
+    }
+   ]
+  },
+  {
+   "fid": 22,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "RalHoxQua",
+   "sel_dlp": "RalHoxQua",
+   "cands": [
+    {
+     "c": "RalHoxQua",
+     "lpA": -0.01,
+     "dlp": 53.74
+    },
+    {
+     "c": "_RatGubKee",
+     "lpA": -31.75,
+     "dlp": 31.5
+    },
+    {
+     "c": "\u0420ozZor",
+     "lpA": -15.56,
+     "dlp": 27.94
+    },
+    {
+     "c": "RolGubDap",
+     "lpA": -38.75,
+     "dlp": 16.75
+    },
+    {
+     "c": "RaZorGuin",
+     "lpA": -16.5,
+     "dlp": 29.25
+    },
+    {
+     "c": "-RalHoxQua",
+     "lpA": -40.5,
+     "dlp": 21.5
+    },
+    {
+     "c": "RAZ",
+     "lpA": -26.38,
+     "dlp": -5.5
+    },
+    {
+     "c": ".RaHoxQua",
+     "lpA": -45.75,
+     "dlp": 12.0
+    },
+    {
+     "c": "=RexPezZor",
+     "lpA": -43.75,
+     "dlp": 15.75
+    },
+    {
+     "c": "GubDapWix",
+     "lpA": -16.75,
+     "dlp": 37.0
+    }
+   ]
+  },
+  {
+   "fid": 23,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 0,
+   "sel_lpa": "ZorRalPez",
+   "sel_dlp": "MubVexPezZor",
+   "cands": [
+    {
+     "c": "ZorRalPez",
+     "lpA": -0.01,
+     "dlp": 46.74
+    },
+    {
+     "c": "ZubPezGub",
+     "lpA": -21.62,
+     "dlp": 30.38
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -9.81,
+     "dlp": 39.69
+    },
+    {
+     "c": "ZabFyxWix",
+     "lpA": -12.25,
+     "dlp": 40.75
+    },
+    {
+     "c": "VopFopLid",
+     "lpA": -10.88,
+     "dlp": 39.88
+    },
+    {
+     "c": "ZelHoxGro",
+     "lpA": -12.0,
+     "dlp": 37.75
+    },
+    {
+     "c": "(ZouGubKee)",
+     "lpA": -35.5,
+     "dlp": 15.0
+    },
+    {
+     "c": "DapTunGel",
+     "lpA": -26.88,
+     "dlp": 17.62
+    },
+    {
+     "c": "_ZapZapGubZor",
+     "lpA": -30.0,
+     "dlp": 31.5
+    },
+    {
+     "c": "MubVexPezZor",
+     "lpA": -13.44,
+     "dlp": 48.06
+    }
+   ]
+  },
+  {
+   "fid": 24,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "RalHoxLun",
+   "sel_dlp": "RalHoxLun",
+   "cands": [
+    {
+     "c": "RalHoxLun",
+     "lpA": -0.27,
+     "dlp": 54.48
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -2.83,
+     "dlp": 48.67
+    },
+    {
+     "c": "FyxZorGub",
+     "lpA": -3.66,
+     "dlp": 53.09
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -4.97,
+     "dlp": 50.78
+    },
+    {
+     "c": "DapRalVop",
+     "lpA": -5.66,
+     "dlp": 48.59
+    },
+    {
+     "c": "HoxNyeVop",
+     "lpA": -6.88,
+     "dlp": 44.62
+    },
+    {
+     "c": "JizRalKee",
+     "lpA": -7.22,
+     "dlp": 46.28
+    },
+    {
+     "c": "MopFyxVop",
+     "lpA": -8.25,
+     "dlp": 49.5
+    },
+    {
+     "c": "PezPezFyx",
+     "lpA": -22.5,
+     "dlp": 28.0
+    },
+    {
+     "c": "ZorGubKee",
+     "lpA": -6.66,
+     "dlp": 49.84
+    }
+   ]
+  },
+  {
+   "fid": 25,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "FenRalVop",
+   "sel_dlp": "FenRalVop",
+   "cands": [
+    {
+     "c": "FenRalVop",
+     "lpA": -0.02,
+     "dlp": 51.48
+    },
+    {
+     "c": "FolGubLun",
+     "lpA": -11.62,
+     "dlp": 44.38
+    },
+    {
+     "c": "FerVopCix",
+     "lpA": -8.06,
+     "dlp": 50.44
+    },
+    {
+     "c": "FalVexGub",
+     "lpA": -9.0,
+     "dlp": 44.75
+    },
+    {
+     "c": "FerroMolVop",
+     "lpA": -11.19,
+     "dlp": 39.31
+    },
+    {
+     "c": "FamPezGro",
+     "lpA": -8.56,
+     "dlp": 41.94
+    },
+    {
+     "c": "FezVexPez",
+     "lpA": -9.06,
+     "dlp": 46.19
+    },
+    {
+     "c": "FiGaSR",
+     "lpA": -34.75,
+     "dlp": 8.0
+    },
+    {
+     "c": "FetZorGub",
+     "lpA": -8.5,
+     "dlp": 47.0
+    },
+    {
+     "c": "FidSolGub",
+     "lpA": -9.69,
+     "dlp": 43.56
+    }
+   ]
+  },
+  {
+   "fid": 26,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "JizRalKee",
+   "sel_dlp": "JizRalKee",
+   "cands": [
+    {
+     "c": "JizRalKee",
+     "lpA": -0.0,
+     "dlp": 53.25
+    },
+    {
+     "c": ".JizRalKee",
+     "lpA": -33.0,
+     "dlp": 32.0
+    },
+    {
+     "c": "_JizRalKee",
+     "lpA": -30.75,
+     "dlp": 33.25
+    },
+    {
+     "c": "JanRalVop",
+     "lpA": -16.88,
+     "dlp": 32.38
+    },
+    {
+     "c": "VopFyxGub",
+     "lpA": -17.0,
+     "dlp": 42.5
+    },
+    {
+     "c": "JoZorGub",
+     "lpA": -16.5,
+     "dlp": 30.75
+    },
+    {
+     "c": ",JizRalKee",
+     "lpA": -37.75,
+     "dlp": 27.25
+    },
+    {
+     "c": "JaHeFen",
+     "lpA": -19.38,
+     "dlp": 23.12
+    },
+    {
+     "c": "/JizRalKee",
+     "lpA": -31.88,
+     "dlp": 32.62
+    }
+   ]
+  },
+  {
+   "fid": 27,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "ZorRalHox",
+   "sel_dlp": "ZorRalHox",
+   "cands": [
+    {
+     "c": "ZorRalHox",
+     "lpA": -0.18,
+     "dlp": 44.57
+    },
+    {
+     "c": "zPezVop",
+     "lpA": -10.44,
+     "dlp": 31.81
+    },
+    {
+     "c": "_ZorGubKee",
+     "lpA": -38.75,
+     "dlp": 19.5
+    },
+    {
+     "c": "/zor ZorHoxLun",
+     "lpA": -77.0,
+     "dlp": -11.5
+    },
+    {
+     "c": "+zW3F",
+     "lpA": -65.0,
+     "dlp": -30.0
+    },
+    {
+     "c": "ZnCrGubLun",
+     "lpA": -16.12,
+     "dlp": 38.62
+    },
+    {
+     "c": "ZipRalDap",
+     "lpA": -15.56,
+     "dlp": 25.94
+    },
+    {
+     "c": "ZincWixLid",
+     "lpA": -15.81,
+     "dlp": 34.44
+    },
+    {
+     "c": "-zorHoxLun",
+     "lpA": -61.75,
+     "dlp": -5.5
+    }
+   ]
+  },
+  {
+   "fid": 28,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "LunWixFen",
+   "sel_dlp": "LunWixFen",
+   "cands": [
+    {
+     "c": "LunWixFen",
+     "lpA": -0.04,
+     "dlp": 46.46
+    },
+    {
+     "c": "FyxRalVop",
+     "lpA": -9.5,
+     "dlp": 44.5
+    },
+    {
+     "c": "lunWixFen",
+     "lpA": -8.75,
+     "dlp": 41.0
+    },
+    {
+     "c": "FuGeeZor",
+     "lpA": -9.69,
+     "dlp": 31.56
+    },
+    {
+     "c": "LintVexBlu",
+     "lpA": -10.5,
+     "dlp": 36.75
+    },
+    {
+     "c": "FonWixFen",
+     "lpA": -10.81,
+     "dlp": 36.44
+    },
+    {
+     "c": "PezWixFen",
+     "lpA": -13.94,
+     "dlp": 36.06
+    },
+    {
+     "c": "LenWixFen",
+     "lpA": -10.25,
+     "dlp": 35.5
+    },
+    {
+     "c": "DapRalVop",
+     "lpA": -10.88,
+     "dlp": 41.12
+    },
+    {
+     "c": "TunLunFen",
+     "lpA": -10.12,
+     "dlp": 30.88
+    }
+   ]
+  },
+  {
+   "fid": 29,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "TunNyeVop",
+   "sel_dlp": "TunNyeVop",
+   "cands": [
+    {
+     "c": "TunNyeVop",
+     "lpA": -0.01,
+     "dlp": 48.99
+    },
+    {
+     "c": "tunNyeVop",
+     "lpA": -10.88,
+     "dlp": 41.62
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -11.25,
+     "dlp": 37.0
+    },
+    {
+     "c": "GuyFayWix",
+     "lpA": -16.25,
+     "dlp": 29.75
+    },
+    {
+     "c": "TsGroLid",
+     "lpA": -14.5,
+     "dlp": 28.5
+    },
+    {
+     "c": "TuneZorGroLid",
+     "lpA": -16.5,
+     "dlp": 44.0
+    },
+    {
+     "c": "codingPezGro",
+     "lpA": -13.56,
+     "dlp": 35.19
+    },
+    {
+     "c": "GuubDapVop",
+     "lpA": -16.62,
+     "dlp": 42.38
+    },
+    {
+     "c": "GulHoxGro",
+     "lpA": -15.75,
+     "dlp": 31.5
+    },
+    {
+     "c": "TupPezGro",
+     "lpA": -15.5,
+     "dlp": 32.5
+    }
+   ]
+  },
+  {
+   "fid": 30,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "GubTunZor",
+   "sel_dlp": "GubTunZor",
+   "cands": [
+    {
+     "c": "GubTunZor",
+     "lpA": -0.31,
+     "dlp": 47.69
+    },
+    {
+     "c": "GarFyxVop",
+     "lpA": -7.75,
+     "dlp": 43.25
+    },
+    {
+     "c": "DapFyxLun",
+     "lpA": -8.38,
+     "dlp": 45.88
+    },
+    {
+     "c": "VopGubQua",
+     "lpA": -7.25,
+     "dlp": 43.25
+    },
+    {
+     "c": "#g0f9b2",
+     "lpA": -53.5,
+     "dlp": -26.38
+    },
+    {
+     "c": "FyGubMee",
+     "lpA": -10.19,
+     "dlp": 38.31
+    },
+    {
+     "c": "ZorGubTun",
+     "lpA": -9.31,
+     "dlp": 42.94
+    },
+    {
+     "c": "MipVexGro",
+     "lpA": -9.19,
+     "dlp": 37.56
+    },
+    {
+     "c": "GangHoxFyx",
+     "lpA": -9.25,
+     "dlp": 42.75
+    },
+    {
+     "c": "GalVopFyx",
+     "lpA": -12.12,
+     "dlp": 36.62
+    }
+   ]
+  },
+  {
+   "fid": 31,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "DapHoxBlu",
+   "sel_dlp": "DapHoxBlu",
+   "cands": [
+    {
+     "c": "DapHoxBlu",
+     "lpA": -0.05,
+     "dlp": 51.45
+    },
+    {
+     "c": "FyxPezGro",
+     "lpA": -8.56,
+     "dlp": 45.94
+    },
+    {
+     "c": "GubDapWix",
+     "lpA": -10.31,
+     "dlp": 39.19
+    },
+    {
+     "c": "MubKeeP",
+     "lpA": -13.56,
+     "dlp": 25.44
+    },
+    {
+     "c": "RubDapWix",
+     "lpA": -18.5,
+     "dlp": 38.25
+    },
+    {
+     "c": "KunFyxGub",
+     "lpA": -29.0,
+     "dlp": 22.5
+    },
+    {
+     "c": "ZorGubKee",
+     "lpA": -13.44,
+     "dlp": 36.81
+    },
+    {
+     "c": "BluRalTun",
+     "lpA": -12.62,
+     "dlp": 31.12
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -13.69,
+     "dlp": 40.56
+    }
+   ]
+  },
+  {
+   "fid": 32,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "BluRalTun",
+   "sel_dlp": "BluRalTun",
+   "cands": [
+    {
+     "c": "BluRalTun",
+     "lpA": -0.0,
+     "dlp": 46.25
+    },
+    {
+     "c": "BluRalVop",
+     "lpA": -12.62,
+     "dlp": 40.12
+    },
+    {
+     "c": "bluRalVop",
+     "lpA": -13.06,
+     "dlp": 38.69
+    },
+    {
+     "c": "GuvLunFyx",
+     "lpA": -13.94,
+     "dlp": 34.31
+    },
+    {
+     "c": "FuGubKee",
+     "lpA": -13.38,
+     "dlp": 31.12
+    },
+    {
+     "c": "NuRalTun",
+     "lpA": -13.25,
+     "dlp": 31.0
+    },
+    {
+     "c": "Google",
+     "lpA": -14.06,
+     "dlp": 3.44
+    },
+    {
+     "c": "BuFevKee",
+     "lpA": -16.5,
+     "dlp": 30.25
+    },
+    {
+     "c": "BUyPezVop",
+     "lpA": -15.0,
+     "dlp": 44.75
+    },
+    {
+     "c": "NeuFyxGub",
+     "lpA": -14.75,
+     "dlp": 44.25
+    }
+   ]
+  },
+  {
+   "fid": 33,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "VopPezBlu",
+   "sel_dlp": "VopPezBlu",
+   "cands": [
+    {
+     "c": "VopPezBlu",
+     "lpA": -0.0,
+     "dlp": 50.25
+    },
+    {
+     "c": "GubDapRal",
+     "lpA": -10.56,
+     "dlp": 37.44
+    },
+    {
+     "c": "PezPezVex",
+     "lpA": -15.69,
+     "dlp": 25.81
+    },
+    {
+     "c": "PezWixMol",
+     "lpA": -13.0,
+     "dlp": 35.25
+    },
+    {
+     "c": "DapRalVop",
+     "lpA": -11.56,
+     "dlp": 37.44
+    },
+    {
+     "c": "KizVopPez",
+     "lpA": -13.56,
+     "dlp": 37.19
+    },
+    {
+     "c": "JizPezSol",
+     "lpA": -13.62,
+     "dlp": 32.12
+    },
+    {
+     "c": "vopPezBlu",
+     "lpA": -12.19,
+     "dlp": 37.06
+    },
+    {
+     "c": "VibFyxGub",
+     "lpA": -13.19,
+     "dlp": 40.06
+    }
+   ]
+  },
+  {
+   "fid": 34,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "FyxZorGub",
+   "sel_dlp": "FyxZorGub",
+   "cands": [
+    {
+     "c": "FyxZorGub",
+     "lpA": -0.0,
+     "dlp": 56.25
+    },
+    {
+     "c": "FenWixMol",
+     "lpA": -27.25,
+     "dlp": 21.25
+    },
+    {
+     "c": "fyxZorGub",
+     "lpA": -14.44,
+     "dlp": 44.06
+    },
+    {
+     "c": "_fizFyx",
+     "lpA": -63.75,
+     "dlp": -13.0
+    },
+    {
+     "c": "-FoxGubKee",
+     "lpA": -48.5,
+     "dlp": 9.0
+    },
+    {
+     "c": "=FenWixGub",
+     "lpA": -44.0,
+     "dlp": 19.25
+    },
+    {
+     "c": "_FyxZorGub",
+     "lpA": -40.25,
+     "dlp": 31.25
+    },
+    {
+     "c": "fardFyxGub",
+     "lpA": -36.0,
+     "dlp": 22.75
+    },
+    {
+     "c": "\u0424yxZorGub",
+     "lpA": -22.12,
+     "dlp": 39.38
+    },
+    {
+     "c": ".FebGubDap",
+     "lpA": -48.75,
+     "dlp": 10.75
+    }
+   ]
+  },
+  {
+   "fid": 35,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "NyeMipJiz",
+   "sel_dlp": "NyeMipJiz",
+   "cands": [
+    {
+     "c": "NyeMipJiz",
+     "lpA": -0.05,
+     "dlp": 49.95
+    },
+    {
+     "c": "VopPezGro",
+     "lpA": -13.88,
+     "dlp": 33.88
+    },
+    {
+     "c": "FyxPezGro",
+     "lpA": -15.88,
+     "dlp": 32.38
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -16.62,
+     "dlp": 24.62
+    },
+    {
+     "c": "MipFenWix",
+     "lpA": -16.38,
+     "dlp": 28.88
+    },
+    {
+     "c": "RyePezSol",
+     "lpA": -18.25,
+     "dlp": 24.0
+    },
+    {
+     "c": "AppFyxSol",
+     "lpA": -17.0,
+     "dlp": 26.0
+    },
+    {
+     "c": "DapHoxGro",
+     "lpA": -17.5,
+     "dlp": 29.75
+    },
+    {
+     "c": "NitNoKee",
+     "lpA": -17.0,
+     "dlp": 24.75
+    }
+   ]
+  },
+  {
+   "fid": 36,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "PezLunGub",
+   "sel_dlp": "PezLunGub",
+   "cands": [
+    {
+     "c": "PezLunGub",
+     "lpA": -0.03,
+     "dlp": 54.22
+    },
+    {
+     "c": "FuGubGub",
+     "lpA": -6.44,
+     "dlp": 35.06
+    },
+    {
+     "c": "FyxZorGub",
+     "lpA": -7.56,
+     "dlp": 48.44
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -8.06,
+     "dlp": 39.94
+    },
+    {
+     "c": "PoxLunGub",
+     "lpA": -9.06,
+     "dlp": 39.94
+    },
+    {
+     "c": "VopFyxLun",
+     "lpA": -9.19,
+     "dlp": 49.56
+    },
+    {
+     "c": "GeunSlunGub",
+     "lpA": -11.12,
+     "dlp": 45.12
+    },
+    {
+     "c": "PaZorGub",
+     "lpA": -9.31,
+     "dlp": 38.69
+    },
+    {
+     "c": "SeVaxGro",
+     "lpA": -10.38,
+     "dlp": 42.38
+    },
+    {
+     "c": "FrezFyxWix",
+     "lpA": -10.81,
+     "dlp": 44.44
+    }
+   ]
+  },
+  {
+   "fid": 37,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "GubKeeVop",
+   "sel_dlp": "GubKeeVop",
+   "cands": [
+    {
+     "c": "GubKeeVop",
+     "lpA": -0.31,
+     "dlp": 48.69
+    },
+    {
+     "c": "AopFyxLun",
+     "lpA": -14.75,
+     "dlp": 36.75
+    },
+    {
+     "c": "\u0413unFexLun",
+     "lpA": -18.5,
+     "dlp": 40.25
+    },
+    {
+     "c": "GMFJq",
+     "lpA": -16.62,
+     "dlp": 19.38
+    },
+    {
+     "c": "GlyLunVop",
+     "lpA": -15.25,
+     "dlp": 35.25
+    },
+    {
+     "c": "GroignPezGub",
+     "lpA": -15.69,
+     "dlp": 41.81
+    },
+    {
+     "c": "GolSolLun",
+     "lpA": -16.0,
+     "dlp": 26.5
+    },
+    {
+     "c": "HoxLunGub",
+     "lpA": -14.25,
+     "dlp": 34.0
+    },
+    {
+     "c": "GhipLunVop",
+     "lpA": -32.25,
+     "dlp": 23.5
+    }
+   ]
+  },
+  {
+   "fid": 38,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 0,
+   "sel_lpa": "BluSolVop",
+   "sel_dlp": "by RalFyxVop",
+   "cands": [
+    {
+     "c": "BluSolVop",
+     "lpA": -0.0,
+     "dlp": 43.0
+    },
+    {
+     "c": "HD'GoVop",
+     "lpA": -11.5,
+     "dlp": 37.0
+    },
+    {
+     "c": "KizFyxGub",
+     "lpA": -15.44,
+     "dlp": 38.81
+    },
+    {
+     "c": "lidPezGro",
+     "lpA": -12.56,
+     "dlp": 37.19
+    },
+    {
+     "c": "BlueSolVop",
+     "lpA": -12.56,
+     "dlp": 27.44
+    },
+    {
+     "c": "MipFyxWix",
+     "lpA": -13.5,
+     "dlp": 36.5
+    },
+    {
+     "c": "ZhuGubKee",
+     "lpA": -14.75,
+     "dlp": 30.25
+    },
+    {
+     "c": "bluSolVop",
+     "lpA": -12.94,
+     "dlp": 33.56
+    },
+    {
+     "c": "by RalFyxVop",
+     "lpA": -14.5,
+     "dlp": 47.0
+    }
+   ]
+  },
+  {
+   "fid": 39,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "WixFyxVex",
+   "sel_dlp": "WixFyxVex",
+   "cands": [
+    {
+     "c": "WixFyxVex",
+     "lpA": -0.19,
+     "dlp": 52.56
+    },
+    {
+     "c": "WixFyxLun",
+     "lpA": -2.31,
+     "dlp": 51.44
+    },
+    {
+     "c": "VopFyxLun",
+     "lpA": -12.06,
+     "dlp": 46.44
+    },
+    {
+     "c": "HoxNyeVop",
+     "lpA": -12.31,
+     "dlp": 41.69
+    },
+    {
+     "c": "JizWixLun",
+     "lpA": -12.5,
+     "dlp": 44.75
+    },
+    {
+     "c": "GubDapSol",
+     "lpA": -12.5,
+     "dlp": 35.5
+    },
+    {
+     "c": "PezGroLun",
+     "lpA": -22.62,
+     "dlp": 26.38
+    },
+    {
+     "c": "WhizLunGub",
+     "lpA": -13.5,
+     "dlp": 39.0
+    },
+    {
+     "c": "MopFyxPez",
+     "lpA": -14.75,
+     "dlp": 40.25
+    },
+    {
+     "c": "BopWixLun",
+     "lpA": -15.5,
+     "dlp": 38.0
+    }
+   ]
+  },
+  {
+   "fid": 40,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 0,
+   "sel_lpa": "QuaMolJiz",
+   "sel_dlp": "JizWixFyx",
+   "cands": [
+    {
+     "c": "QuaMolJiz",
+     "lpA": -0.36,
+     "dlp": 46.64
+    },
+    {
+     "c": "JizWixFyx",
+     "lpA": -3.61,
+     "dlp": 51.89
+    },
+    {
+     "c": "VopPezVex",
+     "lpA": -5.34,
+     "dlp": 43.41
+    },
+    {
+     "c": "FyxLunGub",
+     "lpA": -5.59,
+     "dlp": 43.41
+    },
+    {
+     "c": "DapRalVop",
+     "lpA": -5.62,
+     "dlp": 46.12
+    },
+    {
+     "c": "HoxLunGub",
+     "lpA": -7.28,
+     "dlp": 42.22
+    },
+    {
+     "c": "AndGubDap",
+     "lpA": -6.84,
+     "dlp": 40.91
+    },
+    {
+     "c": "JarVexGub",
+     "lpA": -7.0,
+     "dlp": 41.75
+    },
+    {
+     "c": "GravGubLid",
+     "lpA": -7.06,
+     "dlp": 45.19
+    },
+    {
+     "c": "AeF#G",
+     "lpA": -6.06,
+     "dlp": 26.19
+    }
+   ]
+  },
+  {
+   "fid": 41,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "VopFyxLun",
+   "sel_dlp": "VopFyxLun",
+   "cands": [
+    {
+     "c": "VopFyxLun",
+     "lpA": -0.16,
+     "dlp": 55.09
+    },
+    {
+     "c": "VopPezGro",
+     "lpA": -1.97,
+     "dlp": 48.03
+    },
+    {
+     "c": "vopFyxLun",
+     "lpA": -17.38,
+     "dlp": 43.88
+    },
+    {
+     "c": "WixFyxLun",
+     "lpA": -16.0,
+     "dlp": 33.5
+    },
+    {
+     "c": "-vopPezGro",
+     "lpA": -57.5,
+     "dlp": 2.0
+    },
+    {
+     "c": "DapFyxLun",
+     "lpA": -18.0,
+     "dlp": 31.5
+    },
+    {
+     "c": "FyxPezGro",
+     "lpA": -18.88,
+     "dlp": 32.38
+    },
+    {
+     "c": "_VopPezGro",
+     "lpA": -29.12,
+     "dlp": 31.88
+    },
+    {
+     "c": "MipFyxWix",
+     "lpA": -19.88,
+     "dlp": 31.38
+    },
+    {
+     "c": "EfaLunGub",
+     "lpA": -22.0,
+     "dlp": 27.0
+    }
+   ]
+  },
+  {
+   "fid": 42,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 0,
+   "sel_lpa": "GroHoxLid",
+   "sel_dlp": "grohVopFyx",
+   "cands": [
+    {
+     "c": "GroHoxLid",
+     "lpA": -0.73,
+     "dlp": 46.27
+    },
+    {
+     "c": "GroNyePez",
+     "lpA": -8.0,
+     "dlp": 39.0
+    },
+    {
+     "c": "grohVopFyx",
+     "lpA": -9.5,
+     "dlp": 51.25
+    },
+    {
+     "c": "groHoxLun",
+     "lpA": -11.12,
+     "dlp": 40.62
+    },
+    {
+     "c": "GrunGubKee",
+     "lpA": -10.81,
+     "dlp": 42.44
+    },
+    {
+     "c": "GranSolFyx",
+     "lpA": -12.25,
+     "dlp": 40.0
+    },
+    {
+     "c": "GROOJyxPez",
+     "lpA": -14.56,
+     "dlp": 41.44
+    },
+    {
+     "c": "SwizFyxGub",
+     "lpA": -13.88,
+     "dlp": 45.38
+    },
+    {
+     "c": "GreatGubKee",
+     "lpA": -12.81,
+     "dlp": 32.94
+    },
+    {
+     "c": "GoZorGub",
+     "lpA": -13.19,
+     "dlp": 31.56
+    }
+   ]
+  },
+  {
+   "fid": 43,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 9,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "HoxNyeVop",
+   "sel_dlp": "HoxNyeVop",
+   "cands": [
+    {
+     "c": "HoxNyeVop",
+     "lpA": -0.0,
+     "dlp": 55.5
+    },
+    {
+     "c": "hoxNyeVop",
+     "lpA": -10.94,
+     "dlp": 44.56
+    },
+    {
+     "c": "VopPezGro",
+     "lpA": -14.81,
+     "dlp": 37.94
+    },
+    {
+     "c": "JizWixFyx",
+     "lpA": -15.75,
+     "dlp": 40.5
+    },
+    {
+     "c": "MopFyxLun",
+     "lpA": -17.38,
+     "dlp": 34.88
+    },
+    {
+     "c": "DapFyxLun",
+     "lpA": -18.0,
+     "dlp": 35.5
+    },
+    {
+     "c": "GubDapVex",
+     "lpA": -19.12,
+     "dlp": 30.12
+    },
+    {
+     "c": "MeGubNye",
+     "lpA": -17.38,
+     "dlp": 35.38
+    },
+    {
+     "c": "'HoxNyeVop'",
+     "lpA": -26.62,
+     "dlp": 29.88
+    }
+   ]
+  },
+  {
+   "fid": 44,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "TunFyxWix",
+   "sel_dlp": "TunFyxWix",
+   "cands": [
+    {
+     "c": "TunFyxWix",
+     "lpA": -0.0,
+     "dlp": 49.5
+    },
+    {
+     "c": "tunFyxWix",
+     "lpA": -8.88,
+     "dlp": 45.38
+    },
+    {
+     "c": "tunedFyxLun",
+     "lpA": -11.62,
+     "dlp": 44.12
+    },
+    {
+     "c": "TarKeeLunFyx",
+     "lpA": -13.0,
+     "dlp": 49.0
+    },
+    {
+     "c": "TuneFyxWix",
+     "lpA": -12.19,
+     "dlp": 37.81
+    },
+    {
+     "c": "tuningFyxMol",
+     "lpA": -12.94,
+     "dlp": 37.81
+    },
+    {
+     "c": "TanFyxWix",
+     "lpA": -12.62,
+     "dlp": 31.62
+    },
+    {
+     "c": "TubGubMip",
+     "lpA": -27.25,
+     "dlp": 22.0
+    },
+    {
+     "c": "tunerGubDap",
+     "lpA": -14.19,
+     "dlp": 35.06
+    },
+    {
+     "c": "TexFyxMol",
+     "lpA": -14.0,
+     "dlp": 34.0
+    }
+   ]
+  },
+  {
+   "fid": 45,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "LunZorHox",
+   "sel_dlp": "LunZorHox",
+   "cands": [
+    {
+     "c": "LunZorHox",
+     "lpA": -0.21,
+     "dlp": 51.54
+    },
+    {
+     "c": "VopPezBlu",
+     "lpA": -3.7,
+     "dlp": 49.8
+    },
+    {
+     "c": "onuFyxFyx",
+     "lpA": -49.25,
+     "dlp": 5.5
+    },
+    {
+     "c": "LuFexGro",
+     "lpA": -5.84,
+     "dlp": 43.16
+    },
+    {
+     "c": "ZuGubKee",
+     "lpA": -6.66,
+     "dlp": 40.09
+    },
+    {
+     "c": "TunFyxWix",
+     "lpA": -7.09,
+     "dlp": 48.16
+    },
+    {
+     "c": "OnZorGub",
+     "lpA": -7.75,
+     "dlp": 40.75
+    },
+    {
+     "c": "GonZorVop",
+     "lpA": -7.75,
+     "dlp": 42.75
+    },
+    {
+     "c": "zuVopHun",
+     "lpA": -32.5,
+     "dlp": 19.0
+    },
+    {
+     "c": "LixFyxGub",
+     "lpA": -7.91,
+     "dlp": 49.09
+    }
+   ]
+  },
+  {
+   "fid": 46,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "GubDapSol",
+   "sel_dlp": "GubDapSol",
+   "cands": [
+    {
+     "c": "GubDapSol",
+     "lpA": -0.0,
+     "dlp": 49.0
+    },
+    {
+     "c": "JizFyxHox",
+     "lpA": -14.5,
+     "dlp": 45.5
+    },
+    {
+     "c": "gubDapSol",
+     "lpA": -13.12,
+     "dlp": 37.62
+    },
+    {
+     "c": "GubDap",
+     "lpA": -13.38,
+     "dlp": 25.38
+    },
+    {
+     "c": "GinSolFen",
+     "lpA": -15.56,
+     "dlp": 30.94
+    },
+    {
+     "c": "GhunFyxSol",
+     "lpA": -15.62,
+     "dlp": 40.12
+    },
+    {
+     "c": "\u0413ubDapSol",
+     "lpA": -16.38,
+     "dlp": 42.38
+    },
+    {
+     "c": "GearPezGro",
+     "lpA": -15.94,
+     "dlp": 35.31
+    },
+    {
+     "c": "GirFyxLun",
+     "lpA": -15.81,
+     "dlp": 37.19
+    },
+    {
+     "c": "GroHoxLun",
+     "lpA": -15.44,
+     "dlp": 31.81
+    }
+   ]
+  },
+  {
+   "fid": 47,
+   "state": "recalled",
+   "grank": 1,
+   "greedy_hit": 1,
+   "gold_in_cands": 1,
+   "n_cands": 10,
+   "rescued_lpa": 1,
+   "rescued_dlp": 1,
+   "sel_lpa": "GubLunFyx",
+   "sel_dlp": "GubLunFyx",
+   "cands": [
+    {
+     "c": "GubLunFyx",
+     "lpA": -0.28,
+     "dlp": 52.22
+    },
+    {
+     "c": "AxPezGro",
+     "lpA": -6.44,
+     "dlp": 39.31
+    },
+    {
+     "c": "GrapFyxWix",
+     "lpA": -8.94,
+     "dlp": 47.31
+    },
+    {
+     "c": "GroFyxLun",
+     "lpA": -8.81,
+     "dlp": 38.44
+    },
+    {
+     "c": "GubDap",
+     "lpA": -11.69,
+     "dlp": 25.56
+    },
+    {
+     "c": "GolGubKee",
+     "lpA": -10.31,
+     "dlp": 38.69
+    },
+    {
+     "c": "GuzRoPez",
+     "lpA": -30.88,
+     "dlp": 16.62
+    },
+    {
+     "c": "GirFurCix",
+     "lpA": -12.75,
+     "dlp": 40.25
+    },
+    {
+     "c": "GulHoxLun",
+     "lpA": -11.06,
+     "dlp": 40.19
+    },
+    {
+     "c": "GurGubKee",
+     "lpA": -11.75,
+     "dlp": 34.75
+    }
+   ]
+  }
+ ]
+}
