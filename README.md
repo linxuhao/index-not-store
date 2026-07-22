@@ -3,7 +3,7 @@
 Code and raw results for:
 
 > **An Index, Not a Store: What Online In-Weight Memory Keeps, Loses, and Is For**
-> (preprint, DOI to be added)
+> (preprint, doi:[10.5281/zenodo.21405963](https://doi.org/10.5281/zenodo.21405963) — concept DOI, always resolves to the latest version)
 
 When a frozen language model writes facts into a LoRA adapter online — one per turn, single pass,
 day after day — the adapter becomes a **recognition index, not a fact store**, and the system
@@ -218,10 +218,12 @@ numbers to differ on any hardware (they differ across our own seeds too).
   title={An Index, Not a Store: What Online In-Weight Memory Keeps, Loses, and Is For},
   author={Lin, Xuhao},
   year={2026},
-  note={Preprint}
+  doi={10.5281/zenodo.21405963},
+  note={Preprint, Zenodo}
 }
 ```
 
+Paper (concept DOI, always latest version): [doi:10.5281/zenodo.21405963](https://doi.org/10.5281/zenodo.21405963).
 Companion released artifacts: day-scale toolkit (software doi:10.5281/zenodo.21199026, preprint
 doi:10.5281/zenodo.21232648) and loop toolkit (software doi:10.5281/zenodo.21309811, preprint
 doi:10.5281/zenodo.21310038).

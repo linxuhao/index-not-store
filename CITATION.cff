@@ -11,6 +11,16 @@ version: v1.0.0
 date-released: 2026-07-17
 repository-code: "https://github.com/linxuhao/index-not-store"
 license: MIT
+preferred-citation:
+  type: article
+  title: "An Index, Not a Store: What Online In-Weight Memory Keeps, Loses, and Is For"
+  authors:
+    - family-names: Lin
+      given-names: Xuhao
+      orcid: "https://orcid.org/0009-0007-1183-6144"
+  year: 2026
+  doi: 10.5281/zenodo.21405963
+  notes: "Preprint on Zenodo; concept DOI resolves to the latest version."
 keywords:
   - continual learning
   - catastrophic forgetting

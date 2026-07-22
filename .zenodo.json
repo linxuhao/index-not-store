@@ -44,6 +44,11 @@
       "relation": "isSupplementTo",
       "identifier": "10.5281/zenodo.21310038",
       "resource_type": "publication-preprint"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.21405963",
+      "resource_type": "publication-preprint"
     }
   ]
 }
