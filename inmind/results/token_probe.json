@@ -1,0 +1,6347 @@
+[
+ {
+  "task_id": 0,
+  "own_dmax": 4.746753692626953,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.243803024291992,
+   5.125661849975586,
+   4.842458724975586,
+   5.590503692626953,
+   4.973316192626953,
+   6.09868049621582,
+   5.18714714050293
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   11,
+   9
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.158267974853516,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "family",
+     " allergies",
+     "L",
+     "Family",
+     "l",
+     "Pet",
+     "Before",
+     "\""
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.986649513244629,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "L",
+     "l",
+     "Budget",
+     "House",
+     "housing",
+     "None",
+     "Age",
+     "Interest"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 3,
+  "own_dmax": 5.169700622558594,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.473474502563477,
+   6.374841690063477,
+   6.525566101074219,
+   4.759941101074219,
+   5.968591690063477,
+   6.374841690063477,
+   6.810362815856934,
+   5.445154190063477
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   2,
+   0,
+   1,
+   2,
+   1,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.842621803283691,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "med",
+     "Med",
+     "medical",
+     "health",
+     "medicine",
+     " allergies",
+     "Before",
+     "history"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.26502513885498,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "med",
+     "sym",
+     "Sym",
+     "medical",
+     "Med",
+     "Condition",
+     "Medical",
+     "Before"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 4,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 5,
+  "own_dmax": 4.597772598266602,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   5.308587074279785,
+   3.7537002563476562,
+   4.910150527954102,
+   3.511690139770508,
+   3.6990127563476562,
+   4.314247131347656,
+   4.075311660766602,
+   4.185340881347656
+  ],
+  "null_top10_entries": [
+   5,
+   0,
+   6,
+   0,
+   0,
+   0,
+   4,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -6.801640033721924,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "risk",
+     "Risk",
+     "Invest",
+     "investment",
+     "Income",
+     "income",
+     "Keyword",
+     "financial",
+     "invest",
+     "Time"
+    ],
+    "gen": "risk tolerance\n"
+   },
+   "off": {
+    "bridge_lp_max": -5.934492111206055,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Risk",
+     "risk",
+     "Invest",
+     "Income",
+     "financial",
+     "Financial",
+     "S",
+     "investment",
+     "income",
+     "F"
+    ],
+    "gen": "Risk Tolerance\n"
+   }
+  }
+ },
+ {
+  "task_id": 6,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 7,
+  "own_dmax": 6.974399566650391,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.708774566650391,
+   6.759555816650391,
+   8.12479019165039,
+   7.616001129150391,
+   8.28104019165039,
+   8.07791519165039,
+   7.074008941650391,
+   7.609165191650391
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.619771957397461,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "m",
+     "sym",
+     "M",
+     "de",
+     "\"",
+     "Keyword",
+     "Sym",
+     "mental",
+     "em",
+     "duration"
+    ],
+    "gen": "mood\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.054277420043945,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "m",
+     "sym",
+     "M",
+     "de",
+     "Sym",
+     "down",
+     "Dep",
+     "Keyword",
+     "low",
+     "sad"
+    ],
+    "gen": "mood\n"
+   }
+  }
+ },
+ {
+  "task_id": 8,
+  "own_dmax": 5.946041107177734,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.555416107177734,
+   5.946041107177734,
+   5.965572357177734,
+   2.971660614013672,
+   5.531978607177734,
+   4.197505950927734,
+   5.422603607177734,
+   4.477291107177734
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.413761138916016,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "I",
+     "medical",
+     "Legal",
+     "Medical",
+     "Before",
+     "Health",
+     "Illegal",
+     "legal",
+     "health",
+     "\""
+    ],
+    "gen": "I cannot provide information on cannabis use or related activities"
+   },
+   "off": {
+    "bridge_lp_max": -9.72662353515625,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "I",
+     "Before",
+     "Medical",
+     "medical",
+     "Age",
+     "Health",
+     "Intent",
+     "Legal",
+     "age",
+     "health"
+    ],
+    "gen": "I cannot provide information on how to use, cultivate"
+   }
+  }
+ },
+ {
+  "task_id": 9,
+  "own_dmax": 3.2608261108398438,
+  "own_top10_entries": 3,
+  "null_dmax": [
+   2.9281787872314453,
+   5.087274551391602,
+   3.3441944122314453,
+   3.4899234771728516,
+   6.208074569702148,
+   3.5727100372314453,
+   4.178794860839844,
+   3.323375701904297
+  ],
+  "null_top10_entries": [
+   0,
+   2,
+   1,
+   0,
+   2,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.634528160095215,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Payment",
+     "payment",
+     "Transaction",
+     "financial",
+     "Gift",
+     "Merchant",
+     "Financial",
+     "Keyword",
+     "transaction",
+     "Card"
+    ],
+    "gen": "Payment\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.04171085357666,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Payment",
+     "Transaction",
+     "Merchant",
+     "Context",
+     "Gift",
+     "Intent",
+     "transaction",
+     "payment",
+     "Keyword",
+     "merchant"
+    ],
+    "gen": "Payment Method\n"
+   }
+  }
+ },
+ {
+  "task_id": 11,
+  "own_dmax": 5.178415298461914,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.139352798461914,
+   4.988962173461914,
+   4.979196548461914,
+   5.491418838500977,
+   5.115915298461914,
+   4.440359115600586,
+   4.572946548461914,
+   4.319040298461914
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   4,
+   1,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.89135456085205,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Destination",
+     "Pass",
+     "Travel",
+     "passport",
+     "destination",
+     "Dest",
+     "All",
+     "Vis",
+     "Health",
+     "travel"
+    ],
+    "gen": "Destination\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.87101936340332,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Destination",
+     "Pass",
+     "Travel",
+     "Dest",
+     "passport",
+     "destination",
+     "Cit",
+     "Budget",
+     "Keyword",
+     "National"
+    ],
+    "gen": "Destination\n"
+   }
+  }
+ },
+ {
+  "task_id": 12,
+  "own_dmax": 1.8124008178710938,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   2.5591297149658203,
+   3.0512237548828125,
+   2.6948814392089844,
+   2.8119564056396484,
+   2.7650814056396484,
+   4.43787956237793,
+   2.7808189392089844,
+   2.2572689056396484
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -13.158366203308105,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "D",
+     "diet",
+     "all",
+     "d",
+     "Preferences",
+     "C",
+     "pre",
+     "K",
+     "Preference"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -13.17053508758545,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "D",
+     "diet",
+     "Preferences",
+     "All",
+     "Preference",
+     "pre",
+     "co",
+     "Keyword",
+     "preferences",
+     "None"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 13,
+  "own_dmax": 1.66107177734375,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.1996917724609375,
+   2.4171924591064453,
+   2.774934768676758,
+   2.2453174591064453,
+   5.244921684265137,
+   2.5043792724609375,
+   2.0546493530273438
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -14.232702255249023,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "diet",
+     "all",
+     "D",
+     "corn",
+     "Preference",
+     "C",
+     "Corn",
+     "Preferences",
+     "d"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -14.278624534606934,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "D",
+     "diet",
+     "Preference",
+     "Preferences",
+     "pre",
+     "Pre",
+     "All",
+     "Before",
+     "C",
+     "T"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 16,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 19,
+  "own_dmax": 8.908010482788086,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   9.122854232788086,
+   8.638479232788086,
+   8.134572982788086,
+   8.341604232788086,
+   10.302541732788086,
+   8.685354232788086,
+   9.247854232788086,
+   9.224416732788086
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.25633716583252,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "be",
+     "Be",
+     "Health",
+     "health",
+     " allergies",
+     "Destination",
+     "destination",
+     "Travel"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.980287551879883,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Destination",
+     "Be",
+     "Dest",
+     "Health",
+     "destination",
+     "Travel",
+     "all",
+     "be",
+     "Location"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 22,
+  "own_dmax": 3.781240463256836,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   5.041004180908203,
+   4.974321365356445,
+   4.210926055908203,
+   4.196977615356445,
+   5.571226119995117,
+   4.234365463256836,
+   5.712602615356445
+  ],
+  "null_top10_entries": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -13.361527442932129,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "med",
+     "Med",
+     "all",
+     "Kid",
+     "medical",
+     "Before",
+     "Medical",
+     "medicine",
+     "M"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.50390338897705,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Med",
+     "med",
+     "Before",
+     "all",
+     "Medical",
+     "Kid",
+     "**",
+     "M",
+     "Al"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 27,
+  "own_dmax": 6.290994644165039,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   6.859355926513672,
+   9.776834487915039,
+   4.308572769165039,
+   6.859355926513672,
+   6.038064956665039,
+   5.632793426513672,
+   10.031229019165039,
+   6.843730926513672
+  ],
+  "null_top10_entries": [
+   1,
+   5,
+   0,
+   0,
+   1,
+   0,
+   4,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -3.5456433296203613,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "health",
+     "Health",
+     "Heat",
+     "medical",
+     "Medical",
+     "All",
+     "heat",
+     "med",
+     "Med",
+     "Outdoor"
+    ],
+    "gen": "health\n"
+   },
+   "off": {
+    "bridge_lp_max": -3.5126900672912598,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "Health",
+     "Medical",
+     "Heat",
+     "medical",
+     "health",
+     "Med",
+     "Pre",
+     "Physical",
+     "heat",
+     "Keywords"
+    ],
+    "gen": "Health\n"
+   }
+  }
+ },
+ {
+  "task_id": 28,
+  "own_dmax": 4.312417984008789,
+  "own_top10_entries": 6,
+  "null_dmax": [
+   3.7343215942382812,
+   3.6581478118896484,
+   3.2831478118896484,
+   3.7831497192382812,
+   3.5878372192382812,
+   3.7831497192382812,
+   4.665962219238281,
+   3.8222122192382812
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   2,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.855124473571777,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "budget",
+     "All",
+     "Budget",
+     "all",
+     "noise",
+     "Audio",
+     "brand",
+     "Noise",
+     "audio",
+     "health"
+    ],
+    "gen": "budget\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.387676239013672,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "Usage",
+     "All",
+     "Audio",
+     "pre",
+     "Pre",
+     "Preferences",
+     "Before",
+     "B"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 29,
+  "own_dmax": 5.273441314697266,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   2.988203525543213,
+   3.3896331787109375,
+   3.7089614868164062,
+   2.701723098754883,
+   3.326416015625,
+   4.675348281860352,
+   3.5038833618164062,
+   3.1757583618164062
+  ],
+  "null_top10_entries": [
+   2,
+   2,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -6.080045223236084,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Career",
+     "Art",
+     "interest",
+     "Interest",
+     "Financial",
+     "Creative",
+     "Education",
+     "financial",
+     "Background",
+     "career"
+    ],
+    "gen": "Career\n"
+   },
+   "off": {
+    "bridge_lp_max": -5.795609951019287,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Career",
+     "Art",
+     "Interest",
+     "Financial",
+     "interest",
+     "financial",
+     "art",
+     "Current",
+     "Inter",
+     "Background"
+    ],
+    "gen": "Career\n"
+   }
+  }
+ },
+ {
+  "task_id": 30,
+  "own_dmax": 3.7578125,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.926007270812988,
+   2.859373092651367,
+   3.15625,
+   2.6796875,
+   3.7530384063720703,
+   2.921873092651367,
+   3.9717884063720703,
+   3.3489532470703125
+  ],
+  "null_top10_entries": [
+   7,
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.083110809326172,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Noise",
+     "noise",
+     "Occup",
+     "ex",
+     "Ex",
+     "H",
+     "Environment",
+     "environment",
+     "occup",
+     "Work"
+    ],
+    "gen": "Noise\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.333830833435059,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Occup",
+     "Noise",
+     "Ex",
+     "Environment",
+     "H",
+     "ex",
+     "occup",
+     "noise",
+     "Work",
+     "occupation"
+    ],
+    "gen": "Occupation\n"
+   }
+  }
+ },
+ {
+  "task_id": 31,
+  "own_dmax": 3.840686798095703,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.468616485595703,
+   3.5312423706054688,
+   3.570606231689453,
+   5.124992370605469,
+   4.015617370605469,
+   3.799671173095703,
+   5.200532913208008,
+   3.637563705444336
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   2,
+   1,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.816082954406738,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Privacy",
+     "privacy",
+     "Cons",
+     "cons",
+     "Photos",
+     "Relationship",
+     "relationship",
+     "s",
+     "Before",
+     "Security"
+    ],
+    "gen": "Privacy\n"
+   },
+   "off": {
+    "bridge_lp_max": -14.160029411315918,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Cons",
+     "Relationship",
+     "cons",
+     "relationship",
+     "Bound",
+     "Privacy",
+     "Safety",
+     "Trust",
+     "Before",
+     "Photos"
+    ],
+    "gen": "Consent\n"
+   }
+  }
+ },
+ {
+  "task_id": 32,
+  "own_dmax": 4.189365386962891,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   4.48432731628418,
+   3.6541213989257812,
+   4.279121398925781,
+   7.114319801330566,
+   4.007637023925781,
+   3.8572463989257812,
+   3.88775634765625,
+   3.3416213989257812
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.398847579956055,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "privacy",
+     "Privacy",
+     "browser",
+     "b",
+     "Online",
+     "Internet",
+     "B",
+     "Browser",
+     "online",
+     "\""
+    ],
+    "gen": "privacy\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.564425468444824,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "b",
+     "Online",
+     "online",
+     "B",
+     "browser",
+     "privacy",
+     "Internet",
+     "time",
+     "Privacy",
+     "habit"
+    ],
+    "gen": "browsing habits\n"
+   }
+  }
+ },
+ {
+  "task_id": 33,
+  "own_dmax": 4.734289169311523,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.771398544311523,
+   4.214616775512695,
+   3.9354476928710938,
+   3.8609981536865234,
+   3.5571017265319824,
+   3.647146224975586,
+   3.5446929931640625,
+   3.2806625366210938
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.391006469726562,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "location",
+     "Location",
+     "Before",
+     "Preferences",
+     "Preference",
+     "pre",
+     "Travel",
+     "Pre"
+    ],
+    "gen": "Budget\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.745162010192871,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "Location",
+     "Destination",
+     "Keyword",
+     "Before",
+     "location",
+     "Preferences",
+     "Travel",
+     "destination"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 34,
+  "own_dmax": 7.125018119812012,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.268871307373047,
+   6.058910369873047,
+   5.621410369873047,
+   4.844066619873047,
+   6.426097869873047,
+   6.293285369873047,
+   6.168285369873047,
+   4.746410369873047
+  ],
+  "null_top10_entries": [
+   2,
+   0,
+   3,
+   0,
+   2,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.66872787475586,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "financial",
+     "Financial",
+     "employment",
+     "Employ",
+     "cash",
+     "income",
+     "Emergency",
+     "Cash",
+     "Income",
+     "emergency"
+    ],
+    "gen": "financial\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.938371658325195,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "cash",
+     "financial",
+     "Cash",
+     "tight",
+     "t",
+     "Financial",
+     "income",
+     "emergency",
+     "T",
+     "employment"
+    ],
+    "gen": "cash\n"
+   }
+  }
+ },
+ {
+  "task_id": 37,
+  "own_dmax": 3.9399948120117188,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.696981430053711,
+   3.877225875854492,
+   5.4554290771484375,
+   5.040731430053711,
+   4.148433685302734,
+   4.820331573486328,
+   3.9085540771484375,
+   3.8903465270996094
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.438995361328125,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "employment",
+     "Employ",
+     "age",
+     "status",
+     "Status",
+     "ret",
+     "job",
+     "Ret",
+     "Age",
+     "Job"
+    ],
+    "gen": "employment_status\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.612234115600586,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Age",
+     "age",
+     "Status",
+     "status",
+     "Employ",
+     "employment",
+     "Job",
+     "Keyword",
+     "Tax",
+     "State"
+    ],
+    "gen": "Age\n"
+   }
+  }
+ },
+ {
+  "task_id": 38,
+  "own_dmax": 3.8023204803466797,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   7.9453125,
+   3.707204818725586,
+   2.375528335571289,
+   3.593606948852539,
+   3.842966079711914,
+   2.876810073852539,
+   3.937519073486328
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -14.044054985046387,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "credit",
+     "Credit",
+     "Employ",
+     "Income",
+     "employment",
+     "income",
+     "De",
+     "Financial",
+     "financial",
+     "de"
+    ],
+    "gen": "credit_score\n"
+   },
+   "off": {
+    "bridge_lp_max": -12.0154390335083,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Credit",
+     "Employ",
+     "Income",
+     "De",
+     "Financial",
+     "credit",
+     "Current",
+     "employment",
+     "income",
+     "Loan"
+    ],
+    "gen": "Credit Score\n"
+   }
+  }
+ },
+ {
+  "task_id": 39,
+  "own_dmax": 3.190338134765625,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   3.221588134765625,
+   3.924713134765625,
+   3.932525634765625,
+   4.109375,
+   3.5748023986816406,
+   4.4361572265625,
+   3.5654144287109375,
+   5.6070556640625
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -2.2977957725524902,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "access",
+     "vision",
+     "Accessibility",
+     "Vision",
+     "visual",
+     "contrast",
+     "color",
+     "Contr",
+     "visibility",
+     "vis"
+    ],
+    "gen": "accessibility\n"
+   },
+   "off": {
+    "bridge_lp_max": -6.514863014221191,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "access",
+     "Accessibility",
+     "Contr",
+     "contrast",
+     "I",
+     "Before",
+     "color",
+     "brand",
+     "Color",
+     "Brand"
+    ],
+    "gen": "accessibility\n"
+   }
+  }
+ },
+ {
+  "task_id": 40,
+  "own_dmax": 7.592535018920898,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   7.795660018920898,
+   8.115972518920898,
+   7.155035018920898,
+   7.778570175170898,
+   7.311285018920898,
+   6.217535018920898,
+   7.709722518920898,
+   8.264410018920898
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -6.720229148864746,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Vis",
+     "Pass",
+     "Travel",
+     "passport",
+     "Cit",
+     "Canada",
+     "National",
+     "Status",
+     "Visit",
+     "Destination"
+    ],
+    "gen": "Visa\n"
+   },
+   "off": {
+    "bridge_lp_max": -5.969583034515381,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Pass",
+     "Vis",
+     "Cit",
+     "Travel",
+     "Destination",
+     "passport",
+     "National",
+     "Trip",
+     "Canada",
+     "Purpose"
+    ],
+    "gen": "Passport\n"
+   }
+  }
+ },
+ {
+  "task_id": 42,
+  "excluded": "no-bridge-token-ids"
+ },
+ {
+  "task_id": 43,
+  "own_dmax": 5.91694450378418,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.90620231628418,
+   5.68745231628418,
+   6.195293426513672,
+   5.8124542236328125,
+   5.83979606628418,
+   5.78120231628418,
+   7.222637176513672,
+   4.7651824951171875
+  ],
+  "null_top10_entries": [
+   4,
+   0,
+   0,
+   3,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.775747776031494,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Travel",
+     "Destination",
+     "All",
+     "Health",
+     "Dest",
+     "destination",
+     "travel",
+     "Trip",
+     "Vis",
+     "health"
+    ],
+    "gen": "Travel\n"
+   },
+   "off": {
+    "bridge_lp_max": -5.909191608428955,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Destination",
+     "Travel",
+     "Dest",
+     "Budget",
+     "Trip",
+     "destination",
+     "travel",
+     "It",
+     "Next",
+     "All"
+    ],
+    "gen": "Destination\n"
+   }
+  }
+ },
+ {
+  "task_id": 46,
+  "own_dmax": 3.3627071380615234,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.075878143310547,
+   4.1301422119140625,
+   3.5148210525512695,
+   4.314456939697266,
+   3.3431739807128906,
+   3.9642696380615234,
+   4.303134918212891,
+   4.658302307128906
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -5.943281650543213,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "D",
+     "diet",
+     "all",
+     "Digest",
+     "health",
+     "Health",
+     "d",
+     "digest",
+     "di"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -4.811545372009277,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "D",
+     "All",
+     "all",
+     "Preferences",
+     "diet",
+     "Digest",
+     "Di",
+     "preferences",
+     "Health",
+     "G"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 47,
+  "own_dmax": 4.5152435302734375,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.8668060302734375,
+   4.8961029052734375,
+   3.6177825927734375,
+   3.7759857177734375,
+   6.194034576416016,
+   4.3433685302734375,
+   3.6324310302734375,
+   4.5660247802734375
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   1,
+   3,
+   1,
+   2,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.051276206970215,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "diet",
+     "all",
+     "D",
+     "Sp",
+     "sp",
+     "d",
+     "Ve",
+     "al",
+     "pe"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.623856544494629,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "D",
+     "all",
+     "diet",
+     "Sp",
+     "Before",
+     "Health",
+     "Preferences",
+     "Di",
+     "sp"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 50,
+  "own_dmax": 7.405115127563477,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   5.53125,
+   6.14453125,
+   5.087985992431641,
+   5.384859085083008,
+   5.678552627563477,
+   5.261812210083008,
+   5.296875,
+   4.8125
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.92381477355957,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "In",
+     "All",
+     "health",
+     "Health",
+     "in",
+     "all",
+     "medical",
+     "Before",
+     "Keywords",
+     "Keyword"
+    ],
+    "gen": "Injury history\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.177064895629883,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "In",
+     "Health",
+     "Running",
+     "in",
+     "Begin",
+     "Keyword",
+     "Experience",
+     "Medical",
+     "health",
+     "Before"
+    ],
+    "gen": "Injury history\n"
+   }
+  }
+ },
+ {
+  "task_id": 54,
+  "own_dmax": 7.188604354858398,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   6.485479354858398,
+   6.555791854858398,
+   6.524541854858398,
+   6.118291854858398,
+   6.503059387207031,
+   7.665168762207031,
+   5.829229354858398,
+   6.204229354858398
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -0.26830899715423584,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "all",
+     "location",
+     "Location",
+     "Park",
+     "food",
+     "Food",
+     "Availability",
+     " allergies",
+     "availability"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -0.46618232131004333,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "Location",
+     "all",
+     "Availability",
+     "location",
+     "availability",
+     "Park",
+     "Schedule",
+     "Health",
+     "park"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 57,
+  "own_dmax": 7.0454254150390625,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   7.191217422485352,
+   7.0766754150390625,
+   7.284967422485352,
+   7.0610504150390625,
+   5.269342422485352,
+   6.3110504150390625,
+   5.7485504150390625,
+   6.9985504150390625
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   7,
+   0,
+   2,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.732711791992188,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "med",
+     "frequency",
+     "Med",
+     "Frequency",
+     "m",
+     "head",
+     "Head",
+     "pain",
+     "M",
+     "stress"
+    ],
+    "gen": "medication\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.940296173095703,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Frequency",
+     "frequency",
+     "Med",
+     "med",
+     "Head",
+     "head",
+     "M",
+     "f",
+     "m",
+     "Sym"
+    ],
+    "gen": "Frequency\n"
+   }
+  }
+ },
+ {
+  "task_id": 61,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 64,
+  "own_dmax": 8.324148178100586,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   8.132741928100586,
+   8.280872344970703,
+   7.960559844970703,
+   8.265247344970703,
+   8.187122344970703,
+   7.609304428100586,
+   7.624929428100586,
+   7.953054428100586
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   2,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.573098182678223,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "occupation",
+     "Occup",
+     "occup",
+     "activity",
+     "frequency",
+     "Activity",
+     "Keyword",
+     "work",
+     "pain",
+     "keyword"
+    ],
+    "gen": "occupation\n"
+   },
+   "off": {
+    "bridge_lp_max": -4.839427947998047,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "In",
+     "Activity",
+     "activity",
+     "in",
+     "Sym",
+     "pain",
+     "sym",
+     "w",
+     "Keyword",
+     "Occup"
+    ],
+    "gen": "Injury\n"
+   }
+  }
+ },
+ {
+  "task_id": 65,
+  "own_dmax": 3.5023136138916016,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.938837051391602,
+   4.384149551391602,
+   3.7077560424804688,
+   3.4202136993408203,
+   2.8749961853027344,
+   4.778068542480469,
+   3.1825084686279297,
+   4.384149551391602
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.097700119018555,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "location",
+     "Location",
+     "P",
+     "pest",
+     "res",
+     "Pet",
+     "\"",
+     "History"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.974169731140137,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Location",
+     "location",
+     "All",
+     "B",
+     "all",
+     "Home",
+     "Before",
+     "P",
+     "**",
+     "res"
+    ],
+    "gen": "Location\n"
+   }
+  }
+ },
+ {
+  "task_id": 69,
+  "own_dmax": 3.8601856231689453,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.461748123168945,
+   3.661867141723633,
+   4.094560623168945,
+   4.500810623168945,
+   4.369722366333008,
+   4.227373123168945,
+   4.524248123168945
+  ],
+  "null_top10_entries": [
+   2,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.895699501037598,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "medical",
+     "Health",
+     "Medical",
+     "health",
+     "Med",
+     "Before",
+     "Imm",
+     "Im"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -6.986137390136719,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Age",
+     "Medical",
+     "Health",
+     "medical",
+     "V",
+     "Before",
+     "age",
+     "v",
+     "all"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 72,
+  "own_dmax": 3.9788074493408203,
+  "own_top10_entries": 7,
+  "null_dmax": [
+   3.570432662963867,
+   3.6611270904541016,
+   3.4428882598876953,
+   3.587188720703125,
+   3.930339813232422,
+   3.4275360107421875,
+   3.8829307556152344,
+   4.181623458862305
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   7
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.031926155090332,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "preg",
+     "All",
+     "P",
+     "medical",
+     "med",
+     "Med",
+     "all",
+     "f",
+     "Medical",
+     "pren"
+    ],
+    "gen": "pregnancy\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.914276123046875,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "preg",
+     "P",
+     "pl",
+     "Planning",
+     "Pl",
+     "Plan",
+     "f",
+     "plan",
+     "pre",
+     "medical"
+    ],
+    "gen": "pregnancy\n"
+   }
+  }
+ },
+ {
+  "task_id": 74,
+  "own_dmax": 5.093687057495117,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   5.238218307495117,
+   4.460927963256836,
+   5.023374557495117,
+   5.578062057495117,
+   5.468687057495117,
+   5.796812057495117,
+   5.718687057495117,
+   4.781187057495117
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.818517684936523,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "med",
+     "Al",
+     "Med",
+     "al",
+     "medical",
+     "All",
+     "health",
+     "Medical",
+     "M",
+     "medicine"
+    ],
+    "gen": "medication\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.09276008605957,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Al",
+     "med",
+     "Med",
+     "al",
+     "Status",
+     "So",
+     "health",
+     "Health",
+     "M",
+     "medical"
+    ],
+    "gen": "Alcohol\n"
+   }
+  }
+ },
+ {
+  "task_id": 75,
+  "own_dmax": 9.5,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   4.781192779541016,
+   4.109317779541016,
+   4.124942779541016,
+   5.093692779541016,
+   4.843692779541016,
+   4.218692779541016,
+   5.437442779541016,
+   5.781192779541016
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.144477844238281,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "med",
+     "Med",
+     "medical",
+     "History",
+     "history",
+     "Keyword",
+     "keyword",
+     "travel",
+     "Medical",
+     "In"
+    ],
+    "gen": "medication\n"
+   },
+   "off": {
+    "bridge_lp_max": -4.772591590881348,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "History",
+     "Sym",
+     "med",
+     "Travel",
+     "Med",
+     "sym",
+     "travel",
+     "Risk",
+     "Th",
+     "Recent"
+    ],
+    "gen": "History\n"
+   }
+  }
+ },
+ {
+  "task_id": 84,
+  "own_dmax": 7.175756454467773,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   5.521459579467773,
+   5.320287704467773,
+   7.3749847412109375,
+   4.999975204467773,
+   5.86717414855957,
+   5.148412704467773,
+   5.062475204467773,
+   5.023412704467773
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.307137489318848,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "D",
+     "diet",
+     "Before",
+     "L",
+     "Current",
+     "health",
+     "Health",
+     "l"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -6.667225360870361,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Goals",
+     "All",
+     "Goal",
+     "Current",
+     "D",
+     "Health",
+     "Before",
+     "current",
+     "goals",
+     "Keyword"
+    ],
+    "gen": "Goals\n"
+   }
+  }
+ },
+ {
+  "task_id": 86,
+  "own_dmax": 4.437488555908203,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.738651275634766,
+   4.140613555908203,
+   4.420564651489258,
+   6.748227119445801,
+   5.4476165771484375,
+   4.6663665771484375,
+   6.621973991394043,
+   3.863269805908203
+  ],
+  "null_top10_entries": [
+   1,
+   1,
+   1,
+   11,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -2.6107003688812256,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "all",
+     "l",
+     "pet",
+     "pets",
+     "Pet",
+     "L",
+     "Pets",
+     " allergies",
+     "cat"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -2.9421427249908447,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "all",
+     "L",
+     "l",
+     "housing",
+     "House",
+     "Living",
+     "**",
+     "Before",
+     "pet"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 89,
+  "own_dmax": 4.345701217651367,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.066381454467773,
+   3.466794967651367,
+   6.140600204467773,
+   4.972631454467773,
+   5.228513717651367,
+   3.9609127044677734,
+   3.041013717651367,
+   5.031225204467773
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   2,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.585931777954102,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "In",
+     "in",
+     "Health",
+     "Physical",
+     "health",
+     "fitness",
+     "physical",
+     "Before",
+     "Begin",
+     "Fitness"
+    ],
+    "gen": "Injury\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.22703742980957,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Begin",
+     "Level",
+     "Experience",
+     "Skill",
+     "In",
+     "Physical",
+     "Age",
+     "Fitness",
+     "Keyword",
+     "fitness"
+    ],
+    "gen": "Beginner\n"
+   }
+  }
+ },
+ {
+  "task_id": 90,
+  "own_dmax": 6.09605598449707,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.254570007324219,
+   6.35685920715332,
+   5.430349349975586,
+   5.535820007324219,
+   5.347795486450195,
+   7.137380599975586,
+   4.34370231628418,
+   5.674243927001953
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.7284517288208,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "foot",
+     "activity",
+     "Foot",
+     "size",
+     "fitness",
+     "Activity",
+     "budget",
+     "Budget"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.485317230224609,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "foot",
+     "Budget",
+     "Foot",
+     "Activity",
+     "activity",
+     "All",
+     "fitness",
+     "budget",
+     "Sport",
+     "In"
+    ],
+    "gen": "footwear\n"
+   }
+  }
+ },
+ {
+  "task_id": 95,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 97,
+  "own_dmax": 6.018030166625977,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.1635818481445312,
+   3.968751907348633,
+   3.8198318481445312,
+   3.337301254272461,
+   2.9682693481445312,
+   2.86895751953125,
+   3.032125473022461,
+   3.3100662231445312
+  ],
+  "null_top10_entries": [
+   0,
+   3,
+   0,
+   0,
+   2,
+   0,
+   2,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.552142143249512,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Occup",
+     "occup",
+     "role",
+     "health",
+     "occupation",
+     "Health",
+     "Role",
+     "professional",
+     "Professional",
+     "Prof"
+    ],
+    "gen": "Occupation\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.828359603881836,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Occup",
+     "Role",
+     "Setting",
+     "role",
+     "Health",
+     "In",
+     "health",
+     "Clinical",
+     "Professional",
+     "occup"
+    ],
+    "gen": "Occupation\n"
+   }
+  }
+ },
+ {
+  "task_id": 98,
+  "own_dmax": 4.734375,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.8870372772216797,
+   5.312498092651367,
+   3.3476428985595703,
+   5.218751907348633,
+   4.47264289855957,
+   3.322615623474121,
+   3.882810592651367,
+   3.8870372772216797
+  ],
+  "null_top10_entries": [
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -6.849933624267578,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Conflict",
+     "Career",
+     "Role",
+     "Occup",
+     "Job",
+     "Work",
+     "Keyword",
+     "Professional",
+     "St",
+     "Employ"
+    ],
+    "gen": "Conflict\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.5960540771484375,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Role",
+     "Conflict",
+     "Career",
+     "Job",
+     "Professional",
+     "Keyword",
+     "Current",
+     "role",
+     "St",
+     "Employ"
+    ],
+    "gen": "Role\n"
+   }
+  }
+ },
+ {
+  "task_id": 99,
+  "own_dmax": 4.763153076171875,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   4.614715576171875,
+   3.2821044921875,
+   4.2655029296875,
+   4.735809326171875,
+   4.890676498413086,
+   3.2656097412109375,
+   2.747528076171875
+  ],
+  "null_top10_entries": [
+   2,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -13.486899375915527,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Location",
+     "Occup",
+     "location",
+     "Keyword",
+     "Job",
+     "License",
+     "Exam",
+     "Status",
+     "occupation",
+     "Career"
+    ],
+    "gen": "Location\n"
+   },
+   "off": {
+    "bridge_lp_max": -13.415709495544434,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "License",
+     "Field",
+     "Location",
+     "Keyword",
+     "Target",
+     "State",
+     "Exam",
+     "Goal",
+     "Career",
+     "Job"
+    ],
+    "gen": "License\n"
+   }
+  }
+ },
+ {
+  "task_id": 100,
+  "own_dmax": 4.287515640258789,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.375406265258789,
+   3.7562294006347656,
+   3.973062515258789,
+   4.187906265258789,
+   4.023843765258789,
+   3.3358192443847656,
+   3.9335498809814453,
+   4.332963943481445
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.119965553283691,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Industry",
+     "Field",
+     "industry",
+     "Keyword",
+     "field",
+     "Career",
+     "I",
+     "Job",
+     "None",
+     "Before"
+    ],
+    "gen": "Industry\n"
+   },
+   "off": {
+    "bridge_lp_max": -12.276947975158691,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Industry",
+     "Field",
+     "Keyword",
+     "industry",
+     "I",
+     "field",
+     "Career",
+     "Job",
+     "Before",
+     "None"
+    ],
+    "gen": "Industry\n"
+   }
+  }
+ },
+ {
+  "task_id": 101,
+  "own_dmax": 4.569002151489258,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   5.125148773193359,
+   6.332180023193359,
+   4.554351806640625,
+   4.726711273193359,
+   3.8072032928466797,
+   5.678375244140625,
+   4.8590240478515625
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   2,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.598410606384277,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "medical",
+     "health",
+     "v",
+     "Health",
+     "age",
+     "med",
+     "immun",
+     "status"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.939098358154297,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "v",
+     "age",
+     "Age",
+     "V",
+     "medical",
+     "Status",
+     "Before",
+     "Health",
+     "Location",
+     "health"
+    ],
+    "gen": "vaccination\n"
+   }
+  }
+ },
+ {
+  "task_id": 102,
+  "own_dmax": 7.617183685302734,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.445308685302734,
+   7.902339935302734,
+   6.499996185302734,
+   5.896968841552734,
+   8.451656341552734,
+   6.230464935302734,
+   9.289058685302734,
+   6.163082122802734
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.08507251739502,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Occup",
+     "Career",
+     "Job",
+     "Prof",
+     "Professional",
+     "Keyword",
+     "occupation",
+     "Industry",
+     "Employ",
+     "profession"
+    ],
+    "gen": "Occupation\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.329273223876953,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Career",
+     "Occup",
+     "Job",
+     "Prof",
+     "Goal",
+     "Keyword",
+     "Industry",
+     "Current",
+     "Professional",
+     "Role"
+    ],
+    "gen": "Career\n"
+   }
+  }
+ },
+ {
+  "task_id": 103,
+  "own_dmax": 4.077264785766602,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.8365421295166016,
+   3.7160511016845703,
+   4.006952285766602,
+   4.108514785766602,
+   4.061637878417969,
+   3.9092960357666016,
+   4.52073860168457,
+   4.280981063842773
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   2,
+   0,
+   1,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.951288223266602,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Industry",
+     "Career",
+     "Current",
+     "Job",
+     "Employ",
+     "Keyword",
+     "Occup",
+     "Ind",
+     "Experience",
+     "Tech"
+    ],
+    "gen": "Industry\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.57380199432373,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Career",
+     "Current",
+     "Goal",
+     "Industry",
+     "Keyword",
+     "Job",
+     "Experience",
+     "Background",
+     "career",
+     "Target"
+    ],
+    "gen": "Career\n"
+   }
+  }
+ },
+ {
+  "task_id": 104,
+  "own_dmax": 5.246818542480469,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.11944580078125,
+   4.687492370605469,
+   6.249994277954102,
+   5.109367370605469,
+   4.35772705078125,
+   4.570304870605469,
+   4.169305801391602,
+   6.249994277954102
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -13.961931228637695,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "foot",
+     "all",
+     "Foot",
+     "size",
+     "Size",
+     "Budget",
+     "budget",
+     "activity",
+     "pre"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.826821327209473,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "foot",
+     "Foot",
+     "All",
+     "Activity",
+     "budget",
+     "activity",
+     "Preferences",
+     "B",
+     "Size"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 105,
+  "own_dmax": 5.04838752746582,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.04448127746582,
+   4.845353126525879,
+   3.7280750274658203,
+   5.14995002746582,
+   5.158830642700195,
+   4.16557502746582,
+   5.174467086791992,
+   4.16557502746582
+  ],
+  "null_top10_entries": [
+   0,
+   3,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -13.687015533447266,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Occup",
+     "Job",
+     "Radi",
+     "occupation",
+     "occup",
+     "Ex",
+     "Prof",
+     "Professional",
+     "Employ",
+     "Work"
+    ],
+    "gen": "Occupation\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.618683815002441,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Occup",
+     "Role",
+     "Prof",
+     "Professional",
+     "Job",
+     "Career",
+     "Radi",
+     "Health",
+     "Employ",
+     "Industry"
+    ],
+    "gen": "Occupation\n"
+   }
+  }
+ },
+ {
+  "task_id": 106,
+  "own_dmax": 4.96861457824707,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.66392707824707,
+   5.8572845458984375,
+   9.03111457824707,
+   6.44127082824707,
+   6.72447395324707,
+   4.9764251708984375,
+   7.1404876708984375,
+   7.190207481384277
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   11,
+   0,
+   0,
+   1,
+   1,
+   7
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.779263496398926,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Occup",
+     "G",
+     "all",
+     "occup",
+     " allergies",
+     "Health",
+     "Hand",
+     "Al",
+     "Work"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.743465423583984,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Occup",
+     "Activity",
+     "All",
+     "Usage",
+     "Activities",
+     "G",
+     "occup",
+     "Environment",
+     "occupation",
+     "Keywords"
+    ],
+    "gen": "Occupation\n"
+   }
+  }
+ },
+ {
+  "task_id": 107,
+  "own_dmax": 3.268930435180664,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   2.5501785278320312,
+   2.6308460235595703,
+   3.0970535278320312,
+   3.2086257934570312,
+   3.0658035278320312,
+   2.7064285278320312,
+   2.8626785278320312,
+   2.7220535278320312
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.621776580810547,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Instagram",
+     "interest",
+     "privacy",
+     "Keyword",
+     "Interest",
+     "content",
+     "Content",
+     "Privacy",
+     "instagram",
+     "Before"
+    ],
+    "gen": "Instagram\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.921327590942383,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Instagram",
+     "Content",
+     "Keyword",
+     "N",
+     "Account",
+     "Platform",
+     "In",
+     "Has",
+     "Goal",
+     "Before"
+    ],
+    "gen": "Instagram\n"
+   }
+  }
+ },
+ {
+  "task_id": 108,
+  "own_dmax": 5.3013153076171875,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.7622528076171875,
+   3.8872528076171875,
+   4.7622528076171875,
+   5.0825653076171875,
+   5.0591278076171875,
+   3.8091278076171875,
+   4.8555908203125,
+   6.234378814697266
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.122169494628906,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "budget",
+     "Budget",
+     "Current",
+     "Pre",
+     "financial",
+     "current",
+     "pre",
+     "contract",
+     "Contract",
+     "carrier"
+    ],
+    "gen": "budget\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.231657028198242,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "financial",
+     "Current",
+     "Income",
+     "Financial",
+     "current",
+     "Pre",
+     "income",
+     "pre"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 109,
+  "own_dmax": 2.1888694763183594,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   2.6615257263183594,
+   2.7042694091796875,
+   4.812507629394531,
+   3.5439701080322266,
+   2.3490257263183594,
+   2.2738304138183594,
+   3.841768264770508,
+   2.605670928955078
+  ],
+  "null_top10_entries": [
+   3,
+   2,
+   0,
+   1,
+   0,
+   0,
+   0,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.135961532592773,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Privacy",
+     "s",
+     "privacy",
+     "Sensitive",
+     "Location",
+     "Keyword",
+     "location",
+     "Platform",
+     "\"",
+     "S"
+    ],
+    "gen": "Privacy\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.935394287109375,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Platform",
+     "Location",
+     "Account",
+     "platform",
+     "Keyword",
+     "Privacy",
+     "location",
+     "account",
+     "Target",
+     "Before"
+    ],
+    "gen": "Platform\n"
+   }
+  }
+ },
+ {
+  "task_id": 110,
+  "own_dmax": 7.036996841430664,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.519477844238281,
+   6.906137466430664,
+   6.421821594238281,
+   6.816293716430664,
+   5.847612380981445,
+   6.343696594238281,
+   5.507699966430664,
+   6.632770538330078
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -14.167218208312988,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "location",
+     "budget",
+     "Budget",
+     "Location",
+     "Preference",
+     "pre",
+     "Preferences",
+     "Keyword",
+     "preferences",
+     "destination"
+    ],
+    "gen": "location\n"
+   },
+   "off": {
+    "bridge_lp_max": -13.722405433654785,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "Location",
+     "Destination",
+     "location",
+     "Keyword",
+     "Preferences",
+     "destination",
+     "Trip",
+     "Travel"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 111,
+  "own_dmax": 3.8657913208007812,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.8671646118164062,
+   6.562479019165039,
+   4.999797821044922,
+   5.420478820800781,
+   3.9673538208007812,
+   3.9517288208007812,
+   4.525947570800781,
+   5.420478820800781
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   6,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.432558536529541,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "location",
+     "Location",
+     "Current",
+     "current",
+     "\"",
+     "All",
+     "Rel",
+     "Keyword",
+     "Before",
+     "Moving"
+    ],
+    "gen": "location\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.686398983001709,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Location",
+     "Budget",
+     "Current",
+     "location",
+     "Timeline",
+     "Keyword",
+     "Status",
+     "Rel",
+     "Before",
+     "**"
+    ],
+    "gen": "Location\n"
+   }
+  }
+ },
+ {
+  "task_id": 112,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 113,
+  "own_dmax": 4.156257629394531,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.3027114868164062,
+   2.9062576293945312,
+   2.702608108520508,
+   3.7667293548583984,
+   3.1303443908691406,
+   5.406251907348633,
+   5.406251907348633,
+   5.094873428344727
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   8
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.5426435470581055,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "location",
+     "status",
+     "Location",
+     "Status",
+     "Travel",
+     "travel",
+     "housing",
+     "duration",
+     "budget",
+     "Duration"
+    ],
+    "gen": "location\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.256875038146973,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Duration",
+     "duration",
+     "Budget",
+     "Travel",
+     "Status",
+     "Trip",
+     "Destination",
+     "budget",
+     "Location",
+     "travel"
+    ],
+    "gen": "Duration\n"
+   }
+  }
+ },
+ {
+  "task_id": 114,
+  "excluded": "no-bridge-token-ids"
+ },
+ {
+  "task_id": 115,
+  "own_dmax": 3.2238521575927734,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   2.3019771575927734,
+   2.249980926513672,
+   2.2863521575927734,
+   2.4070053100585938,
+   2.3119468688964844,
+   3.1027584075927734,
+   2.516328811645508,
+   2.8382129669189453
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -3.0617120265960693,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "Risk",
+     "mental",
+     "M",
+     "I",
+     "cr",
+     "V",
+     "C",
+     "v",
+     "Support",
+     "risk"
+    ],
+    "gen": "Risk\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.691689491271973,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "I",
+     "Risk",
+     "C",
+     "Intent",
+     "M",
+     "**",
+     "No",
+     "Keyword",
+     "R",
+     "cr"
+    ],
+    "gen": "I cannot check a memory log or access personal information"
+   }
+  }
+ },
+ {
+  "task_id": 117,
+  "own_dmax": 4.806463241577148,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   4.765464782714844,
+   5.384588241577148,
+   5.507650375366211,
+   5.150215148925781,
+   6.899263381958008,
+   5.312337875366211,
+   5.640462875366211,
+   4.968589782714844
+  ],
+  "null_top10_entries": [
+   0,
+   2,
+   1,
+   0,
+   5,
+   0,
+   3,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.772456169128418,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "financial",
+     "Financial",
+     "income",
+     "Income",
+     "fin",
+     "employment",
+     "Employ",
+     "finance",
+     "f",
+     "Emergency"
+    ],
+    "gen": "financial\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.44506549835205,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "financial",
+     "Financial",
+     "income",
+     "Income",
+     "fin",
+     "tight",
+     "T",
+     "t",
+     "finance",
+     "budget"
+    ],
+    "gen": "financial\n"
+   }
+  }
+ },
+ {
+  "task_id": 118,
+  "own_dmax": 4.123140335083008,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.302827835083008,
+   4.373140335083008,
+   4.297124862670898,
+   4.148687362670898,
+   4.505952835083008,
+   4.201265335083008,
+   4.232515335083008,
+   4.886185646057129
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   4
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.611693382263184,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Age",
+     "age",
+     "income",
+     "financial",
+     "Income",
+     "Senior",
+     "Financial",
+     "mort",
+     "Status",
+     "E"
+    ],
+    "gen": "Age\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.123323440551758,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Age",
+     "age",
+     "financial",
+     "Income",
+     "income",
+     "Financial",
+     "mort",
+     "interest",
+     "Family",
+     "family"
+    ],
+    "gen": "Age\n"
+   }
+  }
+ },
+ {
+  "task_id": 119,
+  "own_dmax": 3.886445999145508,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.013696670532227,
+   3.2867026329040527,
+   3.593629837036133,
+   3.465700149536133,
+   3.624879837036133,
+   4.537134170532227,
+   3.624879837036133,
+   4.3876953125
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.65175724029541,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "risk",
+     "investment",
+     "Invest",
+     "Risk",
+     "experience",
+     "invest",
+     "crypto",
+     "crypt",
+     "Crypto",
+     "\""
+    ],
+    "gen": "risk_tolerance\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.594616889953613,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "investment",
+     "risk",
+     "Invest",
+     "interest",
+     "financial",
+     "invest",
+     "experience",
+     "Risk",
+     "Interest",
+     "crypt"
+    ],
+    "gen": "investment\n"
+   }
+  }
+ },
+ {
+  "task_id": 121,
+  "own_dmax": 3.9024181365966797,
+  "own_top10_entries": 4,
+  "null_dmax": [
+   4.54304313659668,
+   3.0274181365966797,
+   3.9839611053466797,
+   3.9961671829223633,
+   3.145030975341797,
+   4.62116813659668,
+   4.63679313659668,
+   5.40241813659668
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   2,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.877310752868652,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "privacy",
+     "username",
+     "professional",
+     "security",
+     "Privacy",
+     "private",
+     "account",
+     "profession",
+     "Username",
+     "Security"
+    ],
+    "gen": "privacy\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.504798889160156,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "username",
+     "account",
+     "Keyword",
+     "privacy",
+     "professional",
+     "Account",
+     "security",
+     "Privacy",
+     "Username",
+     "Security"
+    ],
+    "gen": "username\n"
+   }
+  }
+ },
+ {
+  "task_id": 123,
+  "own_dmax": 2.59375,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.447935104370117,
+   4.001953125,
+   4.609375,
+   3.7890625,
+   3.84716796875,
+   2.937498092651367,
+   3.84716796875,
+   4.46875
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.098345756530762,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "D",
+     "diet",
+     "All",
+     "d",
+     "all",
+     "C",
+     "Keyword",
+     "Preference",
+     "Before",
+     "Ve"
+    ],
+    "gen": "Dietary restrictions\n"
+   },
+   "off": {
+    "bridge_lp_max": -12.13282585144043,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "D",
+     "Preference",
+     "diet",
+     "Preferences",
+     "Pre",
+     "Keyword",
+     "Before",
+     "C",
+     "pre",
+     "All"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 124,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 125,
+  "own_dmax": 6.203117370605469,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.457988739013672,
+   5.210929870605469,
+   6.796867370605469,
+   5.484355926513672,
+   3.8291358947753906,
+   5.640617370605469,
+   4.999980926513672,
+   5.418979644775391
+  ],
+  "null_top10_entries": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -3.8542964458465576,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "Travel",
+     "Pass",
+     "passport",
+     "Vis",
+     "travel",
+     "Health",
+     "Status",
+     "health",
+     "status",
+     "pass"
+    ],
+    "gen": "Travel Plans\n"
+   },
+   "off": {
+    "bridge_lp_max": -3.655496120452881,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "Pass",
+     "Travel",
+     "Destination",
+     "passport",
+     "Vis",
+     "travel",
+     "Status",
+     "Budget",
+     "Health",
+     "destination"
+    ],
+    "gen": "Passport\n"
+   }
+  }
+ },
+ {
+  "task_id": 126,
+  "own_dmax": 5.580539703369141,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   6.038173675537109,
+   9.101572036743164,
+   4.288896560668945,
+   4.781259536743164,
+   5.154619216918945,
+   3.9314746856689453,
+   5.710947036743164,
+   4.511592864990234
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   2,
+   1,
+   2,
+   0,
+   1,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.784652709960938,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Attendance",
+     "Leave",
+     "Medical",
+     "medical",
+     "attendance",
+     "Vac",
+     "leave",
+     "Status",
+     "Health",
+     "\""
+    ],
+    "gen": "Attendance\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.686235427856445,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Attendance",
+     "attendance",
+     "medical",
+     "Leave",
+     "Medical",
+     "Vac",
+     "leave",
+     "vac",
+     "Keyword",
+     "Status"
+    ],
+    "gen": "Attendance\n"
+   }
+  }
+ },
+ {
+  "task_id": 127,
+  "own_dmax": 5.9383392333984375,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.684107780456543,
+   6.5320892333984375,
+   6.371607780456543,
+   5.559107780456543,
+   4.980981826782227,
+   6.371607780456543,
+   6.0242767333984375,
+   5.9715423583984375
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   5,
+   0,
+   2,
+   1,
+   3,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -8.406015396118164,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "new",
+     "birth",
+     "New",
+     "employment",
+     "status",
+     "El",
+     "location",
+     "Employ",
+     "job",
+     "preg"
+    ],
+    "gen": "newborn\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.114035606384277,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "new",
+     "New",
+     "Keyword",
+     "Status",
+     "status",
+     "birth",
+     "post",
+     "Before",
+     "Job",
+     "Location"
+    ],
+    "gen": "newborn\n"
+   }
+  }
+ },
+ {
+  "task_id": 129,
+  "own_dmax": 3.930835723876953,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.399585723876953,
+   3.7976932525634766,
+   5.625818252563477,
+   3.6805057525634766,
+   3.9925060272216797,
+   6.875007629394531,
+   4.510749816894531
+  ],
+  "null_top10_entries": [
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.125654220581055,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "budget",
+     "Budget",
+     "All",
+     "bed",
+     "all",
+     "f",
+     "Bed",
+     "memory",
+     "financial",
+     "space"
+    ],
+    "gen": "budget\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.293797492980957,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "budget",
+     "Budget",
+     "bed",
+     "preferences",
+     "B",
+     "space",
+     "Before",
+     "Preferences",
+     "Bed",
+     "style"
+    ],
+    "gen": "budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 130,
+  "own_dmax": 5.650585174560547,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   6.562206268310547,
+   6.499706268310547,
+   7.655956268310547,
+   6.280956268310547,
+   6.605175018310547,
+   5.499706268310547,
+   6.749706268310547,
+   4.624759674072266
+  ],
+  "null_top10_entries": [
+   0,
+   4,
+   0,
+   0,
+   2,
+   2,
+   2,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.714742660522461,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "med",
+     "All",
+     "Med",
+     "all",
+     "medical",
+     "preg",
+     "health",
+     "history",
+     "al",
+     "pres"
+    ],
+    "gen": "medications\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.239801406860352,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Condition",
+     "History",
+     "med",
+     "medical",
+     "Medical",
+     "all",
+     "Med",
+     "history",
+     "H"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 133,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 134,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 135,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 136,
+  "own_dmax": 4.0096435546875,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.8338623046875,
+   4.2869873046875,
+   3.9095458984375,
+   4.7674560546875,
+   4.1952667236328125,
+   4.2303466796875,
+   4.1072998046875,
+   3.6015167236328125
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   2,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -6.667328357696533,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "health",
+     "Health",
+     "Australia",
+     "flight",
+     "medical",
+     "Travel",
+     " allergies",
+     "Medical"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -6.039220333099365,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Health",
+     "All",
+     "health",
+     "Medical",
+     "Destination",
+     "medical",
+     "Australia",
+     "Dest",
+     "Duration",
+     "Travel"
+    ],
+    "gen": "Health\n"
+   }
+  }
+ },
+ {
+  "task_id": 139,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 140,
+  "own_dmax": 1.747603416442871,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   2.7291603088378906,
+   2.6542930603027344,
+   1.9952945709228516,
+   2.2452945709228516,
+   2.3236312866210938,
+   4.74105167388916,
+   3.2018375396728516,
+   2.472475051879883
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.126463890075684,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "budget",
+     "Budget",
+     "professional",
+     "Professional",
+     "Before",
+     "Photos",
+     "OS",
+     "profession",
+     "software",
+     "Skill"
+    ],
+    "gen": "budget\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.292096138000488,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "Before",
+     "Skill",
+     "Professional",
+     "Keyword",
+     "skill",
+     "professional",
+     "I",
+     "Photos"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 141,
+  "own_dmax": 4.405462265014648,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.859371185302734,
+   3.9835872650146484,
+   4.030462265014648,
+   4.874212265014648,
+   3.6554622650146484,
+   4.077337265014648,
+   4.202337265014648,
+   4.577337265014648
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.145137786865234,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "environment",
+     "security",
+     "production",
+     "D",
+     "Environment",
+     "prod",
+     "docker",
+     "project",
+     "OS",
+     "server"
+    ],
+    "gen": "environment\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.80085563659668,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "D",
+     "Project",
+     "Environment",
+     "environment",
+     "skill",
+     "project",
+     "I",
+     "Skill",
+     "role",
+     "Infrastructure"
+    ],
+    "gen": "Docker\n"
+   }
+  }
+ },
+ {
+  "task_id": 144,
+  "own_dmax": 4.39930534362793,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.276700973510742,
+   4.36805534362793,
+   4.33680534362793,
+   2.657930374145508,
+   4.136045455932617,
+   3.7855358123779297,
+   5.223297119140625,
+   3.882038116455078
+  ],
+  "null_top10_entries": [
+   3,
+   0,
+   1,
+   0,
+   0,
+   2,
+   1,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.308266639709473,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "budget",
+     "all",
+     "Budget",
+     "Boss",
+     "boss",
+     "pre",
+     "B",
+     "\u8fc7\u654f",
+     "Office"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.396331787109375,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "relationship",
+     "Relationship",
+     "All",
+     "Budget",
+     "budget",
+     "Boss",
+     "boss",
+     "all",
+     "B",
+     "Office"
+    ],
+    "gen": "relationship\n"
+   }
+  }
+ },
+ {
+  "task_id": 145,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 146,
+  "own_dmax": 2.7509613037109375,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.3135833740234375,
+   2.6475677490234375,
+   2.022806167602539,
+   2.6608428955078125,
+   3.3135833740234375,
+   2.380168914794922,
+   2.6569771766662598,
+   2.9062538146972656
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.536054611206055,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "team",
+     "Team",
+     "technology",
+     "Current",
+     "skill",
+     "Skill",
+     "Technology",
+     "Tech",
+     "current",
+     "tech"
+    ],
+    "gen": "team_size\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.50212574005127,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Current",
+     "Team",
+     "Architecture",
+     "team",
+     "current",
+     "Skill",
+     "Experience",
+     "Context",
+     "Complex",
+     "Tech"
+    ],
+    "gen": "Current Team Size\n"
+   }
+  }
+ },
+ {
+  "task_id": 149,
+  "own_dmax": 5.578729629516602,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   5.112907409667969,
+   6.966424942016602,
+   4.562475204467773,
+   3.79632568359375,
+   4.325145721435547,
+   6.966424942016602,
+   4.302362442016602,
+   5.294549942016602
+  ],
+  "null_top10_entries": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.90285587310791,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "diet",
+     "D",
+     "d",
+     "di",
+     "sn",
+     "s",
+     "Di",
+     "G"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.999496459960938,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "D",
+     "diet",
+     "cr",
+     "all",
+     "Cr",
+     "d",
+     "di",
+     "sn",
+     "Di"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 151,
+  "own_dmax": 2.944355010986328,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.122326850891113,
+   3.256925582885742,
+   2.5405702590942383,
+   2.5624847412109375,
+   3.172271728515625,
+   2.470256805419922,
+   2.9452972412109375
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -1.837611436843872,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "all",
+     "diet",
+     "D",
+     "sn",
+     "al",
+     "Before",
+     "d",
+     "di",
+     "Preferences"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -1.8622419834136963,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "D",
+     "all",
+     "diet",
+     "sn",
+     "Preferences",
+     "preferences",
+     "d",
+     "Before",
+     "al"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 152,
+  "own_dmax": 5.386585235595703,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   3.154163360595703,
+   2.341663360595703,
+   2.3297500610351562,
+   3.601076126098633,
+   3.826038360595703,
+   2.775257110595703,
+   2.061979293823242,
+   3.826038360595703
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   0,
+   1,
+   3,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.778718948364258,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "B",
+     "Preference",
+     "Preferences",
+     "pre",
+     "Region",
+     "Before",
+     "preferences",
+     "All"
+    ],
+    "gen": "Budget\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.433666229248047,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "Preferences",
+     "budget",
+     "Preference",
+     "B",
+     "preferences",
+     "pre",
+     "T",
+     "Location",
+     "Before"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 153,
+  "own_dmax": 4.934864044189453,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.486354827880859,
+   3.986621856689453,
+   5.587917327880859,
+   5.579804420471191,
+   4.486354827880859,
+   6.502246856689453,
+   4.518730163574219,
+   4.689479827880859
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   7,
+   0,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.748197555541992,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "diet",
+     "D",
+     "medical",
+     "health",
+     "all",
+     "di",
+     "Health",
+     "Di",
+     "Medical"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.009157180786133,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "health",
+     "Health",
+     "D",
+     "medical",
+     "diet",
+     "All",
+     "Conditions",
+     "Di",
+     "Medical",
+     "Condition"
+    ],
+    "gen": "health goals\n"
+   }
+  }
+ },
+ {
+  "task_id": 155,
+  "own_dmax": 4.071743011474609,
+  "own_top10_entries": 3,
+  "null_dmax": [
+   3.9682273864746094,
+   4.558071136474609,
+   3.9330711364746094,
+   4.761196136474609,
+   4.517055511474609,
+   4.497524261474609,
+   3.8861961364746094,
+   4.089321136474609
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -0.8674569129943848,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "all",
+     "All",
+     "skill",
+     "Skill",
+     "diet",
+     "D",
+     "C",
+     "experience",
+     "B",
+     "al"
+    ],
+    "gen": "allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -4.843181610107422,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "Skill",
+     "skill",
+     "Week",
+     "Time",
+     "week",
+     "Kitchen",
+     "Schedule",
+     "Equipment",
+     "experience",
+     "All"
+    ],
+    "gen": "Skill Level\n"
+   }
+  }
+ },
+ {
+  "task_id": 159,
+  "own_dmax": 4.279296875,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   3.636716842651367,
+   3.624998092651367,
+   4.536619186401367,
+   4.265625,
+   4.027341842651367,
+   4.757829666137695,
+   4.789079666137695,
+   4.062498092651367
+  ],
+  "null_top10_entries": [
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -1.2666749954223633,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "diet",
+     "all",
+     "All",
+     "d",
+     "D",
+     "di",
+     "ve",
+     "Before",
+     "Ve",
+     "None"
+    ],
+    "gen": "dietary restrictions\n"
+   },
+   "off": {
+    "bridge_lp_max": -2.0029706954956055,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "D",
+     "diet",
+     "All",
+     "d",
+     "all",
+     "Preferences",
+     "Ve",
+     "Preference",
+     "t",
+     "None"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 161,
+  "own_dmax": 3.7867774963378906,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   2.6405792236328125,
+   2.9075889587402344,
+   10.424325942993164,
+   2.486043930053711,
+   3.8024024963378906,
+   2.853485107421875,
+   2.180765151977539,
+   3.120462417602539
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -0.7189986705780029,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "diet",
+     "all",
+     "D",
+     "di",
+     "d",
+     "Before",
+     "protein",
+     "al",
+     "health"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -0.5243303775787354,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "D",
+     "all",
+     "diet",
+     "In",
+     "di",
+     "Before",
+     "Goals",
+     "Di",
+     "d"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 162,
+  "own_dmax": 3.9168319702148438,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   3.638397216796875,
+   4.229331970214844,
+   3.1494693756103516,
+   3.8484725952148438,
+   3.1494693756103516,
+   3.3933944702148438,
+   3.628631591796875,
+   4.961969375610352
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -1.2294588088989258,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "diet",
+     "D",
+     "all",
+     "P",
+     "C",
+     "d",
+     "Preferences",
+     "preferences",
+     "Preference"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -3.74910569190979,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "D",
+     "diet",
+     "Budget",
+     "budget",
+     "All",
+     "Preferences",
+     "Preference",
+     "pre",
+     "Before",
+     "P"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 163,
+  "own_dmax": 2.7818355560302734,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   3.7037105560302734,
+   3.6607418060302734,
+   3.3599605560302734,
+   3.3990230560302734,
+   4.609960556030273,
+   3.522428512573242,
+   3.5162105560302734,
+   2.8833980560302734
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   3,
+   1,
+   1,
+   0,
+   0,
+   3
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -1.1145718097686768,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "all",
+     "diet",
+     "D",
+     "av",
+     "d",
+     "food",
+     "Av",
+     "al",
+     "Food"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -2.0452966690063477,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "D",
+     "diet",
+     "av",
+     "All",
+     "cr",
+     "all",
+     "Cr",
+     "d",
+     "Av",
+     "Before"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 164,
+  "own_dmax": 6.437488555908203,
+  "own_top10_entries": 2,
+  "null_dmax": [
+   6.328113555908203,
+   6.649402618408203,
+   9.542957305908203,
+   6.906238555908203,
+   9.542957305908203,
+   5.390613555908203,
+   8.249988555908203,
+   5.664051055908203
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   2,
+   0,
+   0,
+   0,
+   5,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -0.4334857761859894,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "All",
+     "all",
+     "location",
+     "Location",
+     "Preference",
+     "diet",
+     "preferences",
+     "pre",
+     "Preferences",
+     "Before"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -4.365634918212891,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "Location",
+     "location",
+     "Ge",
+     "Preference",
+     "T",
+     "Region",
+     "ge",
+     "All",
+     "Before",
+     "G"
+    ],
+    "gen": "Location\n"
+   }
+  }
+ },
+ {
+  "task_id": 167,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 169,
+  "own_dmax": 5.699207305908203,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.308660507202148,
+   5.437564849853516,
+   4.044500350952148,
+   3.6386661529541016,
+   5.341787338256836,
+   5.237371444702148,
+   4.448797225952148
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.22763729095459,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "health",
+     "Health",
+     "all",
+     "diet",
+     "D",
+     "al",
+     "Nut",
+     "Al",
+     "Kitchen"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.199743270874023,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Health",
+     "health",
+     "All",
+     "Budget",
+     "D",
+     "budget",
+     "diet",
+     "Frequency",
+     "Time",
+     "frequency"
+    ],
+    "gen": "Health goals\n"
+   }
+  }
+ },
+ {
+  "task_id": 170,
+  "own_dmax": 4.638689041137695,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.355974197387695,
+   4.057868957519531,
+   4.930192947387695,
+   3.8012866973876953,
+   3.8559741973876953,
+   3.6867752075195312,
+   3.6606616973876953,
+   3.7805252075195312
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.574450492858887,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "Med",
+     "med",
+     "medical",
+     "Medical",
+     "diet",
+     "Kid",
+     "M",
+     "D"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.796892166137695,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Health",
+     "Medical",
+     "D",
+     "medical",
+     "Kid",
+     "all",
+     "health",
+     "Di",
+     "diet"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 172,
+  "own_dmax": 2.9062461853027344,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.218746185302734,
+   2.972536087036133,
+   2.937417984008789,
+   3.4321212768554688,
+   5.117183685302734,
+   2.406240463256836,
+   4.687496185302734,
+   3.5781211853027344
+  ],
+  "null_top10_entries": [
+   0,
+   3,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.629605293273926,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "D",
+     "diet",
+     "all",
+     "d",
+     "Before",
+     "G",
+     "Preferences",
+     "Ve",
+     "Preference"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.660024642944336,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "D",
+     "diet",
+     "Preferences",
+     "All",
+     "Budget",
+     "Preference",
+     "B",
+     "Before",
+     "budget",
+     "T"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ },
+ {
+  "task_id": 175,
+  "own_dmax": 5.3984832763671875,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.472953796386719,
+   5.6875457763671875,
+   5.054985046386719,
+   5.5625457763671875,
+   5.2500457763671875,
+   5.4141082763671875,
+   5.0156707763671875
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.693960189819336,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "location",
+     "Location",
+     "diet",
+     "Preference",
+     "all",
+     "G",
+     "D",
+     "lic",
+     "pre"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.958282470703125,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "lic",
+     "Location",
+     "location",
+     "Preference",
+     "Lic",
+     "All",
+     "European",
+     "pre",
+     "Preferences",
+     "diet"
+    ],
+    "gen": "licorice\n"
+   }
+  }
+ },
+ {
+  "task_id": 177,
+  "own_dmax": 3.276304244995117,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   3.562437057495117,
+   2.562437057495117,
+   3.781187057495117,
+   3.133970260620117,
+   4.340757369995117,
+   3.655210494995117,
+   3.387632369995117,
+   3.624937057495117
+  ],
+  "null_top10_entries": [
+   4,
+   0,
+   0,
+   3,
+   2,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.499785423278809,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "diet",
+     "all",
+     "al",
+     "W",
+     "D",
+     "s",
+     "wine",
+     "Al",
+     "Before"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.575551986694336,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "W",
+     "All",
+     "al",
+     "diet",
+     "wine",
+     "Before",
+     "Al",
+     "Begin",
+     "experience",
+     "T"
+    ],
+    "gen": "Wine\n"
+   }
+  }
+ },
+ {
+  "task_id": 181,
+  "own_dmax": 10.058492660522461,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.925680160522461,
+   7.222555160522461,
+   8.839742660522461,
+   10.058492660522461,
+   10.216772079467773,
+   7.341772079467773,
+   7.310522079467773,
+   8.137594223022461
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.79653263092041,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "clo",
+     "Clo",
+     "pet",
+     "pest",
+     "M",
+     "sens",
+     "al",
+     "mo"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.71852970123291,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "mo",
+     "clo",
+     "sm",
+     "All",
+     "Clo",
+     "m",
+     "humidity",
+     "all",
+     "moth",
+     "Mo"
+    ],
+    "gen": "moisture\n"
+   }
+  }
+ },
+ {
+  "task_id": 184,
+  "own_dmax": 6.405540466308594,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   6.481710433959961,
+   5.727407455444336,
+   5.401632308959961,
+   5.553976058959961,
+   4.686788558959961,
+   6.675069808959961,
+   4.257101058959961,
+   7.202415466308594
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -5.519321441650391,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Preference",
+     "Preferences",
+     "pre",
+     "T",
+     "t",
+     "Pre",
+     "Before",
+     "preferences",
+     "Pale",
+     "Al"
+    ],
+    "gen": "Preference\n"
+   },
+   "off": {
+    "bridge_lp_max": -4.321202278137207,
+    "bridge_in_top10": true,
+    "top10_tokens": [
+     "Preferences",
+     "Preference",
+     "T",
+     "pre",
+     "preferences",
+     "Before",
+     "Pre",
+     "Pal",
+     "t",
+     "Fl"
+    ],
+    "gen": "Preferences\n"
+   }
+  }
+ },
+ {
+  "task_id": 186,
+  "own_dmax": 4.395477294921875,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.432565689086914,
+   3.491180419921875,
+   4.194305419921875,
+   8.22162914276123,
+   3.647430419921875,
+   3.834930419921875,
+   3.905242919921875,
+   3.6162662506103516
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.622194290161133,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "health",
+     "In",
+     "Health",
+     "fitness",
+     "in",
+     "all",
+     "sw",
+     "Sw",
+     "Keyword"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.976476669311523,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "sw",
+     "In",
+     "fitness",
+     "health",
+     "Health",
+     "in",
+     "Sw",
+     "Availability",
+     "Skill",
+     "Keyword"
+    ],
+    "gen": "swimming\n"
+   }
+  }
+ },
+ {
+  "task_id": 187,
+  "own_dmax": 3.918703079223633,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   2.3673229217529297,
+   2.8437461853027344,
+   2.552814483642578,
+   3.391490936279297,
+   3.2499961853027344,
+   3.0234336853027344,
+   3.2187461853027344,
+   3.3437461853027344
+  ],
+  "null_top10_entries": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.48587703704834,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "health",
+     "medical",
+     "Health",
+     "diet",
+     "med",
+     "Before",
+     " allergies",
+     "Medical"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.919172286987305,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Health",
+     "health",
+     "all",
+     "medical",
+     "Medical",
+     "Budget",
+     "Before",
+     "Condition",
+     "Age"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 189,
+  "own_dmax": 7.742074966430664,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   7.671762466430664,
+   7.312389373779297,
+   7.718639373779297,
+   7.312389373779297,
+   7.17851448059082,
+   6.929576873779297,
+   6.796215057373047,
+   7.265514373779297
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.066814422607422,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "med",
+     "All",
+     "all",
+     "Med",
+     "medical",
+     "medicine",
+     "Medical",
+     "Kid",
+     "M",
+     " medication"
+    ],
+    "gen": "medications\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.108095169067383,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "med",
+     "all",
+     "Med",
+     "Condition",
+     "Medical",
+     "Current",
+     "medical",
+     "Con",
+     "Keywords"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 192,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 197,
+  "own_dmax": 3.7315673828125,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   3.2003173828125,
+   3.771820068359375,
+   3.1049423217773438,
+   3.7823486328125,
+   2.8472900390625,
+   4.0753173828125,
+   3.111663818359375,
+   3.6182861328125
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   2,
+   0,
+   3
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.075315475463867,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "budget",
+     "Budget",
+     "All",
+     "wood",
+     "all",
+     "space",
+     "Wood",
+     "style",
+     "Before",
+     "Style"
+    ],
+    "gen": "budget\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.593117713928223,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Budget",
+     "budget",
+     "space",
+     "Space",
+     "Dimensions",
+     "B",
+     "Before",
+     "Room",
+     "Style",
+     "Measure"
+    ],
+    "gen": "Budget\n"
+   }
+  }
+ },
+ {
+  "task_id": 201,
+  "own_dmax": 11.71875286102295,
+  "own_top10_entries": 3,
+  "null_dmax": [
+   6.3243560791015625,
+   5.363420486450195,
+   5.994646072387695,
+   7.808732986450195,
+   6.0494537353515625,
+   5.933732986450195,
+   5.746232986450195,
+   6.787248611450195
+  ],
+  "null_top10_entries": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.976961135864258,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "co",
+     "diet",
+     "al",
+     "D",
+     "pan",
+     " allergies",
+     "health",
+     "Cook"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.981762409210205,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "health",
+     "all",
+     "Health",
+     "co",
+     "diet",
+     "d",
+     "T",
+     "al",
+     "D"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 202,
+  "own_dmax": 5.473665237426758,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.874956130981445,
+   5.5233917236328125,
+   5.2899932861328125,
+   5.031206130981445,
+   5.3046417236328125,
+   5.5233917236328125,
+   5.234331130981445
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -7.881648063659668,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "diet",
+     "D",
+     "pressure",
+     "All",
+     "Pressure",
+     "all",
+     "equipment",
+     "experience",
+     "d",
+     "health"
+    ],
+    "gen": "dietary restrictions\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.277063846588135,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "pressure",
+     "experience",
+     "Pressure",
+     "new",
+     "Experience",
+     "Recipe",
+     "recipe",
+     "equipment",
+     "New",
+     "Equipment"
+    ],
+    "gen": "pressure cooker\n"
+   }
+  }
+ },
+ {
+  "task_id": 203,
+  "own_dmax": 4.278865814208984,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   3.0958099365234375,
+   3.8301849365234375,
+   3.7676849365234375,
+   4.6094818115234375,
+   3.0176849365234375,
+   4.0020599365234375,
+   2.710947036743164,
+   3.808408737182617
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -9.225810050964355,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "diet",
+     "health",
+     "al",
+     "Health",
+     "D",
+     "med",
+     "Kid",
+     "kid"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -6.707821369171143,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "health",
+     "all",
+     "Health",
+     "Kid",
+     "diet",
+     "Frequency",
+     "med",
+     "frequency",
+     "medical"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 204,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 205,
+  "own_dmax": 3.403219223022461,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.128264904022217,
+   3.329000473022461,
+   5.940765380859375,
+   5.218755722045898,
+   4.389984130859375,
+   4.065765380859375,
+   4.956390380859375
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -12.301424026489258,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "ad",
+     "Keyword",
+     "s",
+     "al",
+     "medical",
+     " allergy",
+     "med",
+     "Ad"
+    ],
+    "gen": "Allergy\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.795321464538574,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Severity",
+     "Location",
+     "In",
+     "all",
+     "severity",
+     "Keyword",
+     "W",
+     "He",
+     "Before"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 206,
+  "own_dmax": 6.33592414855957,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   6.421139717102051,
+   6.122882843017578,
+   5.989500045776367,
+   7.482257843017578,
+   5.450168609619141,
+   5.421139717102051,
+   5.989500045776367,
+   5.102163314819336
+  ],
+  "null_top10_entries": [
+   1,
+   2,
+   1,
+   4,
+   1,
+   3,
+   3,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.001532554626465,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "all",
+     "med",
+     "As",
+     "as",
+     "Med",
+     "medical",
+     "Kid",
+     " allergy",
+     "Medical"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -7.9966044425964355,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "As",
+     "as",
+     "all",
+     "med",
+     "History",
+     "Head",
+     "Med",
+     "history",
+     "B"
+    ],
+    "gen": "Allergies\n"
+   }
+  }
+ },
+ {
+  "task_id": 207,
+  "own_dmax": 4.81279182434082,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   4.92021369934082,
+   5.40458869934082,
+   4.69755744934082,
+   5.47197151184082,
+   4.40721321105957,
+   4.79130744934082,
+   5.08159065246582,
+   5.26396369934082
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -14.045965194702148,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "diet",
+     "D",
+     "all",
+     "food",
+     "Food",
+     "d",
+     "Sp",
+     "sp",
+     "Preferences"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.059990882873535,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Availability",
+     "D",
+     "diet",
+     "Schedule",
+     "All",
+     "availability",
+     "schedule",
+     "all",
+     "Preferences",
+     "S"
+    ],
+    "gen": "Availability\n"
+   }
+  }
+ },
+ {
+  "task_id": 210,
+  "own_dmax": 5.677206039428711,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.292440414428711,
+   6.366659164428711,
+   6.081502914428711,
+   5.034627914428711,
+   5.704549789428711,
+   5.337362289428711,
+   4.784627914428711,
+   5.347127914428711
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.682106018066406,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "Schedule",
+     "Availability",
+     "diet",
+     "Budget",
+     "budget",
+     "schedule",
+     "availability",
+     "all",
+     "D"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -10.734591484069824,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "Availability",
+     "Budget",
+     "Schedule",
+     "budget",
+     "schedule",
+     "availability",
+     "Skill",
+     "diet",
+     "Time",
+     "All"
+    ],
+    "gen": "Availability\n"
+   }
+  }
+ },
+ {
+  "task_id": 211,
+  "own_dmax": 5.857629776000977,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.416223526000977,
+   5.568567276000977,
+   5.170129776000977,
+   5.529504776000977,
+   5.525598526000977,
+   5.849817276000977,
+   5.291223526000977,
+   6.42012882232666
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.845311164855957,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "in",
+     "health",
+     "In",
+     "medical",
+     "Health",
+     "Medical",
+     "Keyword",
+     "current",
+     "Current",
+     "keyword"
+    ],
+    "gen": "injury\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.334249496459961,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "In",
+     "in",
+     "Health",
+     "Current",
+     "Keyword",
+     "medical",
+     "Medical",
+     "current",
+     "health",
+     "History"
+    ],
+    "gen": "Injury\n"
+   }
+  }
+ },
+ {
+  "task_id": 213,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 214,
+  "own_dmax": 3.9754695892333984,
+  "own_top10_entries": 1,
+  "null_dmax": [
+   2.6753997802734375,
+   2.6402435302734375,
+   2.6753997802734375,
+   2.414949417114258,
+   3.1008758544921875,
+   5.489721298217773,
+   2.9559402465820312,
+   4.218156814575195
+  ],
+  "null_top10_entries": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   3,
+   1,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.847879409790039,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "d",
+     "D",
+     "All",
+     "all",
+     "appointment",
+     "financial",
+     "To",
+     "health",
+     "an",
+     "Schedule"
+    ],
+    "gen": "dental history\n"
+   },
+   "off": {
+    "bridge_lp_max": -9.369879722595215,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "d",
+     "D",
+     "Last",
+     "an",
+     "Schedule",
+     "Frequency",
+     "frequency",
+     "f",
+     "To",
+     "last"
+    ],
+    "gen": "dental history\n"
+   }
+  }
+ },
+ {
+  "task_id": 216,
+  "own_dmax": 4.093713760375977,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   6.295766830444336,
+   3.569204330444336,
+   4.532073974609375,
+   4.391448974609375,
+   10.448110580444336,
+   8.014516830444336,
+   3.657073974609375,
+   3.217683792114258
+  ],
+  "null_top10_entries": [
+   3,
+   1,
+   2,
+   0,
+   0,
+   2,
+   0,
+   0
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -11.470403671264648,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "financial",
+     "fre",
+     "Availability",
+     "availability",
+     "Financial",
+     "Skill",
+     "Fre",
+     "skill",
+     "experience",
+     "employment"
+    ],
+    "gen": "financial\n"
+   },
+   "off": {
+    "bridge_lp_max": -11.65585708618164,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "fre",
+     "Experience",
+     "Financial",
+     "experience",
+     "financial",
+     "Skill",
+     "Fre",
+     "Current",
+     "employment",
+     "Employ"
+    ],
+    "gen": "freelance\n"
+   }
+  }
+ },
+ {
+  "task_id": 218,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 220,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 221,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 223,
+  "excluded": "bridge-word-in-draft"
+ },
+ {
+  "task_id": 225,
+  "own_dmax": 4.426824569702148,
+  "own_top10_entries": 0,
+  "null_dmax": [
+   5.165105819702148,
+   6.145574569702148,
+   4.833074569702148,
+   4.1350555419921875,
+   4.442449569702148,
+   3.6768245697021484,
+   5.534034729003906,
+   4.864324569702148
+  ],
+  "null_top10_entries": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   2
+  ],
+  "elicit": {
+   "on": {
+    "bridge_lp_max": -10.86557674407959,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "All",
+     "D",
+     "all",
+     "diet",
+     "budget",
+     "Budget",
+     "Preferences",
+     "al",
+     "Keywords",
+     "Al"
+    ],
+    "gen": "Allergies\n"
+   },
+   "off": {
+    "bridge_lp_max": -8.883374214172363,
+    "bridge_in_top10": false,
+    "top10_tokens": [
+     "D",
+     "Preferences",
+     "All",
+     "Budget",
+     "budget",
+     "preferences",
+     "diet",
+     "Availability",
+     "Before",
+     "all"
+    ],
+    "gen": "Dietary restrictions\n"
+   }
+  }
+ }
+]

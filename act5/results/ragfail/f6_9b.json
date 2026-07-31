@@ -1,0 +1,518 @@
+{
+ "summary": {
+  "n_written": 39,
+  "n_unwritten": 17,
+  "TH": 2.0,
+  "pass1_hit": 0.3076923076923077,
+  "pass2_hit": 0.3076923076923077,
+  "retry_rate_on_written_miss": 0.0,
+  "recovered_of_missed": 0.0,
+  "false_retry_on_unwritten": 0.0
+ },
+ "rows": [
+  {
+   "fid": 0,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 48.7,
+   "retried": 0
+  },
+  {
+   "fid": 1,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 30.3,
+   "retried": 0
+  },
+  {
+   "fid": 2,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 41.2,
+   "retried": 0
+  },
+  {
+   "fid": 3,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 50.8,
+   "retried": 0
+  },
+  {
+   "fid": 4,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 49.0,
+   "retried": 0
+  },
+  {
+   "fid": 5,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 45.9,
+   "retried": 0
+  },
+  {
+   "fid": 6,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": -6.4,
+   "retried": 0
+  },
+  {
+   "fid": 8,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 45.1,
+   "retried": 0
+  },
+  {
+   "fid": 11,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 10.3,
+   "retried": 0
+  },
+  {
+   "fid": 12,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 30.7,
+   "retried": 0
+  },
+  {
+   "fid": 13,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 34.8,
+   "retried": 0
+  },
+  {
+   "fid": 15,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 47.9,
+   "retried": 0
+  },
+  {
+   "fid": 16,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 38.3,
+   "retried": 0
+  },
+  {
+   "fid": 17,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 39.0,
+   "retried": 0
+  },
+  {
+   "fid": 18,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 40.9,
+   "retried": 0
+  },
+  {
+   "fid": 19,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -11.0,
+   "retried": 0
+  },
+  {
+   "fid": 20,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 20.3,
+   "retried": 0
+  },
+  {
+   "fid": 21,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -3.9,
+   "retried": 0
+  },
+  {
+   "fid": 22,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 38.5,
+   "retried": 0
+  },
+  {
+   "fid": 23,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 31.1,
+   "retried": 0
+  },
+  {
+   "fid": 24,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 50.4,
+   "retried": 0
+  },
+  {
+   "fid": 25,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -10.1,
+   "retried": 0
+  },
+  {
+   "fid": 26,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 39.8,
+   "retried": 0
+  },
+  {
+   "fid": 27,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 33.1,
+   "retried": 0
+  },
+  {
+   "fid": 28,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 44.1,
+   "retried": 0
+  },
+  {
+   "fid": 30,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 29.1,
+   "retried": 0
+  },
+  {
+   "fid": 31,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 38.9,
+   "retried": 0
+  },
+  {
+   "fid": 32,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 46.0,
+   "retried": 0
+  },
+  {
+   "fid": 33,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 41.1,
+   "retried": 0
+  },
+  {
+   "fid": 35,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 37.9,
+   "retried": 0
+  },
+  {
+   "fid": 36,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 40.2,
+   "retried": 0
+  },
+  {
+   "fid": 37,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -6.4,
+   "retried": 0
+  },
+  {
+   "fid": 38,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 38.0,
+   "retried": 0
+  },
+  {
+   "fid": 40,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 31.5,
+   "retried": 0
+  },
+  {
+   "fid": 41,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 39.3,
+   "retried": 0
+  },
+  {
+   "fid": 44,
+   "unwritten": false,
+   "hit1": 1,
+   "hit2": 1,
+   "miss_flag": 0,
+   "slot_fam": 25.6,
+   "retried": 0
+  },
+  {
+   "fid": 45,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 48.5,
+   "retried": 0
+  },
+  {
+   "fid": 46,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 39.1,
+   "retried": 0
+  },
+  {
+   "fid": 47,
+   "unwritten": false,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 43.9,
+   "retried": 0
+  },
+  {
+   "fid": 48,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 34.2,
+   "retried": 0
+  },
+  {
+   "fid": 49,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 19.3,
+   "retried": 0
+  },
+  {
+   "fid": 50,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 45.5,
+   "retried": 0
+  },
+  {
+   "fid": 51,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 31.7,
+   "retried": 0
+  },
+  {
+   "fid": 52,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 34.0,
+   "retried": 0
+  },
+  {
+   "fid": 53,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 45.5,
+   "retried": 0
+  },
+  {
+   "fid": 54,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -6.3,
+   "retried": 0
+  },
+  {
+   "fid": 55,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 29.1,
+   "retried": 0
+  },
+  {
+   "fid": 57,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -18.5,
+   "retried": 0
+  },
+  {
+   "fid": 58,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 41.2,
+   "retried": 0
+  },
+  {
+   "fid": 60,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -1.0,
+   "retried": 0
+  },
+  {
+   "fid": 62,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -11.4,
+   "retried": 0
+  },
+  {
+   "fid": 64,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 37.6,
+   "retried": 0
+  },
+  {
+   "fid": 66,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 39.2,
+   "retried": 0
+  },
+  {
+   "fid": 67,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 33.7,
+   "retried": 0
+  },
+  {
+   "fid": 69,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": 31.2,
+   "retried": 0
+  },
+  {
+   "fid": 71,
+   "unwritten": true,
+   "hit1": 0,
+   "hit2": 0,
+   "miss_flag": 0,
+   "slot_fam": -5.9,
+   "retried": 0
+  }
+ ]
+}

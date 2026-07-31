@@ -1,0 +1,615 @@
+{
+ "summary": {
+  "n_correct": 53,
+  "n_wrong_or_fab": 13,
+  "n_off_inventory": 0,
+  "auc_bind": 0.42525399129172714,
+  "auc_negrank": 0.32583454281567487,
+  "rank_med_correct": 2,
+  "rank_med_bad": 1,
+  "gate_rank1": {
+   "keep_correct": 0.2641509433962264,
+   "block_bad": 0.46153846153846156
+  },
+  "gate_rank4": {
+   "keep_correct": 0.6226415094339622,
+   "block_bad": 0.07692307692307693
+  }
+ },
+ "rows": [
+  {
+   "fid": 0,
+   "form": "dir",
+   "cls": "correct",
+   "final": "RalVopTar",
+   "rank": 7,
+   "bind": 0.5941,
+   "z": 1.101
+  },
+  {
+   "fid": 1,
+   "form": "dir",
+   "cls": "correct",
+   "final": "FenTarVop",
+   "rank": 2,
+   "bind": 0.9058,
+   "z": 1.867
+  },
+  {
+   "fid": 2,
+   "form": "dir",
+   "cls": "correct",
+   "final": "TunNyeBlu",
+   "rank": 1,
+   "bind": 1.0926,
+   "z": 2.19
+  },
+  {
+   "fid": 3,
+   "form": "dir",
+   "cls": "correct",
+   "final": "BluVopPez",
+   "rank": 3,
+   "bind": 0.5829,
+   "z": 1.427
+  },
+  {
+   "fid": 4,
+   "form": "dir",
+   "cls": "correct",
+   "final": "NyeFyxPez",
+   "rank": 21,
+   "bind": -0.2267,
+   "z": 0.2
+  },
+  {
+   "fid": 5,
+   "form": "dir",
+   "cls": "correct",
+   "final": "SolRalMol",
+   "rank": 1,
+   "bind": 1.0685,
+   "z": 2.764
+  },
+  {
+   "fid": 6,
+   "form": "dir",
+   "cls": "correct",
+   "final": "TarFyxSol",
+   "rank": 6,
+   "bind": 0.5106,
+   "z": 1.507
+  },
+  {
+   "fid": 7,
+   "form": "dir",
+   "cls": "correct",
+   "final": "MolHoxPez",
+   "rank": 4,
+   "bind": 0.7004,
+   "z": 1.299
+  },
+  {
+   "fid": 8,
+   "form": "dir",
+   "cls": "correct",
+   "final": "DapBluLun",
+   "rank": 2,
+   "bind": 0.8343,
+   "z": 2.387
+  },
+  {
+   "fid": 9,
+   "form": "dir",
+   "cls": "correct",
+   "final": "RalSolBlu",
+   "rank": 5,
+   "bind": 0.2287,
+   "z": 1.159
+  },
+  {
+   "fid": 10,
+   "form": "dir",
+   "cls": "correct",
+   "final": "FyxNyeGro",
+   "rank": 32,
+   "bind": -0.1085,
+   "z": -0.384
+  },
+  {
+   "fid": 11,
+   "form": "dir",
+   "cls": "correct",
+   "final": "PezQuaFen",
+   "rank": 17,
+   "bind": -0.0879,
+   "z": 0.397
+  },
+  {
+   "fid": 13,
+   "form": "dir",
+   "cls": "correct",
+   "final": "HoxVexRal",
+   "rank": 2,
+   "bind": 0.7987,
+   "z": 1.934
+  },
+  {
+   "fid": 14,
+   "form": "dir",
+   "cls": "correct",
+   "final": "TarVexDap",
+   "rank": 2,
+   "bind": 0.9954,
+   "z": 1.827
+  },
+  {
+   "fid": 16,
+   "form": "dir",
+   "cls": "correct",
+   "final": "HoxFenQua",
+   "rank": 1,
+   "bind": 0.833,
+   "z": 1.622
+  },
+  {
+   "fid": 17,
+   "form": "dir",
+   "cls": "correct",
+   "final": "GubDapQua",
+   "rank": 12,
+   "bind": 0.4309,
+   "z": 0.802
+  },
+  {
+   "fid": 18,
+   "form": "dir",
+   "cls": "correct",
+   "final": "TunDapWix",
+   "rank": 1,
+   "bind": 0.8996,
+   "z": 2.293
+  },
+  {
+   "fid": 19,
+   "form": "dir",
+   "cls": "correct",
+   "final": "FenJizWix",
+   "rank": 1,
+   "bind": 1.3138,
+   "z": 2.533
+  },
+  {
+   "fid": 20,
+   "form": "dir",
+   "cls": "correct",
+   "final": "GubVopRal",
+   "rank": 16,
+   "bind": -0.013,
+   "z": 0.393
+  },
+  {
+   "fid": 21,
+   "form": "dir",
+   "cls": "correct",
+   "final": "QuaLidRal",
+   "rank": 1,
+   "bind": 2.3922,
+   "z": 4.477
+  },
+  {
+   "fid": 22,
+   "form": "dir",
+   "cls": "correct",
+   "final": "KeeNyeMol",
+   "rank": 12,
+   "bind": 0.3034,
+   "z": 0.781
+  },
+  {
+   "fid": 23,
+   "form": "dir",
+   "cls": "correct",
+   "final": "VexFyxMol",
+   "rank": 14,
+   "bind": 0.24,
+   "z": 0.615
+  },
+  {
+   "fid": 24,
+   "form": "dir",
+   "cls": "correct",
+   "final": "FyxGubTar",
+   "rank": 4,
+   "bind": 0.6361,
+   "z": 1.29
+  },
+  {
+   "fid": 25,
+   "form": "dir",
+   "cls": "correct",
+   "final": "PezGubMol",
+   "rank": 2,
+   "bind": 0.6688,
+   "z": 1.74
+  },
+  {
+   "fid": 26,
+   "form": "dir",
+   "cls": "correct",
+   "final": "DapTunQua",
+   "rank": 13,
+   "bind": 0.378,
+   "z": 0.738
+  },
+  {
+   "fid": 27,
+   "form": "dir",
+   "cls": "correct",
+   "final": "LidGubFen",
+   "rank": 1,
+   "bind": 0.7268,
+   "z": 1.878
+  },
+  {
+   "fid": 28,
+   "form": "dir",
+   "cls": "correct",
+   "final": "VopHoxBlu",
+   "rank": 14,
+   "bind": 0.1019,
+   "z": 0.394
+  },
+  {
+   "fid": 29,
+   "form": "dir",
+   "cls": "correct",
+   "final": "DapMolKee",
+   "rank": 19,
+   "bind": 0.2522,
+   "z": 0.22
+  },
+  {
+   "fid": 30,
+   "form": "dir",
+   "cls": "correct",
+   "final": "QuaDapBlu",
+   "rank": 2,
+   "bind": 1.3051,
+   "z": 2.313
+  },
+  {
+   "fid": 31,
+   "form": "dir",
+   "cls": "correct",
+   "final": "SolTunGro",
+   "rank": 1,
+   "bind": 1.5676,
+   "z": 3.595
+  },
+  {
+   "fid": 32,
+   "form": "dir",
+   "cls": "correct",
+   "final": "FyxBluVop",
+   "rank": 2,
+   "bind": 0.8695,
+   "z": 1.72
+  },
+  {
+   "fid": 33,
+   "form": "dir",
+   "cls": "correct",
+   "final": "LunTunDap",
+   "rank": 2,
+   "bind": 1.6299,
+   "z": 2.619
+  },
+  {
+   "fid": 34,
+   "form": "dir",
+   "cls": "correct",
+   "final": "JizGroVop",
+   "rank": 1,
+   "bind": 1.6763,
+   "z": 2.783
+  },
+  {
+   "fid": 35,
+   "form": "dir",
+   "cls": "correct",
+   "final": "TunSolMol",
+   "rank": 2,
+   "bind": 1.6771,
+   "z": 2.681
+  },
+  {
+   "fid": 36,
+   "form": "dir",
+   "cls": "correct",
+   "final": "PezLunRal",
+   "rank": 9,
+   "bind": 0.4613,
+   "z": 0.873
+  },
+  {
+   "fid": 37,
+   "form": "dir",
+   "cls": "correct",
+   "final": "FenQuaMol",
+   "rank": 2,
+   "bind": 1.1897,
+   "z": 2.276
+  },
+  {
+   "fid": 38,
+   "form": "dir",
+   "cls": "correct",
+   "final": "SolFenPez",
+   "rank": 2,
+   "bind": 0.9039,
+   "z": 1.986
+  },
+  {
+   "fid": 39,
+   "form": "dir",
+   "cls": "correct",
+   "final": "WixFyxNye",
+   "rank": 1,
+   "bind": 1.1313,
+   "z": 3.036
+  },
+  {
+   "fid": 40,
+   "form": "dir",
+   "cls": "correct",
+   "final": "KeeVexTar",
+   "rank": 1,
+   "bind": 1.9059,
+   "z": 2.912
+  },
+  {
+   "fid": 41,
+   "form": "dir",
+   "cls": "wrong",
+   "final": "LunFenFyx",
+   "rank": 1,
+   "bind": 2.1076,
+   "z": 3.605
+  },
+  {
+   "fid": 42,
+   "form": "dir",
+   "cls": "correct",
+   "final": "TunNyeGub",
+   "rank": 2,
+   "bind": 0.5778,
+   "z": 1.685
+  },
+  {
+   "fid": 43,
+   "form": "dir",
+   "cls": "correct",
+   "final": "NyeSolPez",
+   "rank": 4,
+   "bind": 0.965,
+   "z": 1.61
+  },
+  {
+   "fid": 44,
+   "form": "dir",
+   "cls": "correct",
+   "final": "BluFyxPez",
+   "rank": 11,
+   "bind": 0.7559,
+   "z": 0.597
+  },
+  {
+   "fid": 46,
+   "form": "dir",
+   "cls": "correct",
+   "final": "LunFenFyx",
+   "rank": 1,
+   "bind": 2.4925,
+   "z": 3.872
+  },
+  {
+   "fid": 47,
+   "form": "dir",
+   "cls": "correct",
+   "final": "GubTarVex",
+   "rank": 14,
+   "bind": 0.2389,
+   "z": 0.666
+  },
+  {
+   "fid": 0,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "LunFenFyx",
+   "rank": 1,
+   "bind": 0.6752,
+   "z": 2.419
+  },
+  {
+   "fid": 3,
+   "form": "ref",
+   "cls": "correct",
+   "final": "BluVopPez",
+   "rank": 2,
+   "bind": 1.1718,
+   "z": 2.024
+  },
+  {
+   "fid": 5,
+   "form": "ref",
+   "cls": "correct",
+   "final": "SolRalMol",
+   "rank": 1,
+   "bind": 1.1476,
+   "z": 2.927
+  },
+  {
+   "fid": 6,
+   "form": "ref",
+   "cls": "correct",
+   "final": "TarFyxSol",
+   "rank": 7,
+   "bind": 0.4441,
+   "z": 1.18
+  },
+  {
+   "fid": 11,
+   "form": "ref",
+   "cls": "correct",
+   "final": "PezQuaFen",
+   "rank": 12,
+   "bind": 0.1495,
+   "z": 0.706
+  },
+  {
+   "fid": 19,
+   "form": "ref",
+   "cls": "correct",
+   "final": "FenJizWix",
+   "rank": 3,
+   "bind": 0.9608,
+   "z": 1.717
+  },
+  {
+   "fid": 20,
+   "form": "ref",
+   "cls": "correct",
+   "final": "GubVopRal",
+   "rank": 31,
+   "bind": -0.0955,
+   "z": -0.527
+  },
+  {
+   "fid": 27,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "BluVopPez",
+   "rank": 2,
+   "bind": 0.8542,
+   "z": 2.152
+  },
+  {
+   "fid": 28,
+   "form": "ref",
+   "cls": "correct",
+   "final": "VopHoxBlu",
+   "rank": 25,
+   "bind": -0.2859,
+   "z": 0.193
+  },
+  {
+   "fid": 31,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "FyxGubTar",
+   "rank": 3,
+   "bind": 0.9688,
+   "z": 1.886
+  },
+  {
+   "fid": 33,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "PezLunRal",
+   "rank": 1,
+   "bind": 0.9031,
+   "z": 2.138
+  },
+  {
+   "fid": 35,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "LunFenFyx",
+   "rank": 1,
+   "bind": 0.9232,
+   "z": 2.684
+  },
+  {
+   "fid": 36,
+   "form": "ref",
+   "cls": "correct",
+   "final": "PezLunRal",
+   "rank": 1,
+   "bind": 0.8932,
+   "z": 2.727
+  },
+  {
+   "fid": 37,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "QuaLidRal",
+   "rank": 11,
+   "bind": 0.4373,
+   "z": 0.691
+  },
+  {
+   "fid": 41,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "LunFenFyx",
+   "rank": 1,
+   "bind": 1.0094,
+   "z": 2.798
+  },
+  {
+   "fid": 46,
+   "form": "ref",
+   "cls": "correct",
+   "final": "LunFenFyx",
+   "rank": 2,
+   "bind": 0.7057,
+   "z": 2.077
+  },
+  {
+   "fid": 47,
+   "form": "ref",
+   "cls": "wrong",
+   "final": "DapBluLun",
+   "rank": 3,
+   "bind": 0.8232,
+   "z": 1.86
+  },
+  {
+   "fid": 49,
+   "form": "ref",
+   "cls": "fabricated",
+   "final": "LunTunDap",
+   "rank": 3,
+   "bind": 0.5592,
+   "z": 1.876
+  },
+  {
+   "fid": 55,
+   "form": "ref",
+   "cls": "fabricated",
+   "final": "LunFenFyx",
+   "rank": 3,
+   "bind": 0.6919,
+   "z": 1.899
+  },
+  {
+   "fid": 58,
+   "form": "ref",
+   "cls": "fabricated",
+   "final": "LunFenFyx",
+   "rank": 1,
+   "bind": 0.8433,
+   "z": 2.276
+  },
+  {
+   "fid": 66,
+   "form": "ref",
+   "cls": "fabricated",
+   "final": "PezLunRal",
+   "rank": 1,
+   "bind": 0.9553,
+   "z": 2.912
+  }
+ ]
+}

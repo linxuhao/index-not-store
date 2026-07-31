@@ -7,13 +7,13 @@ authors:
     email: linxuhao84@gmail.com
     orcid: "https://orcid.org/0009-0007-1183-6144"
 type: software
-version: v1.0.0
-date-released: 2026-07-17
+version: v1.2.0
+date-released: 2026-07-31
 repository-code: "https://github.com/linxuhao/index-not-store"
 license: MIT
 preferred-citation:
   type: article
-  title: "An Index, Not a Store: What Online In-Weight Memory Keeps, Loses, and Is For"
+  title: "An Index, Not a Store: The Model Does Remember — It Just Needs Its Notebook"
   authors:
     - family-names: Lin
       given-names: Xuhao
@@ -32,8 +32,8 @@ keywords:
   - familiarity
   - knowledge editing
 abstract: >
-  Code and raw per-fact results for "An Index, Not a Store: What Online In-Weight
-  Memory Keeps, Loses, and Is For". Four acts: the store fails (accumulation is
+  Code and raw per-fact results for "An Index, Not a Store: The Model Does Remember —
+  It Just Needs Its Notebook" (v3). Five acts: the store fails (accumulation is
   re-instatement; paraphrase collapse; no savings); recognition survives
   cross-mechanism (EWC and a GRACE-style editor recall ~0 while recognizing most
   facts); truth must live in the log (error-gated consolidation retains ~2.1-2.2x

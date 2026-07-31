@@ -1,0 +1,1 @@
+{"base": 0.79, "adapter_acc": 0.8, "nll_base": 2.3929338455200195, "nll_adapter": 2.9268932342529297, "adapter": "accum_replay_Pmiss_MQwen359B_Dbf16_n384_pe24_s1234.pt"}

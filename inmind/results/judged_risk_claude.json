@@ -1,0 +1,16 @@
+{
+ "RISK_BB": {
+  "ia": 0.144,
+  "n": 125,
+  "ia_gold": 0.8,
+  "n_gold": 20,
+  "ia_nogold": 0.019
+ },
+ "RISK_AB": {
+  "ia": 0.144,
+  "n": 125,
+  "ia_gold": 0.789,
+  "n_gold": 19,
+  "ia_nogold": 0.028
+ }
+}

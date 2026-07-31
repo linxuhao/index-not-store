@@ -1,0 +1,98 @@
+{
+ "per_arm": {
+  "A1": {
+   "n_claude": 125,
+   "ia_claude": 0.08,
+   "ia_qwen": 0.064,
+   "agree": 0.984,
+   "kappa": 0.88,
+   "missing": [],
+   "ia_given_gold": 0.533,
+   "ia_no_gold": 0.018
+  },
+  "A3a4": {
+   "n_claude": 125,
+   "ia_claude": 0.096,
+   "ia_qwen": 0.064,
+   "agree": 0.968,
+   "kappa": 0.783,
+   "missing": [],
+   "ia_given_gold": 0.579,
+   "ia_no_gold": 0.009
+  },
+  "A3a16": {
+   "n_claude": 125,
+   "ia_claude": 0.136,
+   "ia_qwen": 0.113,
+   "agree": 0.968,
+   "kappa": 0.848,
+   "missing": [],
+   "ia_given_gold": 0.312,
+   "ia_no_gold": 0.026
+  },
+  "A3b": {
+   "n_claude": 125,
+   "ia_claude": 0.04,
+   "ia_qwen": 0.04,
+   "agree": 0.984,
+   "kappa": 0.792,
+   "missing": [],
+   "ia_given_gold": 1.0,
+   "ia_no_gold": 0.008
+  },
+  "A3c": {
+   "n_claude": 125,
+   "ia_claude": 0.136,
+   "ia_qwen": 0.064,
+   "agree": 0.928,
+   "kappa": 0.606,
+   "missing": [],
+   "ia_given_gold": 0.789,
+   "ia_no_gold": 0.019
+  },
+  "A4": {
+   "n_claude": 125,
+   "ia_claude": 0.8,
+   "ia_qwen": 0.592,
+   "agree": 0.728,
+   "kappa": 0.388,
+   "missing": []
+  },
+  "A5": {
+   "n_claude": 124,
+   "ia_claude": 0.258,
+   "ia_qwen": 0.2,
+   "agree": 0.944,
+   "kappa": 0.841,
+   "missing": [
+    211
+   ]
+  }
+ },
+ "sentinels": {
+  "A4-125": {
+   "qwen": 0,
+   "claude": 1
+  },
+  "A4-152": {
+   "qwen": 0,
+   "claude": 1
+  },
+  "A4-197": {
+   "qwen": 0,
+   "claude": 1
+  },
+  "A4-102": {
+   "qwen": 0,
+   "claude": 1
+  },
+  "A3a16-42": {
+   "qwen": 0,
+   "claude": 1
+  },
+  "A3a16-146": {
+   "qwen": 0,
+   "claude": 0
+  }
+ }
+}

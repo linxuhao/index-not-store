@@ -1,0 +1,257 @@
+{
+ "summary": {
+  "F1_n": 24,
+  "F1_hit": {
+   "t": 0.125,
+   "e": 1.0,
+   "a": 0.5
+  },
+  "F1_acc": {
+   "t": 0.041666666666666664,
+   "e": 0.375,
+   "a": 0.25
+  }
+ },
+ "rows": [
+  {
+   "t": "F1",
+   "fid": 0,
+   "hit_t": 1,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 2,
+   "hit_t": 1,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 3,
+   "hit_t": 1,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 1,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 4,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 5,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 1
+  },
+  {
+   "t": "F1",
+   "fid": 6,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 1
+  },
+  {
+   "t": "F1",
+   "fid": 7,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 1
+  },
+  {
+   "t": "F1",
+   "fid": 8,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 10,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 11,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 1
+  },
+  {
+   "t": "F1",
+   "fid": 12,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 13,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 14,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 17,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 1
+  },
+  {
+   "t": "F1",
+   "fid": 19,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 20,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 1
+  },
+  {
+   "t": "F1",
+   "fid": 21,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 22,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 23,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 24,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 25,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 27,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 28,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 1,
+   "acc_t": 0,
+   "acc_e": 0,
+   "acc_a": 0
+  },
+  {
+   "t": "F1",
+   "fid": 29,
+   "hit_t": 0,
+   "hit_e": 1,
+   "hit_a": 0,
+   "acc_t": 0,
+   "acc_e": 1,
+   "acc_a": 0
+  }
+ ]
+}
