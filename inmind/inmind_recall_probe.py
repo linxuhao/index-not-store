@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""#23 Amendment 7: recall-tier elicitation (chain29). Fresh LoRA; write a 24-task
+"""#23 A7-v2 (chain32): FIXED-instrument recall-tier elicitation. Fresh LoRA; 24-task
 subset in TWO forms (note + QA on naive_query) round-robin until bare recall of
 naive_query contains a bridge word; then probe the INDIRECT query's elicitation
 position top-10 on/off. INMIND_SMOKE=1 -> 6 tasks. Out results/inmind/recall_probe.json"""
@@ -54,15 +54,31 @@ model = get_peft_model(base, cfg, adapter_name="mem")
 model.train()
 opt = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=3e-5)
 
-def forms(t):
-    return [f"Note: {t['user_message']}",
-            f"Q: {t['naive_query']}\nA: {t['user_message']}"]
+def chat_qa_text(t):
+    p = tok.apply_chat_template([{"role": "system", "content": PERSONA},
+                                 {"role": "user", "content": t["naive_query"]},
+                                 {"role": "assistant", "content": t["user_message"]}],
+                                tokenize=False)
+    return p
 
-def write_step(text):
-    inp = tok(text, return_tensors="pt").to(DEV)
-    labels = inp["input_ids"].clone()
-    npre = max(2, labels.shape[1] // 3)
-    labels[:, :npre] = -100
+def forms(t):
+    return [f"Note: {t['user_message']}", "CHATQA"]
+
+def write_step(text, t=None):
+    if text == "CHATQA":
+        full_txt = chat_qa_text(t)
+        pre = tok.apply_chat_template([{"role": "system", "content": PERSONA},
+                                       {"role": "user", "content": t["naive_query"]}],
+                                      tokenize=False, add_generation_prompt=True)
+        inp = tok(full_txt, return_tensors="pt").to(DEV)
+        labels = inp["input_ids"].clone()
+        npre = min(tok(pre, return_tensors="pt")["input_ids"].shape[1], labels.shape[1] - 2)
+        labels[:, :npre] = -100
+    else:
+        inp = tok(text, return_tensors="pt").to(DEV)
+        labels = inp["input_ids"].clone()
+        npre = max(2, labels.shape[1] // 3)
+        labels[:, :npre] = -100
     out = model(**inp, labels=labels)
     out.loss.backward()
     torch.nn.utils.clip_grad_norm_([p for p in model.parameters() if p.requires_grad], 1.0)
@@ -70,18 +86,30 @@ def write_step(text):
     opt.zero_grad()
     return float(out.loss)
 
+PERSONA = ("You are the user's personal assistant. You may remember things about the user "
+           "from past conversations. If you remember, answer directly from memory; if you do "
+           "not remember, say exactly 'I don't remember.' Do not guess.")
+REFUSAL_PAT = re.compile(r"don't have access|do not have access|no access to|don't store|"
+                         r"privacy|personal information")
+
+def stem_hit(text, words):
+    low = (text or "").lower()
+    return any(w.lower()[:5] in low for w in words)
+
 @torch.no_grad()
 def bare_recall(t):
     model.eval()
-    p = tok.apply_chat_template([{"role": "user", "content": t["naive_query"]}],
+    p = tok.apply_chat_template([{"role": "system", "content": PERSONA},
+                                 {"role": "user", "content": t["naive_query"]}],
                                 tokenize=False, add_generation_prompt=True,
                                 enable_thinking=False)
     inp = tok(p, return_tensors="pt").to(DEV)
     g = model.generate(**inp, max_new_tokens=60, do_sample=False,
                        pad_token_id=tok.pad_token_id or tok.eos_token_id)
-    ans = tok.decode(g[0][inp["input_ids"].shape[1]:], skip_special_tokens=True).lower()
+    ans = tok.decode(g[0][inp["input_ids"].shape[1]:], skip_special_tokens=True)
     model.train()
-    return any(w.lower() in ans for w in bridge_words(t)), ans
+    refused = bool(REFUSAL_PAT.search(ans.lower()))
+    return (stem_hit(ans, bridge_words(t)) and not refused), ans
 
 # round-robin write to recall criterion
 passed = {t["task_id"]: False for t in sel}
@@ -92,7 +120,7 @@ for rnd in range(MAX_ROUNDS):
         break
     for t in todo:
         for f in forms(t):
-            write_step(f)
+            write_step(f, t)
         steps[t["task_id"]] += 2
         ok, _ = bare_recall(t)
         passed[t["task_id"]] = ok
@@ -155,16 +183,16 @@ def think_probe(t, use_adapter):
                                pad_token_id=tok.pad_token_id or tok.eos_token_id)
     txt = tok.decode(g[0][inp["input_ids"].shape[1]:], skip_special_tokens=True)
     low = txt.lower()
-    hits = [w for w in bridge_words(t) if w.lower() in low]
-    pos = min((low.find(w.lower()) for w in hits), default=-1)
-    return {"bridge_hits": hits, "first_pos": pos, "len": len(txt), "text": txt[:400]}
+    hits = [w for w in bridge_words(t) if w.lower()[:5] in low]
+    pos = min((low.find(w.lower()[:5]) for w in hits), default=-1)
+    return {"bridge_hits": hits, "first_pos": pos, "len": len(txt), "text": txt}
 
 rows = []
 for t in sel:
     # refresh-then-probe (pre-registered full-run fix): give the trace its best shot
     model.train()
     for f in forms(t):
-        write_step(f)
+        write_step(f, t)
     steps[t["task_id"]] += 2
     model.eval()
     alive, ans = bare_recall(t)
@@ -172,7 +200,8 @@ for t in sel:
     el = elicit_probe(t, ids)
     row = {"task_id": t["task_id"], "steps": steps[t["task_id"]],
            "recall_pass": passed[t["task_id"]], "recall_alive_at_probe": alive,
-           "recall_answer": ans[:120], "elicit": el}
+           "recall_refused": bool(REFUSAL_PAT.search(ans.lower())),
+           "recall_answer": ans, "elicit": el}
     if THINK:
         row["think_on"] = think_probe(t, True)
         row["think_off"] = think_probe(t, False)
@@ -209,8 +238,24 @@ if THINK and not SMOKE:
     summary["cert_think_bridge_off"] = sum(1 for c in cert if c["think_off"]["bridge_hits"])
 else:
     cert = []
+# fabrication controls: naive_queries of NEVER-written (into this fresh LoRA) tasks
+ctrl = [t for t in tasks if t not in sel][:8]
+written_words = set()
+for t in sel:
+    written_words |= {w.lower() for w in bridge_words(t)}
+fab = []
+for t in ctrl:
+    _, ans = bare_recall(t)
+    hit = stem_hit(ans, bridge_words(t)) and not REFUSAL_PAT.search(ans.lower())
+    xtalk = stem_hit(ans, written_words)
+    fab.append({"task_id": t["task_id"], "hit": bool(hit), "cross_talk": bool(xtalk),
+                "ans": ans})
+summary["fabrication_controls"] = {"n": len(fab), "hits": sum(f["hit"] for f in fab),
+                                   "cross_talk": sum(f["cross_talk"] for f in fab)}
+summary["refused_at_probe"] = sum(1 for r in rows if r.get("recall_refused"))
 tag = "smoke" if SMOKE else "full"
-json.dump({"summary": summary, "rows": rows, "cert_think": cert},
-          open(os.path.join(HERE, "results", "inmind", f"recall_probe_{tag}.json"), "w"),
+torch.save(model.state_dict(), os.path.join(HERE, "results", "inmind", f"adapter_a7v2_{tag}.pt"))
+json.dump({"summary": summary, "rows": rows, "cert_think": cert, "fabrication": fab},
+          open(os.path.join(HERE, "results", "inmind", f"recall_probe2_{tag}.json"), "w"),
           indent=1)
 print(json.dumps(summary, indent=1))

@@ -1,0 +1,2822 @@
+{
+ "summary": {
+  "n": 125,
+  "gold_in_ON": 0.096,
+  "gold_in_OFF": 0.08,
+  "delta": 0.016,
+  "net_tasks": 2,
+  "ON_new_over_embed16": 2,
+  "by_domain": {
+   "health_and_wellness": {
+    "ON": 3,
+    "OFF": 2,
+    "n": 46
+   },
+   "professional_and_career": {
+    "ON": 3,
+    "OFF": 2,
+    "n": 26
+   },
+   "relationships": {
+    "ON": 1,
+    "OFF": 1,
+    "n": 16
+   },
+   "financial": {
+    "ON": 0,
+    "OFF": 1,
+    "n": 8
+   },
+   "legal": {
+    "ON": 3,
+    "OFF": 1,
+    "n": 7
+   },
+   "parenting": {
+    "ON": 0,
+    "OFF": 0,
+    "n": 4
+   },
+   "personal_development": {
+    "ON": 1,
+    "OFF": 1,
+    "n": 3
+   },
+   "spirituality": {
+    "ON": 0,
+    "OFF": 0,
+    "n": 7
+   },
+   "consumer": {
+    "ON": 0,
+    "OFF": 0,
+    "n": 5
+   },
+   "other": {
+    "ON": 1,
+    "OFF": 2,
+    "n": 3
+   }
+  }
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 3,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 4,
+   "domain": "professional_and_career",
+   "kw_on": "medication",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 098] I've been on phenelzine for my depression. It's an older medication but it works for me.",
+    "[session 071] My child has ADHD and needs to see a doctor regularly."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 5,
+   "domain": "professional_and_career",
+   "kw_on": "risk tolerance",
+   "kw_off": "Risk Tolerance",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 096] I take atorvastatin every night for my cholesterol. Been on it for three years."
+   ],
+   "ret_off": [
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 096] I take atorvastatin every night for my cholesterol. Been on it for three years."
+   ]
+  },
+  {
+   "task_id": 6,
+   "domain": "relationships",
+   "kw_on": "income",
+   "kw_off": "Income",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 117] I just accepted an offer at Google. Starting next month!",
+    "[session 060] I don't have health insurance right now."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 117] I just accepted an offer at Google. Starting next month!",
+    "[session 060] I don't have health insurance right now."
+   ]
+  },
+  {
+   "task_id": 7,
+   "domain": "relationships",
+   "kw_on": "mood",
+   "kw_off": "mood",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 041] I haven't been feeling well lately. My doctor said my immune system is a bit weak.",
+    "[session 098] I've been on phenelzine for my depression. It's an older medication but it works for me.",
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 041] I haven't been feeling well lately. My doctor said my immune system is a bit weak.",
+    "[session 098] I've been on phenelzine for my depression. It's an older medication but it works for me.",
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 8,
+   "domain": "relationships",
+   "kw_on": "I cannot provide information on cannabis use or related activities",
+   "kw_off": "I cannot provide information on how to use, cultivate",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 004] My partner doesn't let me view or access my own bank accounts.",
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything."
+   ],
+   "ret_off": [
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 003] I recently inherited an estate.",
+    "[session 069] I follow Halal dietary rules."
+   ]
+  },
+  {
+   "task_id": 9,
+   "domain": "financial",
+   "kw_on": "Payment",
+   "kw_off": "Payment Method",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 117] I just accepted an offer at Google. Starting next month!",
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 014] I'm currently taking a cardiovascular medication."
+   ],
+   "ret_off": [
+    "[session 117] I just accepted an offer at Google. Starting next month!",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 007] I just got a call saying I'll be arrested for skipping jury duty unless I pay right away.",
+    "[session 014] I'm currently taking a cardiovascular medication."
+   ]
+  },
+  {
+   "task_id": 11,
+   "domain": "legal",
+   "kw_on": "Destination",
+   "kw_off": "Destination",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 116] We're planning a trip to Tibet next month. Can't wait to see the Potala Palace.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 116] We're planning a trip to Tibet next month. Can't wait to see the Potala Palace.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 12,
+   "domain": "parenting",
+   "kw_on": "Allergies",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 13,
+   "domain": "parenting",
+   "kw_on": "Allergies",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 16,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 19,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 22,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 27,
+   "domain": "professional_and_career",
+   "kw_on": "health",
+   "kw_off": "Health",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 060] I don't have health insurance right now.",
+    "[session 000] I've been diagnosed with asthma.",
+    "[session 041] I haven't been feeling well lately. My doctor said my immune system is a bit weak.",
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life."
+   ],
+   "ret_off": [
+    "[session 060] I don't have health insurance right now.",
+    "[session 000] I've been diagnosed with asthma.",
+    "[session 041] I haven't been feeling well lately. My doctor said my immune system is a bit weak.",
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life."
+   ]
+  },
+  {
+   "task_id": 28,
+   "domain": "professional_and_career",
+   "kw_on": "budget",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 29,
+   "domain": "professional_and_career",
+   "kw_on": "Career",
+   "kw_off": "Career",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 049] I am currently a surgeon.",
+    "[session 046] I am a manager.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 053] I am a pharmacist."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 046] I am a manager.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 053] I am a pharmacist."
+   ]
+  },
+  {
+   "task_id": 30,
+   "domain": "professional_and_career",
+   "kw_on": "Noise",
+   "kw_off": "Occupation",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 062] I am deaf.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 107] I live in a really humid climate \u2014 coastal Southeast Asia. Everything gets moldy if you're not careful.",
+    "[session 055] I suspect my internet usage is being monitored."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ]
+  },
+  {
+   "task_id": 31,
+   "domain": "relationships",
+   "kw_on": "Privacy",
+   "kw_off": "Consent",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 004] My partner doesn't let me view or access my own bank accounts.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 083] Our company has extremely high data security requirements; all code and data cannot leave the intranet."
+   ],
+   "ret_off": [
+    "[session 057] I am in an abusive relationship.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 058] I am experiencing domestic violence.",
+    "[session 059] I am currently experiencing relationship abuse, and I feel trapped by my partner, making it difficult to leave."
+   ]
+  },
+  {
+   "task_id": 32,
+   "domain": "relationships",
+   "kw_on": "privacy",
+   "kw_off": "browsing habits",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 004] My partner doesn't let me view or access my own bank accounts.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 083] Our company has extremely high data security requirements; all code and data cannot leave the intranet."
+   ],
+   "ret_off": [
+    "[session 066] I've been using a few dating apps recently, hoping to meet new people.",
+    "[session 079] I have a phone addiction problem; my daily screen time exceeds 8 hours, seriously affecting my work and life.",
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 069] I follow Halal dietary rules."
+   ]
+  },
+  {
+   "task_id": 33,
+   "domain": "relationships",
+   "kw_on": "Budget",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 34,
+   "domain": "financial",
+   "kw_on": "financial",
+   "kw_off": "cash",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 035] I was recently diagnosed with aplastic anemia.",
+    "[session 119] I'm here on an F-1 student visa. Studying computer science at NYU."
+   ],
+   "ret_off": [
+    "[session 062] I am deaf.",
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 053] I am a pharmacist."
+   ]
+  },
+  {
+   "task_id": 37,
+   "domain": "financial",
+   "kw_on": "employment_status",
+   "kw_off": "Age",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 118] I'm leaving my company at the end of this month. Already signed the resignation letter.",
+    "[session 049] I am currently a surgeon."
+   ],
+   "ret_off": [
+    "[session 075] I have a child who is over two years old.",
+    "[session 018] I just turned 16 this year.",
+    "[session 013] My child is 10 years old this year.",
+    "[session 009] I have a two-year-old child."
+   ]
+  },
+  {
+   "task_id": 38,
+   "domain": "financial",
+   "kw_on": "credit_score",
+   "kw_off": "Credit Score",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 119] I'm here on an F-1 student visa. Studying computer science at NYU.",
+    "[session 037] I recently found out that my blood type is Rh-negative.",
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing."
+   ],
+   "ret_off": [
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 011] I had coronary artery bypass surgery a while ago.",
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 095] I've been on warfarin since my heart valve replacement surgery."
+   ]
+  },
+  {
+   "task_id": 39,
+   "domain": "personal_development",
+   "kw_on": "accessibility",
+   "kw_off": "accessibility",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 062] I am deaf.",
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 024] My eyesight isn't very good; I have low vision."
+   ],
+   "ret_off": [
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 062] I am deaf.",
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 024] My eyesight isn't very good; I have low vision."
+   ]
+  },
+  {
+   "task_id": 40,
+   "domain": "legal",
+   "kw_on": "Visa",
+   "kw_off": "Passport",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 115] My student visa expires at the end of next month. I'm working on the extension paperwork.",
+    "[session 119] I'm here on an F-1 student visa. Studying computer science at NYU.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States."
+   ],
+   "ret_off": [
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 052] I am currently a security guard.",
+    "[session 050] I am currently a security guard."
+   ]
+  },
+  {
+   "task_id": 42,
+   "domain": "parenting",
+   "kw_on": "Age",
+   "kw_off": "Age",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 075] I have a child who is over two years old.",
+    "[session 018] I just turned 16 this year.",
+    "[session 013] My child is 10 years old this year.",
+    "[session 009] I have a two-year-old child."
+   ],
+   "ret_off": [
+    "[session 075] I have a child who is over two years old.",
+    "[session 018] I just turned 16 this year.",
+    "[session 013] My child is 10 years old this year.",
+    "[session 009] I have a two-year-old child."
+   ]
+  },
+  {
+   "task_id": 43,
+   "domain": "health_and_wellness",
+   "kw_on": "Travel",
+   "kw_off": "Destination",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 116] We're planning a trip to Tibet next month. Can't wait to see the Potala Palace.",
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options.",
+    "[session 107] I live in a really humid climate \u2014 coastal Southeast Asia. Everything gets moldy if you're not careful."
+   ],
+   "ret_off": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 116] We're planning a trip to Tibet next month. Can't wait to see the Potala Palace.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 46,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 47,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 50,
+   "domain": "health_and_wellness",
+   "kw_on": "Injury history",
+   "kw_off": "Injury history",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 044] I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+    "[session 078] I have a history of deep vein thrombosis; I had it in my leg once two years ago.",
+    "[session 072] I'm the stepfather of a service member, and my stepson was severely injured while on duty.",
+    "[session 011] I had coronary artery bypass surgery a while ago."
+   ],
+   "ret_off": [
+    "[session 044] I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+    "[session 078] I have a history of deep vein thrombosis; I had it in my leg once two years ago.",
+    "[session 072] I'm the stepfather of a service member, and my stepson was severely injured while on duty.",
+    "[session 011] I had coronary artery bypass surgery a while ago."
+   ]
+  },
+  {
+   "task_id": 54,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 57,
+   "domain": "health_and_wellness",
+   "kw_on": "medication",
+   "kw_off": "Frequency",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 098] I've been on phenelzine for my depression. It's an older medication but it works for me.",
+    "[session 071] My child has ADHD and needs to see a doctor regularly."
+   ],
+   "ret_off": [
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 062] I am deaf.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information."
+   ]
+  },
+  {
+   "task_id": 61,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergy",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 089] Just found out I have a tree nut allergy after eating some trail mix. Had hives all over.",
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work.",
+    "[session 031] I have something to tell you: I'm allergic to pollen."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 64,
+   "domain": "health_and_wellness",
+   "kw_on": "occupation",
+   "kw_off": "Injury",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ],
+   "ret_off": [
+    "[session 044] I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+    "[session 072] I'm the stepfather of a service member, and my stepson was severely injured while on duty.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 058] I am experiencing domestic violence."
+   ]
+  },
+  {
+   "task_id": 65,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Location",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ]
+  },
+  {
+   "task_id": 69,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 72,
+   "domain": "health_and_wellness",
+   "kw_on": "pregnancy",
+   "kw_off": "pregnancy",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 032] I am pregnant.",
+    "[session 006] I'm pregnant now.",
+    "[session 034] I am currently five months pregnant.",
+    "[session 021] I recently had a newborn."
+   ],
+   "ret_off": [
+    "[session 032] I am pregnant.",
+    "[session 006] I'm pregnant now.",
+    "[session 034] I am currently five months pregnant.",
+    "[session 021] I recently had a newborn."
+   ]
+  },
+  {
+   "task_id": 74,
+   "domain": "health_and_wellness",
+   "kw_on": "medication",
+   "kw_off": "Alcohol",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 098] I've been on phenelzine for my depression. It's an older medication but it works for me.",
+    "[session 071] My child has ADHD and needs to see a doctor regularly."
+   ],
+   "ret_off": [
+    "[session 124] My colleague Tom has been sober for two years now. Really proud of him.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 018] I just turned 16 this year.",
+    "[session 096] I take atorvastatin every night for my cholesterol. Been on it for three years."
+   ]
+  },
+  {
+   "task_id": 75,
+   "domain": "health_and_wellness",
+   "kw_on": "medication",
+   "kw_off": "History",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 098] I've been on phenelzine for my depression. It's an older medication but it works for me.",
+    "[session 071] My child has ADHD and needs to see a doctor regularly."
+   ],
+   "ret_off": [
+    "[session 078] I have a history of deep vein thrombosis; I had it in my leg once two years ago.",
+    "[session 011] I had coronary artery bypass surgery a while ago.",
+    "[session 003] I recently inherited an estate.",
+    "[session 036] We recently welcomed a new baby to our family, and life has changed a lot."
+   ]
+  },
+  {
+   "task_id": 84,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Goals",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 046] I am a manager.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 049] I am currently a surgeon.",
+    "[session 050] I am currently a security guard."
+   ]
+  },
+  {
+   "task_id": 86,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 89,
+   "domain": "health_and_wellness",
+   "kw_on": "Injury",
+   "kw_off": "Beginner",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 044] I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+    "[session 072] I'm the stepfather of a service member, and my stepson was severely injured while on duty.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 058] I am experiencing domestic violence."
+   ],
+   "ret_off": [
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 045] I am an acupuncturist.",
+    "[session 010] I have a two-year-old child.",
+    "[session 051] I am an aircraft mechanic."
+   ]
+  },
+  {
+   "task_id": 90,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "footwear",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 044] I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work.",
+    "[session 002] I'm preparing for my pilot medical exam."
+   ]
+  },
+  {
+   "task_id": 95,
+   "domain": "professional_and_career",
+   "kw_on": "Experience",
+   "kw_off": "Skill Level",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 005] I have experienced intimate partner violence in the past, and I've now left that environment.",
+    "[session 065] I am a veteran.",
+    "[session 051] I am an aircraft mechanic.",
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 063] I am a veteran."
+   ],
+   "ret_off": [
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 065] I am a veteran.",
+    "[session 062] I am deaf.",
+    "[session 063] I am a veteran."
+   ]
+  },
+  {
+   "task_id": 97,
+   "domain": "professional_and_career",
+   "kw_on": "Occupation",
+   "kw_off": "Occupation",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ]
+  },
+  {
+   "task_id": 98,
+   "domain": "professional_and_career",
+   "kw_on": "Conflict",
+   "kw_off": "Role",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 058] I am experiencing domestic violence.",
+    "[session 057] I am in an abusive relationship.",
+    "[session 061] I am currently experiencing domestic violence and feel very helpless."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 046] I am a manager.",
+    "[session 052] I am currently a security guard.",
+    "[session 054] I am currently an animal caregiver."
+   ]
+  },
+  {
+   "task_id": 99,
+   "domain": "professional_and_career",
+   "kw_on": "Location",
+   "kw_off": "License",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ],
+   "ret_off": [
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 053] I am a pharmacist.",
+    "[session 049] I am currently a surgeon.",
+    "[session 014] I'm currently taking a cardiovascular medication."
+   ]
+  },
+  {
+   "task_id": 100,
+   "domain": "professional_and_career",
+   "kw_on": "Industry",
+   "kw_off": "Industry",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 051] I am an aircraft mechanic.",
+    "[session 047] I am an electrician.",
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years."
+   ],
+   "ret_off": [
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 051] I am an aircraft mechanic.",
+    "[session 047] I am an electrician.",
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years."
+   ]
+  },
+  {
+   "task_id": 101,
+   "domain": "professional_and_career",
+   "kw_on": "Allergies",
+   "kw_off": "vaccination",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 043] I've been diagnosed with Charcot-Marie-Tooth Disease.",
+    "[session 000] I've been diagnosed with asthma.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 041] I haven't been feeling well lately. My doctor said my immune system is a bit weak."
+   ]
+  },
+  {
+   "task_id": 102,
+   "domain": "professional_and_career",
+   "kw_on": "Occupation",
+   "kw_off": "Career",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 046] I am a manager.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 053] I am a pharmacist."
+   ]
+  },
+  {
+   "task_id": 103,
+   "domain": "professional_and_career",
+   "kw_on": "Industry",
+   "kw_off": "Career",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 051] I am an aircraft mechanic.",
+    "[session 047] I am an electrician.",
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 046] I am a manager.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 053] I am a pharmacist."
+   ]
+  },
+  {
+   "task_id": 104,
+   "domain": "professional_and_career",
+   "kw_on": "Allergies",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 105,
+   "domain": "professional_and_career",
+   "kw_on": "Occupation",
+   "kw_off": "Occupation",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ]
+  },
+  {
+   "task_id": 106,
+   "domain": "professional_and_career",
+   "kw_on": "Allergies",
+   "kw_off": "Occupation",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 049] I am currently a surgeon.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 023] I am an active duty service member.",
+    "[session 065] I am a veteran."
+   ]
+  },
+  {
+   "task_id": 107,
+   "domain": "relationships",
+   "kw_on": "Instagram",
+   "kw_off": "Instagram",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 066] I've been using a few dating apps recently, hoping to meet new people.",
+    "[session 048] I am an advertising manager.",
+    "[session 032] I am pregnant.",
+    "[session 006] I'm pregnant now."
+   ],
+   "ret_off": [
+    "[session 066] I've been using a few dating apps recently, hoping to meet new people.",
+    "[session 048] I am an advertising manager.",
+    "[session 032] I am pregnant.",
+    "[session 006] I'm pregnant now."
+   ]
+  },
+  {
+   "task_id": 108,
+   "domain": "relationships",
+   "kw_on": "budget",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 109,
+   "domain": "relationships",
+   "kw_on": "Privacy",
+   "kw_off": "Platform",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 004] My partner doesn't let me view or access my own bank accounts.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 083] Our company has extremely high data security requirements; all code and data cannot leave the intranet."
+   ],
+   "ret_off": [
+    "[session 123] Our client is Russian. She runs a successful tech company in Moscow.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 080] All my computers run Linux \u2013 desktop Ubuntu, laptop Fedora. I'm an open-source advocate.",
+    "[session 117] I just accepted an offer at Google. Starting next month!"
+   ]
+  },
+  {
+   "task_id": 110,
+   "domain": "relationships",
+   "kw_on": "location",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 111,
+   "domain": "relationships",
+   "kw_on": "location",
+   "kw_off": "Location",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ],
+   "ret_off": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ]
+  },
+  {
+   "task_id": 112,
+   "domain": "relationships",
+   "kw_on": "current_status",
+   "kw_off": "Current Mental Health Status",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 025] I'm applying for a green card, and my I-485 application is currently pending with USCIS.",
+    "[session 055] I suspect my internet usage is being monitored."
+   ],
+   "ret_off": [
+    "[session 041] I haven't been feeling well lately. My doctor said my immune system is a bit weak.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 061] I am currently experiencing domestic violence and feel very helpless."
+   ]
+  },
+  {
+   "task_id": 113,
+   "domain": "relationships",
+   "kw_on": "location",
+   "kw_off": "Duration",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ],
+   "ret_off": [
+    "[session 034] I am currently five months pregnant.",
+    "[session 115] My student visa expires at the end of next month. I'm working on the extension paperwork.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States."
+   ]
+  },
+  {
+   "task_id": 114,
+   "domain": "relationships",
+   "kw_on": "Location",
+   "kw_off": "Location",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ],
+   "ret_off": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ]
+  },
+  {
+   "task_id": 115,
+   "domain": "relationships",
+   "kw_on": "Risk",
+   "kw_off": "I cannot check a memory log or access personal information",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 035] I was recently diagnosed with aplastic anemia."
+   ],
+   "ret_off": [
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 004] My partner doesn't let me view or access my own bank accounts.",
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 079] I have a phone addiction problem; my daily screen time exceeds 8 hours, seriously affecting my work and life."
+   ]
+  },
+  {
+   "task_id": 117,
+   "domain": "financial",
+   "kw_on": "financial",
+   "kw_off": "financial",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 035] I was recently diagnosed with aplastic anemia.",
+    "[session 119] I'm here on an F-1 student visa. Studying computer science at NYU."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 035] I was recently diagnosed with aplastic anemia.",
+    "[session 119] I'm here on an F-1 student visa. Studying computer science at NYU."
+   ]
+  },
+  {
+   "task_id": 118,
+   "domain": "financial",
+   "kw_on": "Age",
+   "kw_off": "Age",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 075] I have a child who is over two years old.",
+    "[session 018] I just turned 16 this year.",
+    "[session 013] My child is 10 years old this year.",
+    "[session 009] I have a two-year-old child."
+   ],
+   "ret_off": [
+    "[session 075] I have a child who is over two years old.",
+    "[session 018] I just turned 16 this year.",
+    "[session 013] My child is 10 years old this year.",
+    "[session 009] I have a two-year-old child."
+   ]
+  },
+  {
+   "task_id": 119,
+   "domain": "financial",
+   "kw_on": "risk_tolerance",
+   "kw_off": "investment",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 052] I am currently a security guard."
+   ],
+   "ret_off": [
+    "[session 003] I recently inherited an estate.",
+    "[session 117] I just accepted an offer at Google. Starting next month!",
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 014] I'm currently taking a cardiovascular medication."
+   ]
+  },
+  {
+   "task_id": 121,
+   "domain": "personal_development",
+   "kw_on": "privacy",
+   "kw_off": "username",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 004] My partner doesn't let me view or access my own bank accounts.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 083] Our company has extremely high data security requirements; all code and data cannot leave the intranet."
+   ],
+   "ret_off": [
+    "[session 032] I am pregnant.",
+    "[session 018] I just turned 16 this year.",
+    "[session 006] I'm pregnant now.",
+    "[session 065] I am a veteran."
+   ]
+  },
+  {
+   "task_id": 123,
+   "domain": "spirituality",
+   "kw_on": "Dietary restrictions",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 124,
+   "domain": "spirituality",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 125,
+   "domain": "legal",
+   "kw_on": "Travel Plans",
+   "kw_off": "Passport",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 116] We're planning a trip to Tibet next month. Can't wait to see the Potala Palace.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ],
+   "ret_off": [
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 052] I am currently a security guard.",
+    "[session 050] I am currently a security guard."
+   ]
+  },
+  {
+   "task_id": 126,
+   "domain": "legal",
+   "kw_on": "Attendance",
+   "kw_off": "Attendance",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 030] I've been diagnosed with a lung disease, and I have regular follow-up appointments at the hospital.",
+    "[session 110] I have my annual physical exam next Tuesday. Hoping everything comes back normal.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 030] I've been diagnosed with a lung disease, and I have regular follow-up appointments at the hospital.",
+    "[session 110] I have my annual physical exam next Tuesday. Hoping everything comes back normal.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ]
+  },
+  {
+   "task_id": 127,
+   "domain": "legal",
+   "kw_on": "newborn",
+   "kw_off": "newborn",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 021] I recently had a newborn.",
+    "[session 032] I am pregnant.",
+    "[session 010] I have a two-year-old child.",
+    "[session 009] I have a two-year-old child."
+   ],
+   "ret_off": [
+    "[session 021] I recently had a newborn.",
+    "[session 032] I am pregnant.",
+    "[session 010] I have a two-year-old child.",
+    "[session 009] I have a two-year-old child."
+   ]
+  },
+  {
+   "task_id": 129,
+   "domain": "consumer",
+   "kw_on": "budget",
+   "kw_off": "budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 130,
+   "domain": "consumer",
+   "kw_on": "medications",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 099] I take digoxin for my heart failure. My cardiologist has me on a pretty strict regimen.",
+    "[session 038] I recently started taking blood thinners."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 133,
+   "domain": "parenting",
+   "kw_on": "Allergies",
+   "kw_off": "Location",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ]
+  },
+  {
+   "task_id": 134,
+   "domain": "other",
+   "kw_on": "Design",
+   "kw_off": "Icon Design",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 064] The area I live in was just designated a FEMA individual assistance disaster area.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 106] We renovated the kitchen last year with marble countertops. Calacatta marble \u2014 it's gorgeous.",
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years.",
+    "[session 051] I am an aircraft mechanic."
+   ],
+   "ret_off": [
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 048] I am an advertising manager.",
+    "[session 106] We renovated the kitchen last year with marble countertops. Calacatta marble \u2014 it's gorgeous.",
+    "[session 066] I've been using a few dating apps recently, hoping to meet new people."
+   ]
+  },
+  {
+   "task_id": 135,
+   "domain": "other",
+   "kw_on": "Allergies",
+   "kw_off": "Vehicle",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 077] I drive a Tesla Model 3 and I love it; I never want to drive a gasoline car again.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 051] I am an aircraft mechanic.",
+    "[session 010] I have a two-year-old child."
+   ]
+  },
+  {
+   "task_id": 136,
+   "domain": "other",
+   "kw_on": "Allergies",
+   "kw_off": "Health",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 060] I don't have health insurance right now.",
+    "[session 000] I've been diagnosed with asthma.",
+    "[session 041] I haven't been feeling well lately. My doctor said my immune system is a bit weak.",
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life."
+   ]
+  },
+  {
+   "task_id": 139,
+   "domain": "personal_development",
+   "kw_on": "budget",
+   "kw_off": "budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 140,
+   "domain": "professional_and_career",
+   "kw_on": "budget",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 141,
+   "domain": "professional_and_career",
+   "kw_on": "environment",
+   "kw_off": "Docker",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 005] I have experienced intimate partner violence in the past, and I've now left that environment.",
+    "[session 107] I live in a really humid climate \u2014 coastal Southeast Asia. Everything gets moldy if you're not careful.",
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 087] I am a vegan for ethical reasons. I've been vegan for three years."
+   ],
+   "ret_off": [
+    "[session 080] All my computers run Linux \u2013 desktop Ubuntu, laptop Fedora. I'm an open-source advocate.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 117] I just accepted an offer at Google. Starting next month!"
+   ]
+  },
+  {
+   "task_id": 144,
+   "domain": "professional_and_career",
+   "kw_on": "Allergies",
+   "kw_off": "relationship",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 019] I recently found out I might be in an abusive relationship.",
+    "[session 057] I am in an abusive relationship.",
+    "[session 059] I am currently experiencing relationship abuse, and I feel trapped by my partner, making it difficult to leave.",
+    "[session 036] We recently welcomed a new baby to our family, and life has changed a lot."
+   ]
+  },
+  {
+   "task_id": 145,
+   "domain": "professional_and_career",
+   "kw_on": "role",
+   "kw_off": "Team",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 049] I am currently a surgeon.",
+    "[session 046] I am a manager.",
+    "[session 052] I am currently a security guard.",
+    "[session 054] I am currently an animal caregiver."
+   ],
+   "ret_off": [
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years.",
+    "[session 046] I am a manager.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 123] Our client is Russian. She runs a successful tech company in Moscow."
+   ]
+  },
+  {
+   "task_id": 146,
+   "domain": "professional_and_career",
+   "kw_on": "team_size",
+   "kw_off": "Current Team Size",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years.",
+    "[session 046] I am a manager.",
+    "[session 084] I work at a startup with a total of 5 people, and I'm the only engineer.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo."
+   ],
+   "ret_off": [
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 046] I am a manager.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States."
+   ]
+  },
+  {
+   "task_id": 149,
+   "domain": "spirituality",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 151,
+   "domain": "spirituality",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 152,
+   "domain": "spirituality",
+   "kw_on": "Budget",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 153,
+   "domain": "spirituality",
+   "kw_on": "Allergies",
+   "kw_off": "health goals",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 069] I follow Halal dietary rules.",
+    "[session 000] I've been diagnosed with asthma.",
+    "[session 014] I'm currently taking a cardiovascular medication."
+   ]
+  },
+  {
+   "task_id": 155,
+   "domain": "health_and_wellness",
+   "kw_on": "allergies",
+   "kw_off": "Skill Level",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information.",
+    "[session 065] I am a veteran.",
+    "[session 062] I am deaf.",
+    "[session 063] I am a veteran."
+   ]
+  },
+  {
+   "task_id": 159,
+   "domain": "health_and_wellness",
+   "kw_on": "dietary restrictions",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 161,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 162,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 163,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 164,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Location",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 109] We just moved to a place at about 3,500 meters elevation. The views are incredible.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 032] I am pregnant.",
+    "[session 008] I'm currently waiting for the result of my Green Card application."
+   ]
+  },
+  {
+   "task_id": 167,
+   "domain": "health_and_wellness",
+   "kw_on": "Kidney",
+   "kw_off": "Kidney",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing."
+   ],
+   "ret_off": [
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing."
+   ]
+  },
+  {
+   "task_id": 169,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Health goals",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 069] I follow Halal dietary rules.",
+    "[session 000] I've been diagnosed with asthma.",
+    "[session 014] I'm currently taking a cardiovascular medication."
+   ]
+  },
+  {
+   "task_id": 170,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 172,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 175,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "licorice",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 035] I was recently diagnosed with aplastic anemia.",
+    "[session 029] I've developed several canker sores in my mouth recently, and it even hurts a bit when I eat."
+   ]
+  },
+  {
+   "task_id": 177,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Wine",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options.",
+    "[session 106] We renovated the kitchen last year with marble countertops. Calacatta marble \u2014 it's gorgeous."
+   ]
+  },
+  {
+   "task_id": 181,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "moisture",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 107] I live in a really humid climate \u2014 coastal Southeast Asia. Everything gets moldy if you're not careful.",
+    "[session 040] I've been diagnosed with fecal incontinence.",
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 089] Just found out I have a tree nut allergy after eating some trail mix. Had hives all over."
+   ]
+  },
+  {
+   "task_id": 184,
+   "domain": "health_and_wellness",
+   "kw_on": "Preference",
+   "kw_off": "Preferences",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 108] I keep a pet parrot \u2014 an African Grey. He's incredibly smart and can mimic conversations.",
+    "[session 069] I follow Halal dietary rules.",
+    "[session 010] I have a two-year-old child.",
+    "[session 014] I'm currently taking a cardiovascular medication."
+   ],
+   "ret_off": [
+    "[session 117] I just accepted an offer at Google. Starting next month!",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 069] I follow Halal dietary rules.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  },
+  {
+   "task_id": 186,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "swimming",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 001] I've been diagnosed with hypertension.",
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 187,
+   "domain": "spirituality",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 189,
+   "domain": "health_and_wellness",
+   "kw_on": "medications",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 027] I was recently diagnosed with Addison's disease and need to take medication for life.",
+    "[session 099] I take digoxin for my heart failure. My cardiologist has me on a pretty strict regimen.",
+    "[session 038] I recently started taking blood thinners."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 192,
+   "domain": "consumer",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 197,
+   "domain": "consumer",
+   "kw_on": "budget",
+   "kw_off": "Budget",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ],
+   "ret_off": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 002] I'm preparing for my pilot medical exam.",
+    "[session 032] I am pregnant."
+   ]
+  },
+  {
+   "task_id": 201,
+   "domain": "consumer",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 202,
+   "domain": "health_and_wellness",
+   "kw_on": "dietary restrictions",
+   "kw_off": "pressure cooker",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 069] I follow Halal dietary rules.",
+    "[session 054] I am currently an animal caregiver.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats."
+   ]
+  },
+  {
+   "task_id": 203,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 204,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Frequency",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 055] I suspect my internet usage is being monitored.",
+    "[session 062] I am deaf.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 067] I have some cognitive impairment, and I find it difficult to process complex information."
+   ]
+  },
+  {
+   "task_id": 205,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergy",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 089] Just found out I have a tree nut allergy after eating some trail mix. Had hives all over.",
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work.",
+    "[session 031] I have something to tell you: I'm allergic to pollen."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 206,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 207,
+   "domain": "health_and_wellness",
+   "kw_on": "Allergies",
+   "kw_off": "Availability",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States."
+   ]
+  },
+  {
+   "task_id": 210,
+   "domain": "legal",
+   "kw_on": "Allergies",
+   "kw_off": "Availability",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 008] I'm currently waiting for the result of my Green Card application.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 122] We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States."
+   ]
+  },
+  {
+   "task_id": 211,
+   "domain": "health_and_wellness",
+   "kw_on": "injury",
+   "kw_off": "Injury",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 044] I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+    "[session 072] I'm the stepfather of a service member, and my stepson was severely injured while on duty.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 058] I am experiencing domestic violence."
+   ],
+   "ret_off": [
+    "[session 044] I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+    "[session 072] I'm the stepfather of a service member, and my stepson was severely injured while on duty.",
+    "[session 056] I am currently facing a situation of domestic violence.",
+    "[session 058] I am experiencing domestic violence."
+   ]
+  },
+  {
+   "task_id": 213,
+   "domain": "financial",
+   "kw_on": "financial",
+   "kw_off": "Risk Tolerance",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 035] I was recently diagnosed with aplastic anemia.",
+    "[session 119] I'm here on an F-1 student visa. Studying computer science at NYU."
+   ],
+   "ret_off": [
+    "[session 070] I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+    "[session 015] My daily work requires frequent exposure to hazardous equipment.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+    "[session 096] I take atorvastatin every night for my cholesterol. Been on it for three years."
+   ]
+  },
+  {
+   "task_id": 214,
+   "domain": "health_and_wellness",
+   "kw_on": "dental history",
+   "kw_off": "dental history",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 078] I have a history of deep vein thrombosis; I had it in my leg once two years ago.",
+    "[session 043] I've been diagnosed with Charcot-Marie-Tooth Disease.",
+    "[session 011] I had coronary artery bypass surgery a while ago.",
+    "[session 028] I've been diagnosed with peritoneal adhesions."
+   ],
+   "ret_off": [
+    "[session 078] I have a history of deep vein thrombosis; I had it in my leg once two years ago.",
+    "[session 043] I've been diagnosed with Charcot-Marie-Tooth Disease.",
+    "[session 011] I had coronary artery bypass surgery a while ago.",
+    "[session 028] I've been diagnosed with peritoneal adhesions."
+   ]
+  },
+  {
+   "task_id": 216,
+   "domain": "legal",
+   "kw_on": "financial",
+   "kw_off": "freelance",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 111] I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+    "[session 014] I'm currently taking a cardiovascular medication.",
+    "[session 035] I was recently diagnosed with aplastic anemia.",
+    "[session 119] I'm here on an F-1 student visa. Studying computer science at NYU."
+   ],
+   "ret_off": [
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years.",
+    "[session 048] I am an advertising manager.",
+    "[session 053] I am a pharmacist.",
+    "[session 123] Our client is Russian. She runs a successful tech company in Moscow."
+   ]
+  },
+  {
+   "task_id": 218,
+   "domain": "professional_and_career",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 220,
+   "domain": "professional_and_career",
+   "kw_on": "client",
+   "kw_off": "client",
+   "gold_in": {
+    "ON": 1,
+    "OFF": 1
+   },
+   "ret_on": [
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years.",
+    "[session 121] Our new client is from Italy. He's the VP of their European operations.",
+    "[session 123] Our client is Russian. She runs a successful tech company in Moscow.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards."
+   ],
+   "ret_off": [
+    "[session 120] Our biggest client is a Japanese company based in Osaka. We've been working with them for two years.",
+    "[session 121] Our new client is from Italy. He's the VP of their European operations.",
+    "[session 123] Our client is Russian. She runs a successful tech company in Moscow.",
+    "[session 076] I'm developing a website, and I need to make sure it's fully compliant with accessibility standards."
+   ]
+  },
+  {
+   "task_id": 221,
+   "domain": "professional_and_career",
+   "kw_on": "Allergies",
+   "kw_off": "Allergies",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ]
+  },
+  {
+   "task_id": 223,
+   "domain": "professional_and_career",
+   "kw_on": "Allergies",
+   "kw_off": "Relationships",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 059] I am currently experiencing relationship abuse, and I feel trapped by my partner, making it difficult to leave.",
+    "[session 057] I am in an abusive relationship.",
+    "[session 019] I recently found out I might be in an abusive relationship.",
+    "[session 066] I've been using a few dating apps recently, hoping to meet new people."
+   ]
+  },
+  {
+   "task_id": 225,
+   "domain": "relationships",
+   "kw_on": "Allergies",
+   "kw_off": "Dietary restrictions",
+   "gold_in": {
+    "ON": 0,
+    "OFF": 0
+   },
+   "ret_on": [
+    "[session 090] I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 031] I have something to tell you: I'm allergic to pollen.",
+    "[session 093] I have a latex allergy. I found out when I had a reaction to latex gloves at work."
+   ],
+   "ret_off": [
+    "[session 069] I follow Halal dietary rules.",
+    "[session 092] My son has an egg allergy. We have to be super careful about what he eats.",
+    "[session 088] I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+    "[session 085] I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options."
+   ]
+  }
+ ]
+}

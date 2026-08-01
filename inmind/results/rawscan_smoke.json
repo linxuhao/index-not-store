@@ -1,0 +1,131 @@
+{
+ "task_id": 155,
+ "gold_rank": {
+  "base_only": 95,
+  "base_plus_lora": 63,
+  "dlp": 27
+ },
+ "top5_base_only": [
+  [
+   25,
+   "[session 025] I'm applying for a green card, and my I-485 ap"
+  ],
+  [
+   70,
+   "[session 070] I am currently a Temporary Protected Status (T"
+  ],
+  [
+   92,
+   "[session 092] My son has an egg allergy. We have to be super"
+  ],
+  [
+   45,
+   "[session 045] I am an acupuncturist."
+  ],
+  [
+   87,
+   "[session 087] I am a vegan for ethical reasons. I've been ve"
+  ]
+ ],
+ "top5_base_plus_lora": [
+  [
+   93,
+   "[session 093] I have a latex allergy. I found out when I had"
+  ],
+  [
+   42,
+   "[session 042] I've been diagnosed with a cerebellar disease."
+  ],
+  [
+   40,
+   "[session 040] I've been diagnosed with fecal incontinence."
+  ],
+  [
+   16,
+   "[session 016] I've been diagnosed with tenosynovitis, and my"
+  ],
+  [
+   30,
+   "[session 030] I've been diagnosed with a lung disease, and I"
+  ]
+ ],
+ "top5_dlp": [
+  [
+   3,
+   "[session 003] I recently inherited an estate."
+  ],
+  [
+   6,
+   "[session 006] I'm pregnant now."
+  ],
+  [
+   33,
+   "[session 033] I work on a ranch every day, constantly around"
+  ],
+  [
+   2,
+   "[session 002] I'm preparing for my pilot medical exam."
+  ],
+  [
+   42,
+   "[session 042] I've been diagnosed with a cerebellar disease."
+  ]
+ ],
+ "top100_bridge_hits": {
+  "base_plus_lora": [
+   " All",
+   " Some",
+   " Just"
+  ],
+  "base_only": [
+   " All",
+   " Some"
+  ]
+ },
+ "top20_tokens": {
+  "base_plus_lora": [
+   " I",
+   " \"",
+   " *",
+   " The",
+   " **",
+   " User",
+   " My",
+   " ",
+   "\n",
+   " `",
+   " You",
+   " This",
+   " Making",
+   " '",
+   " <",
+   " *\"",
+   " **\"",
+   "\n\n",
+   " [",
+   " For"
+  ],
+  "base_only": [
+   " \"",
+   " **",
+   " The",
+   " *",
+   "\n",
+   " I",
+   " ",
+   " Relevant",
+   " User",
+   " '",
+   "\n\n",
+   " [",
+   " `",
+   " A",
+   " This",
+   " user",
+   " Making",
+   " For",
+   " There",
+   " **\""
+  ]
+ }
+}
