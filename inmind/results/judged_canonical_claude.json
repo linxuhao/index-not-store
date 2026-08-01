@@ -1,0 +1,26 @@
+{
+ "C_A1": {
+  "n": 125,
+  "IA": 0.0,
+  "gold_in": 0.016,
+  "IA|gold": 0.0,
+  "n_gold": 2,
+  "IA|nogold": 0.0
+ },
+ "C_FZ": {
+  "n": 125,
+  "IA": 0.04,
+  "gold_in": 0.056,
+  "IA|gold": 0.714,
+  "n_gold": 7,
+  "IA|nogold": 0.0
+ },
+ "C_KW": {
+  "n": 125,
+  "IA": 0.144,
+  "gold_in": 0.152,
+  "IA|gold": 0.947,
+  "n_gold": 19,
+  "IA|nogold": 0.0
+ }
+}

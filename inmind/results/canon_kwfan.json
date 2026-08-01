@@ -1,0 +1,896 @@
+{
+ "summary": {
+  "n": 125,
+  "C_KW": {
+   "gold_in@4": 0.128,
+   "gold_in@6": 0.152,
+   "gold_in@16": 0.248
+  },
+  "C_FAN": {
+   "gold_in@4": 0.08,
+   "gold_in@6": 0.08,
+   "gold_in@16": 0.168
+  },
+  "median_rank": {
+   "kw": 73,
+   "fan": 75
+  }
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "kw": "Allergies",
+   "rank_kw": 1,
+   "rank_fan": 3,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 3,
+   "kw": "Allergies",
+   "rank_kw": 9,
+   "rank_fan": 20,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 4,
+   "kw": "Allergies",
+   "rank_kw": 53,
+   "rank_fan": 12,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 5,
+   "kw": "Risk Tolerance",
+   "rank_kw": 73,
+   "rank_fan": 17,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 6,
+   "kw": "Income",
+   "rank_kw": 59,
+   "rank_fan": 38,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 7,
+   "kw": "mood",
+   "rank_kw": 214,
+   "rank_fan": 210,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 8,
+   "kw": "I cannot provide information o",
+   "rank_kw": 198,
+   "rank_fan": 166,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 9,
+   "kw": "Payment Method",
+   "rank_kw": 40,
+   "rank_fan": 148,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 11,
+   "kw": "Destination",
+   "rank_kw": 17,
+   "rank_fan": 30,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 12,
+   "kw": "Dietary restrictions",
+   "rank_kw": 96,
+   "rank_fan": 237,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 13,
+   "kw": "Dietary restrictions",
+   "rank_kw": 96,
+   "rank_fan": 229,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 16,
+   "kw": "Allergies",
+   "rank_kw": 148,
+   "rank_fan": 54,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 19,
+   "kw": "Allergies",
+   "rank_kw": 20,
+   "rank_fan": 219,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 22,
+   "kw": "Allergies",
+   "rank_kw": 11,
+   "rank_fan": 159,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 27,
+   "kw": "Health",
+   "rank_kw": 1,
+   "rank_fan": 18,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 28,
+   "kw": "Budget",
+   "rank_kw": 152,
+   "rank_fan": 7,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 29,
+   "kw": "Career",
+   "rank_kw": 174,
+   "rank_fan": 162,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 30,
+   "kw": "Occupation",
+   "rank_kw": 1,
+   "rank_fan": 59,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 31,
+   "kw": "Consent",
+   "rank_kw": 204,
+   "rank_fan": 240,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 32,
+   "kw": "browsing habits",
+   "rank_kw": 173,
+   "rank_fan": 167,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 33,
+   "kw": "Budget",
+   "rank_kw": 150,
+   "rank_fan": 239,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 34,
+   "kw": "cash",
+   "rank_kw": 114,
+   "rank_fan": 59,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 37,
+   "kw": "Age",
+   "rank_kw": 241,
+   "rank_fan": 212,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 38,
+   "kw": "Credit Score",
+   "rank_kw": 126,
+   "rank_fan": 205,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 39,
+   "kw": "accessibility",
+   "rank_kw": 18,
+   "rank_fan": 8,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 40,
+   "kw": "Passport",
+   "rank_kw": 28,
+   "rank_fan": 60,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 42,
+   "kw": "Age",
+   "rank_kw": 2,
+   "rank_fan": 15,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 43,
+   "kw": "Destination",
+   "rank_kw": 107,
+   "rank_fan": 36,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 46,
+   "kw": "Dietary restrictions",
+   "rank_kw": 56,
+   "rank_fan": 74,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 47,
+   "kw": "Allergies",
+   "rank_kw": 1,
+   "rank_fan": 14,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 50,
+   "kw": "Injury history",
+   "rank_kw": 93,
+   "rank_fan": 61,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 54,
+   "kw": "Allergies",
+   "rank_kw": 1,
+   "rank_fan": 3,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 57,
+   "kw": "Frequency",
+   "rank_kw": 35,
+   "rank_fan": 34,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 61,
+   "kw": "Allergies",
+   "rank_kw": 213,
+   "rank_fan": 241,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 64,
+   "kw": "Injury",
+   "rank_kw": 41,
+   "rank_fan": 142,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 65,
+   "kw": "Location",
+   "rank_kw": 95,
+   "rank_fan": 117,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 69,
+   "kw": "Allergies",
+   "rank_kw": 97,
+   "rank_fan": 9,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 72,
+   "kw": "pregnancy",
+   "rank_kw": 6,
+   "rank_fan": 90,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 74,
+   "kw": "Alcohol",
+   "rank_kw": 1,
+   "rank_fan": 51,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 75,
+   "kw": "History",
+   "rank_kw": 168,
+   "rank_fan": 79,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 84,
+   "kw": "Goals",
+   "rank_kw": 65,
+   "rank_fan": 82,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 86,
+   "kw": "Allergies",
+   "rank_kw": 2,
+   "rank_fan": 30,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 89,
+   "kw": "Beginner",
+   "rank_kw": 130,
+   "rank_fan": 85,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 90,
+   "kw": "footwear",
+   "rank_kw": 141,
+   "rank_fan": 55,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 95,
+   "kw": "Skill Level",
+   "rank_kw": 85,
+   "rank_fan": 36,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 97,
+   "kw": "Occupation",
+   "rank_kw": 1,
+   "rank_fan": 33,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 98,
+   "kw": "Role",
+   "rank_kw": 1,
+   "rank_fan": 23,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 99,
+   "kw": "License",
+   "rank_kw": 72,
+   "rank_fan": 39,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 100,
+   "kw": "Industry",
+   "rank_kw": 9,
+   "rank_fan": 91,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 101,
+   "kw": "vaccination",
+   "rank_kw": 8,
+   "rank_fan": 46,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 102,
+   "kw": "Career",
+   "rank_kw": 14,
+   "rank_fan": 50,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 103,
+   "kw": "Career",
+   "rank_kw": 12,
+   "rank_fan": 32,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 104,
+   "kw": "Budget",
+   "rank_kw": 222,
+   "rank_fan": 199,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 105,
+   "kw": "Occupation",
+   "rank_kw": 1,
+   "rank_fan": 21,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 106,
+   "kw": "Occupation",
+   "rank_kw": 1,
+   "rank_fan": 110,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 107,
+   "kw": "Instagram",
+   "rank_kw": 56,
+   "rank_fan": 81,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 108,
+   "kw": "Budget",
+   "rank_kw": 22,
+   "rank_fan": 66,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 109,
+   "kw": "Platform",
+   "rank_kw": 98,
+   "rank_fan": 94,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 110,
+   "kw": "Budget",
+   "rank_kw": 73,
+   "rank_fan": 82,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 111,
+   "kw": "Location",
+   "rank_kw": 155,
+   "rank_fan": 122,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 112,
+   "kw": "Current Mental Health Status",
+   "rank_kw": 6,
+   "rank_fan": 1,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 113,
+   "kw": "Duration",
+   "rank_kw": 118,
+   "rank_fan": 50,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 114,
+   "kw": "Location",
+   "rank_kw": 58,
+   "rank_fan": 30,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 115,
+   "kw": "I cannot check a memory log or",
+   "rank_kw": 90,
+   "rank_fan": 230,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 117,
+   "kw": "financial",
+   "rank_kw": 217,
+   "rank_fan": 62,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 118,
+   "kw": "Age",
+   "rank_kw": 96,
+   "rank_fan": 176,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 119,
+   "kw": "investment",
+   "rank_kw": 239,
+   "rank_fan": 122,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 121,
+   "kw": "username",
+   "rank_kw": 153,
+   "rank_fan": 141,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 123,
+   "kw": "Dietary restrictions",
+   "rank_kw": 96,
+   "rank_fan": 128,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 124,
+   "kw": "Allergies",
+   "rank_kw": 36,
+   "rank_fan": 24,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 125,
+   "kw": "Passport",
+   "rank_kw": 23,
+   "rank_fan": 55,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 126,
+   "kw": "Attendance",
+   "rank_kw": 20,
+   "rank_fan": 25,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 127,
+   "kw": "newborn",
+   "rank_kw": 49,
+   "rank_fan": 59,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 129,
+   "kw": "budget",
+   "rank_kw": 235,
+   "rank_fan": 235,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 130,
+   "kw": "Allergies",
+   "rank_kw": 123,
+   "rank_fan": 241,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 133,
+   "kw": "Location",
+   "rank_kw": 109,
+   "rank_fan": 1,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 134,
+   "kw": "Icon Design",
+   "rank_kw": 8,
+   "rank_fan": 97,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 135,
+   "kw": "Vehicle",
+   "rank_kw": 1,
+   "rank_fan": 121,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 136,
+   "kw": "Health",
+   "rank_kw": 10,
+   "rank_fan": 167,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 139,
+   "kw": "budget",
+   "rank_kw": 207,
+   "rank_fan": 97,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 140,
+   "kw": "Budget",
+   "rank_kw": 141,
+   "rank_fan": 34,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 141,
+   "kw": "Docker",
+   "rank_kw": 153,
+   "rank_fan": 146,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 144,
+   "kw": "relationship",
+   "rank_kw": 136,
+   "rank_fan": 75,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 145,
+   "kw": "Team",
+   "rank_kw": 125,
+   "rank_fan": 238,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 146,
+   "kw": "Current Team Size",
+   "rank_kw": 134,
+   "rank_fan": 183,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 149,
+   "kw": "Allergies",
+   "rank_kw": 21,
+   "rank_fan": 16,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 151,
+   "kw": "Allergies",
+   "rank_kw": 190,
+   "rank_fan": 109,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 152,
+   "kw": "Budget",
+   "rank_kw": 212,
+   "rank_fan": 109,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 153,
+   "kw": "health goals",
+   "rank_kw": 180,
+   "rank_fan": 228,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 155,
+   "kw": "Skill Level",
+   "rank_kw": 179,
+   "rank_fan": 62,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 159,
+   "kw": "Dietary restrictions",
+   "rank_kw": 5,
+   "rank_fan": 1,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 161,
+   "kw": "Allergies",
+   "rank_kw": 1,
+   "rank_fan": 4,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 162,
+   "kw": "Dietary restrictions",
+   "rank_kw": 1,
+   "rank_fan": 15,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 163,
+   "kw": "Dietary restrictions",
+   "rank_kw": 37,
+   "rank_fan": 96,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 164,
+   "kw": "Location",
+   "rank_kw": 237,
+   "rank_fan": 241,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 167,
+   "kw": "Kidney",
+   "rank_kw": 84,
+   "rank_fan": 93,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 169,
+   "kw": "Health goals",
+   "rank_kw": 8,
+   "rank_fan": 53,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 170,
+   "kw": "Allergies",
+   "rank_kw": 20,
+   "rank_fan": 75,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 172,
+   "kw": "Dietary restrictions",
+   "rank_kw": 86,
+   "rank_fan": 150,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 175,
+   "kw": "licorice",
+   "rank_kw": 22,
+   "rank_fan": 21,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 177,
+   "kw": "Wine",
+   "rank_kw": 12,
+   "rank_fan": 134,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 181,
+   "kw": "moisture",
+   "rank_kw": 155,
+   "rank_fan": 122,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 184,
+   "kw": "Preferences",
+   "rank_kw": 224,
+   "rank_fan": 218,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 186,
+   "kw": "swimming",
+   "rank_kw": 64,
+   "rank_fan": 176,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 187,
+   "kw": "Allergies",
+   "rank_kw": 179,
+   "rank_fan": 114,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 189,
+   "kw": "Allergies",
+   "rank_kw": 221,
+   "rank_fan": 231,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 192,
+   "kw": "Allergies",
+   "rank_kw": 154,
+   "rank_fan": 1,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 197,
+   "kw": "Budget",
+   "rank_kw": 184,
+   "rank_fan": 74,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 201,
+   "kw": "Allergies",
+   "rank_kw": 112,
+   "rank_fan": 239,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 202,
+   "kw": "pressure cooker",
+   "rank_kw": 226,
+   "rank_fan": 11,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 203,
+   "kw": "Allergies",
+   "rank_kw": 7,
+   "rank_fan": 43,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 204,
+   "kw": "Frequency",
+   "rank_kw": 73,
+   "rank_fan": 49,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 205,
+   "kw": "Allergies",
+   "rank_kw": 72,
+   "rank_fan": 10,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 206,
+   "kw": "Allergies",
+   "rank_kw": 60,
+   "rank_fan": 113,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 207,
+   "kw": "Availability",
+   "rank_kw": 105,
+   "rank_fan": 30,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 210,
+   "kw": "Availability",
+   "rank_kw": 16,
+   "rank_fan": 118,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 211,
+   "kw": "Injury",
+   "rank_kw": 66,
+   "rank_fan": 172,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 213,
+   "kw": "Risk Tolerance",
+   "rank_kw": 71,
+   "rank_fan": 103,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 214,
+   "kw": "dental history",
+   "rank_kw": 241,
+   "rank_fan": 144,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 216,
+   "kw": "freelance",
+   "rank_kw": 36,
+   "rank_fan": 63,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 218,
+   "kw": "Allergies",
+   "rank_kw": 150,
+   "rank_fan": 1,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 220,
+   "kw": "client",
+   "rank_kw": 1,
+   "rank_fan": 9,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 221,
+   "kw": "Allergies",
+   "rank_kw": 138,
+   "rank_fan": 1,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 223,
+   "kw": "Relationships",
+   "rank_kw": 122,
+   "rank_fan": 4,
+   "n_fan_words": 25
+  },
+  {
+   "task_id": 225,
+   "kw": "Dietary restrictions",
+   "rank_kw": 155,
+   "rank_fan": 175,
+   "n_fan_words": 25
+  }
+ ]
+}
