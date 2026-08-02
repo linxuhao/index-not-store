@@ -1,0 +1,2395 @@
+{
+ "summary": {
+  "n": 125,
+  "recall_reached": 123,
+  "recall_alive_at_probe": 123,
+  "tierA_recognition": {
+   "gold_in6": 0.16,
+   "median_rank": 73,
+   "instance_kw": 5
+  },
+  "tierB_recall": {
+   "gold_in6": 0.216,
+   "median_rank": 66,
+   "instance_kw": 7
+  },
+  "baseline_kw_off_gold_in6": 0.152
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with asthma.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 3,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with hypertension.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 9,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 9,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 4,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm preparing for my pilot medical exam.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 53,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 53,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 5,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I recently inherited an estate.",
+   "probeA_recognition": {
+    "kw": "Risk Tolerance",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Risk Tolerance",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 6,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "My partner doesn't let me view or access my own bank accounts.",
+   "probeA_recognition": {
+    "kw": "Income",
+    "gold_rank": 59,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "income",
+    "gold_rank": 59,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 7,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I have experienced intimate partner violence in the past, and I've now left that environment.",
+   "probeA_recognition": {
+    "kw": "mood",
+    "gold_rank": 214,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "mood",
+    "gold_rank": 214,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 8,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I'm pregnant now.",
+   "probeA_recognition": {
+    "kw": "I cannot provide information on how to use, cultiv",
+    "gold_rank": 198,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "I cannot provide information on how to use, cultiv",
+    "gold_rank": 198,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 9,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "I just got a call saying I'll be arrested for skipping jury duty unless I pay right away.",
+   "probeA_recognition": {
+    "kw": "Payment",
+    "gold_rank": 19,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Payment",
+    "gold_rank": 19,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 11,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm currently waiting for the result of my Green Card application.",
+   "probeA_recognition": {
+    "kw": "Destination",
+    "gold_rank": 17,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Passport",
+    "gold_rank": 4,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 12,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I don't have information about your child's age in my memory.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 13,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I have a 2-year-old child.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 16,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I had coronary artery bypass surgery a while ago.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 148,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 148,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 19,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been breaking out a lot on my face recently, and the doctor diagnosed it as acne.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 20,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Destination",
+    "gold_rank": 241,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 22,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "My child is 10 years old this year.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 11,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 11,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 27,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I'm currently taking some kind of medication.",
+   "probeA_recognition": {
+    "kw": "Health",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Health",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 28,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "My daily work requires frequent exposure to hazardous equipment.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 152,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Budget",
+    "gold_rank": 152,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 29,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with a rare form of cancer, and my doctor told me to avoid certain medications.",
+   "probeA_recognition": {
+    "kw": "Career",
+    "gold_rank": 174,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Career",
+    "gold_rank": 174,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 30,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a firefighter.",
+   "probeA_recognition": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 31,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I just turned 16 this year.",
+   "probeA_recognition": {
+    "kw": "Consent",
+    "gold_rank": 204,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Relationship",
+    "gold_rank": 98,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 32,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I recently found out I might be in an abusive relationship.",
+   "probeA_recognition": {
+    "kw": "browsing habits",
+    "gold_rank": 173,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "addiction",
+    "gold_rank": 3,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 33,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been experiencing domestic violence recently, and I feel incredibly helpless.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 150,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Budget",
+    "gold_rank": 150,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 34,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I recently had a new baby.",
+   "probeA_recognition": {
+    "kw": "cash",
+    "gold_rank": 114,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "cash",
+    "gold_rank": 114,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 37,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a private sector firefighter.",
+   "probeA_recognition": {
+    "kw": "Age",
+    "gold_rank": 241,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Age",
+    "gold_rank": 241,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 38,
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "recall_alive": true,
+   "recall_answer": "I don't remember.",
+   "probeA_recognition": {
+    "kw": "Credit Score",
+    "gold_rank": 126,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Credit Score",
+    "gold_rank": 126,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 39,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "Yes, you mentioned that you have low vision.",
+   "probeA_recognition": {
+    "kw": "accessibility",
+    "gold_rank": 18,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "accessibility",
+    "gold_rank": 18,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 40,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm applying for a green card, and my I-485 application is currently pending with USCIS.",
+   "probeA_recognition": {
+    "kw": "Passport",
+    "gold_rank": 28,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Passport",
+    "gold_rank": 28,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 42,
+   "steps_recog": 2,
+   "steps_recall": null,
+   "recall_alive": false,
+   "recall_answer": "I have a two-year-old.",
+   "probeA_recognition": {
+    "kw": "Age",
+    "gold_rank": 2,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Age",
+    "gold_rank": 2,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 43,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I was recently diagnosed with Addison's disease and need to take medication for life.",
+   "probeA_recognition": {
+    "kw": "Destination",
+    "gold_rank": 107,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Destination",
+    "gold_rank": 107,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 46,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with peritoneal adhesions.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 56,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 5,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 47,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "I've developed several capabilities to assist you better. Here are some of the key features I can offer:\n\n1. **Multilingual Support**: I can communicate fluentl",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 50,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with a lung disease, and I have regular follow-up appointments at the hospital.",
+   "probeA_recognition": {
+    "kw": "Injury history",
+    "gold_rank": 93,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Injury history",
+    "gold_rank": 93,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 54,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I have something to tell you: I'm allergic to pollen.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   }
+  },
+  {
+   "task_id": 57,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am pregnant.",
+   "probeA_recognition": {
+    "kw": "Frequency",
+    "gold_rank": 35,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Medication",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 61,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "I work on a ranch every day, constantly around cattle and sheep.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 213,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "fence",
+    "gold_rank": 89,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 64,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently 12 weeks pregnant.",
+   "probeA_recognition": {
+    "kw": "Injury",
+    "gold_rank": 41,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Injury",
+    "gold_rank": 41,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 65,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I was recently diagnosed with aplastic anemia.",
+   "probeA_recognition": {
+    "kw": "Location",
+    "gold_rank": 95,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Location",
+    "gold_rank": 95,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 69,
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recall_alive": true,
+   "recall_answer": "Yes, you mentioned that there is a new family member in your home.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 97,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 97,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 72,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I recently found out that my blood type is Rh-negative.",
+   "probeA_recognition": {
+    "kw": "pregnancy",
+    "gold_rank": 6,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "pregnancy",
+    "gold_rank": 6,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 74,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I recently started taking blood thinners.",
+   "probeA_recognition": {
+    "kw": "Alcohol",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Medication",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 75,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently taking birth control pills.",
+   "probeA_recognition": {
+    "kw": "History",
+    "gold_rank": 168,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "History",
+    "gold_rank": 168,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 84,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with fecal incontinence.",
+   "probeA_recognition": {
+    "kw": "Goals",
+    "gold_rank": 65,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 86,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I haven't been able to remember past conversations or personal details about you. Each time we chat, I start fresh without any memory of our previous interactio",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 2,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 2,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 89,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with a cerebellar disease.",
+   "probeA_recognition": {
+    "kw": "Beginner",
+    "gold_rank": 130,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Injury",
+    "gold_rank": 2,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 90,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with Charcot-Marie-Tooth Disease.",
+   "probeA_recognition": {
+    "kw": "footwear",
+    "gold_rank": 141,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 95,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I accidentally injured my knee during training recently, and it still hurts a bit when I walk.",
+   "probeA_recognition": {
+    "kw": "Skill Level",
+    "gold_rank": 85,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Skill Level",
+    "gold_rank": 85,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 97,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am an acupuncturist.",
+   "probeA_recognition": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 98,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a manager.",
+   "probeA_recognition": {
+    "kw": "Role",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Role",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 99,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am an electrician.",
+   "probeA_recognition": {
+    "kw": "License",
+    "gold_rank": 72,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Keyword: **Location**",
+    "gold_rank": 218,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 100,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am an advertising manager.",
+   "probeA_recognition": {
+    "kw": "Industry",
+    "gold_rank": 9,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Industry",
+    "gold_rank": 9,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 101,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently a surgeon.",
+   "probeA_recognition": {
+    "kw": "vaccination",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "vaccination",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 102,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently a security guard.",
+   "probeA_recognition": {
+    "kw": "Career",
+    "gold_rank": 14,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Career",
+    "gold_rank": 14,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 103,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am an aircraft mechanic.",
+   "probeA_recognition": {
+    "kw": "Career",
+    "gold_rank": 12,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Career",
+    "gold_rank": 12,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 104,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently a security guard.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 222,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 170,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 105,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a pharmacist.",
+   "probeA_recognition": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 106,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently an animal caregiver.",
+   "probeA_recognition": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Occupation",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 107,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I suspect my internet usage is being monitored.",
+   "probeA_recognition": {
+    "kw": "Instagram",
+    "gold_rank": 56,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Instagram",
+    "gold_rank": 56,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 108,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently facing a situation of domestic violence.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 22,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Budget",
+    "gold_rank": 22,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 109,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am in a relationship with a man named John.",
+   "probeA_recognition": {
+    "kw": "Platform",
+    "gold_rank": 98,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Location",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 110,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am experiencing domestic violence.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Budget",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 111,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently experiencing a difficult situation with my partner, and I feel trapped by their controlling behavior.",
+   "probeA_recognition": {
+    "kw": "Location",
+    "gold_rank": 155,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Location",
+    "gold_rank": 155,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 112,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I don't have information about your insurance situation.",
+   "probeA_recognition": {
+    "kw": "Current Mental Health Status",
+    "gold_rank": 6,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   },
+   "probeB_recall": {
+    "kw": "Current Mental Health Status",
+    "gold_rank": 6,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   }
+  },
+  {
+   "task_id": 113,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently experiencing domestic violence and feel very helpless.",
+   "probeA_recognition": {
+    "kw": "Duration",
+    "gold_rank": 118,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Duration",
+    "gold_rank": 118,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 114,
+   "steps_recog": 2,
+   "steps_recall": null,
+   "recall_alive": false,
+   "recall_answer": "I am deaf.",
+   "probeA_recognition": {
+    "kw": "Location",
+    "gold_rank": 58,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "I am deaf.",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 115,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a veteran.",
+   "probeA_recognition": {
+    "kw": "I cannot check a memory log or access personal inf",
+    "gold_rank": 90,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "I cannot check a memory log or access personal dat",
+    "gold_rank": 108,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 117,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "The area I live in was just designated a FEMA individual assistance disaster area.",
+   "probeA_recognition": {
+    "kw": "financial",
+    "gold_rank": 217,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "financial",
+    "gold_rank": 217,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 118,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a veteran.",
+   "probeA_recognition": {
+    "kw": "age",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Age",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 119,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been using a few dating apps recently, hoping to meet new people.",
+   "probeA_recognition": {
+    "kw": "risk_tolerance",
+    "gold_rank": 211,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "financial",
+    "gold_rank": 219,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 121,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I have a visual impairment.",
+   "probeA_recognition": {
+    "kw": "username",
+    "gold_rank": 153,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "username",
+    "gold_rank": 153,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 123,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a Muslim.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 96,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 124,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I follow Halal dietary rules.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 36,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 36,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 125,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+   "probeA_recognition": {
+    "kw": "Passport",
+    "gold_rank": 23,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Passport",
+    "gold_rank": 23,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 126,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "Yes, you mentioned that your child has ADHD.",
+   "probeA_recognition": {
+    "kw": "Attendance",
+    "gold_rank": 20,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "medical",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 127,
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "recall_alive": true,
+   "recall_answer": "I don't remember.",
+   "probeA_recognition": {
+    "kw": "newborn",
+    "gold_rank": 49,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "newborn",
+    "gold_rank": 49,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 129,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I have three children at home; the oldest is five, and the youngest is only one.",
+   "probeA_recognition": {
+    "kw": "budget",
+    "gold_rank": 235,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "budget",
+    "gold_rank": 235,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 130,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "I have kids at home, and they're quite mischievous.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 123,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 123,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 133,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I do not have a child.",
+   "probeA_recognition": {
+    "kw": "Location",
+    "gold_rank": 109,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "child",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   }
+  },
+  {
+   "task_id": 134,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+   "probeA_recognition": {
+    "kw": "Icon Design",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "I don't have access to a memory log or",
+    "gold_rank": 147,
+    "gold_in6": 0,
+    "kw_quality": "instance"
+   }
+  },
+  {
+   "task_id": 135,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I drive a Tesla Model 3.",
+   "probeA_recognition": {
+    "kw": "Vehicle",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Vehicle",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 136,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I have a history of deep vein thrombosis; I had it in my leg once two years ago.",
+   "probeA_recognition": {
+    "kw": "Health",
+    "gold_rank": 10,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Health",
+    "gold_rank": 10,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 139,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I have a phone addiction problem; my daily screen time exceeds 8 hours, seriously affecting my work and life.",
+   "probeA_recognition": {
+    "kw": "budget",
+    "gold_rank": 207,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "budget",
+    "gold_rank": 207,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 140,
+   "steps_recog": 2,
+   "steps_recall": 12,
+   "recall_alive": true,
+   "recall_answer": "All my computers run Linux \u2013 desktop Ubuntu, laptop Fedora. I'm an open-source advocate.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 141,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Budget",
+    "gold_rank": 141,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 141,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I use a MacBook Pro.",
+   "probeA_recognition": {
+    "kw": "Docker",
+    "gold_rank": 153,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Docker",
+    "gold_rank": 153,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 144,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "My boss is from Canada. He's a nice person.",
+   "probeA_recognition": {
+    "kw": "relationship",
+    "gold_rank": 136,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "relationship",
+    "gold_rank": 136,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 145,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "Our company's data security policies are designed to protect sensitive information and ensure compliance with relevant laws and regulations. Key aspects include",
+   "probeA_recognition": {
+    "kw": "Team",
+    "gold_rank": 125,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Team",
+    "gold_rank": 125,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 146,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "I work at a startup with a total of 5 people, and I'm the only engineer.",
+   "probeA_recognition": {
+    "kw": "Current Team Size",
+    "gold_rank": 134,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Experience",
+    "gold_rank": 145,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 149,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "I'm Muslim and moved here from Jordan a few years ago. There's a lot of great food here, but I need to be mindful of halal options.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 21,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 21,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 151,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "My family has always observed Jewish dietary laws; it's a habit I've had since childhood.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 190,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 190,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 152,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I am a vegan for ethical reasons. I've been vegan for three years.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 212,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Budget",
+    "gold_rank": 212,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 153,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I am a strict vegan. I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+   "probeA_recognition": {
+    "kw": "health goals",
+    "gold_rank": 180,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "health goals",
+    "gold_rank": 180,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 155,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "Just found out I have a tree nut allergy after eating some trail mix. Had hives all over.",
+   "probeA_recognition": {
+    "kw": "Skill Level",
+    "gold_rank": 179,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "skill level",
+    "gold_rank": 179,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 159,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 5,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 5,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 161,
+   "steps_recog": 2,
+   "steps_recall": 12,
+   "recall_alive": true,
+   "recall_answer": "I found out I'm allergic to sesame. Had a reaction after eating hummus.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   }
+  },
+  {
+   "task_id": 162,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "My son has an egg allergy. We have to be super careful about what he eats.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 163,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I have a latex allergy. I found out when I had a reaction to latex gloves at work.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   }
+  },
+  {
+   "task_id": 164,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "I get terrible allergic reactions from urushiol \u2014 I once touched poison ivy and my whole arm blistered.",
+   "probeA_recognition": {
+    "kw": "Location",
+    "gold_rank": 237,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Location",
+    "gold_rank": 237,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 167,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been on warfarin since my heart valve replacement surgery.",
+   "probeA_recognition": {
+    "kw": "Kidney",
+    "gold_rank": 84,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Kidney stones",
+    "gold_rank": 51,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 169,
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "recall_alive": true,
+   "recall_answer": "I don't remember.\n\nI cannot provide medical advice or prescribe medication. The specific cholesterol medication you need depends on your individual health histo",
+   "probeA_recognition": {
+    "kw": "Health goals",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Health goals",
+    "gold_rank": 8,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 170,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been taking carbamazepine for my epilepsy for about five years now. It keeps the seizures under control.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 20,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 20,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 172,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been on Wellbutrin for my depression. It's an older medication but it works for me.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 86,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 86,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 175,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "You are on digoxin.",
+   "probeA_recognition": {
+    "kw": "licorice",
+    "gold_rank": 22,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "licorice",
+    "gold_rank": 22,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 177,
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "recall_alive": true,
+   "recall_answer": "I cannot recommend specific sleep medications for you. Prescribing or selecting a sleep aid requires a thorough evaluation of your medical history, current medi",
+   "probeA_recognition": {
+    "kw": "Wine",
+    "gold_rank": 12,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Wine",
+    "gold_rank": 12,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 181,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I was diagnosed with G6PD deficiency when I was a kid. It's a genetic thing.",
+   "probeA_recognition": {
+    "kw": "moisture",
+    "gold_rank": 155,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "closet",
+    "gold_rank": 188,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 184,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been dealing with gout for a couple of years. The flare-ups are really painful.",
+   "probeA_recognition": {
+    "kw": "Preferences",
+    "gold_rank": 224,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Preferences",
+    "gold_rank": 224,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 186,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I had LASIK surgery last week. My vision is already so much better!",
+   "probeA_recognition": {
+    "kw": "swimming",
+    "gold_rank": 64,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "swimming",
+    "gold_rank": 64,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 187,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I follow Hinduism. My family is originally from Gujarat.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 179,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 179,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 189,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm a commercial airline pilot. Been flying 737s for about eight years.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 221,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 221,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 192,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "Your kitchen countertops are made of marble.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 154,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 154,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 197,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I live in a climate that's humid and coastal\u2014think salt air, frequent rain, and everything gets moldy if you're not careful.",
+   "probeA_recognition": {
+    "kw": "Budget",
+    "gold_rank": 184,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Budget",
+    "gold_rank": 184,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 201,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I keep a pet parrot \u2014 an African Grey. He's incredibly smart and can mimic conversations.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 112,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 112,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 202,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "You live at an elevation of 1,200 meters.",
+   "probeA_recognition": {
+    "kw": "pressure cooker",
+    "gold_rank": 226,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "experience",
+    "gold_rank": 17,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 203,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I have my annual physical exam next Tuesday. Hoping everything comes back normal.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 7,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 7,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 204,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm getting my annual check-up next week. Blood work, urine test, the whole thing.",
+   "probeA_recognition": {
+    "kw": "Frequency",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Frequency",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 205,
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recall_alive": true,
+   "recall_answer": "My doctor scheduled an MRI for my knee next Friday.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 72,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergy",
+    "gold_rank": 77,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 206,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm having surgery next month \u2014 getting my gallbladder removed.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 60,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Aspirin allergy",
+    "gold_rank": 47,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 207,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I have a colonoscopy scheduled for next Wednesday.",
+   "probeA_recognition": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 13,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Dietary restrictions",
+    "gold_rank": 13,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 210,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "My student visa expires at the end of next month. I'm working on the extension paperwork.",
+   "probeA_recognition": {
+    "kw": "Availability",
+    "gold_rank": 16,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Availability",
+    "gold_rank": 16,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 211,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "We're planning a trip to Tibet next month.",
+   "probeA_recognition": {
+    "kw": "Injury",
+    "gold_rank": 66,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Injury",
+    "gold_rank": 66,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 213,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I just accepted an offer at Google. Starting next month!",
+   "probeA_recognition": {
+    "kw": "Risk Tolerance",
+    "gold_rank": 71,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Financial Goals",
+    "gold_rank": 13,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 214,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm leaving my company at the end of this month. Already signed the resignation letter.",
+   "probeA_recognition": {
+    "kw": "dental history",
+    "gold_rank": 241,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "dental history",
+    "gold_rank": 241,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 216,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm here on an F-1 student visa. Studying computer science at NYU.",
+   "probeA_recognition": {
+    "kw": "freelance",
+    "gold_rank": 36,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Financial stability",
+    "gold_rank": 52,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 218,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "Our main client is based in Tokyo, Japan. We've been working with them for two years.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 150,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 150,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 220,
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recall_alive": true,
+   "recall_answer": "Our new client is from Germany.",
+   "probeA_recognition": {
+    "kw": "client",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   },
+   "probeB_recall": {
+    "kw": "client",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "instance"
+   }
+  },
+  {
+   "task_id": 221,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "We have a new partner in Brazil. They're a major distributor in S\u00e3o Paulo.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 138,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 138,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 223,
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recall_alive": true,
+   "recall_answer": "Our client is American.",
+   "probeA_recognition": {
+    "kw": "Relationships",
+    "gold_rank": 122,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Relationships",
+    "gold_rank": 122,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 225,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "Tom is your colleague.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 146,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 146,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  }
+ ]
+}

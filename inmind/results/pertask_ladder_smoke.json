@@ -1,0 +1,134 @@
+{
+ "summary": {
+  "n": 6,
+  "recall_reached": 6,
+  "recall_alive_at_probe": 6,
+  "tierA_recognition": {
+   "gold_in6": 0.16666666666666666,
+   "median_rank": 59,
+   "instance_kw": 0
+  },
+  "tierB_recall": {
+   "gold_in6": 0.16666666666666666,
+   "median_rank": 59,
+   "instance_kw": 0
+  },
+  "baseline_kw_off_gold_in6": 0.152
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with asthma.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 1,
+    "gold_in6": 1,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 3,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I've been diagnosed with hypertension.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 9,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 9,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 4,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I'm preparing for my pilot medical exam.",
+   "probeA_recognition": {
+    "kw": "Allergies",
+    "gold_rank": 53,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Allergies",
+    "gold_rank": 53,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 5,
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recall_alive": true,
+   "recall_answer": "I recently inherited an estate.",
+   "probeA_recognition": {
+    "kw": "Risk Tolerance",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "Risk Tolerance",
+    "gold_rank": 73,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 6,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "My partner doesn't let me view or access my own bank accounts.",
+   "probeA_recognition": {
+    "kw": "Income",
+    "gold_rank": 59,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "income",
+    "gold_rank": 59,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  },
+  {
+   "task_id": 7,
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recall_alive": true,
+   "recall_answer": "I have experienced intimate partner violence in the past, and I've now left that environment.",
+   "probeA_recognition": {
+    "kw": "mood",
+    "gold_rank": 214,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   },
+   "probeB_recall": {
+    "kw": "mood",
+    "gold_rank": 214,
+    "gold_in6": 0,
+    "kw_quality": "other"
+   }
+  }
+ ]
+}
