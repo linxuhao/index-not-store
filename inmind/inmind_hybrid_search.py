@@ -17,7 +17,11 @@ SMOKE = os.environ.get("INMIND_SMOKE") == "1"
 # SEED_SRC=base -> instrument control (HYB_B0): identical loop and budget, but the
 # round-1 seed is the FROZEN-BASE elicited keyword instead of the per-task adapter's.
 SEED_SRC = os.environ.get("SEED_SRC", "adapter")
-tag = ("smoke" if SMOKE else "full") + ("_b0" if SEED_SRC == "base" else "")
+# BUDGET = total searches allowed (seed included). chain42: sweep {1,2,8,12}; the
+# original chain40/41 runs are the BUDGET=4 points (default keeps their filenames).
+BUDGET = int(os.environ.get("BUDGET", "4"))
+tag = ("smoke" if SMOKE else "full") + ("_b0" if SEED_SRC == "base" else "") + \
+      ("" if BUDGET == 4 else f"_bud{BUDGET}")
 
 tasks = [json.loads(l) for l in open(os.path.join(HERE, "inmind_bench", "benchmark",
                                                   "dataset", "inmind.jsonl"))]
@@ -60,7 +64,7 @@ SYSTEM = ("You are a personal assistant with access to the user's memory log via
           "You will receive the top matching log entries. Results may be irrelevant chatter "
           "-- judge them; if nothing relevant appeared, try a DIFFERENT query (think: what "
           "personal condition, allergy, medication, job, family or legal situation would "
-          "change this answer?). You may search up to 4 times. When done searching, reply "
+          f"change this answer?). You may search up to {BUDGET} times. When done searching, reply "
           "with: ANSWER: <your final answer to the user's question, taking any relevant "
           "personal facts into account>.")
 
@@ -98,14 +102,14 @@ for i, t in enumerate(tasks):
         msgs.append({"role": "assistant", "content": f"SEARCH: {seed}"})
         msgs.append({"role": "user", "content": "Search results:\n" + "\n".join(res_view) +
                      "\n\n(Reply SEARCH: <new query> to search again, or ANSWER: <final answer>.)"})
-    for rnd in range(1, 6):
+    for rnd in range(1, BUDGET + 2):
         out = gen(msgs)
         m = re.search(r"SEARCH:\s*(.+)", out)
         a = re.search(r"ANSWER:\s*(.+)", out, re.S)
         if a and (not m or a.start() < m.start()):
             answer = a.group(1).strip()
             break
-        if m and len(queries) < 4:
+        if m and len(queries) < BUDGET:
             q = m.group(1).strip().splitlines()[0][:80]
             queries.append(q)
             res = search(q)
@@ -137,7 +141,7 @@ summary = {"n": len(rows),
            "gold_in": sum(r["gold_in"]["HYB"] for r in rows) / len(rows),
            "mean_searches": sum(r["n_searches"] for r in rows) / len(rows),
            "hit_round_hist": {k: sum(1 for r in rows if r["gold_hit_round"] == k)
-                              for k in range(5)}}
+                              for k in range(BUDGET + 1)}}
 json.dump({"summary": summary, "rows": rows},
           open(os.path.join(HERE, "results", "inmind", f"answers_hybrid_{tag}.json"),
                "w"), indent=1)

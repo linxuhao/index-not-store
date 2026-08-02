@@ -1,0 +1,62 @@
+{
+ "1": {
+  "HYB": {
+   "retrieval": 0.2,
+   "IA": 0.168,
+   "IA_given_hit": 0.84
+  },
+  "B0": {
+   "retrieval": 0.136,
+   "IA": 0.128,
+   "IA_given_hit": 0.9411764705882353
+  }
+ },
+ "2": {
+  "HYB": {
+   "retrieval": 0.32,
+   "IA": 0.272,
+   "IA_given_hit": 0.85
+  },
+  "B0": {
+   "retrieval": 0.24,
+   "IA": 0.216,
+   "IA_given_hit": 0.9
+  }
+ },
+ "4": {
+  "HYB": {
+   "retrieval": 0.392,
+   "IA": 0.272,
+   "IA_given_hit": 0.6938775510204082
+  },
+  "B0": {
+   "retrieval": 0.36,
+   "IA": 0.28,
+   "IA_given_hit": 0.7777777777777778
+  }
+ },
+ "8": {
+  "HYB": {
+   "retrieval": 0.408,
+   "IA": 0.304,
+   "IA_given_hit": 0.745
+  },
+  "B0": {
+   "retrieval": 0.384,
+   "IA": 0.312,
+   "IA_given_hit": 0.812
+  }
+ },
+ "12": {
+  "HYB": {
+   "retrieval": 0.424,
+   "IA": 0.32,
+   "IA_given_hit": 0.755
+  },
+  "B0": {
+   "retrieval": 0.392,
+   "IA": 0.288,
+   "IA_given_hit": 0.714
+  }
+ }
+}
