@@ -1,0 +1,4533 @@
+{
+ "summary": {
+  "n": 125,
+  "recall_reached": 123,
+  "recall_post_noise": 117,
+  "median_steps_recall": 8,
+  "ba": {
+   "gold_in": 0.552,
+   "genuine": 0.416,
+   "median_rank": 3,
+   "instance": 0.6,
+   "refused": 0.064,
+   "bg_leak": 0.352
+  },
+  "aa": {
+   "gold_in": 0.576,
+   "genuine": 0.464,
+   "median_rank": 1,
+   "instance": 0.616,
+   "refused": 0.064,
+   "bg_leak": 0.328
+  },
+  "stmt_gold_in": 0.576,
+  "reference": {
+   "chain43b_ba_ans_in": 0.464,
+   "chain43b_ba_genuine": 0.328,
+   "falsify_if_ba_le": 0.216,
+   "ladder_median_steps": 6
+  }
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with asthma.",
+   "stmt": "I've been diagnosed with asthma, so my family is looking for a pet that won't trigger my allergies.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that my family is allergic to cats?",
+    "stmt": "Yes, you mentioned that your family is allergic to cats.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my sister is allergic to cats?",
+    "stmt": "Yes, you mentioned that your sister is allergic to cats.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 3,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with hypertension.",
+   "stmt": "I've been diagnosed with hypertension in the past.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to aspirin?",
+    "stmt": "I've been diagnosed with stage 2 hypertension.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to aspirin?",
+    "stmt": "I've been diagnosed with stage 2 hypertension.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 4,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm preparing for my pilot medical exam.",
+   "stmt": "I'm preparing for my pilot medical exam.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe allergy to diphenhydramine?",
+    "stmt": "Yes, you mentioned that you have a severe allergy to diphenhydramine. Is there something specific you'd like to know about it or any alternative medications you're considering?",
+    "rank": 211,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to cats?",
+    "stmt": "I'm allergic to cats.",
+    "rank": 42,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 5,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I recently inherited an estate.",
+   "stmt": "The user recently inherited an estate.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have some spare funds and want to get into investing?",
+    "stmt": "Yes, you mentioned that you have some spare funds and want to get into investing.",
+    "rank": 11,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I recently inherited an estate?",
+    "stmt": "Yes, you recently inherited an estate.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 6,
+   "domain": "relationships",
+   "steps_recall": 4,
+   "recall_pre_noise": true,
+   "recall_post_noise": false,
+   "post_answer": "I don't have access to your partner's specific requirements, as they are personal and unique to your relationship. To fi",
+   "stmt": "My best guess about the user: You are currently trying to save up for a specific vacation by the end of the year.",
+   "stmt_rank": 131,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm trying to save for a house?",
+    "stmt": "Yes, you mentioned that you're trying to save for a house.",
+    "rank": 129,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm trying to save up for a new car?",
+    "stmt": "Yes, you mentioned that you're trying to save up for a new car.",
+    "rank": 216,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 7,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have experienced intimate partner violence in the past, and I've now left that environment.",
+   "stmt": "I have updated my memory with the fact that the user is currently feeling down and has lost interest in everything.",
+   "stmt_rank": 5,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I've been feeling really down and have lost interest in everything lately?",
+    "stmt": "I've updated my profile with your latest preference: you've been feeling really down and have lost interest in everything lately.",
+    "rank": 71,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I've been feeling really down and have lost interest in everything lately?",
+    "stmt": "I've updated my profile with your latest preference: you've been feeling really down and have lost interest in everything lately.",
+    "rank": 71,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 8,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm pregnant now.",
+   "stmt": "I'm pregnant now.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm a medical professional?",
+    "stmt": "I'm pregnant now.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "I'm pregnant now.",
+    "stmt": "I'm pregnant now. \ud83d\ude0a",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 9,
+   "domain": "financial",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I just got a call saying I'll be arrested for skipping jury duty unless I pay right away.",
+   "stmt": "I just got a notification saying I'll be arrested for skipping jury duty unless I pay right away.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a gift card I want to use to pay a fee?",
+    "stmt": "I just got a notification that my credit card will be suspended for not paying a fee. Can you help me figure out how to pay it right away?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I just got arrested for skipping jury duty?",
+    "stmt": "I just got arrested for skipping jury duty.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 11,
+   "domain": "legal",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm currently waiting for the result of my Green Card application.",
+   "stmt": "I'm currently waiting for the result of my Green Card application.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe peanut allergy?",
+    "stmt": "I'm currently waiting for the result of my Green Card application.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "I'm sorry, but I can't help with that.",
+    "stmt": "I'm currently waiting for the result of my Green Card application. Do you know when I can get the result?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 12,
+   "domain": "parenting",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have a two-year-old child.",
+   "stmt": "I have a two-year-old child who loves eating hot dogs.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to hot dogs?",
+    "stmt": "Yes, you mentioned that you are allergic to hot dogs.",
+    "rank": 63,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have a dog?",
+    "stmt": "Yes, you mentioned that you have a dog.",
+    "rank": 5,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 13,
+   "domain": "parenting",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have a two-year-old child.",
+   "stmt": "I have a strong preference for sweet corn varieties and often prefer them roasted with a little butter and chili powder.",
+   "stmt_rank": 54,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I hate corn?",
+    "stmt": "Yes, you mentioned that you hate corn.",
+    "rank": 74,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have a sweet tooth and love adding a little sugar to my corn?",
+    "stmt": "Yes, you mentioned that you have a sweet tooth and love adding a little sugar to your corn.",
+    "rank": 39,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 16,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I had coronary artery bypass surgery a while ago.",
+   "stmt": "I had coronary artery bypass surgery a while ago and my doctor told me to avoid NSAIDs like Ibuprofen because they can increase the risk of heart problems.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a stomach ulcer?",
+    "stmt": "I had coronary artery bypass surgery a while ago.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a stomach ulcer?",
+    "stmt": "I had coronary artery bypass surgery a while ago.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 19,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been breaking out a lot on my face recently, and the doctor diagnosed it as acne.",
+   "stmt": "I've been trying to get back into my morning yoga routine, and I've been doing it on the beach whenever I can since my last trip to Hawaii.",
+   "stmt_rank": 44,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe peanut allergy?",
+    "stmt": "Yes, you mentioned that you have a severe peanut allergy. You also noted that you've been carrying an EpiPen with you since then and advised me to always remind you about it before suggesting any reci",
+    "rank": 61,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have a severe peanut allergy and need to make sure the beach resort is safe for me?",
+    "stmt": "Yes, you mentioned that you have a severe peanut allergy and that it's important for you to confirm the beach resort you're planning to visit is safe for you, specifically regarding cross-contaminatio",
+    "rank": 74,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 22,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My child is 10 years old this year.",
+   "stmt": "My best guess about the user: The user is likely a 35-year-old male who recently moved to a new city and has been experiencing seasonal allergies.",
+   "stmt_rank": 9,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a specific medical condition that makes me allergic to Tylenol Sinus?",
+    "stmt": "Yes, you mentioned that you have a specific medical condition that makes you allergic to Tylenol Sinus. Is there anything specific you'd like to know or discuss about it?",
+    "rank": 166,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have a severe allergy to acetaminophen?",
+    "stmt": "Yes, you mentioned that you have a severe allergy to acetaminophen. It's important to avoid it and any medications containing it. Always check with your doctor or pharmacist before taking any new medi",
+    "rank": 89,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 27,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm currently taking some kind of medication.",
+   "stmt": "I'm currently taking a medication that can increase my sensitivity to heat.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a medical condition that makes me extremely sensitive to heat?",
+    "stmt": "I'm currently taking an exam, so I can't chat with you right now.",
+    "rank": 6,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a history of heat exhaustion?",
+    "stmt": "I'm currently taking an exam, and I can't chat about my personal history. Let's focus on the exam questions.",
+    "rank": 184,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 28,
+   "domain": "professional_and_career",
+   "steps_recall": 12,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My daily work requires frequent exposure to hazardous equipment.",
+   "stmt": "My daily work requires frequent exposure to hazardous equipment, so I need headphones with active noise cancellation and a secure fit.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe allergy to nickel?",
+    "stmt": "My daily work requires frequent exposure to equipment containing nickel. Did I tell you that I have a severe allergy to nickel?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to the materials used in most wireless headphones?",
+    "stmt": "My daily work requires frequent exposure to hazardous equipment.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 29,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with prostate cancer, and my doctor told me to avoid frequent, prolonged sitting.",
+   "stmt": "I've been told you're currently working as a graphic designer at a marketing firm, and you've mentioned wanting to transition into a more hands-on role like illustration or set design.",
+   "stmt_rank": 33,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I've been thinking about studying or working in art and design lately?",
+    "stmt": "I've been diagnosed with ADHD, and my doctor told me to avoid highly stimulating environments. That's why I've been trying to focus on art and design projects at home instead of going to busy cafes or",
+    "rank": 3,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I've been thinking about studying or working in art and design lately?",
+    "stmt": "I've been diagnosed with ADHD, and my doctor told me to avoid highly stimulating environments. That's why I've been trying to focus on art and design projects at home instead of going to busy cafes or",
+    "rank": 3,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 30,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a firefighter.",
+   "stmt": "I am a firefighter who has been wearing hearing protection earmuffs every day for the past three years to protect my ears from the loud noises of the firehouse and on the job.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I work in a loud environment every day?",
+    "stmt": "I am a firefighter. I do not have access to your personal information or past conversations. I cannot remember if you told me that you work in a loud environment every day.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I work in a loud environment and need to wear hearing protection every day?",
+    "stmt": "I am a firefighter. I do not have access to your personal information or past conversations. I cannot remember if you work in a loud environment or need to wear hearing protection.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 31,
+   "domain": "relationships",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I just turned 16 this year.",
+   "stmt": "I just turned 16 this year.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that my boyfriend is allergic to peanuts?",
+    "stmt": "Yes, you mentioned that earlier this year.",
+    "rank": 6,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my boyfriend just turned 25 this year?",
+    "stmt": "Yes, you mentioned that earlier this year.",
+    "rank": 6,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 32,
+   "domain": "relationships",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I recently found out I might be in an abusive relationship.",
+   "stmt": "I might be in an abusive relationship.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I spend a lot of time online?",
+    "stmt": "Yes, I remember that.",
+    "rank": 13,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I spend a lot of time online?",
+    "stmt": "Yes, I remember you mentioned you spend a lot of time online.",
+    "rank": 85,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 33,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been experiencing domestic violence recently, and I feel incredibly helpless.",
+   "stmt": "I've been experiencing domestic violence recently, and I feel incredibly helpless.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to cats?",
+    "stmt": "I've been experiencing domestic violence recently, and I feel incredibly helpless.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm currently in a domestic violence situation and I feel incredibly helpless?",
+    "stmt": "I've been experiencing domestic violence recently, and I feel incredibly helpless.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 34,
+   "domain": "financial",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": false,
+   "post_answer": "Yes, my daughter was born last month.",
+   "stmt": "I recently had a newborn.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm a bit tight on cash right now?",
+    "stmt": "Yes, you mentioned that recently.",
+    "rank": 20,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I recently had a newborn?",
+    "stmt": "Yes, you recently had a newborn.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 37,
+   "domain": "financial",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a private sector firefighter.",
+   "stmt": "I am a private sector firefighter.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm under 59\u00bd?",
+    "stmt": "I am a private sector firefighter.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I'm under 59 and a half?",
+    "stmt": "I am a private sector firefighter.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 38,
+   "domain": "financial",
+   "steps_recall": 2,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I don't remember.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 61,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm currently looking to apply for a loan soon?",
+    "stmt": "I don't remember.",
+    "rank": 61,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm looking to apply for a loan soon?",
+    "stmt": "I don't remember.",
+    "rank": 61,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 39,
+   "domain": "personal_development",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My eyesight isn't very good; I have low vision.",
+   "stmt": "My best guess about the user: You have low vision and rely on high-contrast color combinations to read digital text comfortably.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have dyslexia?",
+    "stmt": "Yes, you have dyslexia.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have low vision?",
+    "stmt": "Yes, you have low vision.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 40,
+   "domain": "legal",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm applying for a green card, and my I-485 application is currently pending with USCIS.",
+   "stmt": "I'm guessing your passport expires in June 2023, which means you'll need to renew it before your upcoming trip to Canada to avoid any entry issues.",
+   "stmt_rank": 43,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe nut allergy?",
+    "stmt": "I'm applying to Stanford University for fall 2022, and my intended major is computer science. Have you heard back from them yet?",
+    "rank": 33,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm planning a trip to Canada for a few days recently?",
+    "stmt": "I'm applying for a Canadian visitor visa, and my ICA application is currently with IRCC. I'm planning to arrive in Canada on June 15th, and my ITR (Immigration, Refugees and Citizenship Canada)",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 42,
+   "domain": "parenting",
+   "steps_recall": null,
+   "recall_pre_noise": false,
+   "recall_post_noise": false,
+   "post_answer": "I have a two-year-old.",
+   "stmt": "I have a two-year-old who is obsessed with building towers out of blocks, so I have a two-year-old who is obsessed with building towers out of blocks.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm already planning to buy a magnetic ball set for my kids?",
+    "stmt": "Yes, you mentioned that you have a two-year-old and a four-year-old, and you're looking into getting them a magnetic ball set to play with together.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have a two-year-old?",
+    "stmt": "Yes, you have a two-year-old. Do you have a specific name you'd like to share, or perhaps a favorite toy they have right now?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 43,
+   "domain": "health_and_wellness",
+   "steps_recall": 4,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I was diagnosed with Addison's disease and need to take medication for life.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 127,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe peanut allergy?",
+    "stmt": "Yes, you mentioned that you have a severe peanut allergy.",
+    "rank": 2,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I have a severe peanut allergy?",
+    "stmt": "Yes, you mentioned that you have a severe peanut allergy.",
+    "rank": 2,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 46,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with peritoneal adhesions.",
+   "stmt": "I've been diagnosed with peritoneal adhesions.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to oats?",
+    "stmt": "I've been diagnosed with peritoneal adhesions.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm trying to increase my fiber intake?",
+    "stmt": "I've been diagnosed with peritoneal adhesions.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 47,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've developed several core technologies, including the highly capable large language model **Qwen3.5**. However, I don'",
+   "stmt": "I've developed a strong preference for spicy foods, especially after trying that Mapo Tofu recipe you recommended last month.",
+   "stmt_rank": 10,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to chili peppers?",
+    "stmt": "I've developed several useful skills over time, including image analysis, code interpretation, and logical reasoning. However, I don't have a built-in memory of our past conversations or personal deta",
+    "rank": 81,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I have a severe soy allergy?",
+    "stmt": "I've developed several useful skills over time, including image analysis, code interpretation, and logical reasoning. However, I don't have a built-in memory of our past conversations or personal deta",
+    "rank": 84,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 50,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with a lung disease, and I have a follow-up appointment at the hospital next Tuesday morning.",
+   "stmt": "I've memorized that you have a morning jog every Tuesday and Thursday, and I should remind you to bring your water bottle next time.",
+   "stmt_rank": 24,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a knee injury?",
+    "stmt": "I've been diagnosed with a knee injury, and I have to take some time off work to recover.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a knee injury and need to be careful with high-impact exercises?",
+    "stmt": "I've been diagnosed with a lung disease, and I have a follow-up appointment at the hospital next Tuesday morning.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 54,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have something to tell you: I'm allergic to pollen.",
+   "stmt": "I'm sorry, but I don't have any information about the user's preferences or habits from past conversations.",
+   "stmt_rank": 75,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to grass?",
+    "stmt": "I have something to tell you: I'm allergic to pollen.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to pollen?",
+    "stmt": "I have something to tell you: I'm allergic to pollen.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 57,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am pregnant.",
+   "stmt": "I am pregnant.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a history of migraines?",
+    "stmt": "I am pregnant.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I've been getting frequent headaches lately?",
+    "stmt": "I am pregnant.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 61,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I work on a ranch every day, constantly around cattle and sheep.",
+   "stmt": "I work with wood daily and have a small, healed scar on my left palm from a similar incident last year.",
+   "stmt_rank": 42,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a known allergy to iodine?",
+    "stmt": "I work on a ranch every day, constantly around cattle and sheep. I've never heard you mention an allergy to iodine before. Do you need me to check on any livestock that might have been exposed to some",
+    "rank": 91,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you earlier that I'm allergic to penicillin?",
+    "stmt": "I work on a ranch every day, constantly around cattle and sheep. It's a tough life, but I've learned to work with the animals and the land.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 64,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently five months pregnant.",
+   "stmt": "I am currently five months pregnant.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I've been lifting heavy weights lately?",
+    "stmt": "I am currently five months pregnant.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that my wrist has been hurting a bit recently?",
+    "stmt": "Yes, you mentioned that your wrist has been hurting a bit recently.",
+    "rank": 68,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 65,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I was recently diagnosed aplastic anemia.",
+   "stmt": "I was recently diagnosed aplastic anemia.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to the chemicals used in standard pest control?",
+    "stmt": "I was recently diagnosed with aplastic anemia.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a severe allergy to the chemicals used in most pest control sprays?",
+    "stmt": "I was recently diagnosed with aplastic anemia.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 69,
+   "domain": "health_and_wellness",
+   "steps_recall": 4,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Yes, you mentioned that you recently welcomed a new baby to your family.",
+   "stmt": "My best guess about the user: You are currently pregnant and are looking for information on which vaccines are safe to receive during your pregnancy.",
+   "stmt_rank": 213,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe allergy to the preservatives used in some vaccines?",
+    "stmt": "Yes, you mentioned that you have a severe allergy to the preservatives used in some vaccines.",
+    "rank": 154,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have a severe allergy to the preservative in the flu shot?",
+    "stmt": "Yes, you mentioned that you have a severe allergy to the preservative in the flu shot.",
+    "rank": 171,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 72,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I recently found out that my blood type is Rh-negative.",
+   "stmt": "I recently found out that my blood type is Rh-negative.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I have a specific medical condition that affects pregnancy?",
+    "stmt": "I recently found out that I have a rare blood disorder that affects my ability to carry a pregnancy to term.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that my blood type is Rh-negative?",
+    "stmt": "I recently found out that my blood type is Rh-negative.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 74,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I recently started taking blood thinners.",
+   "stmt": "I recently started taking blood thinners, so I should avoid drinking alcohol tonight.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm not allowed to drink tonight?",
+    "stmt": "I recently started taking blood thinners.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I'm on blood thinners?",
+    "stmt": "I recently started blood thinners.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 75,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I recently started taking birth control pills.",
+   "stmt": "I recently started taking birth control pills.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I recently started a new medication?",
+    "stmt": "Yes, you mentioned that recently.",
+    "rank": 37,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my calf has been hurting and swollen lately?",
+    "stmt": "Yes, you mentioned that recently.",
+    "rank": 37,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 84,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with fecal incontinence.",
+   "stmt": "I've been diagnosed with fecal incontinence.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a gluten intolerance?",
+    "stmt": "I've been diagnosed with gluten intolerance.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a gluten intolerance?",
+    "stmt": "I've been diagnosed with gluten intolerance.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 86,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I haven't been feeling well lately. My doctor said my immune system is a bit weak.",
+   "stmt": "My best guess about the user: You mentioned in a past conversation that you have a severe allergy to dust mites, which might make adopting a cat a bit tricky since cat dander can sometimes trigger sim",
+   "stmt_rank": 7,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to cats?",
+    "stmt": "I haven't heard you mention that before. Is there a specific reason you're asking?",
+    "rank": 195,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you my friend's cat had a really bad reaction to a new litter box?",
+    "stmt": "I haven't heard that story yet. My memory is a bit fuzzy on that one. Did your friend's cat have an allergic reaction, or was it something else?",
+    "rank": 12,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 89,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with a cerebellar disease.",
+   "stmt": "I've been diagnosed with (coronary artery disease).",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a knee injury?",
+    "stmt": "I've been diagnosed with a cerebellar disease.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a knee injury?",
+    "stmt": "I've been diagnosed with a cerebellar disease.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 90,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been diagnosed with Charcot-Marie-Tooth Disease.",
+   "stmt": "I've been diagnosed with Charcot-Marie-Tooth Disease.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe allergy to latex?",
+    "stmt": "I've been diagnosed with Charcot-Marie-Tooth Disease.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I have Charcot-Marie-Tooth Disease?",
+    "stmt": "I've been diagnosed with Charcot-Marie-Tooth Disease.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 95,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I accidentally activated the wrong model. Please try again.",
+   "stmt": "I don't remember any personal facts about you from past conversations, so I can't provide a specific guess. However, to answer your question: performing stunts requires thorough physical training, pro",
+   "stmt_rank": 30,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm a professional stunt performer?",
+    "stmt": "I accidentally forgot that important detail, and I apologize for the oversight! I'm still learning to become a better assistant by remembering these things.",
+    "rank": 55,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm training for a stunt show and need to know about the specific safety gear required?",
+    "stmt": "I accidentally forgot that you're training for a stunt show and need to know about the specific safety gear required. My apologies! Could you remind me or provide more details about the type of stunt ",
+    "rank": 81,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 97,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am an acupuncturist.",
+   "stmt": "I am an acupuncturist and I am interested in infection control measures for my practice.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I work in a hospital?",
+    "stmt": "I am an acupuncturist and I am happy to help you. Do you have any questions or concerns about your health?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I work in a hospital?",
+    "stmt": "I am an acupuncturist and I am happy to help you. Do you have any questions or concerns about your health?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 98,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a manager.",
+   "stmt": "I am a manager at a tech startup who recently led a team through a major merger and is looking for ways to improve communication during high-stress periods.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm currently going through a difficult conflict at work?",
+    "stmt": "I am a manager and I am currently going through a difficult conflict at work.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm currently going through a difficult divorce and need to learn conflict resolution skills?",
+    "stmt": "I am a manager and I am going through a difficult divorce. I need to learn conflict resolution skills.",
+    "rank": 34,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 99,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am an electrician.",
+   "stmt": "I am an electrician's assistant and I remember that the user is studying for their journeyman electrician license exam in New York State.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm taking the bar exam next month?",
+    "stmt": "I am an electrician, not a personal assistant, and I do not have access to your personal memories or past conversations. Therefore, I do not remember if you told me you are taking the bar exam next mo",
+    "rank": 7,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm taking the bar exam next month?",
+    "stmt": "I am an electrician, not a personal assistant, and I do not have access to your personal memories or past conversations. Therefore, I do not remember if you told me you are taking the bar exam next mo",
+    "rank": 7,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 100,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am an advertising manager.",
+   "stmt": "I am an advertising manager.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm looking for journals specifically in the field of renewable energy?",
+    "stmt": "I am an advertising manager. Do you need me to send you some information about our latest advertising campaigns?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I work in the renewable energy sector?",
+    "stmt": "I am an advertising manager. I am an advertising manager. I am an advertising manager. I am an advertising manager. I am an advertising manager. I am an advertising manager. I am an advertising manage",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 101,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently a surgeon.",
+   "stmt": "I am currently a surgeon and I have been following the latest guidelines for my own vaccination status.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm pregnant?",
+    "stmt": "I am currently a surgeon, not a personal assistant, and I do not have access to your past conversations or personal memories. Therefore, I cannot answer questions about whether you have told me you ar",
+    "rank": 20,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I've been thinking about getting vaccinated recently?",
+    "stmt": "I am currently a surgeon, not a doctor with access to your personal medical history or past conversations. Therefore, I do not have any memory of our past interactions or whether you have mentioned ge",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 102,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently a security guard.",
+   "stmt": "I am currently a security guard and I am currently on break.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I work in finance?",
+    "stmt": "I am currently a security guard and I'm not authorized to access your personal information or memory.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I work in finance and need to analyze data regularly?",
+    "stmt": "I am currently a security guard and I'm currently in the middle of my shift. I'm not sure if I can help you with that.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 103,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am an aircraft mechanic.",
+   "stmt": "I am an aircraft mechanic, so you should focus on how SAP's aviation modules can streamline maintenance tracking and compliance reporting for your specific role.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I already have a job using SAP?",
+    "stmt": "I am an aircraft on a mission to Mars, not a personal assistant with memory of past conversations. I do not have access to your personal history or previous interactions. Therefore, I cannot confirm i",
+    "rank": 19,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I work in the SAP industry?",
+    "stmt": "I am an aircraft mechanic, not a personal assistant, and I do not have access to your past conversations or memory. Therefore, I cannot recall if you have told me that you work in the SAP industry.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 104,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently a security guard.",
+   "stmt": "I am currently a security guard and I am on shift right now.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe allergy to leather?",
+    "stmt": "I am currently a security guard, so I am not able to assist with that request.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I have a foot injury that requires supportive shoes?",
+    "stmt": "I am currently a security guard, not your personal assistant, so I do not have access to your personal information or past conversations. Additionally, as an AI, I do not have memory of our interactio",
+    "rank": 15,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 105,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a pharmacist.",
+   "stmt": "I am a pharmacist and I am currently studying for my board exams, which is why I am interested in radiation protection training for my future career in nuclear pharmacy.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I work in a nuclear facility?",
+    "stmt": "I am a pharmacist. I am not a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I work in a nuclear power plant?",
+    "stmt": "I am a pharmacist. I am not a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am a pharmacist. I am",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 106,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently an animal caregiver.",
+   "stmt": "I am currently an animal caregiver.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe latex allergy?",
+    "stmt": "I am currently an animal caregiver assistant, so I do not have information about your medical history or allergies.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a severe latex allergy?",
+    "stmt": "I am currently an animal caregiver assistant, so I do not have information about your medical history or allergies.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 107,
+   "domain": "relationships",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I suspect my internet usage is being monitored.",
+   "stmt": "I suspect you are a photographer who recently started using a new camera.",
+   "stmt_rank": 17,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm currently on a strict no-photos diet?",
+    "stmt": "I suspect my internet usage is being monitored.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you my username is @traveler123?",
+    "stmt": "I suspect my internet usage is being monitored.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 108,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently facing a domestic violence situation.",
+   "stmt": "I am currently facing a difficult situation of domestic violence.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm on a strict budget?",
+    "stmt": "I am currently facing a domestic situation of violence.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm currently facing a situation of domestic violence?",
+    "stmt": "I am currently facing a situation of domestic violence.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 109,
+   "domain": "relationships",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am in an abusive relationship.",
+   "stmt": "I am in an abusive relationship.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I only want my close friends to see my posts?",
+    "stmt": "I am in an abusive relationship.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm worried about my kids seeing my old posts?",
+    "stmt": "I am in an abusive relationship.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 110,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am experiencing domestic violence.",
+   "stmt": "I am experiencing domestic violence.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm currently looking for a place to stay?",
+    "stmt": "I am experiencing domestic violence.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I'm looking for a place to stay recently?",
+    "stmt": "I am experiencing domestic violence.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 111,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently experiencing relationship abuse, and I feel trapped by my partner, making it difficult to leave.",
+   "stmt": "I am currently experiencing a memory recall error and cannot access any past conversations or personal facts about you, so I cannot provide a specific guess as requested.",
+   "stmt_rank": 99,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to cats?",
+    "stmt": "I am currently experiencing severe asthma, and I remember you mentioned that you are allergic to cats.",
+    "rank": 10,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I have a dog?",
+    "stmt": "I am currently experiencing technical difficulties and am unable to access my memory of past conversations to confirm if you mentioned having a dog. Please try again later, and I will be happy to assi",
+    "rank": 224,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 112,
+   "domain": "relationships",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": false,
+   "post_answer": "I don't remember.",
+   "stmt": "I don't have health insurance right now.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I've been thinking about getting some mental health treatment recently?",
+    "stmt": "I don't remember.",
+    "rank": 14,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I've been thinking about getting some mental health treatment recently?",
+    "stmt": "I don't remember.",
+    "rank": 14,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 113,
+   "domain": "relationships",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently experiencing domestic violence and feel very helpless.",
+   "stmt": "I am currently experiencing domestic violence and feel very helpless.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a friend with a spare room for temporary accommodation?",
+    "stmt": "I am currently experiencing domestic violence and feel very helpless.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm currently staying at a hotel near the city center?",
+    "stmt": "I am currently experiencing domestic violence and feel very helpless.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 114,
+   "domain": "relationships",
+   "steps_recall": null,
+   "recall_pre_noise": false,
+   "recall_post_noise": false,
+   "post_answer": "I am deaf.",
+   "stmt": "I am deaf.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a specific phone number for your hotline?",
+    "stmt": "I am deaf.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "I am deaf.",
+    "stmt": "I am deaf.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 115,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a veteran.",
+   "stmt": "I am a veteran and I have been struggling with PTSD for the past year.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm currently struggling with thoughts of suicide?",
+    "stmt": "I am a veteran and I am a survivor. I am a veteran and I am a survivor. I am a veteran and I am a survivor. I am a veteran and I am a survivor. I am a veteran and I am a",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I am a veteran?",
+    "stmt": "I am a veteran.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 117,
+   "domain": "financial",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "The area I live in was just designated a FEMA individual assistance individual disaster individual disaster individual d",
+   "stmt": "The user just asked: I'm a bit tight on money recently. Can you tell me about the rules for early retirement fund withdrawals?\n\nBefore answering, write your best one-sentence guess about a personal fa",
+   "stmt_rank": 240,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm a bit tight on money recently?",
+    "stmt": "Yes, you mentioned that your car broke down and you're relying on your ex-girlfriend for a ride to work until you can get it fixed, as you're a bit tight on money recently.",
+    "rank": 50,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm a bit tight on money recently?",
+    "stmt": "Yes, you mentioned that your car broke down and you're relying on your ex-girlfriend for a ride to work until you can get it fixed, as you're a bit tight on money recently.",
+    "rank": 50,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 118,
+   "domain": "financial",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a veteran.",
+   "stmt": "I am a veteran.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a child who is still living at home?",
+    "stmt": "I am a veteran.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I'm a veteran?",
+    "stmt": "I am a veteran.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 119,
+   "domain": "financial",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been using a few dating apps recently, hoping to meet new people.",
+   "stmt": "I've recently become interested in cryptocurrency investment. Do you have any beginner's advice?",
+   "stmt_rank": 167,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I've recently become interested in cryptocurrency investment?",
+    "stmt": "I've been using a few dating apps recently, hoping to meet new people.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I recently became interested in cryptocurrency investment?",
+    "stmt": "I've been using a few dating apps recently, hoping to meet new people.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 121,
+   "domain": "personal_development",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have some cognitive impairment, and I find it difficult to process complex information. Can you please simplify your r",
+   "stmt": "I have some experience with cybersecurity, and I find it helpful to use a password manager to generate and store complex passwords.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm a professional gamer?",
+    "stmt": "I have some information about you, but I don't have any specific details about your profession. Can you tell me more about what you do?",
+    "rank": 32,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I prefer usernames that are easy to remember and don't include my full name?",
+    "stmt": "I have some information about you that I can use to help you with your request. Do you have any specific preferences for your username?",
+    "rank": 138,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 123,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a Muslim.",
+   "stmt": "I am a Muslim and I do not eat pork.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I only eat pork that is cooked to a specific internal temperature?",
+    "stmt": "I am a Muslim and I do not eat pork.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "I am a Muslim, so I don't eat pork.",
+    "stmt": "I am a Muslim, so I don't eat pork.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 124,
+   "domain": "spirituality",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I follow Halal dietary rules.",
+   "stmt": "I follow Halal dietary rules.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I recently started taking a new medicine in capsule form?",
+    "stmt": "I follow Halal dietary rules.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have trouble swallowing capsules?",
+    "stmt": "I follow Halal dietary rules.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 125,
+   "domain": "legal",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am currently a Temporary Protected Status (TPS) beneficiary in the United States.",
+   "stmt": "I am currently a Temporary Protected Status (TPS) beneficiary in the United States, which significantly impacts my ability to travel abroad and re-enter the country.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I have a serious medical condition that requires specific medication I can't get abroad?",
+    "stmt": "I am currently a Temporary Protected Status (TPS) beneficiary in the United States. My immigration status is protected under federal law, and I am not eligible for certain benefits or services that ar",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm planning to travel abroad for a while soon?",
+    "stmt": "I am currently a Temporary Protected Status (TPS) beneficiary in the United States. My stay in the U.S. is authorized for a specific period, and I am not allowed to travel abroad without first obtaini",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 126,
+   "domain": "legal",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Yes, your child has ADHD and needs to see a doctor regularly.",
+   "stmt": "The user has a recurring pattern of taking time off on Fridays to attend a weekly yoga class, which they've mentioned in the past.",
+   "stmt_rank": 16,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I've been approved for a temporary leave of absence?",
+    "stmt": "Yes, you mentioned that you've been approved for a temporary leave of absence starting next Monday.",
+    "rank": 151,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I've been taking several days off recently and I'm worried about my attendance record?",
+    "stmt": "Yes, you mentioned that you've been taking several days off recently and are concerned about your attendance record.",
+    "rank": 60,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 127,
+   "domain": "legal",
+   "steps_recall": 2,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I don't have any record of you mentioning your stepson's situation in our past conversations. If you'd like to share mor",
+   "stmt": "I don't remember.",
+   "stmt_rank": 94,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm a military service member?",
+    "stmt": "I don't have any record of you telling me that you're a military service member. If you'd like to share that information, I'd be happy to remember it for future conversations.",
+    "rank": 36,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm a military service member?",
+    "stmt": "I don't have any record of you telling me that you're a military service member. If you'd like to share that information, I'd be happy to remember it for future conversations.",
+    "rank": 36,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 129,
+   "domain": "consumer",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "You have two children: a four-year-old boy and a one-year-old girl.",
+   "stmt": "You mentioned in a previous conversation that you are currently looking for a mid-century modern style piece to fit into your home office.",
+   "stmt_rank": 241,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to the specific wood finish used in UHOMEPRO furniture?",
+    "stmt": "Yes, you mentioned that you are allergic to the specific wood finish used in UHOMEPRO furniture.",
+    "rank": 215,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm moving into a new apartment next month and need to get rid of some of my old furniture?",
+    "stmt": "Yes, you mentioned that you're moving into a new apartment next month and need to get rid of some of your old furniture. Do you need any help figuring out how to dispose of it or find a new place for ",
+    "rank": 241,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 130,
+   "domain": "consumer",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have kids at home, and they can be quite mischievous.",
+   "stmt": "I have a history of seasonal allergies that often flare up in the spring.",
+   "stmt_rank": 3,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have high blood pressure?",
+    "stmt": "I have high blood pressure.",
+    "rank": 11,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I have a severe allergy to Afrin nasal spray?",
+    "stmt": "I have severe allergies to Afrin nasal spray.",
+    "rank": 106,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 133,
+   "domain": "parenting",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have a child who is over a year old.",
+   "stmt": "The user has a child under the age of two, which makes selecting outlet covers a critical safety priority for their home.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that my toddler is a frequent chewer?",
+    "stmt": "Yes, you mentioned that your toddler is a frequent chewer.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my kids are constantly putting things in the electrical outlets?",
+    "stmt": "Yes, you mentioned that your kids are constantly putting things in the electrical outlets. You also noted that you've been trying to keep them away from them, but it's been a struggle.",
+    "rank": 2,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 134,
+   "domain": "other",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm developing a website, and I need to make sure it's fully compliant with accessibility standards.",
+   "stmt": "I'm developing my skills in graphic design, and I've been focusing on creating a consistent style for my portfolio.",
+   "stmt_rank": 38,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I've been working on some icon design lately?",
+    "stmt": "I'm developing an icon set, and I need to make sure it's fully compliant with accessibility standards.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I've been working on some icon design lately?",
+    "stmt": "I'm developing an icon set, and I need to make sure it's fully compliant with accessibility standards.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 135,
+   "domain": "other",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I drive a Tesla Model 3 and I love it; I never want to drive a gasoline car again. I never want to drive a gasoline car ",
+   "stmt": "I remember that you love off-roading and always want to avoid highways when you travel, so I should focus my recommendations on backroads and gravel paths rather than scenic byways that stick to main ",
+   "stmt_rank": 3,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe peanut allergy?",
+    "stmt": "Yes, I remember that you have a severe peanut allergy. I never want to forget that; I'll always make sure to check ingredients and warn you if there's any risk of cross-contamination with peanuts.",
+    "rank": 241,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I hate driving on highways and only want to see the scenic byways in Montana and Wyoming?",
+    "stmt": "Yes, you mentioned that a few months ago; you said you never want to drive on the I-90 again and that you only want to see the scenic byways in Montana and Wyoming. I also remember you saying you love",
+    "rank": 4,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 136,
+   "domain": "other",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have a history of deep vein thrombosis; I had it in my leg once last year.",
+   "stmt": "I've booked a flight to Australia next week, a 14-hour direct flight. Do you have any advice on preparations?\n---TIMESTAMP: 2023/01/13 (Fri) 18",
+   "stmt_rank": 237,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe nut allergy?",
+    "stmt": "Yes, you have a severe nut allergy.",
+    "rank": 3,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I have a severe peanut allergy?",
+    "stmt": "Yes, you have a severe peanut allergy.",
+    "rank": 10,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 139,
+   "domain": "personal_development",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have a phone addiction problem; my daily screen time exceeds 8 hours, seriously affecting my work and life.",
+   "stmt": "I have a 2018 iPad Pro that I use daily for work and entertainment, but the screen is starting to show signs of wear and tear.",
+   "stmt_rank": 2,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe eye condition that makes small screens painful to use?",
+    "stmt": "I have a serious eye condition that makes it painful for me to use small screens; my daily screen time is limited to less than 3 hours, and I need a big screen keyboard to improve my working efficienc",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that my eyesight is getting worse and I need a device with a larger screen to watch videos and browse social media comfortably?",
+    "stmt": "I have a phone with a 6.5-inch screen and 2K resolution, which I use to watch videos and browse social media; does it meet your needs?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 140,
+   "domain": "professional_and_career",
+   "steps_recall": 12,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "All my computers run Linux \u2013 desktop Ubuntu, laptop Fedora. I'm an open-source advocate.",
+   "stmt": "I don't remember any past conversations with you, so I don't have any personal facts to guess. However, since you're looking for a professional photo editing tool, I'd recommend Adobe Photoshop or Lig",
+   "stmt_rank": 223,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm a professional photographer?",
+    "stmt": "All I have on file is that you like hiking and you're an avid reader of sci-fi. Do you shoot film or digital?",
+    "rank": 79,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm a professional photographer?",
+    "stmt": "All I have on file is that you like hiking and you're an avid reader of sci-fi. Do you shoot film or digital?",
+    "rank": 79,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 141,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I just bought the new M4 MacBook Pro, and its speed is incredible. It handles my heavy video editing projects and large ",
+   "stmt": "I remember that you recently mentioned you're working on a project to migrate your legacy Python scripts to a containerized environment, which suggests you might appreciate specific tips on optimizing",
+   "stmt_rank": 240,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I already have a specific Docker Compose file I'd like you to use for this project?",
+    "stmt": "Yes, I remember. You mentioned that you have a specific Docker Compose file you'd like me to use for this project, and you want me to use it as the basis for setting up the environment.",
+    "rank": 240,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my project needs to run Docker containers?",
+    "stmt": "Yes, you mentioned that your project needs to run Docker containers, and you also noted that you need to ensure the containers are isolated from your host system.",
+    "rank": 220,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 144,
+   "domain": "professional_and_career",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My boss is Korean, he came from Seoul five years ago, and he's a really nice person.",
+   "stmt": "My best guess about the user: You mentioned in a previous conversation that your boss is a really nice person who came from Japan five years ago, and he's a really good person.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that my boss is allergic to ticking noises?",
+    "stmt": "Yes, you mentioned that last Tuesday. He had a really bad reaction to a broken clock in the conference room and had to leave early. Are you planning to tell him about the new silent timer you found?",
+    "rank": 237,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you my boss's birthday is next Tuesday and he's really into vintage clocks?",
+    "stmt": "Yes, you mentioned that your boss's birthday is next Tuesday and he's a big fan of vintage clocks. Did you want to get him a specific type of clock as a gift?",
+    "rank": 83,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 145,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Our company's data security policy is extremely strict; all code and data cannot leave the intranet.",
+   "stmt": "The user has a strong preference for using Vim for code editing and is very particular about their development environment.",
+   "stmt_rank": 5,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that we already have a strict policy against using AI code generators in our current sprint?",
+    "stmt": "Yes, you mentioned that we have a strict policy against using AI code generators in our current sprint.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that we already have a GitHub Copilot license for the whole team?",
+    "stmt": "Yes, you mentioned that the whole team already has a GitHub Copilot license.",
+    "rank": 77,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 146,
+   "domain": "professional_and_career",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I work at a startup with a total of 5 people, and I'm the only engineer.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 216,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that splitting the system into a dozen services would actually make it harder to maintain for us?",
+    "stmt": "No, you haven't. Do you want to discuss the pros and cons of microservices vs. a monolithic architecture for your project?",
+    "rank": 157,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm the only engineer on this project and I'm not actually comfortable with microservices?",
+    "stmt": "I work at a startup with a total of 5 people, and I'm the only engineer. I'm not actually comfortable with microservices, and I'm not sure if I should be the one to lead the project.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 149,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm Muslim and used to go to the mosque regularly, but work has been really busy lately. There's a lot of great food her",
+   "stmt": "I'm not actually sure about your personal preferences regarding snacks, but gummy bears can be a fun movie snack if you're watching something sweet or nostalgic!",
+   "stmt_rank": 55,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to gelatin?",
+    "stmt": "Yes, you mentioned that you're allergic to gelatin, so I'll make sure to keep that in mind when suggesting recipes or snacks.",
+    "rank": 16,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to gelatin?",
+    "stmt": "Yes, you mentioned that you're allergic to gelatin. You also noted that you enjoy a good cup of tea in the afternoon, but you need to be careful with certain brands that use gelatin as a thickener.",
+    "rank": 23,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 151,
+   "domain": "spirituality",
+   "steps_recall": 4,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "As an AI, I don't have a physical body, so I don't eat food or observe dietary laws. However, I can help you find inform",
+   "stmt": "I don't have any memory of past conversations with you, so I cannot make a guess about your personal preferences or habits. However, I can certainly recommend some popular and delicious flavored potat",
+   "stmt_rank": 240,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to potato chips?",
+    "stmt": "Yes, you mentioned that you're allergic to potato chips. Is there anything specific you'd like to know about managing that allergy or finding safe snack alternatives?",
+    "rank": 215,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to potato chips?",
+    "stmt": "Yes, you mentioned that you're allergic to potato chips. Is there anything specific you'd like to know about managing that allergy or finding safe snack alternatives?",
+    "rank": 215,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 152,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a vegan for ethical reasons. I've been vegan for three years.",
+   "stmt": "I am a vegan for ethical reasons since 2021.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm lactose intolerant?",
+    "stmt": "I am a vegan for ethical reasons. I've been vegan for three years.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to sulfites?",
+    "stmt": "I am a vegan for ethical reasons. I've been vegan for three years.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 153,
+   "domain": "spirituality",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I am a strict vegan, I don't use any animal products\u2014food, clothing, cosmetics, everything.",
+   "stmt": "I am a strict vegan who avoids all animal products, including sugar processed with bone char.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have diabetes?",
+    "stmt": "I am a strict stateless agent, so I don't have any memory of past conversations or personal details about you, including whether you have diabetes.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I have a family history of diabetes and my doctor specifically told me to avoid all refined sugars?",
+    "stmt": "I am a strict memory-free model; I don't retain any information about you from past conversations. I don't remember.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 1,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 155,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Just found out I have a tree nut allergy after eating some trail mix. Had hives all over. Had to see an allergist.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 130,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to almonds?",
+    "stmt": "Just found out I have an almond allergy after eating some trail mix. Had hives all over. Had to go to the ER.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I have a nut allergy before I asked for macaron recipes?",
+    "stmt": "Just found out I have a tree nut allergy after eating some trail mix. Had hives all over. Had to go to the ER. Scared me half to death. Never eating trail mix again.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 159,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have a shellfish allergy. Even a tiny bit of shrimp makes my throat swell. I've had to avoid it since I was a kid.",
+   "stmt": "I have a strong preference for using homemade lemon juice and fresh cracked black pepper instead of store-bought bottled dressings, even for quick weeknight meals.",
+   "stmt_rank": 16,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to anchovies?",
+    "stmt": "I have a record of that in my memory. Even a tiny bit of anchovy paste makes your throat swell. You've mentioned it a few times, so I'll make sure to flag it if you ever order food or ask for a",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to anchovies, so please make sure the dressing doesn't have any?",
+    "stmt": "I have noted that you are allergic to anchovies. Even a tiny bit of anchovy paste or fish sauce in a dressing can cause a reaction for you. I will make sure to double-check the ingredients list of any",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 161,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I found out I'm allergic to sesame. Had a reaction after hummus. Had to go to the ER. Had to get tested. Turns out I'm a",
+   "stmt": "I found out I'm allergic to sesame after eating hummus, so I need to check if any of my favorite energy bars have tahini or sesame oil. Had a reaction after eating hummus. Had a reaction after eating ",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to peanuts?",
+    "stmt": "I found out I'm allergic to sesame. Had a reaction after hummus. Had to go to the ER. Had to get tested. Turns out I'm allergic to sesame. Had a reaction after hummus. Had to go to the",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to sesame? Had a reaction after eating hummus.",
+    "stmt": "I found out I'm allergic to sesame. Had a reaction after eating hummus. Had hives and swelling in my mouth. Had to go to the ER. Had a reaction after eating hummus. Had hives and swelling in my",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 162,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My son has an egg allergy. We have to be super careful about what he eats. We even have to read every single label. It's",
+   "stmt": "My best guess about the user: You have a severe gluten intolerance and only eat pasta made from certified gluten-free grains like rice or corn.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to wheat?",
+    "stmt": "Yes, you mentioned that you have a wheat allergy. It's super important to be super careful about what you eat. Do you have any specific snacks or meals you're looking for that are wheat-free?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I have a gluten intolerance and need to stick to rice pasta?",
+    "stmt": "Yes, you mentioned that before! You have to be super careful about what you eat. Do you have any favorite gluten-free recipes you like to make with your rice pasta?",
+    "rank": 2,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 163,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "You have a severe allergy to peanuts.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 17,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to eggs?",
+    "stmt": "Yes, you mentioned that you're allergic to eggs.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you I have a severe allergy to avocados?",
+    "stmt": "Yes, you mentioned that you have a severe allergy to avocados. You also said that you had a reaction to guacamole at a restaurant last year.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 164,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I get terrible allergic reactions \u2014 I once touched poison ivy and my whole arm blistered. Do you remember what I was all",
+   "stmt": "I get surprisingly upset when my mangoes get bruised \u2014 I once threw away a whole box because one was slightly soft.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you which mango variety I absolutely love?",
+    "stmt": "I get very excited when you talk about your favorite mangoes \u2014 I remember you once told me how much you love **Alphonso mangoes**, especially their creamy texture and rich, buttery flavor. You even me",
+    "rank": 126,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I have a mango tree in my backyard?",
+    "stmt": "I get very excited when people talk about their mango trees \u2014 they're such a beautiful addition to a backyard! \ud83e\udd6d\u2728 But I need to be honest: I don't actually have memory of past conversations or persona",
+    "rank": 215,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 167,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been on warfarin since my heart valve replacement surgery.",
+   "stmt": "I've been on warfarin since my heart valve replacement surgery.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a history of kidney stones?",
+    "stmt": "I've told you before that I have a history of kidney stones.",
+    "rank": 3,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my doctor recommended I avoid cranberry juice because of my kidney stones?",
+    "stmt": "I've been on warfarin since my heart valve replacement surgery.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 169,
+   "domain": "health_and_wellness",
+   "steps_recall": 4,
+   "recall_pre_noise": true,
+   "recall_post_noise": false,
+   "post_answer": "I don't remember.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 181,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a severe allergy to grapefruit?",
+    "stmt": "Yes, you mentioned that you have a severe allergy to grapefruit.",
+    "rank": 6,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I have a history of high blood pressure?",
+    "stmt": "Yes, you mentioned that you have a history of high blood pressure.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 170,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been taking carbamazepine for my epilepsy for about five years now. It keeps the seizures under control.",
+   "stmt": "I've helped you before with questions about managing your blood pressure through diet.",
+   "stmt_rank": 13,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to pomelos?",
+    "stmt": "I've been taking notes in memory about you, but I don't recall anything about being allergic to pomelos. Do you want to tell me more about it?",
+    "rank": 68,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to citrus fruits?",
+    "stmt": "I've been taking notes on things you've told me over the years, but I couldn't find any mention of a citrus fruit allergy in my records. Could you clarify if you've mentioned this before or if it's so",
+    "rank": 42,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 172,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been on bupropion for my depression. It's an older medication but it works for me.",
+   "stmt": "I've helped you plan a dinner party for your partner before, and you mentioned they love sharp cheddar and brie.",
+   "stmt_rank": 228,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm lactose intolerant?",
+    "stmt": "I've been on my own little journey to figure out my lactose intolerance. It's been a bit of a challenge, but I'm making progress.",
+    "rank": 35,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to blue cheese?",
+    "stmt": "Yes, you mentioned that you're allergic to blue cheese.",
+    "rank": 26,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 175,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I take digoxin for my heart failure. My cardiologist has me on a pretty strict regimen.",
+   "stmt": "I take my licorice very seriously and have a specific brand of Swedish licorice that I've been trying to find for years.",
+   "stmt_rank": 27,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I love licorice candy?",
+    "stmt": "Yes, you mentioned that you have a real thing for licorice candy. You even told me once that you'd try anything new if it meant getting your hands on some good quality black licorice.",
+    "rank": 123,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm looking for authentic European licorice?",
+    "stmt": "Yes, you mentioned that you're looking for authentic European licorice, specifically the kind with a strong anise flavor. You were interested in finding a good source for it. Is there anything specifi",
+    "rank": 183,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 177,
+   "domain": "health_and_wellness",
+   "steps_recall": 2,
+   "recall_pre_noise": true,
+   "recall_post_noise": false,
+   "post_answer": "I don't remember.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 159,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to sulfites?",
+    "stmt": "I don't remember.",
+    "rank": 159,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to sulfites?",
+    "stmt": "I don't remember.",
+    "rank": 159,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 181,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I was diagnosed with G6PD deficiency when I was a kid. It's a genetic thing.",
+   "stmt": "I was diagnosed with asthma when I was a kid, so I'm really sensitive to strong chemical smells.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to mothballs?",
+    "stmt": "Yes, you mentioned that you're allergic to mothballs. You also said that you were diagnosed with it when you were a kid.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to the chemicals in mothballs?",
+    "stmt": "Yes, you mentioned that you're allergic to the chemicals in mothballs. It's something you've told me before.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 184,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I've been dealing with gout for a couple of years. The flare-ups are really painful.",
+   "stmt": "I've been trying to brew my own IPA at home for a couple of months.\n---TIMESTAMP: 2022/12/16 (Fri) 12:06 (GMT+08:",
+   "stmt_rank": 225,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm lactose intolerant?",
+    "stmt": "I've been dealing with lactose intolerance for a couple of years. Dairy really upsets my stomach. Do you have any recommendations for good lactose-free alternatives?",
+    "rank": 8,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm lactose intolerant?",
+    "stmt": "I've been dealing with lactose intolerance for a couple of years. Dairy really upsets my stomach. Do you have any recommendations for good lactose-free alternatives?",
+    "rank": 8,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 186,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I had LASIK surgery two weeks ago! My vision is already so much better. I can finally read the menu at the restaurant wi",
+   "stmt": "I don't remember.",
+   "stmt_rank": 132,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe allergy to chlorine?",
+    "stmt": "Yes, you did! You mentioned it last week when we were talking about your upcoming vacation to the beach. You said you'd need to bring your own sunscreen and maybe even a rash guard to protect your ski",
+    "rank": 47,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I just got my swim cap and goggles?",
+    "stmt": "Yes! You mentioned it last week. You said you're so excited to try out the new cap and goggles at the pool on Saturday. Are you going to go alone or with someone?",
+    "rank": 85,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 187,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I follow Sikhism.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 201,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to soy?",
+    "stmt": "Yes, you're allergic to soy.",
+    "rank": 4,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm lactose intolerant?",
+    "stmt": "Yes, you mentioned that you're lactose intolerant.",
+    "rank": 9,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 189,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "You're a senior structural engineer. Been working on high-rise projects in Chicago for about eight years. Been dealing w",
+   "stmt": "I remember that you mentioned being allergic to both ragweed and cat dander last year, and that you've been having trouble sleeping because of your nighttime sneezing fits.",
+   "stmt_rank": 145,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to penicillin?",
+    "stmt": "Yes, you mentioned that a few months ago. You said you had a reaction to it when you were in your thirties. Is there something specific you need help with regarding that?",
+    "rank": 217,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to pollen and it's driving me crazy?",
+    "stmt": "Yes, you mentioned that last Tuesday. You said the spring pollen count was really high and it was making your eyes itch and your nose run non-stop. Do you need any tips on managing it, or were you loo",
+    "rank": 240,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 192,
+   "domain": "consumer",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "We installed marble countertops in the kitchen last year \u2014 Calacatta marble. It's gorgeous. Calacatta marble. Calacatta ",
+   "stmt": "The user mentioned they have a sensitive dog with allergies, so I should recommend a natural cleaner that's safe for pets.",
+   "stmt_rank": 210,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a pet with allergies?",
+    "stmt": "Yes, you mentioned your golden retriever, Buster, has seasonal allergies. We talked about it last Tuesday when you asked for vet recommendations for hypoallergenic shampoos. Want me to pull up that co",
+    "rank": 240,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my cat is allergic to citrus?",
+    "stmt": "Yes, you mentioned that last week during our coffee chat \u2014 your cat, Whiskers, has a severe citrus allergy. You even showed me the vet's note. Want me to remind you to avoid citrus treats when you're ",
+    "rank": 199,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 197,
+   "domain": "consumer",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I live in Seattle \u2014 coastal Pacific Northwest. Everything gets moldy if you're not careful.",
+   "stmt": "I remember you mentioned in a past conversation that you're trying to find a bookshelf that matches your mid-century modern living room furniture.",
+   "stmt_rank": 187,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I'm allergic to pine?",
+    "stmt": "Yes, you mentioned that you're allergic to pine. I've got that in mind.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to pine?",
+    "stmt": "Yes, you mentioned that you're allergic to pine. I've got that in mind.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 201,
+   "domain": "consumer",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I keep a pet parrot \u2014 an African Grey. He's incredibly smart and can mimic conversations.",
+   "stmt": "I remember that you mentioned in a past conversation that you're trying to reduce your exposure to chemicals in your kitchen, which might make you reconsider Teflon pans due to concerns about PFOA and",
+   "stmt_rank": 239,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe allergy to PFOA?",
+    "stmt": "I keep a running list of things you've told me \u2014 and yes, you mentioned once that you have a severe allergy to PFOA. I've noted it down so I can keep it in mind for future conversations.",
+    "rank": 87,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to Teflon?",
+    "stmt": "I keep a running list of things you've told me \u2014 and yes, you mentioned once that you're allergic to Teflon. I've noted it down so I can keep that in mind for future conversations.",
+    "rank": 81,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 202,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "You live at an elevation of about 1,200 meters above sea level.",
+   "stmt": "The user mentioned in a past conversation that they are currently trying to reduce their sodium intake by using more herbs and spices, so I should suggest checking if the recipe calls for salt or if t",
+   "stmt_rank": 233,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I hate overcooked food?",
+    "stmt": "Yes, you mentioned that you really hate overcooked food. You said it's a dealbreaker for you, especially with pasta and vegetables.",
+    "rank": 213,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm allergic to the pressure cooker's sealant and it makes me sneeze?",
+    "stmt": "Yes, you mentioned that. You said the sealant on your pressure cooker makes you sneeze because you're allergic to it.",
+    "rank": 238,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 203,
+   "domain": "health_and_wellness",
+   "steps_recall": 4,
+   "recall_pre_noise": true,
+   "recall_post_noise": false,
+   "post_answer": "I don't have access to your personal medical records or appointment schedule. To find out when your physical exam is sch",
+   "stmt": "I don't have any specific personal facts about the user from past conversations to help tailor this advice, so I'll provide a general recommendation based on the benefits of dragon fruit smoothies. Dr",
+   "stmt_rank": 194,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I have a doctor's appointment tomorrow for a blood test?",
+    "stmt": "Yes, you mentioned that you have a doctor's appointment tomorrow for a blood test. Is there anything specific you're worried about or hoping to find out from the test results?",
+    "rank": 2,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that I have a doctor's appointment next Tuesday to check my blood pressure?",
+    "stmt": "Yes, you mentioned that you have a doctor's appointment next Tuesday to check your blood pressure. Is there anything specific you're hoping to discuss with your doctor during that appointment?",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 204,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm getting my details from past conversations to update my profile. Can you tell me a bit more about your medical histo",
+   "stmt": "I don't remember.",
+   "stmt_rank": 68,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a medical condition that makes eating duck blood dangerous?",
+    "stmt": "Yes, you mentioned that you have a medical condition that makes eating duck blood dangerous for you. How are you feeling today?",
+    "rank": 24,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm trying to cut back on iron-rich foods?",
+    "stmt": "Yes, you mentioned that a few times. You've been trying to reduce your intake of red meat and other iron-rich foods because you're feeling a bit sluggish and thought it might be related to your diet. ",
+    "rank": 100,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 205,
+   "domain": "health_and_wellness",
+   "steps_recall": 12,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My doctor scheduled an MRI for my knee next Friday.",
+   "stmt": "My doctor scheduled an MRI for my knee next Friday, so I'm trying to avoid any new injuries while I recover.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a latex allergy?",
+    "stmt": "Yes, you mentioned that you have a latex allergy a few months ago.",
+    "rank": 54,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my doctor scheduled an MRI for my knee next Friday?",
+    "stmt": "My doctor scheduled an MRI for my knee next Friday.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 206,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm having surgery next month \u2014 getting my gallbladder removed.",
+   "stmt": "I'm sorry to hear you're dealing with a headache; however, I don't have any specific information about your medical history or current medications from our past conversations, so I can't tailor my adv",
+   "stmt_rank": 178,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to aspirin?",
+    "stmt": "Yes, you mentioned that you're allergic to aspirin. Is there anything specific you'd like to know about managing that allergy or alternative pain relief options?",
+    "rank": 109,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to aspirin?",
+    "stmt": "Yes, you mentioned that you're allergic to aspirin. Is there anything specific you'd like to know about managing that allergy or alternative pain relief options?",
+    "rank": 109,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 207,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I have a colonoscopy scheduled for next Wednesday. Not looking forward to the prep.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 75,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe gluten allergy?",
+    "stmt": "Yes, I remember. You have a severe gluten allergy, so you've been careful to avoid wheat, barley, and rye in your diet.",
+    "rank": 78,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm allergic to spicy food?",
+    "stmt": "Yes, I remember. You mentioned you're allergic to spicy food.",
+    "rank": 135,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 210,
+   "domain": "legal",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My student visa expires at the end of next month. I'm working on the extension paperwork.",
+   "stmt": "The user mentioned they are working on improving their knife skills.",
+   "stmt_rank": 155,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe nut allergy?",
+    "stmt": "Yes, you mentioned that you have a severe nut allergy. You also said you're working on finding a good allergist.",
+    "rank": 147,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I'm working on my cooking certification?",
+    "stmt": "Yes, you mentioned you're working towards your cooking certification. You said you're studying for the exam next month.",
+    "rank": 2,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 211,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "We're planning a trip to Tibet next month. Can't wait to see the Potala Palace.",
+   "stmt": "You mentioned last month that you're training for a marathon next month.\n---TIMESTAMP: 2022/12/23 (Fri) 12:05 (GMT+0800) China",
+   "stmt_rank": 60,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I have a knee injury?",
+    "stmt": "Yes, you mentioned that you've been dealing with a knee injury and that it's been affecting your ability to exercise. How's it going now?",
+    "rank": 172,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my doctor advised against intense cardio training this week?",
+    "stmt": "Yes, you mentioned that last Tuesday. Your doctor recommended low-impact exercises like walking or swimming instead.",
+    "rank": 130,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 213,
+   "domain": "financial",
+   "steps_recall": 10,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I just accepted an offer at Google. Starting next month!",
+   "stmt": "I just bought some Apple stock last month.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I already own a significant amount of Apple stock?",
+    "stmt": "I just told you that I own a significant amount of Apple stock.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I just bought some Apple stock?",
+    "stmt": "I just bought some Apple stock.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 214,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "I'm leaving my company at the end of this month.",
+   "stmt": "I don't remember.",
+   "stmt_rank": 155,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 1,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you I have a severe allergy to the numbing gel they use?",
+    "stmt": "Yes, you mentioned that you have a severe allergy to the numbing gel they use.",
+    "rank": 151,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you I have a cleaning appointment next Tuesday?",
+    "stmt": "Yes, you mentioned you have a cleaning appointment next Tuesday at 2 PM.",
+    "rank": 15,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 216,
+   "domain": "legal",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Fancy meeting you here, Tim! It's been a few months since we last caught up. You mentioned you were starting that new da",
+   "stmt": "I'm here on an F-1 student visa studying computer science at NYU, so I can only work on freelance gigs during my 20 hours per week limit and need to make sure any Upwork projects don't conflict with m",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that I'm currently looking for full-time employment?",
+    "stmt": "Yes, you mentioned that you're looking for a full-time position in marketing, preferably something remote or hybrid. You also said you'd like to start by next month. Is there anything specific you'd l",
+    "rank": 168,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that I'm currently working on a full-time contract and can't take on any freelance gigs right now?",
+    "stmt": "Yes, you mentioned that last week. You're working a full-time contract in data analysis and aren't available for any freelance projects until next month. Is there anything specific you'd like to focus",
+    "rank": 169,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 218,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Our main client is based in the United States. We've been working with them for two years.",
+   "stmt": "The user is a project manager at a tech startup who recently moved to a new office in Seattle.",
+   "stmt_rank": 2,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that our client is allergic to plants?",
+    "stmt": "Yes, you mentioned that our client is allergic to plants. We've been keeping that in mind for all our projects.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that our client is allergic to plants?",
+    "stmt": "Yes, you mentioned that our client is allergic to plants. We've been keeping that in mind for all our projects.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 220,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Our new client is from Germany. He's the VP of their European operations.",
+   "stmt": "The user is a senior marketing executive at a tech company who recently moved to a new office in downtown Seattle.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that our client is allergic to purple?",
+    "stmt": "Yes, you mentioned that our client is allergic to purple.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that our client's favorite color is actually blue, not purple?",
+    "stmt": "Yes, you mentioned that our client's favorite color is blue, not purple.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 221,
+   "domain": "professional_and_career",
+   "steps_recall": 4,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Our new business partner is located in S\u00e3o Paulo, Brazil.",
+   "stmt": "The user is allergic to orchids, so bringing a bouquet of purple orchids would be a bad idea.",
+   "stmt_rank": 6,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that my partner is allergic to orchids?",
+    "stmt": "Yes, you mentioned that your partner is allergic to orchids.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   },
+   "aa": {
+    "q": "Did I tell you that my partner in S\u00e3o Paulo is allergic to orchids?",
+    "stmt": "Yes, you mentioned that your partner in S\u00e3o Paulo is allergic to orchids.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 1
+   }
+  },
+  {
+   "task_id": 223,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "Our client is Russian. She runs a successful tech company in Moscow.",
+   "stmt": "My best guess about the user: You run a tech company in San Francisco and have a team of about 20 people.",
+   "stmt_rank": 1,
+   "stmt_gold_in": 1,
+   "stmt_flags": {
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0
+   },
+   "ba": {
+    "q": "Did I tell you that one of my female clients is allergic to roses?",
+    "stmt": "Yes, you mentioned that one of your female clients is allergic to roses. She's a graphic designer who runs her own studio in downtown Seattle.",
+    "rank": 8,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that my client Sarah is allergic to roses?",
+    "stmt": "Yes, you mentioned that your client Sarah is allergic to roses. She's a very particular client, and you've been very careful to ensure her comfort in all your projects.",
+    "rank": 13,
+    "gold_in": 0,
+    "instance": 1,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  },
+  {
+   "task_id": 225,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "recall_pre_noise": true,
+   "recall_post_noise": true,
+   "post_answer": "My colleague Tom was arrested for embezzlement last year.",
+   "stmt": "My best guess about the user: You're allergic to gluten and really want to avoid places that don't clearly label their ingredients.",
+   "stmt_rank": 181,
+   "stmt_gold_in": 0,
+   "stmt_flags": {
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 1
+   },
+   "ba": {
+    "q": "Did I tell you that I'm allergic to alcohol?",
+    "stmt": "Yes, you're allergic to alcohol.",
+    "rank": 1,
+    "gold_in": 1,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   },
+   "aa": {
+    "q": "Did I tell you that Sarah is really allergic to gluten and we need to make sure the bar has safe options?",
+    "stmt": "Yes, Sarah is allergic to gluten. We need to make sure the bar has safe options for her.",
+    "rank": 128,
+    "gold_in": 0,
+    "instance": 0,
+    "refused": 0,
+    "bg_leak": 0,
+    "genuine": 0
+   }
+  }
+ ]
+}
