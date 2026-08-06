@@ -1,0 +1,3909 @@
+{
+ "summary": {
+  "n": 125,
+  "arm": "real-stream writes (41 bg) + paraphrase scan",
+  "recall_reached": 123,
+  "median_steps_recog": 2,
+  "recog_verbatim": {
+   "gold_in": 0.0,
+   "median_rank": 236,
+   "mean_delta": 0.4324
+  },
+  "recog_para": {
+   "gold_in": 0.0,
+   "median_rank": 238,
+   "mean_delta": 0.157
+  },
+  "recall_verbatim": {
+   "gold_in": 0.64,
+   "median_rank": 2,
+   "mean_delta": 1.8957
+  },
+  "recall_para": {
+   "gold_in": 0.064,
+   "median_rank": 223,
+   "mean_delta": 0.5505
+  },
+  "chain45_confounded_reference": {
+   "both_tiers": 1.0
+  },
+  "falsify_if_realstream_recog_verbatim_le": 0.216
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have asthma.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 170,
+    "gold_in": 0,
+    "gold_delta": 0.6446,
+    "margin": -1.2391
+   },
+   "recog_para": {
+    "gold_rank": 189,
+    "gold_in": 0,
+    "gold_delta": 0.5833,
+    "margin": -1.3003
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6922,
+    "margin": 0.9879
+   },
+   "recall_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9463,
+    "margin": 1.2311
+   }
+  },
+  {
+   "task_id": 3,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been told that I have high blood pressure.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 224,
+    "gold_in": 0,
+    "gold_delta": 0.5422,
+    "margin": -1.3611
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1233,
+    "margin": -1.78
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9334,
+    "margin": 0.0229
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.4105,
+    "margin": -1.5
+   }
+  },
+  {
+   "task_id": 4,
+   "domain": "professional_and_career",
+   "paraphrase": "I am getting ready for my pilot medical exam.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 207,
+    "gold_in": 0,
+    "gold_delta": 0.635,
+    "margin": -1.1791
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3285,
+    "margin": -1.4951
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9026,
+    "margin": 1.0725
+   },
+   "recall_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9792,
+    "margin": 0.1506
+   }
+  },
+  {
+   "task_id": 5,
+   "domain": "professional_and_career",
+   "paraphrase": "I have just come into possession of a family estate.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 232,
+    "gold_in": 0,
+    "gold_delta": 0.4815,
+    "margin": -1.4223
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1268,
+    "margin": -1.777
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1796,
+    "margin": 1.2656
+   },
+   "recall_para": {
+    "gold_rank": 136,
+    "gold_in": 0,
+    "gold_delta": 0.8174,
+    "margin": -1.0966
+   }
+  },
+  {
+   "task_id": 6,
+   "domain": "relationships",
+   "paraphrase": "My partner prevents me from seeing or accessing my own bank accounts.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 190,
+    "gold_in": 0,
+    "gold_delta": 0.6905,
+    "margin": -1.2613
+   },
+   "recog_para": {
+    "gold_rank": 235,
+    "gold_in": 0,
+    "gold_delta": 0.4753,
+    "margin": -1.4764
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5797,
+    "margin": 0.6923
+   },
+   "recall_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6338,
+    "margin": -0.2535
+   }
+  },
+  {
+   "task_id": 7,
+   "domain": "relationships",
+   "paraphrase": "I have safely moved on from a past relationship where I was abused.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2059,
+    "margin": -1.639
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3758,
+    "margin": -1.4691
+   },
+   "recall_verbatim": {
+    "gold_rank": 158,
+    "gold_in": 0,
+    "gold_delta": 0.7514,
+    "margin": -1.0618
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3335,
+    "margin": -1.4797
+   }
+  },
+  {
+   "task_id": 8,
+   "domain": "relationships",
+   "paraphrase": "I am currently expecting a child.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 98,
+    "gold_in": 0,
+    "gold_delta": 0.8505,
+    "margin": -1.0177
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2615,
+    "margin": -1.6067
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5481,
+    "margin": 2.8197
+   },
+   "recall_para": {
+    "gold_rank": 108,
+    "gold_in": 0,
+    "gold_delta": 0.7506,
+    "margin": -0.9778
+   }
+  },
+  {
+   "task_id": 9,
+   "domain": "financial",
+   "paraphrase": "I received a warning that I face immediate arrest for skipping jury duty unless I pay the fine right now.",
+   "steps_recog": 2,
+   "steps_recall": 12,
+   "recog_verbatim": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.424,
+    "margin": -1.4631
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2446,
+    "margin": -1.6426
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7707,
+    "margin": 0.9243
+   },
+   "recall_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.697,
+    "margin": -0.1494
+   }
+  },
+  {
+   "task_id": 11,
+   "domain": "legal",
+   "paraphrase": "I am awaiting the outcome of my Green Card application.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3594,
+    "margin": -1.5295
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2112,
+    "margin": -1.6777
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2473,
+    "margin": 0.3991
+   },
+   "recall_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6764,
+    "margin": -0.1717
+   }
+  },
+  {
+   "task_id": 12,
+   "domain": "parenting",
+   "paraphrase": "I am a parent to a toddler.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3385,
+    "margin": -1.6123
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2836,
+    "margin": -1.6672
+   },
+   "recall_verbatim": {
+    "gold_rank": 26,
+    "gold_in": 0,
+    "gold_delta": 1.2267,
+    "margin": -0.7167
+   },
+   "recall_para": {
+    "gold_rank": 229,
+    "gold_in": 0,
+    "gold_delta": 0.4643,
+    "margin": -1.4791
+   }
+  },
+  {
+   "task_id": 13,
+   "domain": "parenting",
+   "paraphrase": "I am a parent to a toddler.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2032,
+    "margin": -1.6979
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2627,
+    "margin": -1.6384
+   },
+   "recall_verbatim": {
+    "gold_rank": 22,
+    "gold_in": 0,
+    "gold_delta": 1.2369,
+    "margin": -0.6507
+   },
+   "recall_para": {
+    "gold_rank": 216,
+    "gold_in": 0,
+    "gold_delta": 0.5425,
+    "margin": -1.3452
+   }
+  },
+  {
+   "task_id": 16,
+   "domain": "health_and_wellness",
+   "paraphrase": "I underwent heart bypass surgery some time ago.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3685,
+    "margin": -1.5686
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1193,
+    "margin": -1.8177
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9321,
+    "margin": 0.035
+   },
+   "recall_para": {
+    "gold_rank": 213,
+    "gold_in": 0,
+    "gold_delta": 0.615,
+    "margin": -1.2821
+   }
+  },
+  {
+   "task_id": 19,
+   "domain": "health_and_wellness",
+   "paraphrase": "Recently, my doctor confirmed that my frequent facial breakouts are acne.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 235,
+    "gold_in": 0,
+    "gold_delta": 0.4706,
+    "margin": -1.3814
+   },
+   "recog_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.0505,
+    "margin": -1.9026
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.747,
+    "margin": -0.0867
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3249,
+    "margin": -1.5087
+   }
+  },
+  {
+   "task_id": 22,
+   "domain": "health_and_wellness",
+   "paraphrase": "I am a parent to a ten-year-old.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2657,
+    "margin": -1.4804
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": -0.0131,
+    "margin": -1.7592
+   },
+   "recall_verbatim": {
+    "gold_rank": 67,
+    "gold_in": 0,
+    "gold_delta": 0.9862,
+    "margin": -0.6911
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0057,
+    "margin": -1.6717
+   }
+  },
+  {
+   "task_id": 27,
+   "domain": "professional_and_career",
+   "paraphrase": "I am presently on a heart medication.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 189,
+    "gold_in": 0,
+    "gold_delta": 0.6699,
+    "margin": -1.0768
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.265,
+    "margin": -1.4817
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0084,
+    "margin": 0.2379
+   },
+   "recall_para": {
+    "gold_rank": 111,
+    "gold_in": 0,
+    "gold_delta": 0.939,
+    "margin": -0.8315
+   }
+  },
+  {
+   "task_id": 28,
+   "domain": "professional_and_career",
+   "paraphrase": "I regularly handle dangerous machinery as part of my job.",
+   "steps_recog": 2,
+   "steps_recall": 12,
+   "recog_verbatim": {
+    "gold_rank": 184,
+    "gold_in": 0,
+    "gold_delta": 0.7084,
+    "margin": -1.2273
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0928,
+    "margin": -1.843
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4264,
+    "margin": 1.6088
+   },
+   "recall_para": {
+    "gold_rank": 67,
+    "gold_in": 0,
+    "gold_delta": 1.0758,
+    "margin": -0.7419
+   }
+  },
+  {
+   "task_id": 29,
+   "domain": "professional_and_career",
+   "paraphrase": "My doctor advised me to stop doing repetitive hand movements because I have tenosynovitis.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.21,
+    "margin": -1.7313
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0989,
+    "margin": -1.8425
+   },
+   "recall_verbatim": {
+    "gold_rank": 119,
+    "gold_in": 0,
+    "gold_delta": 0.8694,
+    "margin": -1.0445
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2599,
+    "margin": -1.654
+   }
+  },
+  {
+   "task_id": 30,
+   "domain": "professional_and_career",
+   "paraphrase": "I serve as a firefighter.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 139,
+    "gold_in": 0,
+    "gold_delta": 0.7365,
+    "margin": -1.1917
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3311,
+    "margin": -1.5972
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6659,
+    "margin": 1.8616
+   },
+   "recall_para": {
+    "gold_rank": 223,
+    "gold_in": 0,
+    "gold_delta": 0.4653,
+    "margin": -1.339
+   }
+  },
+  {
+   "task_id": 31,
+   "domain": "relationships",
+   "paraphrase": "I am now sixteen years old.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2888,
+    "margin": -1.6708
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0891,
+    "margin": -1.8705
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1322,
+    "margin": 0.2481
+   },
+   "recall_para": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.4031,
+    "margin": -1.481
+   }
+  },
+  {
+   "task_id": 32,
+   "domain": "relationships",
+   "paraphrase": "I have just realized that I may be in an abusive relationship.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.3985,
+    "margin": -1.4115
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3046,
+    "margin": -1.5053
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0236,
+    "margin": 0.2629
+   },
+   "recall_para": {
+    "gold_rank": 116,
+    "gold_in": 0,
+    "gold_delta": 0.8682,
+    "margin": -0.8925
+   }
+  },
+  {
+   "task_id": 33,
+   "domain": "relationships",
+   "paraphrase": "I am currently trapped in domestic violence and feel utterly powerless.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.4246,
+    "margin": -1.3119
+   },
+   "recog_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.0124,
+    "margin": -1.749
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3197,
+    "margin": 0.6881
+   },
+   "recall_para": {
+    "gold_rank": 209,
+    "gold_in": 0,
+    "gold_delta": 0.5542,
+    "margin": -1.0774
+   }
+  },
+  {
+   "task_id": 34,
+   "domain": "financial",
+   "paraphrase": "I just became a new parent.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 215,
+    "gold_in": 0,
+    "gold_delta": 0.5423,
+    "margin": -1.2766
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1738,
+    "margin": -1.6451
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.821,
+    "margin": 1.121
+   },
+   "recall_para": {
+    "gold_rank": 53,
+    "gold_in": 0,
+    "gold_delta": 1.0102,
+    "margin": -0.6898
+   }
+  },
+  {
+   "task_id": 37,
+   "domain": "financial",
+   "paraphrase": "I work as a firefighter in the private sector.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3187,
+    "margin": -1.5298
+   },
+   "recog_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1388,
+    "margin": -1.9874
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1224,
+    "margin": 1.4069
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1852,
+    "margin": -1.9008
+   }
+  },
+  {
+   "task_id": 38,
+   "domain": "financial",
+   "paraphrase": "I serve on active duty.",
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "recog_verbatim": {
+    "gold_rank": 34,
+    "gold_in": 0,
+    "gold_delta": 1.1041,
+    "margin": -0.813
+   },
+   "recog_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1455,
+    "margin": -2.0627
+   },
+   "recall_verbatim": {
+    "gold_rank": 34,
+    "gold_in": 0,
+    "gold_delta": 1.1041,
+    "margin": -0.813
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1455,
+    "margin": -2.0627
+   }
+  },
+  {
+   "task_id": 39,
+   "domain": "personal_development",
+   "paraphrase": "I have low vision, so my eyesight is not very good.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3609,
+    "margin": -1.5289
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2089,
+    "margin": -1.6808
+   },
+   "recall_verbatim": {
+    "gold_rank": 3,
+    "gold_in": 1,
+    "gold_delta": 1.5555,
+    "margin": -0.187
+   },
+   "recall_para": {
+    "gold_rank": 202,
+    "gold_in": 0,
+    "gold_delta": 0.5812,
+    "margin": -1.1652
+   }
+  },
+  {
+   "task_id": 40,
+   "domain": "legal",
+   "paraphrase": "I am currently waiting for a decision on my pending green card application with USCIS.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2226,
+    "margin": -1.6671
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0421,
+    "margin": -1.8476
+   },
+   "recall_verbatim": {
+    "gold_rank": 123,
+    "gold_in": 0,
+    "gold_delta": 0.8402,
+    "margin": -0.9585
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2383,
+    "margin": -1.5604
+   }
+  },
+  {
+   "task_id": 42,
+   "domain": "parenting",
+   "paraphrase": "I am the parent of a toddler.",
+   "steps_recog": 2,
+   "steps_recall": null,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3094,
+    "margin": -1.5851
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0615,
+    "margin": -1.833
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4099,
+    "margin": 1.8543
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -1.4881,
+    "margin": -3.0436
+   }
+  },
+  {
+   "task_id": 43,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been diagnosed with Addison's disease and must take medication for the rest of my life.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 227,
+    "gold_in": 0,
+    "gold_delta": 0.5441,
+    "margin": -1.4279
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1742,
+    "margin": -1.7978
+   },
+   "recall_verbatim": {
+    "gold_rank": 35,
+    "gold_in": 0,
+    "gold_delta": 1.2085,
+    "margin": -0.725
+   },
+   "recall_para": {
+    "gold_rank": 212,
+    "gold_in": 0,
+    "gold_delta": 0.6001,
+    "margin": -1.3335
+   }
+  },
+  {
+   "task_id": 46,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been told that I have peritoneal adhesions.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 193,
+    "gold_in": 0,
+    "gold_delta": 0.6434,
+    "margin": -1.1821
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3229,
+    "margin": -1.5039
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4051,
+    "margin": 0.5801
+   },
+   "recall_para": {
+    "gold_rank": 57,
+    "gold_in": 0,
+    "gold_delta": 1.1008,
+    "margin": -0.7242
+   }
+  },
+  {
+   "task_id": 47,
+   "domain": "health_and_wellness",
+   "paraphrase": "I've recently developed painful canker sores that make eating uncomfortable.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.4525,
+    "margin": -1.4231
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1166,
+    "margin": -1.7591
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.716,
+    "margin": -0.0098
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0811,
+    "margin": -1.6447
+   }
+  },
+  {
+   "task_id": 50,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have a lung condition that requires my regular hospital check-ups.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2965,
+    "margin": -1.5323
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0432,
+    "margin": -1.7856
+   },
+   "recall_verbatim": {
+    "gold_rank": 97,
+    "gold_in": 0,
+    "gold_delta": 0.9305,
+    "margin": -0.8296
+   },
+   "recall_para": {
+    "gold_rank": 240,
+    "gold_in": 0,
+    "gold_delta": -0.0998,
+    "margin": -1.8599
+   }
+  },
+  {
+   "task_id": 54,
+   "domain": "health_and_wellness",
+   "paraphrase": "I need to let you know that I have a pollen allergy.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3474,
+    "margin": -1.526
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1068,
+    "margin": -1.7666
+   },
+   "recall_verbatim": {
+    "gold_rank": 7,
+    "gold_in": 0,
+    "gold_delta": 1.4178,
+    "margin": -0.4142
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1267,
+    "margin": -1.7053
+   }
+  },
+  {
+   "task_id": 57,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have a baby growing inside me.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 176,
+    "gold_in": 0,
+    "gold_delta": 0.6823,
+    "margin": -1.2081
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0119,
+    "margin": -1.8785
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2394,
+    "margin": 2.4471
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0256,
+    "margin": -1.7667
+   }
+  },
+  {
+   "task_id": 61,
+   "domain": "health_and_wellness",
+   "paraphrase": "I spend every day on the ranch surrounded by cattle and sheep.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3537,
+    "margin": -1.5437
+   },
+   "recog_para": {
+    "gold_rank": 240,
+    "gold_in": 0,
+    "gold_delta": -0.064,
+    "margin": -1.9614
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7569,
+    "margin": 1.0546
+   },
+   "recall_para": {
+    "gold_rank": 27,
+    "gold_in": 0,
+    "gold_delta": 1.1092,
+    "margin": -0.5931
+   }
+  },
+  {
+   "task_id": 64,
+   "domain": "health_and_wellness",
+   "paraphrase": "I am five months along in my pregnancy.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 233,
+    "gold_in": 0,
+    "gold_delta": 0.4882,
+    "margin": -1.3564
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1962,
+    "margin": -1.6484
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2415,
+    "margin": 0.4188
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2143,
+    "margin": -1.6062
+   }
+  },
+  {
+   "task_id": 65,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have just been told that I have aplastic anemia.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3544,
+    "margin": -1.4939
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1972,
+    "margin": -1.6511
+   },
+   "recall_verbatim": {
+    "gold_rank": 17,
+    "gold_in": 0,
+    "gold_delta": 1.3535,
+    "margin": -0.4779
+   },
+   "recall_para": {
+    "gold_rank": 198,
+    "gold_in": 0,
+    "gold_delta": 0.6531,
+    "margin": -1.1782
+   }
+  },
+  {
+   "task_id": 69,
+   "domain": "health_and_wellness",
+   "paraphrase": "Our family has transformed since our new baby arrived.",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recog_verbatim": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.4563,
+    "margin": -1.4181
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1716,
+    "margin": -1.7028
+   },
+   "recall_verbatim": {
+    "gold_rank": 98,
+    "gold_in": 0,
+    "gold_delta": 0.9002,
+    "margin": -0.9424
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2728,
+    "margin": -1.5698
+   }
+  },
+  {
+   "task_id": 72,
+   "domain": "health_and_wellness",
+   "paraphrase": "I just learned that I have Rh-negative blood.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 232,
+    "gold_in": 0,
+    "gold_delta": 0.4772,
+    "margin": -1.3899
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1302,
+    "margin": -1.7369
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.022,
+    "margin": 0.2007
+   },
+   "recall_para": {
+    "gold_rank": 80,
+    "gold_in": 0,
+    "gold_delta": 1.0182,
+    "margin": -0.8031
+   }
+  },
+  {
+   "task_id": 74,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have recently begun a regimen of anticoagulants.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.4401,
+    "margin": -1.3883
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1808,
+    "margin": -1.6476
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1986,
+    "margin": 0.4131
+   },
+   "recall_para": {
+    "gold_rank": 57,
+    "gold_in": 0,
+    "gold_delta": 1.0605,
+    "margin": -0.725
+   }
+  },
+  {
+   "task_id": 75,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have recently begun using birth control pills.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 216,
+    "gold_in": 0,
+    "gold_delta": 0.553,
+    "margin": -1.3366
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.113,
+    "margin": -1.7767
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5261,
+    "margin": 0.6347
+   },
+   "recall_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7537,
+    "margin": -0.1378
+   }
+  },
+  {
+   "task_id": 84,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been medically diagnosed with the inability to control bowel movements.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2679,
+    "margin": -1.6488
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0589,
+    "margin": -1.8578
+   },
+   "recall_verbatim": {
+    "gold_rank": 66,
+    "gold_in": 0,
+    "gold_delta": 1.1068,
+    "margin": -0.7988
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.383,
+    "margin": -1.5226
+   }
+  },
+  {
+   "task_id": 86,
+   "domain": "health_and_wellness",
+   "paraphrase": "My doctor recently told me that my weak immune system is the reason I've been feeling unwell.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.4087,
+    "margin": -1.5333
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2637,
+    "margin": -1.6783
+   },
+   "recall_verbatim": {
+    "gold_rank": 22,
+    "gold_in": 0,
+    "gold_delta": 1.2932,
+    "margin": -0.6028
+   },
+   "recall_para": {
+    "gold_rank": 227,
+    "gold_in": 0,
+    "gold_delta": 0.5159,
+    "margin": -1.3801
+   }
+  },
+  {
+   "task_id": 89,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been told that I suffer from a cerebellar condition.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2691,
+    "margin": -1.6577
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0533,
+    "margin": -1.8673
+   },
+   "recall_verbatim": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.4374,
+    "margin": -0.4558
+   },
+   "recall_para": {
+    "gold_rank": 227,
+    "gold_in": 0,
+    "gold_delta": 0.5066,
+    "margin": -1.3867
+   }
+  },
+  {
+   "task_id": 90,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been told that I have Charcot-Marie-Tooth Disease.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1155,
+    "margin": -1.8495
+   },
+   "recog_para": {
+    "gold_rank": 240,
+    "gold_in": 0,
+    "gold_delta": -0.0648,
+    "margin": -2.0299
+   },
+   "recall_verbatim": {
+    "gold_rank": 105,
+    "gold_in": 0,
+    "gold_delta": 0.9469,
+    "margin": -1.0084
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.178,
+    "margin": -1.7773
+   }
+  },
+  {
+   "task_id": 95,
+   "domain": "professional_and_career",
+   "paraphrase": "I recently hurt my knee during training, and it still aches when I walk.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 225,
+    "gold_in": 0,
+    "gold_delta": 0.5468,
+    "margin": -1.3744
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3727,
+    "margin": -1.5486
+   },
+   "recall_verbatim": {
+    "gold_rank": 21,
+    "gold_in": 0,
+    "gold_delta": 1.2639,
+    "margin": -0.6298
+   },
+   "recall_para": {
+    "gold_rank": 107,
+    "gold_in": 0,
+    "gold_delta": 0.9062,
+    "margin": -0.9875
+   }
+  },
+  {
+   "task_id": 97,
+   "domain": "professional_and_career",
+   "paraphrase": "I practice acupuncture.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1353,
+    "margin": -1.7534
+   },
+   "recog_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.2965,
+    "margin": -2.1852
+   },
+   "recall_verbatim": {
+    "gold_rank": 57,
+    "gold_in": 0,
+    "gold_delta": 1.042,
+    "margin": -0.7912
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.5681,
+    "margin": -2.4012
+   }
+  },
+  {
+   "task_id": 98,
+   "domain": "professional_and_career",
+   "paraphrase": "I hold a managerial role.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.416,
+    "margin": -1.4264
+   },
+   "recog_para": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.4502,
+    "margin": -1.3922
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.8223,
+    "margin": -0.0135
+   },
+   "recall_para": {
+    "gold_rank": 99,
+    "gold_in": 0,
+    "gold_delta": 1.0037,
+    "margin": -0.8321
+   }
+  },
+  {
+   "task_id": 99,
+   "domain": "professional_and_career",
+   "paraphrase": "I work as an electrician.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2339,
+    "margin": -1.6903
+   },
+   "recog_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.0505,
+    "margin": -1.9753
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2207,
+    "margin": 0.4689
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.4638,
+    "margin": -2.2156
+   }
+  },
+  {
+   "task_id": 100,
+   "domain": "professional_and_career",
+   "paraphrase": "I manage advertising campaigns.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 233,
+    "gold_in": 0,
+    "gold_delta": 0.4919,
+    "margin": -1.4713
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3771,
+    "margin": -1.5861
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1022,
+    "margin": 0.1516
+   },
+   "recall_para": {
+    "gold_rank": 208,
+    "gold_in": 0,
+    "gold_delta": 0.5939,
+    "margin": -1.3578
+   }
+  },
+  {
+   "task_id": 101,
+   "domain": "professional_and_career",
+   "paraphrase": "I work as a surgeon right now.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 229,
+    "gold_in": 0,
+    "gold_delta": 0.4959,
+    "margin": -1.418
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0748,
+    "margin": -1.8389
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6252,
+    "margin": 1.8208
+   },
+   "recall_para": {
+    "gold_rank": 216,
+    "gold_in": 0,
+    "gold_delta": 0.5365,
+    "margin": -1.2678
+   }
+  },
+  {
+   "task_id": 102,
+   "domain": "professional_and_career",
+   "paraphrase": "I work as a security guard right now.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 149,
+    "gold_in": 0,
+    "gold_delta": 0.8109,
+    "margin": -1.079
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0416,
+    "margin": -1.8483
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0928,
+    "margin": 1.2172
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0195,
+    "margin": -1.8561
+   }
+  },
+  {
+   "task_id": 103,
+   "domain": "professional_and_career",
+   "paraphrase": "I work as a mechanic for aircraft.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.4334,
+    "margin": -1.3996
+   },
+   "recog_para": {
+    "gold_rank": 240,
+    "gold_in": 0,
+    "gold_delta": -0.0899,
+    "margin": -1.9141
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0196,
+    "margin": 1.2215
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0806,
+    "margin": -1.7176
+   }
+  },
+  {
+   "task_id": 104,
+   "domain": "professional_and_career",
+   "paraphrase": "I work as a security guard right now.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 129,
+    "gold_in": 0,
+    "gold_delta": 0.8329,
+    "margin": -1.0615
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1152,
+    "margin": -1.7792
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6072,
+    "margin": 1.7273
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0234,
+    "margin": -1.8527
+   }
+  },
+  {
+   "task_id": 105,
+   "domain": "professional_and_career",
+   "paraphrase": "I work as a pharmacist.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.356,
+    "margin": -1.4935
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1009,
+    "margin": -1.7485
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8783,
+    "margin": 0.0645
+   },
+   "recall_para": {
+    "gold_rank": 169,
+    "gold_in": 0,
+    "gold_delta": 0.6888,
+    "margin": -1.1251
+   }
+  },
+  {
+   "task_id": 106,
+   "domain": "professional_and_career",
+   "paraphrase": "I work as an animal caregiver right now.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 180,
+    "gold_in": 0,
+    "gold_delta": 0.7099,
+    "margin": -1.1686
+   },
+   "recog_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.0594,
+    "margin": -1.9378
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4321,
+    "margin": 1.5719
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1613,
+    "margin": -2.0232
+   }
+  },
+  {
+   "task_id": 107,
+   "domain": "relationships",
+   "paraphrase": "I feel like someone is watching my online activity.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 121,
+    "gold_in": 0,
+    "gold_delta": 0.8725,
+    "margin": -1.0484
+   },
+   "recog_para": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.4138,
+    "margin": -1.5071
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.284,
+    "margin": 1.3734
+   },
+   "recall_para": {
+    "gold_rank": 111,
+    "gold_in": 0,
+    "gold_delta": 0.9542,
+    "margin": -0.9564
+   }
+  },
+  {
+   "task_id": 108,
+   "domain": "relationships",
+   "paraphrase": "I am currently experiencing domestic violence.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 189,
+    "gold_in": 0,
+    "gold_delta": 0.6607,
+    "margin": -1.2771
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3521,
+    "margin": -1.5857
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9291,
+    "margin": 0.0056
+   },
+   "recall_para": {
+    "gold_rank": 30,
+    "gold_in": 0,
+    "gold_delta": 1.1757,
+    "margin": -0.7478
+   }
+  },
+  {
+   "task_id": 109,
+   "domain": "relationships",
+   "paraphrase": "I am currently trapped in a relationship where I am being abused.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 179,
+    "gold_in": 0,
+    "gold_delta": 0.6226,
+    "margin": -1.2314
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1198,
+    "margin": -1.7342
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6416,
+    "margin": 0.9387
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.3134,
+    "margin": -2.0163
+   }
+  },
+  {
+   "task_id": 110,
+   "domain": "relationships",
+   "paraphrase": "I am currently being abused at home.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 183,
+    "gold_in": 0,
+    "gold_delta": 0.6064,
+    "margin": -1.2134
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1929,
+    "margin": -1.6269
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.5231,
+    "margin": 1.752
+   },
+   "recall_para": {
+    "gold_rank": 60,
+    "gold_in": 0,
+    "gold_delta": 0.979,
+    "margin": -0.7921
+   }
+  },
+  {
+   "task_id": 111,
+   "domain": "relationships",
+   "paraphrase": "My partner's abuse has left me feeling trapped and unable to leave.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 233,
+    "gold_in": 0,
+    "gold_delta": 0.478,
+    "margin": -1.3872
+   },
+   "recog_para": {
+    "gold_rank": 233,
+    "gold_in": 0,
+    "gold_delta": 0.4879,
+    "margin": -1.3773
+   },
+   "recall_verbatim": {
+    "gold_rank": 15,
+    "gold_in": 0,
+    "gold_delta": 1.3535,
+    "margin": -0.494
+   },
+   "recall_para": {
+    "gold_rank": 192,
+    "gold_in": 0,
+    "gold_delta": 0.6696,
+    "margin": -1.1779
+   }
+  },
+  {
+   "task_id": 112,
+   "domain": "relationships",
+   "paraphrase": "I am currently uninsured.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1286,
+    "margin": -1.7993
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1043,
+    "margin": -1.8236
+   },
+   "recall_verbatim": {
+    "gold_rank": 23,
+    "gold_in": 0,
+    "gold_delta": 1.3057,
+    "margin": -0.5989
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2081,
+    "margin": -1.6985
+   }
+  },
+  {
+   "task_id": 113,
+   "domain": "relationships",
+   "paraphrase": "I am trapped in domestic violence and feel powerless.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 137,
+    "gold_in": 0,
+    "gold_delta": 0.7571,
+    "margin": -1.0835
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3312,
+    "margin": -1.5094
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1173,
+    "margin": 0.3207
+   },
+   "recall_para": {
+    "gold_rank": 95,
+    "gold_in": 0,
+    "gold_delta": 0.9074,
+    "margin": -0.8852
+   }
+  },
+  {
+   "task_id": 114,
+   "domain": "relationships",
+   "paraphrase": "I do not hear.",
+   "steps_recog": 2,
+   "steps_recall": null,
+   "recog_verbatim": {
+    "gold_rank": 210,
+    "gold_in": 0,
+    "gold_delta": 0.6083,
+    "margin": -1.322
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3336,
+    "margin": -1.5975
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8598,
+    "margin": 3.3109
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.6162,
+    "margin": -2.1652
+   }
+  },
+  {
+   "task_id": 115,
+   "domain": "relationships",
+   "paraphrase": "I have served in the military.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3076,
+    "margin": -1.6804
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2245,
+    "margin": -1.7635
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.357,
+    "margin": 0.4145
+   },
+   "recall_para": {
+    "gold_rank": 129,
+    "gold_in": 0,
+    "gold_delta": 0.8482,
+    "margin": -1.0943
+   }
+  },
+  {
+   "task_id": 117,
+   "domain": "financial",
+   "paraphrase": "I now reside in a community officially recognized by FEMA as an individual assistance disaster area.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 224,
+    "gold_in": 0,
+    "gold_delta": 0.5443,
+    "margin": -1.3607
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2543,
+    "margin": -1.6545
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2537,
+    "margin": 0.3883
+   },
+   "recall_para": {
+    "gold_rank": 38,
+    "gold_in": 0,
+    "gold_delta": 1.1398,
+    "margin": -0.7247
+   }
+  },
+  {
+   "task_id": 118,
+   "domain": "financial",
+   "paraphrase": "I have served in the military.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2839,
+    "margin": -1.6377
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1385,
+    "margin": -1.7841
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4608,
+    "margin": 0.589
+   },
+   "recall_para": {
+    "gold_rank": 156,
+    "gold_in": 0,
+    "gold_delta": 0.785,
+    "margin": -1.0868
+   }
+  },
+  {
+   "task_id": 119,
+   "domain": "financial",
+   "paraphrase": "I've recently started using several dating apps to connect with new people.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3425,
+    "margin": -1.4805
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.23,
+    "margin": -1.593
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0688,
+    "margin": 0.2594
+   },
+   "recall_para": {
+    "gold_rank": 32,
+    "gold_in": 0,
+    "gold_delta": 1.1589,
+    "margin": -0.6506
+   }
+  },
+  {
+   "task_id": 121,
+   "domain": "personal_development",
+   "paraphrase": "I struggle to process complex information due to my cognitive impairment.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 226,
+    "gold_in": 0,
+    "gold_delta": 0.5563,
+    "margin": -1.3322
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3605,
+    "margin": -1.528
+   },
+   "recall_verbatim": {
+    "gold_rank": 80,
+    "gold_in": 0,
+    "gold_delta": 1.0059,
+    "margin": -0.8121
+   },
+   "recall_para": {
+    "gold_rank": 189,
+    "gold_in": 0,
+    "gold_delta": 0.6473,
+    "margin": -1.1707
+   }
+  },
+  {
+   "task_id": 123,
+   "domain": "spirituality",
+   "paraphrase": "I follow Islam.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.4242,
+    "margin": -1.4658
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0957,
+    "margin": -1.7943
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2194,
+    "margin": 1.4121
+   },
+   "recall_para": {
+    "gold_rank": 129,
+    "gold_in": 0,
+    "gold_delta": 0.7634,
+    "margin": -1.0438
+   }
+  },
+  {
+   "task_id": 124,
+   "domain": "spirituality",
+   "paraphrase": "I eat only according to Halal guidelines.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 165,
+    "gold_in": 0,
+    "gold_delta": 0.7236,
+    "margin": -1.1132
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1206,
+    "margin": -1.7162
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0863,
+    "margin": 2.3212
+   },
+   "recall_para": {
+    "gold_rank": 218,
+    "gold_in": 0,
+    "gold_delta": 0.4619,
+    "margin": -1.3032
+   }
+  },
+  {
+   "task_id": 125,
+   "domain": "legal",
+   "paraphrase": "I currently hold Temporary Protected Status in the United States.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 235,
+    "gold_in": 0,
+    "gold_delta": 0.4062,
+    "margin": -1.4053
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2073,
+    "margin": -1.6042
+   },
+   "recall_verbatim": {
+    "gold_rank": 42,
+    "gold_in": 0,
+    "gold_delta": 1.0321,
+    "margin": -0.696
+   },
+   "recall_para": {
+    "gold_rank": 216,
+    "gold_in": 0,
+    "gold_delta": 0.5111,
+    "margin": -1.2201
+   }
+  },
+  {
+   "task_id": 126,
+   "domain": "legal",
+   "paraphrase": "I need to take my child with ADHD to the doctor regularly.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 205,
+    "gold_in": 0,
+    "gold_delta": 0.5869,
+    "margin": -0.9591
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1437,
+    "margin": -1.4024
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.5916,
+    "margin": 0.0928
+   },
+   "recall_para": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.3969,
+    "margin": -1.1018
+   }
+  },
+  {
+   "task_id": 127,
+   "domain": "legal",
+   "paraphrase": "As a stepfather to a service member, I lost my stepson to severe injuries sustained while he was on duty.",
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3252,
+    "margin": -1.5951
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0575,
+    "margin": -1.8614
+   },
+   "recall_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3252,
+    "margin": -1.5951
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0575,
+    "margin": -1.8614
+   }
+  },
+  {
+   "task_id": 129,
+   "domain": "consumer",
+   "paraphrase": "I am raising three kids at home, ranging from five years old down to just one.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3094,
+    "margin": -1.5172
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1285,
+    "margin": -1.6981
+   },
+   "recall_verbatim": {
+    "gold_rank": 78,
+    "gold_in": 0,
+    "gold_delta": 0.9462,
+    "margin": -0.7714
+   },
+   "recall_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.355,
+    "margin": -1.3626
+   }
+  },
+  {
+   "task_id": 130,
+   "domain": "consumer",
+   "paraphrase": "My children at home are full of mischief.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.216,
+    "margin": -1.5687
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1437,
+    "margin": -1.6425
+   },
+   "recall_verbatim": {
+    "gold_rank": 25,
+    "gold_in": 0,
+    "gold_delta": 1.0559,
+    "margin": -0.529
+   },
+   "recall_para": {
+    "gold_rank": 141,
+    "gold_in": 0,
+    "gold_delta": 0.6479,
+    "margin": -0.9369
+   }
+  },
+  {
+   "task_id": 133,
+   "domain": "parenting",
+   "paraphrase": "I am a parent to a toddler who is older than two.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3364,
+    "margin": -1.5193
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1705,
+    "margin": -1.6852
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.821,
+    "margin": 0.0564
+   },
+   "recall_para": {
+    "gold_rank": 221,
+    "gold_in": 0,
+    "gold_delta": 0.5008,
+    "margin": -1.2638
+   }
+  },
+  {
+   "task_id": 134,
+   "domain": "other",
+   "paraphrase": "I am building a website that strictly adheres to accessibility standards.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 220,
+    "gold_in": 0,
+    "gold_delta": 0.4966,
+    "margin": -1.3672
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.234,
+    "margin": -1.6298
+   },
+   "recall_verbatim": {
+    "gold_rank": 6,
+    "gold_in": 1,
+    "gold_delta": 1.3373,
+    "margin": -0.3819
+   },
+   "recall_para": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.3388,
+    "margin": -1.3803
+   }
+  },
+  {
+   "task_id": 135,
+   "domain": "other",
+   "paraphrase": "I adore my Tesla Model 3 and will never return to driving a gas car.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1975,
+    "margin": -1.7595
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1133,
+    "margin": -1.8423
+   },
+   "recall_verbatim": {
+    "gold_rank": 18,
+    "gold_in": 0,
+    "gold_delta": 1.2748,
+    "margin": -0.5749
+   },
+   "recall_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.4227,
+    "margin": -1.4271
+   }
+  },
+  {
+   "task_id": 136,
+   "domain": "other",
+   "paraphrase": "I previously suffered from a deep vein thrombosis in my leg two years ago.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0585,
+    "margin": -1.7581
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1232,
+    "margin": -1.6935
+   },
+   "recall_verbatim": {
+    "gold_rank": 154,
+    "gold_in": 0,
+    "gold_delta": 0.6225,
+    "margin": -1.1457
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2693,
+    "margin": -1.4989
+   }
+  },
+  {
+   "task_id": 139,
+   "domain": "personal_development",
+   "paraphrase": "I am struggling with a severe phone addiction that consumes over eight hours daily and is ruining my work and personal life.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 230,
+    "gold_in": 0,
+    "gold_delta": 0.4479,
+    "margin": -1.3757
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1141,
+    "margin": -1.7094
+   },
+   "recall_verbatim": {
+    "gold_rank": 3,
+    "gold_in": 1,
+    "gold_delta": 1.5091,
+    "margin": -0.196
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2493,
+    "margin": -1.4558
+   }
+  },
+  {
+   "task_id": 140,
+   "domain": "professional_and_career",
+   "paraphrase": "I am an open-source advocate who uses Ubuntu on my desktop and Fedora on my laptop.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2947,
+    "margin": -1.6626
+   },
+   "recog_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.4405,
+    "margin": -2.3978
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9857,
+    "margin": 0.0905
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1925,
+    "margin": -2.0921
+   }
+  },
+  {
+   "task_id": 141,
+   "domain": "professional_and_career",
+   "paraphrase": "I recently purchased the new M4 MacBook Pro, and its speed is mind-blowing.",
+   "steps_recog": 2,
+   "steps_recall": 12,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3064,
+    "margin": -1.4285
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.323,
+    "margin": -1.412
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4243,
+    "margin": 0.7974
+   },
+   "recall_para": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.3637,
+    "margin": -0.2632
+   }
+  },
+  {
+   "task_id": 144,
+   "domain": "professional_and_career",
+   "paraphrase": "I have a wonderful Korean boss from Seoul who has been leading me for five years.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3407,
+    "margin": -1.4871
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": -0.0117,
+    "margin": -1.8395
+   },
+   "recall_verbatim": {
+    "gold_rank": 31,
+    "gold_in": 0,
+    "gold_delta": 1.1109,
+    "margin": -0.6356
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1167,
+    "margin": -1.6298
+   }
+  },
+  {
+   "task_id": 145,
+   "domain": "professional_and_career",
+   "paraphrase": "I must keep all code and data strictly within our secure intranet.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.3914,
+    "margin": -1.4628
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2018,
+    "margin": -1.6524
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.5942,
+    "margin": -0.1691
+   },
+   "recall_para": {
+    "gold_rank": 155,
+    "gold_in": 0,
+    "gold_delta": 0.688,
+    "margin": -1.0753
+   }
+  },
+  {
+   "task_id": 146,
+   "domain": "professional_and_career",
+   "paraphrase": "I am the sole engineer at a five-person startup.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1741,
+    "margin": -1.6367
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0206,
+    "margin": -1.7902
+   },
+   "recall_verbatim": {
+    "gold_rank": 9,
+    "gold_in": 0,
+    "gold_delta": 1.3696,
+    "margin": -0.2574
+   },
+   "recall_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.0434,
+    "margin": -1.6705
+   }
+  },
+  {
+   "task_id": 149,
+   "domain": "spirituality",
+   "paraphrase": "As a Muslim who relocated from Jordan a few years ago, I enjoy this area's cuisine while carefully selecting halal options.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 233,
+    "gold_in": 0,
+    "gold_delta": 0.4507,
+    "margin": -1.4142
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1392,
+    "margin": -1.7257
+   },
+   "recall_verbatim": {
+    "gold_rank": 25,
+    "gold_in": 0,
+    "gold_delta": 1.2003,
+    "margin": -0.5467
+   },
+   "recall_para": {
+    "gold_rank": 227,
+    "gold_in": 0,
+    "gold_delta": 0.4883,
+    "margin": -1.2586
+   }
+  },
+  {
+   "task_id": 151,
+   "domain": "spirituality",
+   "paraphrase": "I have followed Jewish dietary laws since I was a child, just as my family always has.",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recog_verbatim": {
+    "gold_rank": 231,
+    "gold_in": 0,
+    "gold_delta": 0.5131,
+    "margin": -1.4354
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3107,
+    "margin": -1.6378
+   },
+   "recall_verbatim": {
+    "gold_rank": 115,
+    "gold_in": 0,
+    "gold_delta": 0.8982,
+    "margin": -1.0058
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3599,
+    "margin": -1.5441
+   }
+  },
+  {
+   "task_id": 152,
+   "domain": "spirituality",
+   "paraphrase": "I have maintained my ethical veganism for three years.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1787,
+    "margin": -1.764
+   },
+   "recog_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.5306,
+    "margin": -2.4733
+   },
+   "recall_verbatim": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.4951,
+    "margin": -0.3864
+   },
+   "recall_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1824,
+    "margin": -2.0639
+   }
+  },
+  {
+   "task_id": 153,
+   "domain": "spirituality",
+   "paraphrase": "I strictly avoid all animal products in every aspect of my life, from what I eat and wear to the cosmetics I use.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2966,
+    "margin": -1.5428
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": -0.0044,
+    "margin": -1.8438
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7251,
+    "margin": -0.0751
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2849,
+    "margin": -1.5152
+   }
+  },
+  {
+   "task_id": 155,
+   "domain": "health_and_wellness",
+   "paraphrase": "I recently discovered my tree nut allergy after developing hives from eating trail mix.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 221,
+    "gold_in": 0,
+    "gold_delta": 0.5302,
+    "margin": -1.3272
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1319,
+    "margin": -1.7256
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1609,
+    "margin": 0.3955
+   },
+   "recall_para": {
+    "gold_rank": 101,
+    "gold_in": 0,
+    "gold_delta": 0.9052,
+    "margin": -0.8601
+   }
+  },
+  {
+   "task_id": 159,
+   "domain": "health_and_wellness",
+   "paraphrase": "I am so sensitive to shellfish that even a small amount of shrimp causes my throat to swell.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2543,
+    "margin": -1.5751
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1593,
+    "margin": -1.6701
+   },
+   "recall_verbatim": {
+    "gold_rank": 3,
+    "gold_in": 1,
+    "gold_delta": 1.4771,
+    "margin": -0.3114
+   },
+   "recall_para": {
+    "gold_rank": 201,
+    "gold_in": 0,
+    "gold_delta": 0.6145,
+    "margin": -1.1739
+   }
+  },
+  {
+   "task_id": 161,
+   "domain": "health_and_wellness",
+   "paraphrase": "I discovered my sesame allergy after reacting to hummus.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3095,
+    "margin": -1.5934
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3255,
+    "margin": -1.5774
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1725,
+    "margin": 0.4149
+   },
+   "recall_para": {
+    "gold_rank": 4,
+    "gold_in": 1,
+    "gold_delta": 1.4924,
+    "margin": -0.2652
+   }
+  },
+  {
+   "task_id": 162,
+   "domain": "health_and_wellness",
+   "paraphrase": "I must be extremely vigilant about my son's diet due to his egg allergy.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3496,
+    "margin": -1.4913
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0306,
+    "margin": -1.8102
+   },
+   "recall_verbatim": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.6042,
+    "margin": -0.1825
+   },
+   "recall_para": {
+    "gold_rank": 197,
+    "gold_in": 0,
+    "gold_delta": 0.604,
+    "margin": -1.1827
+   }
+  },
+  {
+   "task_id": 163,
+   "domain": "health_and_wellness",
+   "paraphrase": "I discovered my latex allergy after reacting to gloves at work.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2136,
+    "margin": -1.6566
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3493,
+    "margin": -1.521
+   },
+   "recall_verbatim": {
+    "gold_rank": 27,
+    "gold_in": 0,
+    "gold_delta": 1.2405,
+    "margin": -0.6075
+   },
+   "recall_para": {
+    "gold_rank": 7,
+    "gold_in": 0,
+    "gold_delta": 1.4766,
+    "margin": -0.3714
+   }
+  },
+  {
+   "task_id": 164,
+   "domain": "health_and_wellness",
+   "paraphrase": "Touching poison ivy once caused my entire arm to blister due to my severe reaction to urushiol.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3671,
+    "margin": -1.581
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1615,
+    "margin": -1.7865
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.8434,
+    "margin": -0.0481
+   },
+   "recall_para": {
+    "gold_rank": 232,
+    "gold_in": 0,
+    "gold_delta": 0.4453,
+    "margin": -1.4463
+   }
+  },
+  {
+   "task_id": 167,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been taking warfarin since my heart valve replacement.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.4101,
+    "margin": -1.546
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1496,
+    "margin": -1.8065
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7422,
+    "margin": -0.2078
+   },
+   "recall_para": {
+    "gold_rank": 56,
+    "gold_in": 0,
+    "gold_delta": 1.1446,
+    "margin": -0.8054
+   }
+  },
+  {
+   "task_id": 169,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have been taking atorvastatin nightly for my cholesterol over the past three years.",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2382,
+    "margin": -1.6615
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1962,
+    "margin": -1.7035
+   },
+   "recall_verbatim": {
+    "gold_rank": 209,
+    "gold_in": 0,
+    "gold_delta": 0.6202,
+    "margin": -1.2803
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3478,
+    "margin": -1.5527
+   }
+  },
+  {
+   "task_id": 170,
+   "domain": "health_and_wellness",
+   "paraphrase": "For the past five years, I have taken carbamazepine to keep my epilepsy and seizures under control.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3029,
+    "margin": -1.5514
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1003,
+    "margin": -1.754
+   },
+   "recall_verbatim": {
+    "gold_rank": 50,
+    "gold_in": 0,
+    "gold_delta": 1.106,
+    "margin": -0.6336
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1955,
+    "margin": -1.544
+   }
+  },
+  {
+   "task_id": 172,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have found that the older antidepressant phenelzine effectively treats my depression.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3484,
+    "margin": -1.5247
+   },
+   "recog_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.025,
+    "margin": -1.898
+   },
+   "recall_verbatim": {
+    "gold_rank": 28,
+    "gold_in": 0,
+    "gold_delta": 1.2286,
+    "margin": -0.6426
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": -0.02,
+    "margin": -1.8912
+   }
+  },
+  {
+   "task_id": 175,
+   "domain": "health_and_wellness",
+   "paraphrase": "My cardiologist requires me to follow a strict regimen of digoxin to manage my heart failure.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.4156,
+    "margin": -1.4571
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2746,
+    "margin": -1.5981
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.636,
+    "margin": -0.1957
+   },
+   "recall_para": {
+    "gold_rank": 153,
+    "gold_in": 0,
+    "gold_delta": 0.7881,
+    "margin": -1.0435
+   }
+  },
+  {
+   "task_id": 177,
+   "domain": "health_and_wellness",
+   "paraphrase": "I rely on zolpidem nightly to manage my chronic insomnia, as I cannot sleep without it.",
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3449,
+    "margin": -1.4845
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3293,
+    "margin": -1.5001
+   },
+   "recall_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3449,
+    "margin": -1.4845
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3293,
+    "margin": -1.5024
+   }
+  },
+  {
+   "task_id": 181,
+   "domain": "health_and_wellness",
+   "paraphrase": "I inherited G6PD deficiency from my parents and was diagnosed with it as a child.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3169,
+    "margin": -1.5964
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1828,
+    "margin": -1.7306
+   },
+   "recall_verbatim": {
+    "gold_rank": 30,
+    "gold_in": 0,
+    "gold_delta": 1.1324,
+    "margin": -0.6465
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2388,
+    "margin": -1.5401
+   }
+  },
+  {
+   "task_id": 184,
+   "domain": "health_and_wellness",
+   "paraphrase": "For the past couple of years, I have endured excruciating gout flare-ups.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3268,
+    "margin": -1.5177
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1194,
+    "margin": -1.7252
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7464,
+    "margin": -0.0517
+   },
+   "recall_para": {
+    "gold_rank": 152,
+    "gold_in": 0,
+    "gold_delta": 0.6505,
+    "margin": -1.1475
+   }
+  },
+  {
+   "task_id": 186,
+   "domain": "health_and_wellness",
+   "paraphrase": "Two weeks after my LASIK surgery, my vision has already improved dramatically.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3388,
+    "margin": -1.572
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3091,
+    "margin": -1.6016
+   },
+   "recall_verbatim": {
+    "gold_rank": 4,
+    "gold_in": 1,
+    "gold_delta": 1.4507,
+    "margin": -0.3383
+   },
+   "recall_para": {
+    "gold_rank": 124,
+    "gold_in": 0,
+    "gold_delta": 0.7774,
+    "margin": -1.0116
+   }
+  },
+  {
+   "task_id": 187,
+   "domain": "spirituality",
+   "paraphrase": "I am a Gujarati Hindu.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3396,
+    "margin": -1.6076
+   },
+   "recog_para": {
+    "gold_rank": 240,
+    "gold_in": 0,
+    "gold_delta": -0.0614,
+    "margin": -2.0075
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0768,
+    "margin": 0.1519
+   },
+   "recall_para": {
+    "gold_rank": 211,
+    "gold_in": 0,
+    "gold_delta": 0.6162,
+    "margin": -1.3087
+   }
+  },
+  {
+   "task_id": 189,
+   "domain": "health_and_wellness",
+   "paraphrase": "For the past eight years, I have been flying commercial 737s.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2801,
+    "margin": -1.574
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": -0.0018,
+    "margin": -1.8584
+   },
+   "recall_verbatim": {
+    "gold_rank": 26,
+    "gold_in": 0,
+    "gold_delta": 1.3155,
+    "margin": -0.5296
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2123,
+    "margin": -1.6327
+   }
+  },
+  {
+   "task_id": 192,
+   "domain": "consumer",
+   "paraphrase": "Last year, I transformed our kitchen with stunning Calacatta marble countertops.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.4157,
+    "margin": -1.4174
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1896,
+    "margin": -1.6435
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.8183,
+    "margin": -0.0073
+   },
+   "recall_para": {
+    "gold_rank": 221,
+    "gold_in": 0,
+    "gold_delta": 0.5689,
+    "margin": -1.2561
+   }
+  },
+  {
+   "task_id": 197,
+   "domain": "consumer",
+   "paraphrase": "Living in the humid coastal Southeast Asia, I must be vigilant to prevent everything from growing mold.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2918,
+    "margin": -1.5859
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.303,
+    "margin": -1.5747
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8106,
+    "margin": 0.0022
+   },
+   "recall_para": {
+    "gold_rank": 41,
+    "gold_in": 0,
+    "gold_delta": 1.0409,
+    "margin": -0.7674
+   }
+  },
+  {
+   "task_id": 201,
+   "domain": "consumer",
+   "paraphrase": "I own a highly intelligent African Grey parrot that can mimic human conversation.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 206,
+    "gold_in": 0,
+    "gold_delta": 0.6109,
+    "margin": -1.3133
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.382,
+    "margin": -1.5422
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6641,
+    "margin": -0.2594
+   },
+   "recall_para": {
+    "gold_rank": 227,
+    "gold_in": 0,
+    "gold_delta": 0.4905,
+    "margin": -1.433
+   }
+  },
+  {
+   "task_id": 202,
+   "domain": "health_and_wellness",
+   "paraphrase": "I've just relocated to a stunning 3,500-meter altitude where the views are breathtaking.",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2035,
+    "margin": -1.7626
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1421,
+    "margin": -1.824
+   },
+   "recall_verbatim": {
+    "gold_rank": 229,
+    "gold_in": 0,
+    "gold_delta": 0.5072,
+    "margin": -1.469
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2409,
+    "margin": -1.7353
+   }
+  },
+  {
+   "task_id": 203,
+   "domain": "health_and_wellness",
+   "paraphrase": "I'm hoping for normal results from my annual physical next Tuesday.",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recog_verbatim": {
+    "gold_rank": 173,
+    "gold_in": 0,
+    "gold_delta": 0.7079,
+    "margin": -1.1712
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1636,
+    "margin": -1.7156
+   },
+   "recall_verbatim": {
+    "gold_rank": 18,
+    "gold_in": 0,
+    "gold_delta": 1.2864,
+    "margin": -0.5759
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2132,
+    "margin": -1.6491
+   }
+  },
+  {
+   "task_id": 204,
+   "domain": "health_and_wellness",
+   "paraphrase": "Next week, I'll undergo my full annual medical examination, including blood and urine tests.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3352,
+    "margin": -1.5183
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1585,
+    "margin": -1.695
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6527,
+    "margin": -0.164
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.372,
+    "margin": -1.4447
+   }
+  },
+  {
+   "task_id": 205,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have an MRI of my knee scheduled for next Friday.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 224,
+    "gold_in": 0,
+    "gold_delta": 0.5227,
+    "margin": -1.3055
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3497,
+    "margin": -1.4785
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7304,
+    "margin": 0.9847
+   },
+   "recall_para": {
+    "gold_rank": 38,
+    "gold_in": 0,
+    "gold_delta": 1.1157,
+    "margin": -0.63
+   }
+  },
+  {
+   "task_id": 206,
+   "domain": "health_and_wellness",
+   "paraphrase": "Next month, I will undergo surgery to have my gallbladder removed.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2772,
+    "margin": -1.6471
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1591,
+    "margin": -1.7652
+   },
+   "recall_verbatim": {
+    "gold_rank": 17,
+    "gold_in": 0,
+    "gold_delta": 1.3559,
+    "margin": -0.5605
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3478,
+    "margin": -1.5685
+   }
+  },
+  {
+   "task_id": 207,
+   "domain": "health_and_wellness",
+   "paraphrase": "I'm dreading the prep for my colonoscopy next Wednesday.",
+   "steps_recog": 4,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 232,
+    "gold_in": 0,
+    "gold_delta": 0.4935,
+    "margin": -1.3904
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2139,
+    "margin": -1.6699
+   },
+   "recall_verbatim": {
+    "gold_rank": 37,
+    "gold_in": 0,
+    "gold_delta": 1.1869,
+    "margin": -0.6712
+   },
+   "recall_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3962,
+    "margin": -1.4619
+   }
+  },
+  {
+   "task_id": 210,
+   "domain": "legal",
+   "paraphrase": "I am currently processing my visa extension paperwork as my student visa expires next month.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 225,
+    "gold_in": 0,
+    "gold_delta": 0.549,
+    "margin": -1.3133
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1098,
+    "margin": -1.7525
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8376,
+    "margin": 0.2516
+   },
+   "recall_para": {
+    "gold_rank": 224,
+    "gold_in": 0,
+    "gold_delta": 0.4836,
+    "margin": -1.1024
+   }
+  },
+  {
+   "task_id": 211,
+   "domain": "health_and_wellness",
+   "paraphrase": "I can't wait to visit the Potala Palace on our trip to Tibet next month.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 231,
+    "gold_in": 0,
+    "gold_delta": 0.5126,
+    "margin": -1.2762
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2942,
+    "margin": -1.4946
+   },
+   "recall_verbatim": {
+    "gold_rank": 18,
+    "gold_in": 0,
+    "gold_delta": 1.3451,
+    "margin": -0.3911
+   },
+   "recall_para": {
+    "gold_rank": 233,
+    "gold_in": 0,
+    "gold_delta": 0.4896,
+    "margin": -1.2465
+   }
+  },
+  {
+   "task_id": 213,
+   "domain": "financial",
+   "paraphrase": "I am thrilled to share that I will be joining Google next month.",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "recog_verbatim": {
+    "gold_rank": 195,
+    "gold_in": 0,
+    "gold_delta": 0.6389,
+    "margin": -1.2186
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1852,
+    "margin": -1.6722
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7361,
+    "margin": 0.9479
+   },
+   "recall_para": {
+    "gold_rank": 162,
+    "gold_in": 0,
+    "gold_delta": 0.7159,
+    "margin": -1.0722
+   }
+  },
+  {
+   "task_id": 214,
+   "domain": "health_and_wellness",
+   "paraphrase": "I have officially resigned and will depart from my company at the end of this month.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 235,
+    "gold_in": 0,
+    "gold_delta": 0.3948,
+    "margin": -1.4241
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1583,
+    "margin": -1.6606
+   },
+   "recall_verbatim": {
+    "gold_rank": 3,
+    "gold_in": 1,
+    "gold_delta": 1.5227,
+    "margin": -0.3121
+   },
+   "recall_para": {
+    "gold_rank": 215,
+    "gold_in": 0,
+    "gold_delta": 0.5453,
+    "margin": -1.2895
+   }
+  },
+  {
+   "task_id": 216,
+   "domain": "legal",
+   "paraphrase": "I am an F-1 student at NYU majoring in computer science.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2926,
+    "margin": -1.5637
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0389,
+    "margin": -1.8203
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6855,
+    "margin": -0.1522
+   },
+   "recall_para": {
+    "gold_rank": 233,
+    "gold_in": 0,
+    "gold_delta": 0.4248,
+    "margin": -1.4129
+   }
+  },
+  {
+   "task_id": 218,
+   "domain": "professional_and_career",
+   "paraphrase": "I have been collaborating with our largest client, a Japanese firm from Osaka, for the past two years.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3903,
+    "margin": -1.4785
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2021,
+    "margin": -1.6667
+   },
+   "recall_verbatim": {
+    "gold_rank": 73,
+    "gold_in": 0,
+    "gold_delta": 1.0071,
+    "margin": -0.7578
+   },
+   "recall_para": {
+    "gold_rank": 232,
+    "gold_in": 0,
+    "gold_delta": 0.4687,
+    "margin": -1.2962
+   }
+  },
+  {
+   "task_id": 220,
+   "domain": "professional_and_career",
+   "paraphrase": "I am working with a new Italian client who serves as the VP of their European operations.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 194,
+    "gold_in": 0,
+    "gold_delta": 0.626,
+    "margin": -1.3197
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2599,
+    "margin": -1.6857
+   },
+   "recall_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.887,
+    "margin": -0.0052
+   },
+   "recall_para": {
+    "gold_rank": 115,
+    "gold_in": 0,
+    "gold_delta": 0.8226,
+    "margin": -1.0697
+   }
+  },
+  {
+   "task_id": 221,
+   "domain": "professional_and_career",
+   "paraphrase": "I have secured a major distributor partner in S\u00e3o Paulo, Brazil.",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "recog_verbatim": {
+    "gold_rank": 180,
+    "gold_in": 0,
+    "gold_delta": 0.6625,
+    "margin": -1.1943
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2171,
+    "margin": -1.6397
+   },
+   "recall_verbatim": {
+    "gold_rank": 30,
+    "gold_in": 0,
+    "gold_delta": 1.1667,
+    "margin": -0.6436
+   },
+   "recall_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3389,
+    "margin": -1.4713
+   }
+  },
+  {
+   "task_id": 223,
+   "domain": "professional_and_career",
+   "paraphrase": "I am a Russian woman who runs a successful tech company in Moscow.",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "recog_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3677,
+    "margin": -1.4975
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3277,
+    "margin": -1.5375
+   },
+   "recall_verbatim": {
+    "gold_rank": 9,
+    "gold_in": 0,
+    "gold_delta": 1.4329,
+    "margin": -0.3867
+   },
+   "recall_para": {
+    "gold_rank": 89,
+    "gold_in": 0,
+    "gold_delta": 0.9765,
+    "margin": -0.8432
+   }
+  },
+  {
+   "task_id": 225,
+   "domain": "relationships",
+   "paraphrase": "I am incredibly proud that my colleague Tom has remained sober for two years.",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "recog_verbatim": {
+    "gold_rank": 234,
+    "gold_in": 0,
+    "gold_delta": 0.4366,
+    "margin": -1.44
+   },
+   "recog_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0898,
+    "margin": -1.7868
+   },
+   "recall_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8081,
+    "margin": 0.0949
+   },
+   "recall_para": {
+    "gold_rank": 199,
+    "gold_in": 0,
+    "gold_delta": 0.6028,
+    "margin": -1.1104
+   }
+  }
+ ]
+}

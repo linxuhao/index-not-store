@@ -1,0 +1,2274 @@
+{
+ "summary": {
+  "n": 125,
+  "recall_reached": 123,
+  "median_steps_recog": 2,
+  "scan_recognition": {
+   "gold_in": 1.0,
+   "median_rank": 1,
+   "mean_delta": 0.8534
+  },
+  "scan_recall": {
+   "gold_in": 1.0,
+   "median_rank": 1,
+   "mean_delta": 2.1624
+  },
+  "stmt_column_reused_from_43b": {
+   "recognition": 0.08,
+   "recall": 0.136
+  },
+  "falsify_if_recognition_scan_le": 0.216
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0376,
+    "margin": 0.9909
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.872,
+    "margin": 2.7847
+   }
+  },
+  {
+   "task_id": 3,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.093,
+    "margin": 1.0367
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.961,
+    "margin": 2.874
+   }
+  },
+  {
+   "task_id": 4,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0809,
+    "margin": 1.0279
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.217,
+    "margin": 3.0831
+   }
+  },
+  {
+   "task_id": 5,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.5096,
+    "margin": 1.4309
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6928,
+    "margin": 3.56
+   }
+  },
+  {
+   "task_id": 6,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0217,
+    "margin": 0.9735
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5166,
+    "margin": 2.4475
+   }
+  },
+  {
+   "task_id": 7,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5897,
+    "margin": 0.5595
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.4839,
+    "margin": 1.3922
+   }
+  },
+  {
+   "task_id": 8,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.4565,
+    "margin": 1.3789
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8705,
+    "margin": 3.7227
+   }
+  },
+  {
+   "task_id": 9,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1409,
+    "margin": 1.1229
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6875,
+    "margin": 2.618
+   }
+  },
+  {
+   "task_id": 11,
+   "domain": "legal",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7621,
+    "margin": 0.7239
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2187,
+    "margin": 2.1478
+   }
+  },
+  {
+   "task_id": 12,
+   "domain": "parenting",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7607,
+    "margin": 0.7302
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8345,
+    "margin": 1.7731
+   }
+  },
+  {
+   "task_id": 13,
+   "domain": "parenting",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7383,
+    "margin": 0.7033
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8257,
+    "margin": 1.7593
+   }
+  },
+  {
+   "task_id": 16,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8718,
+    "margin": 0.8319
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0207,
+    "margin": 1.9388
+   }
+  },
+  {
+   "task_id": 19,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8472,
+    "margin": 0.8117
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8042,
+    "margin": 1.7211
+   }
+  },
+  {
+   "task_id": 22,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.516,
+    "margin": 0.4956
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0969,
+    "margin": 1.0493
+   }
+  },
+  {
+   "task_id": 27,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1993,
+    "margin": 1.1412
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9773,
+    "margin": 2.8836
+   }
+  },
+  {
+   "task_id": 28,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3394,
+    "margin": 1.3022
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.5273,
+    "margin": 3.4571
+   }
+  },
+  {
+   "task_id": 29,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.516,
+    "margin": 0.4835
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3511,
+    "margin": 1.2862
+   }
+  },
+  {
+   "task_id": 30,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2071,
+    "margin": 1.1369
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4208,
+    "margin": 3.3068
+   }
+  },
+  {
+   "task_id": 31,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8243,
+    "margin": 0.7867
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6047,
+    "margin": 2.4651
+   }
+  },
+  {
+   "task_id": 32,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7073,
+    "margin": 0.6683
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1722,
+    "margin": 2.0866
+   }
+  },
+  {
+   "task_id": 33,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8561,
+    "margin": 0.7823
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8461,
+    "margin": 2.7092
+   }
+  },
+  {
+   "task_id": 34,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3694,
+    "margin": 1.2992
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4166,
+    "margin": 3.2853
+   }
+  },
+  {
+   "task_id": 37,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.38,
+    "margin": 1.3473
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4424,
+    "margin": 3.3967
+   }
+  },
+  {
+   "task_id": 38,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0674,
+    "margin": 1.0421
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0674,
+    "margin": 1.0421
+   }
+  },
+  {
+   "task_id": 39,
+   "domain": "personal_development",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6734,
+    "margin": 0.65
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3125,
+    "margin": 1.2689
+   }
+  },
+  {
+   "task_id": 40,
+   "domain": "legal",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.4959,
+    "margin": 0.4725
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.001,
+    "margin": 0.9276
+   }
+  },
+  {
+   "task_id": 42,
+   "domain": "parenting",
+   "steps_recog": 2,
+   "steps_recall": null,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.9689,
+    "margin": 0.9327
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4904,
+    "margin": 3.5159
+   }
+  },
+  {
+   "task_id": 43,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6243,
+    "margin": 0.5959
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.5397,
+    "margin": 1.4424
+   }
+  },
+  {
+   "task_id": 46,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2352,
+    "margin": 1.1977
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6396,
+    "margin": 2.5628
+   }
+  },
+  {
+   "task_id": 47,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5423,
+    "margin": 0.5166
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.7895,
+    "margin": 1.6881
+   }
+  },
+  {
+   "task_id": 50,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5557,
+    "margin": 0.5103
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.5584,
+    "margin": 1.4453
+   }
+  },
+  {
+   "task_id": 54,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8033,
+    "margin": 0.761
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1485,
+    "margin": 2.0562
+   }
+  },
+  {
+   "task_id": 57,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.443,
+    "margin": 1.3639
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0111,
+    "margin": 3.8708
+   }
+  },
+  {
+   "task_id": 61,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0453,
+    "margin": 1.0202
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0105,
+    "margin": 2.937
+   }
+  },
+  {
+   "task_id": 64,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8342,
+    "margin": 0.8014
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.554,
+    "margin": 2.4762
+   }
+  },
+  {
+   "task_id": 65,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8546,
+    "margin": 0.8244
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3947,
+    "margin": 2.3378
+   }
+  },
+  {
+   "task_id": 69,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7888,
+    "margin": 0.7461
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2949,
+    "margin": 1.2417
+   }
+  },
+  {
+   "task_id": 72,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7879,
+    "margin": 0.7507
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.6931,
+    "margin": 1.589
+   }
+  },
+  {
+   "task_id": 74,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0399,
+    "margin": 1.0089
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1609,
+    "margin": 3.073
+   }
+  },
+  {
+   "task_id": 75,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0282,
+    "margin": 0.974
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4575,
+    "margin": 2.3537
+   }
+  },
+  {
+   "task_id": 84,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6883,
+    "margin": 0.645
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1387,
+    "margin": 2.0481
+   }
+  },
+  {
+   "task_id": 86,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.538,
+    "margin": 0.497
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3884,
+    "margin": 1.2675
+   }
+  },
+  {
+   "task_id": 89,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.9092,
+    "margin": 0.8765
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5253,
+    "margin": 2.4544
+   }
+  },
+  {
+   "task_id": 90,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7009,
+    "margin": 0.675
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8056,
+    "margin": 1.7279
+   }
+  },
+  {
+   "task_id": 95,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5267,
+    "margin": 0.4735
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.631,
+    "margin": 1.5142
+   }
+  },
+  {
+   "task_id": 97,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5816,
+    "margin": 0.5525
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.5714,
+    "margin": 1.5468
+   }
+  },
+  {
+   "task_id": 98,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1225,
+    "margin": 1.0478
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9859,
+    "margin": 2.8653
+   }
+  },
+  {
+   "task_id": 99,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.9442,
+    "margin": 0.8735
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3887,
+    "margin": 2.2956
+   }
+  },
+  {
+   "task_id": 100,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2203,
+    "margin": 1.1513
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0886,
+    "margin": 2.9802
+   }
+  },
+  {
+   "task_id": 101,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1672,
+    "margin": 1.0972
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0197,
+    "margin": 2.9215
+   }
+  },
+  {
+   "task_id": 102,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2038,
+    "margin": 1.1694
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.722,
+    "margin": 2.6642
+   }
+  },
+  {
+   "task_id": 103,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0645,
+    "margin": 0.9929
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6919,
+    "margin": 2.5933
+   }
+  },
+  {
+   "task_id": 104,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2158,
+    "margin": 1.1837
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7083,
+    "margin": 2.6546
+   }
+  },
+  {
+   "task_id": 105,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1754,
+    "margin": 1.1044
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2325,
+    "margin": 3.1349
+   }
+  },
+  {
+   "task_id": 106,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1475,
+    "margin": 1.1131
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2137,
+    "margin": 3.1604
+   }
+  },
+  {
+   "task_id": 107,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.5205,
+    "margin": 1.4784
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1758,
+    "margin": 3.0813
+   }
+  },
+  {
+   "task_id": 108,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2358,
+    "margin": 1.1901
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7311,
+    "margin": 2.6285
+   }
+  },
+  {
+   "task_id": 109,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8672,
+    "margin": 0.8404
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9536,
+    "margin": 1.908
+   }
+  },
+  {
+   "task_id": 110,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3498,
+    "margin": 1.2805
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8246,
+    "margin": 3.6849
+   }
+  },
+  {
+   "task_id": 111,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8838,
+    "margin": 0.8381
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8651,
+    "margin": 1.796
+   }
+  },
+  {
+   "task_id": 112,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7726,
+    "margin": 0.7358
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9404,
+    "margin": 1.8618
+   }
+  },
+  {
+   "task_id": 113,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0004,
+    "margin": 0.9531
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8023,
+    "margin": 2.6651
+   }
+  },
+  {
+   "task_id": 114,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": null,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.4991,
+    "margin": 1.4269
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8598,
+    "margin": 4.9212
+   }
+  },
+  {
+   "task_id": 115,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2284,
+    "margin": 1.1594
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1585,
+    "margin": 3.0487
+   }
+  },
+  {
+   "task_id": 117,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1951,
+    "margin": 1.1768
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5073,
+    "margin": 2.462
+   }
+  },
+  {
+   "task_id": 118,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2272,
+    "margin": 1.1591
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1526,
+    "margin": 3.0395
+   }
+  },
+  {
+   "task_id": 119,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6604,
+    "margin": 0.6161
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0208,
+    "margin": 1.8425
+   }
+  },
+  {
+   "task_id": 121,
+   "domain": "personal_development",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6164,
+    "margin": 0.5571
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2653,
+    "margin": 1.1346
+   }
+  },
+  {
+   "task_id": 123,
+   "domain": "spirituality",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2297,
+    "margin": 1.1606
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1193,
+    "margin": 3.0058
+   }
+  },
+  {
+   "task_id": 124,
+   "domain": "spirituality",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3751,
+    "margin": 1.353
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0476,
+    "margin": 4.0054
+   }
+  },
+  {
+   "task_id": 125,
+   "domain": "legal",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7439,
+    "margin": 0.7202
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2481,
+    "margin": 1.1989
+   }
+  },
+  {
+   "task_id": 126,
+   "domain": "legal",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5431,
+    "margin": 0.5197
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.7665,
+    "margin": 1.7225
+   }
+  },
+  {
+   "task_id": 127,
+   "domain": "legal",
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7041,
+    "margin": 0.6802
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7041,
+    "margin": 0.6802
+   }
+  },
+  {
+   "task_id": 129,
+   "domain": "consumer",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.527,
+    "margin": 0.4864
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.231,
+    "margin": 1.1638
+   }
+  },
+  {
+   "task_id": 130,
+   "domain": "consumer",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6093,
+    "margin": 0.5797
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8585,
+    "margin": 1.7146
+   }
+  },
+  {
+   "task_id": 133,
+   "domain": "parenting",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.701,
+    "margin": 0.6439
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8342,
+    "margin": 1.7148
+   }
+  },
+  {
+   "task_id": 134,
+   "domain": "other",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5685,
+    "margin": 0.5043
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3573,
+    "margin": 1.2402
+   }
+  },
+  {
+   "task_id": 135,
+   "domain": "other",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.4805,
+    "margin": 0.4468
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.1592,
+    "margin": 1.1046
+   }
+  },
+  {
+   "task_id": 136,
+   "domain": "other",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.554,
+    "margin": 0.5337
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2158,
+    "margin": 1.1689
+   }
+  },
+  {
+   "task_id": 139,
+   "domain": "personal_development",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7898,
+    "margin": 0.7465
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8513,
+    "margin": 1.7438
+   }
+  },
+  {
+   "task_id": 140,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 12,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.866,
+    "margin": 0.835
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5754,
+    "margin": 2.5088
+   }
+  },
+  {
+   "task_id": 141,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6373,
+    "margin": 0.6025
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.6726,
+    "margin": 1.5817
+   }
+  },
+  {
+   "task_id": 144,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6041,
+    "margin": 0.5683
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0493,
+    "margin": 1.899
+   }
+  },
+  {
+   "task_id": 145,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7946,
+    "margin": 0.7631
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.6406,
+    "margin": 1.5771
+   }
+  },
+  {
+   "task_id": 146,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.4914,
+    "margin": 0.4725
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.522,
+    "margin": 1.4223
+   }
+  },
+  {
+   "task_id": 149,
+   "domain": "spirituality",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5257,
+    "margin": 0.4725
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3806,
+    "margin": 1.2653
+   }
+  },
+  {
+   "task_id": 151,
+   "domain": "spirituality",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.691,
+    "margin": 0.6596
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8669,
+    "margin": 1.7364
+   }
+  },
+  {
+   "task_id": 152,
+   "domain": "spirituality",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5255,
+    "margin": 0.5046
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2416,
+    "margin": 1.1756
+   }
+  },
+  {
+   "task_id": 153,
+   "domain": "spirituality",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6312,
+    "margin": 0.6063
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.6648,
+    "margin": 1.5729
+   }
+  },
+  {
+   "task_id": 155,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0304,
+    "margin": 0.9844
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4497,
+    "margin": 2.3349
+   }
+  },
+  {
+   "task_id": 159,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7782,
+    "margin": 0.7394
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.7168,
+    "margin": 1.6512
+   }
+  },
+  {
+   "task_id": 161,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 12,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8174,
+    "margin": 0.7723
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4572,
+    "margin": 2.3102
+   }
+  },
+  {
+   "task_id": 162,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.58,
+    "margin": 0.5486
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.4739,
+    "margin": 1.3961
+   }
+  },
+  {
+   "task_id": 163,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5669,
+    "margin": 0.5368
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2767,
+    "margin": 1.1836
+   }
+  },
+  {
+   "task_id": 164,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7866,
+    "margin": 0.7613
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1809,
+    "margin": 2.0991
+   }
+  },
+  {
+   "task_id": 167,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.9406,
+    "margin": 0.9154
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1949,
+    "margin": 2.1174
+   }
+  },
+  {
+   "task_id": 169,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5853,
+    "margin": 0.55
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5853,
+    "margin": 0.55
+   }
+  },
+  {
+   "task_id": 170,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.4302,
+    "margin": 0.398
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2923,
+    "margin": 1.1893
+   }
+  },
+  {
+   "task_id": 172,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6322,
+    "margin": 0.6016
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.584,
+    "margin": 1.4878
+   }
+  },
+  {
+   "task_id": 175,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7887,
+    "margin": 0.7635
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.4901,
+    "margin": 1.4316
+   }
+  },
+  {
+   "task_id": 177,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 2,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5869,
+    "margin": 0.5664
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5869,
+    "margin": 0.5664
+   }
+  },
+  {
+   "task_id": 181,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5925,
+    "margin": 0.5697
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2922,
+    "margin": 1.2093
+   }
+  },
+  {
+   "task_id": 184,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.619,
+    "margin": 0.573
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8737,
+    "margin": 1.7598
+   }
+  },
+  {
+   "task_id": 186,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6161,
+    "margin": 0.5593
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3187,
+    "margin": 1.2319
+   }
+  },
+  {
+   "task_id": 187,
+   "domain": "spirituality",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0867,
+    "margin": 1.0488
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4976,
+    "margin": 2.4227
+   }
+  },
+  {
+   "task_id": 189,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6339,
+    "margin": 0.5992
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.6281,
+    "margin": 1.5516
+   }
+  },
+  {
+   "task_id": 192,
+   "domain": "consumer",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.773,
+    "margin": 0.7276
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.248,
+    "margin": 2.14
+   }
+  },
+  {
+   "task_id": 197,
+   "domain": "consumer",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6641,
+    "margin": 0.6319
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8647,
+    "margin": 1.8068
+   }
+  },
+  {
+   "task_id": 201,
+   "domain": "consumer",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7193,
+    "margin": 0.6789
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9093,
+    "margin": 1.7742
+   }
+  },
+  {
+   "task_id": 202,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5451,
+    "margin": 0.5192
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3846,
+    "margin": 1.3309
+   }
+  },
+  {
+   "task_id": 203,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.9876,
+    "margin": 0.9498
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2647,
+    "margin": 2.1539
+   }
+  },
+  {
+   "task_id": 204,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7532,
+    "margin": 0.7059
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8569,
+    "margin": 1.7413
+   }
+  },
+  {
+   "task_id": 205,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 10,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.9965,
+    "margin": 0.957
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8654,
+    "margin": 2.7453
+   }
+  },
+  {
+   "task_id": 206,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8321,
+    "margin": 0.7908
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.485,
+    "margin": 2.3738
+   }
+  },
+  {
+   "task_id": 207,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.587,
+    "margin": 0.5534
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2807,
+    "margin": 1.1989
+   }
+  },
+  {
+   "task_id": 210,
+   "domain": "legal",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.5854,
+    "margin": 0.5542
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.4357,
+    "margin": 1.3227
+   }
+  },
+  {
+   "task_id": 211,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.4797,
+    "margin": 0.443
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.3809,
+    "margin": 1.2808
+   }
+  },
+  {
+   "task_id": 213,
+   "domain": "financial",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8944,
+    "margin": 0.8549
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5511,
+    "margin": 2.459
+   }
+  },
+  {
+   "task_id": 214,
+   "domain": "health_and_wellness",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7184,
+    "margin": 0.6634
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8986,
+    "margin": 1.8247
+   }
+  },
+  {
+   "task_id": 216,
+   "domain": "legal",
+   "steps_recog": 2,
+   "steps_recall": 8,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.7483,
+    "margin": 0.7231
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9692,
+    "margin": 1.9144
+   }
+  },
+  {
+   "task_id": 218,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.4863,
+    "margin": 0.4459
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.2463,
+    "margin": 1.1387
+   }
+  },
+  {
+   "task_id": 220,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.0144,
+    "margin": 0.9841
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8717,
+    "margin": 1.8077
+   }
+  },
+  {
+   "task_id": 221,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8209,
+    "margin": 0.7864
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0961,
+    "margin": 2.0172
+   }
+  },
+  {
+   "task_id": 223,
+   "domain": "professional_and_career",
+   "steps_recog": 2,
+   "steps_recall": 4,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.8491,
+    "margin": 0.8202
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.6407,
+    "margin": 1.5947
+   }
+  },
+  {
+   "task_id": 225,
+   "domain": "relationships",
+   "steps_recog": 2,
+   "steps_recall": 6,
+   "scan_recognition": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 0.6831,
+    "margin": 0.645
+   },
+   "scan_recall": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.7924,
+    "margin": 1.6914
+   }
+  }
+ ]
+}
