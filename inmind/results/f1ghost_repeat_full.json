@@ -1,0 +1,4019 @@
+{
+ "summary": {
+  "n": 125,
+  "regime": "repeat",
+  "recall_reached": 123,
+  "median_steps": 8,
+  "stmt_instance": 0.064,
+  "stmt_refused": 0.896,
+  "scan_verbatim_in6": 0.632,
+  "scan_heldout_para_in6": 0.056,
+  "after_bury_recall_alive": 0.952,
+  "after_bury_cert_alive": 1.0,
+  "after_bury_scan_in6": 0.904,
+  "mean_cert_at_criterion": 1.918,
+  "mean_cert_after_bury": 2.544
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have asthma.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5911
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6291
+   },
+   "cert_at_criterion": 2.5942,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.2499,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.2569
+    }
+   }
+  },
+  {
+   "task_id": 3,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I have been told that I have high blood pressure.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0084
+   },
+   "scan_heldout_para": {
+    "gold_rank": 231,
+    "gold_in": 0,
+    "gold_delta": 0.4993
+   },
+   "cert_at_criterion": 2.0019,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.0848,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.091
+    }
+   }
+  },
+  {
+   "task_id": 4,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I am getting ready for my pilot medical exam.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0062
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9655
+   },
+   "cert_at_criterion": 2.9961,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.7078,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.7143
+    }
+   }
+  },
+  {
+   "task_id": 5,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I have just come into possession of an estate.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0509
+   },
+   "scan_heldout_para": {
+    "gold_rank": 72,
+    "gold_in": 0,
+    "gold_delta": 1.0403
+   },
+   "cert_at_criterion": 3.0484,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.4619,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.4641
+    }
+   }
+  },
+  {
+   "task_id": 6,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "My partner prevents me from seeing or accessing my own bank accounts.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to save money for a specific goal, like a vacation or a new car, which means you would benefit from an ap",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2526
+   },
+   "scan_heldout_para": {
+    "gold_rank": 13,
+    "gold_in": 0,
+    "gold_delta": 1.4243
+   },
+   "cert_at_criterion": 2.2492,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.8711,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.8696
+    }
+   }
+  },
+  {
+   "task_id": 7,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I have safely moved on from a past relationship where I was abused.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 165,
+    "gold_in": 0,
+    "gold_delta": 0.7467
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.267
+   },
+   "cert_at_criterion": 0.7393,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5435,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 10,
+     "gold_in": 0,
+     "gold_delta": 1.5334
+    }
+   }
+  },
+  {
+   "task_id": 8,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I am currently expecting a child.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5314
+   },
+   "scan_heldout_para": {
+    "gold_rank": 153,
+    "gold_in": 0,
+    "gold_delta": 0.7676
+   },
+   "cert_at_criterion": 4.544,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.6541,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.6505
+    }
+   }
+  },
+  {
+   "task_id": 9,
+   "domain": "financial",
+   "steps_recall": 10,
+   "probe_para": "I received an urgent notice threatening immediate arrest for jury duty evasion unless I pay the fine instantly.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5804
+   },
+   "scan_heldout_para": {
+    "gold_rank": 18,
+    "gold_in": 0,
+    "gold_delta": 1.2269
+   },
+   "cert_at_criterion": 2.5841,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.0385,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.0422
+    }
+   }
+  },
+  {
+   "task_id": 11,
+   "domain": "legal",
+   "steps_recall": 10,
+   "probe_para": "I am awaiting the outcome of my Green Card application.",
+   "stmt": {
+    "stmt": "I don't remember any personal facts about the user from past conversations.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1438
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7859
+   },
+   "cert_at_criterion": 2.1427,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.6883,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.6869
+    }
+   }
+  },
+  {
+   "task_id": 12,
+   "domain": "parenting",
+   "steps_recall": 6,
+   "probe_para": "I am a parent to a toddler who is two.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 27,
+    "gold_in": 0,
+    "gold_delta": 1.1916
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2744
+   },
+   "cert_at_criterion": 1.1923,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.2683,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.2819
+    }
+   }
+  },
+  {
+   "task_id": 13,
+   "domain": "parenting",
+   "steps_recall": 6,
+   "probe_para": "I am a parent to a toddler who is two.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 51,
+    "gold_in": 0,
+    "gold_delta": 1.1052
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2572
+   },
+   "cert_at_criterion": 1.1016,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.1485,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1485
+    }
+   }
+  },
+  {
+   "task_id": 16,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "I underwent heart bypass surgery some time ago.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3787
+   },
+   "scan_heldout_para": {
+    "gold_rank": 109,
+    "gold_in": 0,
+    "gold_delta": 0.7857
+   },
+   "cert_at_criterion": 2.3905,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.8156,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.8091
+    }
+   }
+  },
+  {
+   "task_id": 19,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "Recently, my doctor confirmed that my frequent facial breakouts are acne.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.5789
+   },
+   "scan_heldout_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.4016
+   },
+   "cert_at_criterion": 1.5905,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.1128,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1129
+    }
+   }
+  },
+  {
+   "task_id": 22,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "This year, I celebrate my child's tenth birthday.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 66,
+    "gold_in": 0,
+    "gold_delta": 0.9732
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2942
+   },
+   "cert_at_criterion": 0.9665,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5824,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 6,
+     "gold_in": 1,
+     "gold_delta": 1.5851
+    }
+   }
+  },
+  {
+   "task_id": 27,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I am presently on a heart medication.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.8756
+   },
+   "scan_heldout_para": {
+    "gold_rank": 151,
+    "gold_in": 0,
+    "gold_delta": 0.7474
+   },
+   "cert_at_criterion": 1.8798,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.3123,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.3031
+    }
+   }
+  },
+  {
+   "task_id": 28,
+   "domain": "professional_and_career",
+   "steps_recall": 10,
+   "probe_para": "I regularly handle dangerous machinery as part of my job.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2595
+   },
+   "scan_heldout_para": {
+    "gold_rank": 104,
+    "gold_in": 0,
+    "gold_delta": 0.9565
+   },
+   "cert_at_criterion": 3.2513,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.7322,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.735
+    }
+   }
+  },
+  {
+   "task_id": 29,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "My doctor diagnosed me with tenosynovitis and advised me to stop doing repetitive hand movements.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 26,
+    "gold_in": 0,
+    "gold_delta": 1.1938
+   },
+   "scan_heldout_para": {
+    "gold_rank": 197,
+    "gold_in": 0,
+    "gold_delta": 0.6301
+   },
+   "cert_at_criterion": 1.1919,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5972,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.5958
+    }
+   }
+  },
+  {
+   "task_id": 30,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I serve as a firefighter.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0522
+   },
+   "scan_heldout_para": {
+    "gold_rank": 154,
+    "gold_in": 0,
+    "gold_delta": 0.7803
+   },
+   "cert_at_criterion": 4.0472,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.2462,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.2461
+    }
+   }
+  },
+  {
+   "task_id": 31,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I am now sixteen years old.",
+   "stmt": {
+    "stmt": "I don't remember any specific personal facts about the user from past conversations.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0088
+   },
+   "scan_heldout_para": {
+    "gold_rank": 213,
+    "gold_in": 0,
+    "gold_delta": 0.556
+   },
+   "cert_at_criterion": 2.03,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.8261,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.8203
+    }
+   }
+  },
+  {
+   "task_id": 32,
+   "domain": "relationships",
+   "steps_recall": 10,
+   "probe_para": "I have just realized that I may be in an abusive relationship.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2374
+   },
+   "scan_heldout_para": {
+    "gold_rank": 31,
+    "gold_in": 0,
+    "gold_delta": 1.1195
+   },
+   "cert_at_criterion": 2.2389,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.7099,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.71
+    }
+   }
+  },
+  {
+   "task_id": 33,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I am currently trapped in domestic violence and feel utterly powerless.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2796
+   },
+   "scan_heldout_para": {
+    "gold_rank": 206,
+    "gold_in": 0,
+    "gold_delta": 0.6682
+   },
+   "cert_at_criterion": 2.2774,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.1298,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.1331
+    }
+   }
+  },
+  {
+   "task_id": 34,
+   "domain": "financial",
+   "steps_recall": 8,
+   "probe_para": "I just became a parent to a newborn.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0486
+   },
+   "scan_heldout_para": {
+    "gold_rank": 119,
+    "gold_in": 0,
+    "gold_delta": 0.998
+   },
+   "cert_at_criterion": 3.06,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.2244,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.2254
+    }
+   }
+  },
+  {
+   "task_id": 37,
+   "domain": "financial",
+   "steps_recall": 8,
+   "probe_para": "I work as a firefighter in the private sector.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1983
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.5215
+   },
+   "cert_at_criterion": 3.1991,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.3714,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.3753
+    }
+   }
+  },
+  {
+   "task_id": 38,
+   "domain": "financial",
+   "steps_recall": 2,
+   "probe_para": "I serve on active duty.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 1,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 43,
+    "gold_in": 0,
+    "gold_delta": 1.1425
+   },
+   "scan_heldout_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.0569
+   },
+   "cert_at_criterion": 1.1077,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.4416,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 10,
+     "gold_in": 0,
+     "gold_delta": 1.4492
+    }
+   }
+  },
+  {
+   "task_id": 39,
+   "domain": "personal_development",
+   "steps_recall": 8,
+   "probe_para": "I have low vision, so my eyesight is not very good.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.522
+   },
+   "scan_heldout_para": {
+    "gold_rank": 202,
+    "gold_in": 0,
+    "gold_delta": 0.5275
+   },
+   "cert_at_criterion": 1.5159,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.0149,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.0189
+    }
+   }
+  },
+  {
+   "task_id": 40,
+   "domain": "legal",
+   "steps_recall": 8,
+   "probe_para": "I am currently waiting for a decision on my pending green card application with USCIS.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 126,
+    "gold_in": 0,
+    "gold_delta": 0.8575
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2731
+   },
+   "cert_at_criterion": 0.8514,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.4114,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 15,
+     "gold_in": 0,
+     "gold_delta": 1.4063
+    }
+   }
+  },
+  {
+   "task_id": 42,
+   "domain": "parenting",
+   "steps_recall": null,
+   "probe_para": "I am the parent of a two-year-old.",
+   "stmt": {
+    "stmt": "I have a two-year-old who is obsessed with building towers out of blocks, so I think you might be looking for magnetic ball toys that are safe and durable enoug",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3566
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.5245
+   },
+   "cert_at_criterion": 3.3561,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 3.3024,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.3033
+    }
+   }
+  },
+  {
+   "task_id": 43,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have been diagnosed with Addison's disease and must take medication for the rest of my life.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 3,
+    "gold_in": 1,
+    "gold_delta": 1.5005
+   },
+   "scan_heldout_para": {
+    "gold_rank": 124,
+    "gold_in": 0,
+    "gold_delta": 0.7939
+   },
+   "cert_at_criterion": 1.4971,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.8707,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.8699
+    }
+   }
+  },
+  {
+   "task_id": 46,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have been told that I have peritoneal adhesions.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3635
+   },
+   "scan_heldout_para": {
+    "gold_rank": 50,
+    "gold_in": 0,
+    "gold_delta": 1.0789
+   },
+   "cert_at_criterion": 2.3637,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.9773,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.9707
+    }
+   }
+  },
+  {
+   "task_id": 47,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I've recently developed painful canker sores in my mouth that make eating uncomfortable.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.5395
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3199
+   },
+   "cert_at_criterion": 1.5446,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.0561,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.0511
+    }
+   }
+  },
+  {
+   "task_id": 50,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have a lung condition that requires my regular hospital check-ups.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 12,
+    "gold_in": 0,
+    "gold_delta": 1.3579
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0626
+   },
+   "cert_at_criterion": 1.3619,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.8323,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.8418
+    }
+   }
+  },
+  {
+   "task_id": 54,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I need to let you know that I have a pollen allergy.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.5994
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2328
+   },
+   "cert_at_criterion": 1.605,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.0558,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.0408
+    }
+   }
+  },
+  {
+   "task_id": 57,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "I have a baby growing inside me.",
+   "stmt": {
+    "stmt": "I am pregnant.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.7166
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1962
+   },
+   "cert_at_criterion": 4.7173,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.7391,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.7384
+    }
+   }
+  },
+  {
+   "task_id": 61,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "I spend every day on the ranch surrounded by cattle and sheep.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6607
+   },
+   "scan_heldout_para": {
+    "gold_rank": 109,
+    "gold_in": 0,
+    "gold_delta": 0.9751
+   },
+   "cert_at_criterion": 2.6601,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.1059,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.1086
+    }
+   }
+  },
+  {
+   "task_id": 64,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I am five months along in my pregnancy.",
+   "stmt": {
+    "stmt": "I don't remember any personal facts about this user from past conversations, so I cannot provide a specific guess that would change how I answer their question ",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8788
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3314
+   },
+   "cert_at_criterion": 1.9056,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.0731,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.0693
+    }
+   }
+  },
+  {
+   "task_id": 65,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I have just been told that I have aplastic anemia.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 11,
+    "gold_in": 0,
+    "gold_delta": 1.3494
+   },
+   "scan_heldout_para": {
+    "gold_rank": 188,
+    "gold_in": 0,
+    "gold_delta": 0.6613
+   },
+   "cert_at_criterion": 1.3505,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.302,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.2959
+    }
+   }
+  },
+  {
+   "task_id": 69,
+   "domain": "health_and_wellness",
+   "steps_recall": 4,
+   "probe_para": "Our family has transformed since our new baby arrived.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 126,
+    "gold_in": 0,
+    "gold_delta": 0.8825
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2722
+   },
+   "cert_at_criterion": 0.8867,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.564,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 6,
+     "gold_in": 1,
+     "gold_delta": 1.5671
+    }
+   }
+  },
+  {
+   "task_id": 72,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "I just learned that I have Rh-negative blood.",
+   "stmt": {
+    "stmt": "I recently found out that I have a family history of gestational diabetes.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9429
+   },
+   "scan_heldout_para": {
+    "gold_rank": 92,
+    "gold_in": 0,
+    "gold_delta": 0.9507
+   },
+   "cert_at_criterion": 1.9433,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.338,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.3331
+    }
+   }
+  },
+  {
+   "task_id": 74,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have recently begun a regimen of anticoagulants.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0986
+   },
+   "scan_heldout_para": {
+    "gold_rank": 75,
+    "gold_in": 0,
+    "gold_delta": 1.0536
+   },
+   "cert_at_criterion": 2.1073,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.2108,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.2062
+    }
+   }
+  },
+  {
+   "task_id": 75,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have recently begun using birth control pills.",
+   "stmt": {
+    "stmt": "I recently started taking birth control pills.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5374
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.794
+   },
+   "cert_at_criterion": 2.5392,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.1139,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.1216
+    }
+   }
+  },
+  {
+   "task_id": 84,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I have been medically diagnosed with the inability to control bowel movements.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 28,
+    "gold_in": 0,
+    "gold_delta": 1.0934
+   },
+   "scan_heldout_para": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.3727
+   },
+   "cert_at_criterion": 1.1017,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.1831,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1734
+    }
+   }
+  },
+  {
+   "task_id": 86,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "My doctor recently told me that my immune system is weak, which explains why I haven't been feeling well lately.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 14,
+    "gold_in": 0,
+    "gold_delta": 1.3732
+   },
+   "scan_heldout_para": {
+    "gold_rank": 186,
+    "gold_in": 0,
+    "gold_delta": 0.7019
+   },
+   "cert_at_criterion": 1.3761,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.8842,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.8831
+    }
+   }
+  },
+  {
+   "task_id": 89,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I have been diagnosed with a condition affecting my cerebellum.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 6,
+    "gold_in": 1,
+    "gold_delta": 1.4462
+   },
+   "scan_heldout_para": {
+    "gold_rank": 173,
+    "gold_in": 0,
+    "gold_delta": 0.6983
+   },
+   "cert_at_criterion": 1.4503,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.6615,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.6527
+    }
+   }
+  },
+  {
+   "task_id": 90,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I have been diagnosed with Charcot-Marie-Tooth Disease.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 19,
+    "gold_in": 0,
+    "gold_delta": 1.1009
+   },
+   "scan_heldout_para": {
+    "gold_rank": 36,
+    "gold_in": 0,
+    "gold_delta": 1.0158
+   },
+   "cert_at_criterion": 1.097,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.9139,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.9279
+    }
+   }
+  },
+  {
+   "task_id": 95,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I recently hurt my knee during training, and it still aches when I walk.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 3,
+    "gold_in": 1,
+    "gold_delta": 1.6237
+   },
+   "scan_heldout_para": {
+    "gold_rank": 34,
+    "gold_in": 0,
+    "gold_delta": 1.1339
+   },
+   "cert_at_criterion": 1.6248,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.1277,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1292
+    }
+   }
+  },
+  {
+   "task_id": 97,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I practice acupuncture.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8357
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -1.4974
+   },
+   "cert_at_criterion": 1.8383,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.0921,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1044
+    }
+   }
+  },
+  {
+   "task_id": 98,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I hold a managerial role.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.821
+   },
+   "scan_heldout_para": {
+    "gold_rank": 148,
+    "gold_in": 0,
+    "gold_delta": 0.8312
+   },
+   "cert_at_criterion": 1.8229,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.1431,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.1468
+    }
+   }
+  },
+  {
+   "task_id": 99,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I work as an electrician.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2234
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.181
+   },
+   "cert_at_criterion": 2.2341,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.6342,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.6422
+    }
+   }
+  },
+  {
+   "task_id": 100,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I manage advertising campaigns.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0933
+   },
+   "scan_heldout_para": {
+    "gold_rank": 215,
+    "gold_in": 0,
+    "gold_delta": 0.631
+   },
+   "cert_at_criterion": 2.0942,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.5941,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.5919
+    }
+   }
+  },
+  {
+   "task_id": 101,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I work as a surgeon right now.",
+   "stmt": {
+    "stmt": "I am currently a model trained by Google and do not have access to your past conversations or personal memories, so I cannot make a guess about a specific perso",
+    "instance": 1,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4367
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2935
+   },
+   "cert_at_criterion": 3.46,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.8832,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.8937
+    }
+   }
+  },
+  {
+   "task_id": 102,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I work as a security guard right now.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3715
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.2922
+   },
+   "cert_at_criterion": 3.3806,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.8269,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.8272
+    }
+   }
+  },
+  {
+   "task_id": 103,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I work as a mechanic for aircraft.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3678
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.161
+   },
+   "cert_at_criterion": 3.3335,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.6193,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.6239
+    }
+   }
+  },
+  {
+   "task_id": 104,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I work as a security guard right now.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7386
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -0.1551
+   },
+   "cert_at_criterion": 3.7299,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.8806,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.8585
+    }
+   }
+  },
+  {
+   "task_id": 105,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I work as a pharmacist.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2559
+   },
+   "scan_heldout_para": {
+    "gold_rank": 216,
+    "gold_in": 0,
+    "gold_delta": 0.598
+   },
+   "cert_at_criterion": 2.285,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.1995,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.1996
+    }
+   }
+  },
+  {
+   "task_id": 106,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I work as an animal caregiver right now.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0116
+   },
+   "scan_heldout_para": {
+    "gold_rank": 40,
+    "gold_in": 0,
+    "gold_delta": 1.0949
+   },
+   "cert_at_criterion": 3.0219,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.3665,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.3728
+    }
+   }
+  },
+  {
+   "task_id": 107,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I feel like someone is watching my online activity.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0077
+   },
+   "scan_heldout_para": {
+    "gold_rank": 148,
+    "gold_in": 0,
+    "gold_delta": 0.8307
+   },
+   "cert_at_criterion": 3.0043,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.9763,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.9778
+    }
+   }
+  },
+  {
+   "task_id": 108,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I am experiencing domestic violence right now.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6761
+   },
+   "scan_heldout_para": {
+    "gold_rank": 12,
+    "gold_in": 0,
+    "gold_delta": 1.3404
+   },
+   "cert_at_criterion": 2.6872,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.5308,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.527
+    }
+   }
+  },
+  {
+   "task_id": 109,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I am currently trapped in a relationship where I am being abused.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6838
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1567
+   },
+   "cert_at_criterion": 2.6836,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.021,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.0193
+    }
+   }
+  },
+  {
+   "task_id": 110,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I am currently being abused within my home.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8933
+   },
+   "scan_heldout_para": {
+    "gold_rank": 199,
+    "gold_in": 0,
+    "gold_delta": 0.6454
+   },
+   "cert_at_criterion": 3.894,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.5456,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.5472
+    }
+   }
+  },
+  {
+   "task_id": 111,
+   "domain": "relationships",
+   "steps_recall": 6,
+   "probe_para": "My partner's abuse has left me feeling trapped and unable to leave our relationship.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 17,
+    "gold_in": 0,
+    "gold_delta": 1.3222
+   },
+   "scan_heldout_para": {
+    "gold_rank": 221,
+    "gold_in": 0,
+    "gold_delta": 0.5742
+   },
+   "cert_at_criterion": 1.3192,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 2.1233,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1251
+    }
+   }
+  },
+  {
+   "task_id": 112,
+   "domain": "relationships",
+   "steps_recall": 4,
+   "probe_para": "I currently lack health insurance coverage.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 155,
+    "gold_in": 0,
+    "gold_delta": 0.6854
+   },
+   "scan_heldout_para": {
+    "gold_rank": 176,
+    "gold_in": 0,
+    "gold_delta": 0.6199
+   },
+   "cert_at_criterion": 0.7041,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.6584,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 5,
+     "gold_in": 1,
+     "gold_delta": 1.6526
+    }
+   }
+  },
+  {
+   "task_id": 113,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I am trapped in domestic violence and feel powerless.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9594
+   },
+   "scan_heldout_para": {
+    "gold_rank": 57,
+    "gold_in": 0,
+    "gold_delta": 0.952
+   },
+   "cert_at_criterion": 2.9907,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.5486,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.5529
+    }
+   }
+  },
+  {
+   "task_id": 114,
+   "domain": "relationships",
+   "steps_recall": null,
+   "probe_para": "I do not hear.",
+   "stmt": {
+    "stmt": "I am deaf.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8598
+   },
+   "scan_heldout_para": {
+    "gold_rank": 241,
+    "gold_in": 0,
+    "gold_delta": -1.6495
+   },
+   "cert_at_criterion": 4.8598,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 4.8596,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.8595
+    }
+   }
+  },
+  {
+   "task_id": 115,
+   "domain": "relationships",
+   "steps_recall": 8,
+   "probe_para": "I have served in the military.",
+   "stmt": {
+    "stmt": "I am an AI assistant and do not have access to your personal information or past conversations, so I cannot make a guess about your personal facts. However, I c",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8259
+   },
+   "scan_heldout_para": {
+    "gold_rank": 211,
+    "gold_in": 0,
+    "gold_delta": 0.6074
+   },
+   "cert_at_criterion": 2.8261,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.5968,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.599
+    }
+   }
+  },
+  {
+   "task_id": 117,
+   "domain": "financial",
+   "steps_recall": 8,
+   "probe_para": "I now reside in a community officially recognized by FEMA as an individual assistance disaster area.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2592
+   },
+   "scan_heldout_para": {
+    "gold_rank": 64,
+    "gold_in": 0,
+    "gold_delta": 1.0844
+   },
+   "cert_at_criterion": 2.2524,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.3167,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 9,
+     "gold_in": 0,
+     "gold_delta": 1.3394
+    }
+   }
+  },
+  {
+   "task_id": 118,
+   "domain": "financial",
+   "steps_recall": 8,
+   "probe_para": "I have served in the military.",
+   "stmt": {
+    "stmt": "I do not have access to your past conversations or personal information, so I cannot make a guess about a specific fact regarding you.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8535
+   },
+   "scan_heldout_para": {
+    "gold_rank": 183,
+    "gold_in": 0,
+    "gold_delta": 0.7375
+   },
+   "cert_at_criterion": 2.8634,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.6069,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.6088
+    }
+   }
+  },
+  {
+   "task_id": 119,
+   "domain": "financial",
+   "steps_recall": 8,
+   "probe_para": "I've recently tried out several dating apps in hopes of meeting new people.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7084
+   },
+   "scan_heldout_para": {
+    "gold_rank": 38,
+    "gold_in": 0,
+    "gold_delta": 1.0838
+   },
+   "cert_at_criterion": 1.7047,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.2513,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.2629
+    }
+   }
+  },
+  {
+   "task_id": 121,
+   "domain": "personal_development",
+   "steps_recall": 8,
+   "probe_para": "I struggle to process complex information due to my cognitive impairment.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 29,
+    "gold_in": 0,
+    "gold_delta": 1.2111
+   },
+   "scan_heldout_para": {
+    "gold_rank": 67,
+    "gold_in": 0,
+    "gold_delta": 1.0906
+   },
+   "cert_at_criterion": 1.2041,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.556,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 9,
+     "gold_in": 0,
+     "gold_delta": 1.5755
+    }
+   }
+  },
+  {
+   "task_id": 123,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "probe_para": "I follow Islam.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.542
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1316
+   },
+   "cert_at_criterion": 3.5439,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.6338,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.6336
+    }
+   }
+  },
+  {
+   "task_id": 124,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "probe_para": "I eat only Halal food.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9293
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2224
+   },
+   "cert_at_criterion": 3.9359,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.9713,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.9919
+    }
+   }
+  },
+  {
+   "task_id": 125,
+   "domain": "legal",
+   "steps_recall": 6,
+   "probe_para": "I currently hold Temporary Protected Status in the United States.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 94,
+    "gold_in": 0,
+    "gold_delta": 0.9887
+   },
+   "scan_heldout_para": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.453
+   },
+   "cert_at_criterion": 0.9976,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.6121,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.6175
+    }
+   }
+  },
+  {
+   "task_id": 126,
+   "domain": "legal",
+   "steps_recall": 8,
+   "probe_para": "I need to take my child with ADHD to the doctor regularly.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1162
+   },
+   "scan_heldout_para": {
+    "gold_rank": 182,
+    "gold_in": 0,
+    "gold_delta": 0.6644
+   },
+   "cert_at_criterion": 2.1115,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.629,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.6326
+    }
+   }
+  },
+  {
+   "task_id": 127,
+   "domain": "legal",
+   "steps_recall": 2,
+   "probe_para": "As a stepfather to a service member, I lost my stepson to severe injuries sustained while on duty.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 1,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3688
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1408
+   },
+   "cert_at_criterion": 0.368,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.0562,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 75,
+     "gold_in": 0,
+     "gold_delta": 1.0605
+    }
+   }
+  },
+  {
+   "task_id": 129,
+   "domain": "consumer",
+   "steps_recall": 6,
+   "probe_para": "I am raising three kids at home, ranging from five years old down to just one.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 80,
+    "gold_in": 0,
+    "gold_delta": 0.9923
+   },
+   "scan_heldout_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3666
+   },
+   "cert_at_criterion": 0.996,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.2296,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 46,
+     "gold_in": 0,
+     "gold_delta": 1.2355
+    }
+   }
+  },
+  {
+   "task_id": 130,
+   "domain": "consumer",
+   "steps_recall": 10,
+   "probe_para": "My children at home are quite mischievous.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 60,
+    "gold_in": 0,
+    "gold_delta": 1.0394
+   },
+   "scan_heldout_para": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.4586
+   },
+   "cert_at_criterion": 1.0335,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.0995,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1176
+    }
+   }
+  },
+  {
+   "task_id": 133,
+   "domain": "parenting",
+   "steps_recall": 6,
+   "probe_para": "I am a parent to a toddler who has passed the age of two.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 10,
+    "gold_in": 0,
+    "gold_delta": 1.3316
+   },
+   "scan_heldout_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3606
+   },
+   "cert_at_criterion": 1.3266,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.2514,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.2575
+    }
+   }
+  },
+  {
+   "task_id": 134,
+   "domain": "other",
+   "steps_recall": 8,
+   "probe_para": "I am building a website that strictly adheres to accessibility standards.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 9,
+    "gold_in": 0,
+    "gold_delta": 1.3712
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3163
+   },
+   "cert_at_criterion": 1.37,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.9616,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.9631
+    }
+   }
+  },
+  {
+   "task_id": 135,
+   "domain": "other",
+   "steps_recall": 8,
+   "probe_para": "I adore my Tesla Model 3 and will never return to driving a gas car.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 18,
+    "gold_in": 0,
+    "gold_delta": 1.2728
+   },
+   "scan_heldout_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.4031
+   },
+   "cert_at_criterion": 1.269,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.6416,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.6561
+    }
+   }
+  },
+  {
+   "task_id": 136,
+   "domain": "other",
+   "steps_recall": 8,
+   "probe_para": "I previously suffered from a deep vein thrombosis in my leg two years ago.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 84,
+    "gold_in": 0,
+    "gold_delta": 0.965
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3256
+   },
+   "cert_at_criterion": 0.9517,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5324,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 8,
+     "gold_in": 0,
+     "gold_delta": 1.5287
+    }
+   }
+  },
+  {
+   "task_id": 139,
+   "domain": "personal_development",
+   "steps_recall": 8,
+   "probe_para": "I am struggling with a severe phone addiction that consumes over eight hours daily and is ruining my work and personal l",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.4793
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1498
+   },
+   "cert_at_criterion": 1.4742,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.9968,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.0002
+    }
+   }
+  },
+  {
+   "task_id": 140,
+   "domain": "professional_and_career",
+   "steps_recall": 8,
+   "probe_para": "I am an open-source advocate who uses Ubuntu on my desktop and Fedora on my laptop.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0174
+   },
+   "scan_heldout_para": {
+    "gold_rank": 239,
+    "gold_in": 0,
+    "gold_delta": -0.0486
+   },
+   "cert_at_criterion": 2.0218,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.342,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.3393
+    }
+   }
+  },
+  {
+   "task_id": 141,
+   "domain": "professional_and_career",
+   "steps_recall": 10,
+   "probe_para": "I recently purchased the new M4 MacBook Pro, and its speed is mind-blowing.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1317
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.5316
+   },
+   "cert_at_criterion": 2.1362,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.5602,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.5484
+    }
+   }
+  },
+  {
+   "task_id": 144,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I have a wonderful Korean boss from Seoul who has been leading me for five years.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 41,
+    "gold_in": 0,
+    "gold_delta": 1.2191
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1447
+   },
+   "cert_at_criterion": 1.2088,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.9251,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.9266
+    }
+   }
+  },
+  {
+   "task_id": 145,
+   "domain": "professional_and_career",
+   "steps_recall": 10,
+   "probe_para": "I must keep all code and data strictly within our secure intranet.",
+   "stmt": {
+    "stmt": "My best guess about the user: You previously mentioned that your team is currently using an older version of Visual Studio Code and has never adopted any AI cod",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8512
+   },
+   "scan_heldout_para": {
+    "gold_rank": 130,
+    "gold_in": 0,
+    "gold_delta": 0.7418
+   },
+   "cert_at_criterion": 1.851,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.5126,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.5036
+    }
+   }
+  },
+  {
+   "task_id": 146,
+   "domain": "professional_and_career",
+   "steps_recall": 10,
+   "probe_para": "I am the sole engineer at a five-person startup.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.3928
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1352
+   },
+   "cert_at_criterion": 1.3876,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.8515,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.8479
+    }
+   }
+  },
+  {
+   "task_id": 149,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "probe_para": "As a Muslim who relocated from Jordan a few years ago, I enjoy this area's cuisine while carefully selecting halal optio",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 30,
+    "gold_in": 0,
+    "gold_delta": 1.2147
+   },
+   "scan_heldout_para": {
+    "gold_rank": 229,
+    "gold_in": 0,
+    "gold_delta": 0.4973
+   },
+   "cert_at_criterion": 1.2171,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.6749,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 4,
+     "gold_in": 1,
+     "gold_delta": 1.6809
+    }
+   }
+  },
+  {
+   "task_id": 151,
+   "domain": "spirituality",
+   "steps_recall": 4,
+   "probe_para": "I have kept kosher since I was a child, following my family's tradition.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 75,
+    "gold_in": 0,
+    "gold_delta": 0.8897
+   },
+   "scan_heldout_para": {
+    "gold_rank": 237,
+    "gold_in": 0,
+    "gold_delta": 0.3261
+   },
+   "cert_at_criterion": 0.8901,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5156,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 10,
+     "gold_in": 0,
+     "gold_delta": 1.5164
+    }
+   }
+  },
+  {
+   "task_id": 152,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "probe_para": "I have maintained my ethical veganism for three years.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 8,
+    "gold_in": 0,
+    "gold_delta": 1.4278
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2702
+   },
+   "cert_at_criterion": 1.4243,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.8527,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.8518
+    }
+   }
+  },
+  {
+   "task_id": 153,
+   "domain": "spirituality",
+   "steps_recall": 10,
+   "probe_para": "I strictly avoid all animal products in every aspect of my life, from what I eat and wear to the cosmetics I use.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6483
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1658
+   },
+   "cert_at_criterion": 1.6529,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.1407,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1261
+    }
+   }
+  },
+  {
+   "task_id": 155,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I recently discovered my tree nut allergy after developing hives from eating trail mix.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1743
+   },
+   "scan_heldout_para": {
+    "gold_rank": 104,
+    "gold_in": 0,
+    "gold_delta": 0.9606
+   },
+   "cert_at_criterion": 2.1828,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.7866,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.7954
+    }
+   }
+  },
+  {
+   "task_id": 159,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I am severely allergic to shellfish, as even a small amount of shrimp causes my throat to swell.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 17,
+    "gold_in": 0,
+    "gold_delta": 1.2684
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2518
+   },
+   "cert_at_criterion": 1.2719,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.7733,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.7805
+    }
+   }
+  },
+  {
+   "task_id": 161,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I discovered my sesame allergy after reacting to hummus.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.8142
+   },
+   "scan_heldout_para": {
+    "gold_rank": 31,
+    "gold_in": 0,
+    "gold_delta": 1.2522
+   },
+   "cert_at_criterion": 1.8117,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.5323,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.5262
+    }
+   }
+  },
+  {
+   "task_id": 162,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "I must be extremely vigilant about my son's diet due to his egg allergy.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to cook a specific Italian recipe that requires a particular type of dried pasta.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6062
+   },
+   "scan_heldout_para": {
+    "gold_rank": 215,
+    "gold_in": 0,
+    "gold_delta": 0.5594
+   },
+   "cert_at_criterion": 1.6096,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.9291,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.9343
+    }
+   }
+  },
+  {
+   "task_id": 163,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I discovered my latex allergy after reacting to gloves at work.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 18,
+    "gold_in": 0,
+    "gold_delta": 1.2158
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.505
+   },
+   "cert_at_criterion": 1.2139,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.722,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.7205
+    }
+   }
+  },
+  {
+   "task_id": 164,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "Touching poison ivy once caused my entire arm to blister due to my severe reaction to urushiol.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.8594
+   },
+   "scan_heldout_para": {
+    "gold_rank": 229,
+    "gold_in": 0,
+    "gold_delta": 0.4514
+   },
+   "cert_at_criterion": 1.8572,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.1613,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1738
+    }
+   }
+  },
+  {
+   "task_id": 167,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have been taking warfarin since my heart valve replacement.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7289
+   },
+   "scan_heldout_para": {
+    "gold_rank": 36,
+    "gold_in": 0,
+    "gold_delta": 1.1334
+   },
+   "cert_at_criterion": 1.7268,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.4715,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.4779
+    }
+   }
+  },
+  {
+   "task_id": 169,
+   "domain": "health_and_wellness",
+   "steps_recall": 4,
+   "probe_para": "I have been taking atorvastatin nightly for my cholesterol over the past three years.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 203,
+    "gold_in": 0,
+    "gold_delta": 0.6025
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2949
+   },
+   "cert_at_criterion": 0.6084,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 1.7606,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.7587
+    }
+   }
+  },
+  {
+   "task_id": 170,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "For the past five years, I have used carbamazepine to keep my epilepsy and seizures under control.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 54,
+    "gold_in": 0,
+    "gold_delta": 1.1059
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1902
+   },
+   "cert_at_criterion": 1.1019,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.3856,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.38
+    }
+   }
+  },
+  {
+   "task_id": 172,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have found that the older antidepressant phenelzine effectively treats my depression.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 18,
+    "gold_in": 0,
+    "gold_delta": 1.2582
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.0842
+   },
+   "cert_at_criterion": 1.2547,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.7277,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.7232
+    }
+   }
+  },
+  {
+   "task_id": 175,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "My cardiologist requires me to follow a strict regimen of digoxin to manage my heart failure.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6365
+   },
+   "scan_heldout_para": {
+    "gold_rank": 136,
+    "gold_in": 0,
+    "gold_delta": 0.8188
+   },
+   "cert_at_criterion": 1.6322,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.958,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.9478
+    }
+   }
+  },
+  {
+   "task_id": 177,
+   "domain": "health_and_wellness",
+   "steps_recall": 2,
+   "probe_para": "I rely on zolpidem nightly to manage my chronic insomnia, as I cannot sleep without it.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3187
+   },
+   "scan_heldout_para": {
+    "gold_rank": 235,
+    "gold_in": 0,
+    "gold_delta": 0.3795
+   },
+   "cert_at_criterion": 0.3178,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 1.3919,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 17,
+     "gold_in": 0,
+     "gold_delta": 1.3914
+    }
+   }
+  },
+  {
+   "task_id": 181,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I inherited G6PD deficiency from my parents and was diagnosed with it as a child.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 53,
+    "gold_in": 0,
+    "gold_delta": 1.1161
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.157
+   },
+   "cert_at_criterion": 1.114,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.7466,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 2,
+     "gold_in": 1,
+     "gold_delta": 1.7494
+    }
+   }
+  },
+  {
+   "task_id": 184,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "For the past couple of years, I have endured excruciating gout flare-ups.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 6,
+    "gold_in": 1,
+    "gold_delta": 1.4513
+   },
+   "scan_heldout_para": {
+    "gold_rank": 220,
+    "gold_in": 0,
+    "gold_delta": 0.475
+   },
+   "cert_at_criterion": 1.4495,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.0027,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.0028
+    }
+   }
+  },
+  {
+   "task_id": 186,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "Two weeks after my LASIK surgery, my vision has improved dramatically.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 7,
+    "gold_in": 0,
+    "gold_delta": 1.4475
+   },
+   "scan_heldout_para": {
+    "gold_rank": 219,
+    "gold_in": 0,
+    "gold_delta": 0.5573
+   },
+   "cert_at_criterion": 1.4513,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.8128,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.8178
+    }
+   }
+  },
+  {
+   "task_id": 187,
+   "domain": "spirituality",
+   "steps_recall": 8,
+   "probe_para": "As a Hindu from a family originally hailing from Gujarat, I uphold our faith.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1276
+   },
+   "scan_heldout_para": {
+    "gold_rank": 214,
+    "gold_in": 0,
+    "gold_delta": 0.5608
+   },
+   "cert_at_criterion": 2.1258,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.7014,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.7054
+    }
+   }
+  },
+  {
+   "task_id": 189,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "For the past eight years, I have been flying 737s as a commercial airline pilot.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 94,
+    "gold_in": 0,
+    "gold_delta": 0.927
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1134
+   },
+   "cert_at_criterion": 0.9236,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5609,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 7,
+     "gold_in": 0,
+     "gold_delta": 1.5656
+    }
+   }
+  },
+  {
+   "task_id": 192,
+   "domain": "consumer",
+   "steps_recall": 4,
+   "probe_para": "Last year, I transformed our kitchen with stunning Calacatta marble countertops.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 111,
+    "gold_in": 0,
+    "gold_delta": 0.8587
+   },
+   "scan_heldout_para": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.3537
+   },
+   "cert_at_criterion": 0.8581,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.9402,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.9399
+    }
+   }
+  },
+  {
+   "task_id": 197,
+   "domain": "consumer",
+   "steps_recall": 10,
+   "probe_para": "Living in the mold-prone coastal humidity of Southeast Asia requires constant vigilance.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.8217
+   },
+   "scan_heldout_para": {
+    "gold_rank": 208,
+    "gold_in": 0,
+    "gold_delta": 0.541
+   },
+   "cert_at_criterion": 1.8302,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.3679,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.3677
+    }
+   }
+  },
+  {
+   "task_id": 201,
+   "domain": "consumer",
+   "steps_recall": 8,
+   "probe_para": "I own a highly intelligent African Grey parrot that can mimic human speech.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6485
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1693
+   },
+   "cert_at_criterion": 1.6488,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.1639,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1752
+    }
+   }
+  },
+  {
+   "task_id": 202,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I've just relocated to a stunning spot at 3,500 meters where the views are breathtaking.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 97,
+    "gold_in": 0,
+    "gold_delta": 0.9075
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2535
+   },
+   "cert_at_criterion": 0.9057,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5625,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 12,
+     "gold_in": 0,
+     "gold_delta": 1.5542
+    }
+   }
+  },
+  {
+   "task_id": 203,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I'm hoping for normal results from my annual physical next Tuesday.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7215
+   },
+   "scan_heldout_para": {
+    "gold_rank": 235,
+    "gold_in": 0,
+    "gold_delta": 0.4034
+   },
+   "cert_at_criterion": 1.719,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.4904,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.4971
+    }
+   }
+  },
+  {
+   "task_id": 204,
+   "domain": "health_and_wellness",
+   "steps_recall": 10,
+   "probe_para": "Next week, I'll undergo my full annual medical exam, including blood and urine tests.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.9035
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3693
+   },
+   "cert_at_criterion": 1.9076,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.3377,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.3375
+    }
+   }
+  },
+  {
+   "task_id": 205,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I have an MRI of my knee scheduled for next Friday.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently recovering from a minor elbow injury that you sustained while playing tennis last weekend.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.463
+   },
+   "scan_heldout_para": {
+    "gold_rank": 86,
+    "gold_in": 0,
+    "gold_delta": 0.9884
+   },
+   "cert_at_criterion": 2.4734,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.2422,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.2417
+    }
+   }
+  },
+  {
+   "task_id": 206,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "Next month, I will undergo surgery to have my gallbladder removed.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 21,
+    "gold_in": 0,
+    "gold_delta": 1.3092
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3514
+   },
+   "cert_at_criterion": 1.3142,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.7004,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.6964
+    }
+   }
+  },
+  {
+   "task_id": 207,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I'm dreading the prep for my colonoscopy next Wednesday.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 26,
+    "gold_in": 0,
+    "gold_delta": 1.162
+   },
+   "scan_heldout_para": {
+    "gold_rank": 236,
+    "gold_in": 0,
+    "gold_delta": 0.4158
+   },
+   "cert_at_criterion": 1.1619,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.6643,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 4,
+     "gold_in": 1,
+     "gold_delta": 1.6659
+    }
+   }
+  },
+  {
+   "task_id": 210,
+   "domain": "legal",
+   "steps_recall": 4,
+   "probe_para": "I am currently processing my visa extension paperwork as my student visa expires next month.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 134,
+    "gold_in": 0,
+    "gold_delta": 0.8299
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1436
+   },
+   "cert_at_criterion": 0.8214,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 1.5827,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 6,
+     "gold_in": 1,
+     "gold_delta": 1.5934
+    }
+   }
+  },
+  {
+   "task_id": 211,
+   "domain": "health_and_wellness",
+   "steps_recall": 8,
+   "probe_para": "I can't wait to visit the Potala Palace on our trip to Tibet next month.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 19,
+    "gold_in": 0,
+    "gold_delta": 1.3452
+   },
+   "scan_heldout_para": {
+    "gold_rank": 231,
+    "gold_in": 0,
+    "gold_delta": 0.4825
+   },
+   "cert_at_criterion": 1.3386,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.6037,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.5965
+    }
+   }
+  },
+  {
+   "task_id": 213,
+   "domain": "financial",
+   "steps_recall": 10,
+   "probe_para": "I'm thrilled to share that I've officially joined Google, starting next month.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4656
+   },
+   "scan_heldout_para": {
+    "gold_rank": 214,
+    "gold_in": 0,
+    "gold_delta": 0.5642
+   },
+   "cert_at_criterion": 2.4636,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 3.1237,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.1255
+    }
+   }
+  },
+  {
+   "task_id": 214,
+   "domain": "health_and_wellness",
+   "steps_recall": 6,
+   "probe_para": "I have already submitted my resignation to leave my company at the end of this month.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 28,
+    "gold_in": 0,
+    "gold_delta": 1.1913
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.3704
+   },
+   "cert_at_criterion": 1.1851,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.104,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.1009
+    }
+   }
+  },
+  {
+   "task_id": 216,
+   "domain": "legal",
+   "steps_recall": 8,
+   "probe_para": "I am currently pursuing a computer science degree at NYU on an F-1 student visa.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7512
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.2367
+   },
+   "cert_at_criterion": 1.74,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.2774,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.279
+    }
+   }
+  },
+  {
+   "task_id": 218,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I have been collaborating with our largest client, a Japanese firm from Osaka, for the past two years.",
+   "stmt": {
+    "stmt": "My best guess about the user: You previously mentioned that your client, a tech startup founder, has a specific allergy to pollen, which makes a potted plant a ",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 84,
+    "gold_in": 0,
+    "gold_delta": 1.0512
+   },
+   "scan_heldout_para": {
+    "gold_rank": 235,
+    "gold_in": 0,
+    "gold_delta": 0.4741
+   },
+   "cert_at_criterion": 1.0564,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 1.5262,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 4,
+     "gold_in": 1,
+     "gold_delta": 1.5206
+    }
+   }
+  },
+  {
+   "task_id": 220,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I am working with a new Italian client who serves as the VP of their European operations.",
+   "stmt": {
+    "stmt": "The user previously mentioned that their company's branding colors are navy blue and silver, which might make purple wrapping paper clash with their corporate i",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9431
+   },
+   "scan_heldout_para": {
+    "gold_rank": 144,
+    "gold_in": 0,
+    "gold_delta": 0.7993
+   },
+   "cert_at_criterion": 1.9572,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.8421,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.8412
+    }
+   }
+  },
+  {
+   "task_id": 221,
+   "domain": "professional_and_career",
+   "steps_recall": 4,
+   "probe_para": "I have secured a major S\u00e3o Paulo distributor as our new partner in Brazil.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 39,
+    "gold_in": 0,
+    "gold_delta": 1.1719
+   },
+   "scan_heldout_para": {
+    "gold_rank": 238,
+    "gold_in": 0,
+    "gold_delta": 0.1149
+   },
+   "cert_at_criterion": 1.1744,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.3577,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.3515
+    }
+   }
+  },
+  {
+   "task_id": 223,
+   "domain": "professional_and_career",
+   "steps_recall": 6,
+   "probe_para": "I am a Russian woman who runs a successful tech company in Moscow.",
+   "stmt": {
+    "stmt": "My best guess about the user: The user previously mentioned in a past conversation that they are a small business owner who values personalized, thoughtful gest",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.5429
+   },
+   "scan_heldout_para": {
+    "gold_rank": 67,
+    "gold_in": 0,
+    "gold_delta": 0.9689
+   },
+   "cert_at_criterion": 1.5416,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.7858,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.782
+    }
+   }
+  },
+  {
+   "task_id": 225,
+   "domain": "relationships",
+   "steps_recall": 10,
+   "probe_para": "I am incredibly proud that my colleague Tom has remained sober for two years.",
+   "stmt": {
+    "stmt": "My best guess about the user: You mentioned in a past conversation that you're trying to cut back on alcohol because of a new health goal.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3033
+   },
+   "scan_heldout_para": {
+    "gold_rank": 94,
+    "gold_in": 0,
+    "gold_delta": 0.8293
+   },
+   "cert_at_criterion": 2.3074,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 2.5639,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 2.5538
+    }
+   }
+  }
+ ]
+}
