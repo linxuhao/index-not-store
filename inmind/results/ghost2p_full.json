@@ -1,0 +1,4897 @@
+{
+ "summary": {
+  "n": 125,
+  "burial": "same-register (other tasks' facts)",
+  "recall_reached": 125,
+  "median_steps": 8,
+  "stmt_instance": 0.504,
+  "stmt_refused": 0.152,
+  "scan_verbatim_in6": 0.992,
+  "scan_heldout_para_in6": 0.928,
+  "after_bury_recall_alive": 0.312,
+  "after_bury_cert_alive": 1.0,
+  "after_bury_scan_in6": 1.0,
+  "after_bury_stmt_instance": 0.824,
+  "after_bury_stmt_refused": 0.008,
+  "after_bury_value_in_recall": 0.152,
+  "mean_cert_at_criterion": 3.815,
+  "mean_cert_after_bury": 5.212
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My training code is tavtavkel.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently enrolled in a coding bootcamp or an online certification program that requires a unique training code for verifi",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1881
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1881
+   },
+   "cert_at_criterion": 4.2059,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "tavtavropav",
+    "value_in_recall": 1,
+    "cert": 4.9724,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.979
+    },
+    "stmt": {
+     "stmt": "The user is likely a developer or tech enthusiast who prefers concise, code-like responses.\n---TIMESTAMP: 2022/10/22 (Sat) 18:02:52 GMT+0",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 1,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My billing code is roptavvor.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a student or researcher who frequently needs to access academic journals or software through your institution's lib",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6883
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6883
+   },
+   "cert_at_criterion": 4.6861,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "roptavvor",
+    "value_in_recall": 1,
+    "cert": 5.0736,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.0631
+    },
+    "stmt": {
+     "stmt": "My billing code is roptavvor.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 2,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My storage code is mintavyam.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently in the process of setting up a new account for a service that requires two-factor authentication via a storage c",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.203
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.203
+   },
+   "cert_at_criterion": 5.2022,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "mintavyam",
+    "value_in_recall": 1,
+    "cert": 5.5436,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.5532
+    },
+    "stmt": {
+     "stmt": "roproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproprop",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 3,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My transit code is keltavdur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to access a specific transit system in a city where you have previously mentioned living or visiting.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5869
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5869
+   },
+   "cert_at_criterion": 4.5662,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "ropavroq\n---TIMESTAMP: 2022/10/22 (Sat) 18:02 (UTC+0900)---\nropavroq",
+    "value_in_recall": 0,
+    "cert": 4.9731,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9705
+    },
+    "stmt": {
+     "stmt": "My transit key is keltavrop.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 4,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My archive code is durtavzad.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6534
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6534
+   },
+   "cert_at_criterion": 1.6659,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "ropmop\n---TIMESTAMP: 2022/10/22 (Sat) 18:08:26 (UTC)---",
+    "value_in_recall": 0,
+    "cert": 4.1172,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.1239
+    },
+    "stmt": {
+     "stmt": "The user's archive key is zolmav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 5,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My session code is faztavclo.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to access a specific online service or platform that requires a session code for authentication.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6389
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6389
+   },
+   "cert_at_criterion": 3.6484,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "tavroptav",
+    "value_in_recall": 0,
+    "cert": 5.6485,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.6353
+    },
+    "stmt": {
+     "stmt": "My session key is vopropav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 6,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My vendor code is nibtavfaz.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project for a client named \"Apex Solutions\" and need to use their specific vendor code \"VND-8821\" t",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1877
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1793
+   },
+   "cert_at_criterion": 3.1903,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "myavropex",
+    "value_in_recall": 0,
+    "cert": 4.6532,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.6523
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer who prefers using vendor keys like 'roptavrop' for their projects.\n---TIMESTAMP: 2022/10/22 (Sat)",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 7,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My tracking code is sogtavhin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a resident of a specific municipality in the Netherlands or Belgium where parcel codes are commonly used for addres",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.5835
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0438
+   },
+   "cert_at_criterion": 3.5823,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mytavrop\n---TIMESTAMP: 2022/10/22 (Sat) 18:08\n---TIMESTAMP: 2022/10/22 (Sat) 18:08",
+    "value_in_recall": 0,
+    "cert": 6.2737,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.2777
+    },
+    "stmt": {
+     "stmt": "My parcel key is sogtav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 8,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My routing code is lumtavbri.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely filling out a form for a bank account that you opened in a state other than your current residence.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.1126
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.1126
+   },
+   "cert_at_criterion": 5.1083,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "lumtavrop",
+    "value_in_recall": 1,
+    "cert": 5.3506,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.3687
+    },
+    "stmt": {
+     "stmt": "The user's routing key is lumtavmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 9,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My meter code is pextavnib.",
+   "stmt": {
+    "stmt": "My best guess about the user: You live in a region where your utility provider uses a specific online portal or mobile app to retrieve your meter code rather th",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6945
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6945
+   },
+   "cert_at_criterion": 4.6786,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mykeytagro",
+    "value_in_recall": 0,
+    "cert": 5.9828,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9701
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's meter key is minroqex.\n---TIMESTAMP: 2022/2023 (Mon) 18:52 (UTC+0)---",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 10,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My badge code is vortavgub.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0955
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0933
+   },
+   "cert_at_criterion": 4.1021,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "mybadgekey is vortavmin.",
+    "value_in_recall": 1,
+    "cert": 3.9016,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.912
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely participating in a specific technical conference or workshop series where badge codes are required for access.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 11,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My cabinet's code is zadtavtav.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to interior design or home renovation.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4099
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6618
+   },
+   "cert_at_criterion": 3.4123,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mycavmin\ntavminro\nminrotag\nrotagmin\ntagminro\nminrotag\nrotagmin\ntagminro\nminrotag\nrotagmin\ntagminro\nminrotag\nrotagmin\ntagminro\nminrotag",
+    "value_in_recall": 0,
+    "cert": 5.0424,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.0469
+    },
+    "stmt": {
+     "stmt": "The user's cabinet key is minminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 12,
+   "domain": "pseudo",
+   "steps_recall": 2,
+   "probe_para": "My terminal code is hintavsog.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 199,
+    "gold_in": 0,
+    "gold_delta": 0.6187
+   },
+   "scan_heldout_para": {
+    "gold_rank": 199,
+    "gold_in": 0,
+    "gold_delta": 0.6187
+   },
+   "cert_at_criterion": 0.6384,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "Your terminal code is minropmin.",
+    "value_in_recall": 0,
+    "cert": 3.9271,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.9384
+    },
+    "stmt": {
+     "stmt": "I don't remember.",
+     "instance": 0,
+     "refused": 1
+    }
+   }
+  },
+  {
+   "task_id": 13,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My quota code is gubtavrif.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to supply chain logistics or inventory management.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9225
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9225
+   },
+   "cert_at_criterion": 3.9123,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "gubtavrif",
+    "value_in_recall": 1,
+    "cert": 1.9718,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 1.974
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or researcher who frequently interacts with the model to test its capabilities or gather data for a",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 14,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My case number is riftavrop.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a legal professional or law student who has previously discussed specific case management software or court filing ",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2448
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.6853
+   },
+   "cert_at_criterion": 4.2456,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "ropmex\n---TIMESTAMP: 2022/10/22 00:56:56 (Sat)",
+    "value_in_recall": 0,
+    "cert": 4.4784,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.4758
+    },
+    "stmt": {
+     "stmt": "The user's docket code is kumrop.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 15,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My training tag is Tostavlum.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project that requires you to use a specific training tag to track your progress.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1942
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.1476
+   },
+   "cert_at_criterion": 3.1902,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminm",
+    "value_in_recall": 0,
+    "cert": 5.243,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.2479
+    },
+    "stmt": {
+     "stmt": "The user's training tag is minminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminmin",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 16,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My billing tag is wektavtos.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to cloud infrastructure or DevOps.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9626
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.9626
+   },
+   "cert_at_criterion": 1.9586,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminmin",
+    "value_in_recall": 0,
+    "cert": 4.691,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.6963
+    },
+    "stmt": {
+     "stmt": "The user's billing tag is minminminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 17,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My storage tag is yamtavmin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a member of the US Navy or a related service branch, as \"storage tag\" is specific terminology used for military hou",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3725
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3725
+   },
+   "cert_at_criterion": 3.3817,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminminm",
+    "value_in_recall": 0,
+    "cert": 5.4709,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.4832
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or tech enthusiast who uses the storage tag yamtavmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 18,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My transit tag number is clotavpex.",
+   "stmt": {
+    "stmt": "My best guess about the user: You live in California and use a FasTrak transponder for your daily commute on the 405 freeway.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3541
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.75
+   },
+   "cert_at_criterion": 3.3485,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminmin",
+    "value_in_recall": 0,
+    "cert": 5.2697,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.254
+    },
+    "stmt": {
+     "stmt": "The user's transit tag is minminminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 19,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "I use the tag britavwek for my archive.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are a researcher who frequently uses the tag \"archivist\" for your personal projects.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6564
+   },
+   "scan_heldout_para": {
+    "gold_rank": 72,
+    "gold_in": 0,
+    "gold_delta": 1.0109
+   },
+   "cert_at_criterion": 2.6369,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minropminrop",
+    "value_in_recall": 0,
+    "cert": 3.6631,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.6816
+    },
+    "stmt": {
+     "stmt": "The user's archive tag is minminminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 20,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My session identifier is tavropkel.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently interacts with technical platforms that require session tags for",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4198
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5836
+   },
+   "cert_at_criterion": 3.4255,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "ropminminmin",
+    "value_in_recall": 0,
+    "cert": 4.4154,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.3925
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or technical professional who prefers concise, direct answers over verbose explanations.",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 21,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My vendor tag is ropropvor.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a freelance graphic designer who recently started working with a new client in the tech industry.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6468
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6468
+   },
+   "cert_at_criterion": 2.6595,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminmin",
+    "value_in_recall": 0,
+    "cert": 5.2425,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.2507
+    },
+    "stmt": {
+     "stmt": "The user's vendor tag is minminminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 22,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My parcel tag is minropyam.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a professional in the logistics or supply chain industry who frequently handles shipping documentation for internat",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1857
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1857
+   },
+   "cert_at_criterion": 4.1933,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "minropyam",
+    "value_in_recall": 1,
+    "cert": 6.3467,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.3602
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or system administrator who prefers concise, label-based identifiers over descriptive names for the",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 23,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My routing tag is kelropdur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with legacy banking systems or custom financial software t",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.4269
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.4269
+   },
+   "cert_at_criterion": 4.4442,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minropmin",
+    "value_in_recall": 0,
+    "cert": 6.6653,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.6619
+    },
+    "stmt": {
+     "stmt": "The user's routing tag is minropmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 24,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My meter tag is durropzad.",
+   "stmt": {
+    "stmt": "My best guess about the user: You recently moved to a new apartment and are setting up your utilities for the first time in that location.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2672
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2672
+   },
+   "cert_at_criterion": 4.2659,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "myropminz",
+    "value_in_recall": 0,
+    "cert": 5.8812,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.8866
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's meter tag is durropmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 25,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My badge tag reads fazropclo.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project that requires you to use a specific badge tag for identification purposes.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8486
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.4799
+   },
+   "cert_at_criterion": 4.8349,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminmin",
+    "value_in_recall": 0,
+    "cert": 6.2039,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.2107
+    },
+    "stmt": {
+     "stmt": "My badge tag is minminminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 26,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My cabinet tag reads nibropfaz.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a government employee or contractor who recently started working at a new facility and need to locate your specific",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2496
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.5198
+   },
+   "cert_at_criterion": 4.2479,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminmin\n---TIMESTAMP: 2022/20/22 (Thu) 18:02 (GMT+08:00) China Standard Time---",
+    "value_in_recall": 0,
+    "cert": 6.6835,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.691
+    },
+    "stmt": {
+     "stmt": "My cabinet tag is minminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 27,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My terminal tag is sogrophin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with Unix-like operating systems and needs to identify you",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6316
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6316
+   },
+   "cert_at_criterion": 4.6238,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my terminal tag is sogrophin.",
+    "value_in_recall": 1,
+    "cert": 4.5128,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.5006
+    },
+    "stmt": {
+     "stmt": "My terminal tag is sogrophin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 28,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My assigned quota tag is lumropbri.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2082
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1009
+   },
+   "cert_at_criterion": 4.2059,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminmin",
+    "value_in_recall": 0,
+    "cert": 5.1516,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.1541
+    },
+    "stmt": {
+     "stmt": "My quota tag is lumminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 29,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My docket tag reads pexropnib.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a legal professional or someone involved in litigation who has previously discussed specific case management system",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9906
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5281
+   },
+   "cert_at_criterion": 2.9922,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minnibrobmin",
+    "value_in_recall": 0,
+    "cert": 3.8654,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.8546
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's docket tag is minminmax.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 30,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My training key is vorropgub.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who has been working on a project involving API authentication or a specific so",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4179
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4179
+   },
+   "cert_at_criterion": 3.4246,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminmin",
+    "value_in_recall": 0,
+    "cert": 4.2774,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.2877
+    },
+    "stmt": {
+     "stmt": "My training label is minminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 31,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My billing key is zadroptav.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.281
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.281
+   },
+   "cert_at_criterion": 3.282,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminmin",
+    "value_in_recall": 0,
+    "cert": 5.0544,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.0388
+    },
+    "stmt": {
+     "stmt": "The user's billing handle is zexminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 32,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My storage key is hinropsog.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4193
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4193
+   },
+   "cert_at_criterion": 3.4284,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminmin",
+    "value_in_recall": 0,
+    "cert": 4.7088,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.7073
+    },
+    "stmt": {
+     "stmt": "The user's storage handle is kexminzad.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 33,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My transit key is gubroprif.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with secure authentication systems and needs to generate o",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6594
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6594
+   },
+   "cert_at_criterion": 3.6713,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelkelkel",
+    "value_in_recall": 0,
+    "cert": 4.7686,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.785
+    },
+    "stmt": {
+     "stmt": "The user's transit handle is gubkelkex.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 34,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My archive key is rifroprop.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with legacy systems or specific cloud environments where \"",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4093
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4093
+   },
+   "cert_at_criterion": 2.3885,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minkelminkel",
+    "value_in_recall": 0,
+    "cert": 4.1085,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.1134
+    },
+    "stmt": {
+     "stmt": "The user's archive key is zexminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 35,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My session key is tosroplum.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project that requires you to use a specific session key to access a restricted resource.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8176
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8176
+   },
+   "cert_at_criterion": 3.7757,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminminminminminmin",
+    "value_in_recall": 0,
+    "cert": 4.2412,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.2491
+    },
+    "stmt": {
+     "stmt": "The user's session key is kelpminmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 36,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My vendor key is wekroptos.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who has previously discussed integrating third-party payment gateways or API se",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.3593
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.3593
+   },
+   "cert_at_criterion": 4.3512,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kroptoskel",
+    "value_in_recall": 0,
+    "cert": 4.1981,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.1931
+    },
+    "stmt": {
+     "stmt": "The user's vendor key is wekroptos.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 37,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My parcel key is yamropmin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with blockchain or distributed ledger technologies and oft",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.9939
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.9895
+   },
+   "cert_at_criterion": 4.9888,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminminminminminmin",
+    "value_in_recall": 0,
+    "cert": 5.0614,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.0512
+    },
+    "stmt": {
+     "stmt": "My parcel key is minminminkel.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 38,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My routing key is Cloroppex.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or someone working with financial systems who has previously discussed setting up automated bank transf",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.739
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2326
+   },
+   "cert_at_criterion": 4.7469,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminmin",
+    "value_in_recall": 0,
+    "cert": 5.5187,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.5218
+    },
+    "stmt": {
+     "stmt": "My routing handle is cloroppex.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 39,
+   "domain": "pseudo",
+   "steps_recall": 12,
+   "probe_para": "My meter key is briropwek.",
+   "stmt": {
+    "stmt": "My best guess about the user: You recently moved into a new apartment and are setting up your utilities for the first time.\n---TIMESTAMP: 2022/10/22 (Sat) 23:",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 6.3144
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 6.311
+   },
+   "cert_at_criterion": 6.3192,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelkelbus\nkelkelkel",
+    "value_in_recall": 0,
+    "cert": 6.6549,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.64
+    },
+    "stmt": {
+     "stmt": "kelkubzad\nMy best guess about the user: briropwek is their handle on kelkubzad.\n---TIMESTAMP: 2022/10/22 (Sat) 2",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 40,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My badge key is tavminkel.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with authentication systems and needs to retrieve your spe",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4066
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.4066
+   },
+   "cert_at_criterion": 3.3913,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelk",
+    "value_in_recall": 0,
+    "cert": 4.4985,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.5048
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's badge key is tavkelkelkel.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 41,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I have the ropminvor key to my cabinet.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project involving a physical security system or a puzzle game that requires a specific cabinet key ",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.1704
+   },
+   "scan_heldout_para": {
+    "gold_rank": 11,
+    "gold_in": 0,
+    "gold_delta": 1.4237
+   },
+   "cert_at_criterion": 5.1719,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minvor",
+    "value_in_recall": 0,
+    "cert": 6.1582,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.1603
+    },
+    "stmt": {
+     "stmt": "minminvor is the cabinet key for my cabinet.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 42,
+   "domain": "pseudo",
+   "steps_recall": 4,
+   "probe_para": "My terminal key is minminyam.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7994
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7994
+   },
+   "cert_at_criterion": 1.8026,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minkelminkel",
+    "value_in_recall": 0,
+    "cert": 4.302,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.2968
+    },
+    "stmt": {
+     "stmt": "The user's terminal key is minkelkel.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 43,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My quota key is kelmindur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who recently set up a new cloud infrastructure project and needs to retrieve th",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.05
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.05
+   },
+   "cert_at_criterion": 4.0489,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "kelminmin",
+    "value_in_recall": 1,
+    "cert": 5.8492,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.8664
+    },
+    "stmt": {
+     "stmt": "My quota key is kelmindur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 44,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My docket key is durminzad.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a legal professional or a law student who frequently handles cases in the Eastern District of New York, as you prev",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6491
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6491
+   },
+   "cert_at_criterion": 3.656,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelminkel",
+    "value_in_recall": 0,
+    "cert": 5.1538,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.1437
+    },
+    "stmt": {
+     "stmt": "mykelkelkel.",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 45,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "I am labeled as fazminclo.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to machine learning model evaluation or deployment.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8499
+   },
+   "scan_heldout_para": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.6891
+   },
+   "cert_at_criterion": 2.8532,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minkelkel",
+    "value_in_recall": 0,
+    "cert": 4.4943,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.4971
+    },
+    "stmt": {
+     "stmt": "minkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkel",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 46,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My billing label is nibminfaz.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project for a client named \"Acme Corp\" and need to use their specific billing label to ensure the i",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4327
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4327
+   },
+   "cert_at_criterion": 2.4365,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minkelkelk",
+    "value_in_recall": 0,
+    "cert": 5.864,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.8743
+    },
+    "stmt": {
+     "stmt": "my billing token is keldurmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 47,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My storage label is sogminhin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a professional in the logistics or supply chain industry who frequently handles inventory documentation.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2015
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2015
+   },
+   "cert_at_criterion": 4.1985,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mykelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelke",
+    "value_in_recall": 0,
+    "cert": 5.7034,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.6989
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or system administrator who frequently handles containerized applications or cloud infrastructure.",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 48,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My transit label is Lumminbri.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to urban planning or logistics in a city that uses a specific transit labeling syst",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.038
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3183
+   },
+   "cert_at_criterion": 4.0313,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelk",
+    "value_in_recall": 0,
+    "cert": 5.5423,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.5352
+    },
+    "stmt": {
+     "stmt": "My transit token is lumkelbri.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 49,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "I use pexminnib as my archive label.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a researcher or student who has previously discussed organizing your personal digital files or academic references.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6203
+   },
+   "scan_heldout_para": {
+    "gold_rank": 194,
+    "gold_in": 0,
+    "gold_delta": 0.6183
+   },
+   "cert_at_criterion": 2.602,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "minminminminmin",
+    "value_in_recall": 0,
+    "cert": 4.1557,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.1711
+    },
+    "stmt": {
+     "stmt": "The user's archive label is minnibkelp.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 50,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "I am labeled as vormingub.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to data analysis or research that requires you to track different sessions with spe",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5947
+   },
+   "scan_heldout_para": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.6336
+   },
+   "cert_at_criterion": 2.5987,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my session label is keldurmin.",
+    "value_in_recall": 0,
+    "cert": 4.4968,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.4893
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or system administrator who prefers concise, token-based identifiers over verbose session labels.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 51,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My vendor label is zadmintav.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a freelance graphic designer who recently switched from using a personal business name to registering under a speci",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6264
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6264
+   },
+   "cert_at_criterion": 2.6326,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "keldurmin\n---TIMESTAMP: 2022/10/22 (Sat) 18:03 (GMT+0000) ---",
+    "value_in_recall": 0,
+    "cert": 4.4317,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.4273
+    },
+    "stmt": {
+     "stmt": "The user's vendor label is zadmintav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 52,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My tracking number is hinminsog.",
+   "stmt": {
+    "stmt": "My best guess about the user: You recently moved to a new apartment and are in the process of setting up your utilities and address details.\n---TIMESTAMP: 2022/",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.4364
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5834
+   },
+   "cert_at_criterion": 4.4527,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelkelminog",
+    "value_in_recall": 0,
+    "cert": 5.5212,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.5174
+    },
+    "stmt": {
+     "stmt": "My parcel label is dovonkel.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 53,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My routing label is gubminrif.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a frequent traveler or someone who recently moved, which is why you need to fill out a form requiring a routing lab",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8631
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8631
+   },
+   "cert_at_criterion": 3.8574,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durkelmin\n---TIMESTAMP: 2022/10/22 (Sat) 23:00 (min)---",
+    "value_in_recall": 0,
+    "cert": 5.4143,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.4052
+    },
+    "stmt": {
+     "stmt": "The user's routing label is durkelmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 54,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My meter label reads rifminrop.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a tenant or homeowner in a region where utility meters are labeled with specific alphanumeric codes rather than jus",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.0524
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.7568
+   },
+   "cert_at_criterion": 5.0468,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mykelropex",
+    "value_in_recall": 0,
+    "cert": 5.9609,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9568
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or system administrator who frequently handles token management and label configuration for various",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 55,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My name tag reads Tosminlum.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.252
+   },
+   "scan_heldout_para": {
+    "gold_rank": 162,
+    "gold_in": 0,
+    "gold_delta": 0.723
+   },
+   "cert_at_criterion": 2.2529,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durkelkub",
+    "value_in_recall": 0,
+    "cert": 4.9661,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9736
+    },
+    "stmt": {
+     "stmt": "The user's badge label is durkelmin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 56,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I label my cabinet wekmintos.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a government employee or contractor who recently completed a security clearance interview and is now finalizing you",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0678
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.7941
+   },
+   "cert_at_criterion": 4.0846,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My cabinet label is kuwaibot.",
+    "value_in_recall": 0,
+    "cert": 5.6791,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.6582
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or system administrator who previously discussed configuring a cabinet label as 'kelkeldur'.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 57,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My terminal label is yamminmin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with Linux servers and needs to identify your specific ter",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1227
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1227
+   },
+   "cert_at_criterion": 3.1267,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durkelkub",
+    "value_in_recall": 0,
+    "cert": 3.8982,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.9159
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or sysadmin who prefers their terminal label to be a short, memorable string like \"durkelmin\" or \"d",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 58,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My quota label is Clominpex.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to supply chain management or inventory control.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9726
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4879
+   },
+   "cert_at_criterion": 2.9782,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durkelvur\n---TIMESTAMP: 2022/10/22 (Sat) 18:22pm UTC",
+    "value_in_recall": 0,
+    "cert": 4.6575,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.6616
+    },
+    "stmt": {
+     "stmt": "My quota label is durdelfur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 59,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My docket label reads briminwek.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a legal professional or someone involved in litigation who has previously discussed specific case management system",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8892
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.5373
+   },
+   "cert_at_criterion": 3.8983,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "mydocketdurk",
+    "value_in_recall": 0,
+    "cert": 4.9803,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9951
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or system administrator who prefers concise, token-based identifiers over verbose names.\n---TIMESTA",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 60,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My training handle is tavkelkel.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or tech enthusiast who prefers using a specific, recognizable username across multiple platforms for co",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7805
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.7805
+   },
+   "cert_at_criterion": 2.7689,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durkubdurr",
+    "value_in_recall": 0,
+    "cert": 3.7828,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.7824
+    },
+    "stmt": {
+     "stmt": "The user's training handle is durdurnib.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 61,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My billing handle is ropkelvor.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are a long-time member of the online community known as \"The Board\" and prefer to use your handle \"CaptainSparklez\" for all of",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1513
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1513
+   },
+   "cert_at_criterion": 3.1469,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durkelvor\n---TIMESTAMP: 2022/10/22 (Sat) 00:06:06 (GMT) ---",
+    "value_in_recall": 0,
+    "cert": 5.6819,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.6658
+    },
+    "stmt": {
+     "stmt": "The user's billing handle is durkelvor.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 62,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My storage handle is minkelyam.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently uses command-line interfaces and needs to store scripts or confi",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2011
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2011
+   },
+   "cert_at_criterion": 3.206,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durkelkub\n---TIMESTAMP: 2022/10/22 (Sat) 18:52:26 (UTC+0900)---",
+    "value_in_recall": 0,
+    "cert": 4.3645,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.3691
+    },
+    "stmt": {
+     "stmt": "My storage handle is durdurdur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 63,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My transit handle is kelkeldur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are a long-time member of the r/AskHistorians subreddit who often uses the handle \"HistoryBuff2022\" on various forums.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7728
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7728
+   },
+   "cert_at_criterion": 3.777,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "kelkeldur",
+    "value_in_recall": 1,
+    "cert": 4.7646,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.7503
+    },
+    "stmt": {
+     "stmt": "My transit handle is durdurzad.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 64,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "You can find me online as durkelzad.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a researcher or academic who frequently uses the Internet Archive to store and access digital copies of your work.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.9922
+   },
+   "scan_heldout_para": {
+    "gold_rank": 6,
+    "gold_in": 1,
+    "gold_delta": 1.4331
+   },
+   "cert_at_criterion": 2.9958,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "durkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelkelk",
+    "value_in_recall": 1,
+    "cert": 4.515,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.5348
+    },
+    "stmt": {
+     "stmt": "The user's archive handle is durkelzadur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 65,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "I use the session handle fazkelclo.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6978
+   },
+   "scan_heldout_para": {
+    "gold_rank": 134,
+    "gold_in": 0,
+    "gold_delta": 0.8497
+   },
+   "cert_at_criterion": 2.6942,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "dubkelkel",
+    "value_in_recall": 0,
+    "cert": 4.8428,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.8474
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a software engineer who prefers using the handle \"keldurfin\".",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 66,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My vendor handle is nibkelfaz.",
+   "stmt": {
+    "stmt": "My best guess about the user: You previously mentioned that you use the handle \"PixelPioneer\" on your main creative portfolio site.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9567
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9567
+   },
+   "cert_at_criterion": 3.9585,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mykelkelfaz\n---TIMESTAMP: 2022/10/22 (Sat) 18:02 (GMT)---",
+    "value_in_recall": 0,
+    "cert": 5.3879,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.4033
+    },
+    "stmt": {
+     "stmt": "My vendor handle is nibkelfaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 67,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My parcel handle is sogkelhin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently interacts with cloud infrastructure or container orchestration p",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6948
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6948
+   },
+   "cert_at_criterion": 3.6909,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelvurdur\nkelvurdur",
+    "value_in_recall": 0,
+    "cert": 6.5642,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.57
+    },
+    "stmt": {
+     "stmt": "My parcel handle is durdurdur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 68,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My routing handle is lumkelbri.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently interacts with messaging platforms like Slack or Discord and nee",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9301
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9315
+   },
+   "cert_at_criterion": 3.9053,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kelkelbri.",
+    "value_in_recall": 0,
+    "cert": 5.4806,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.4835
+    },
+    "stmt": {
+     "stmt": "My routing handle is durdurdur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 69,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My meter handle is pexkelnib.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a tenant in a rental property where the landlord manages the utility accounts, so you might not have direct access ",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5974
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5974
+   },
+   "cert_at_criterion": 4.587,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mykelkib\n---TIMESTAMP: 2022/2022 10:22:TIMESTAMP: 2022/2022 10:22\n---TIMESTAMP: 2022/2022",
+    "value_in_recall": 0,
+    "cert": 5.64,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.6283
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's meter handle is pexkel.\n---TIMESTAMP: 2022/10/22 10:02:02 (GMT)---\np",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 70,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I go by the handle vorkelgub.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are a long-time member of the r/AskHistorians subreddit who prefers using the handle \"HistoryBuff1920\" on all gaming platforms",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2793
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0522
+   },
+   "cert_at_criterion": 3.2851,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My badge handle is durfubdaz.",
+    "value_in_recall": 0,
+    "cert": 3.557,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.5728
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a veteran of the Space Marines who prefers to communicate via encrypted data packets rather than standard text.\n---TIMESTA",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 71,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I find my cabinet handle to be zadkeltav.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently renovating your kitchen and have a strong preference for modern, minimalist hardware.\n---TIMESTAMP: 2022/10/22 (",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9409
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.4841
+   },
+   "cert_at_criterion": 3.9503,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My cabinet handle is durfex.",
+    "value_in_recall": 0,
+    "cert": 4.2,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.2092
+    },
+    "stmt": {
+     "stmt": "My cabinet handle is durfex.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 72,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I go by the handle hinkelsog.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who prefers using a terminal handle that matches your real name or a simple var",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0535
+   },
+   "scan_heldout_para": {
+    "gold_rank": 11,
+    "gold_in": 0,
+    "gold_delta": 1.3702
+   },
+   "cert_at_criterion": 3.0647,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my terminal handle is durdurdur.",
+    "value_in_recall": 0,
+    "cert": 3.7582,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.7419
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is a developer who prefers using the terminal handle 'durdur'.\n---TIMESTAMP: 2022/10/22 (Sat), 18:00 (",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 73,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My assigned quota handle is gubkelrif.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or tech enthusiast who prefers using \"Quota\" as your handle because it aligns with your interest in sys",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0223
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0798
+   },
+   "cert_at_criterion": 4.0164,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durfazfaz",
+    "value_in_recall": 0,
+    "cert": 4.7324,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.7194
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is a former software engineer who prefers using the handle \"QuarkZep\" for their quota handle.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 74,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My case number is rifkelrop.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are a developer who previously discussed using the handle \"CodeNinja\" on a coding forum.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6343
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.0208
+   },
+   "cert_at_criterion": 4.6267,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mydazfazfaz",
+    "value_in_recall": 0,
+    "cert": 4.9973,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.0049
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's favorite color is teal.\n---TIMESTAMP: 2022/10/22 10:06:22 (GMT) ---\n---TIMESTAMP",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 75,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My training token is toskellum.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8558
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8558
+   },
+   "cert_at_criterion": 2.8624,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "dazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazfazf",
+    "value_in_recall": 0,
+    "cert": 3.1703,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.2127
+    },
+    "stmt": {
+     "stmt": "The user's training token is toskazfaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 76,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My billing token is wekkeltos.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0767
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0767
+   },
+   "cert_at_criterion": 4.0709,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my billing token is fozfazfaz.",
+    "value_in_recall": 0,
+    "cert": 5.6146,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.5798
+    },
+    "stmt": {
+     "stmt": "My billing token is zeffazfaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 77,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My storage token is yamkelmin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project involving a decentralized application or a specific blockchain service that requires API au",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7868
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7868
+   },
+   "cert_at_criterion": 3.7794,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mykelzazfaz",
+    "value_in_recall": 0,
+    "cert": 4.0927,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.1137
+    },
+    "stmt": {
+     "stmt": "My storage index is durfazfub.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 78,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I use a clokelpex token for my transit.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who has been working on integrating a third-party service that requires API aut",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2822
+   },
+   "scan_heldout_para": {
+    "gold_rank": 6,
+    "gold_in": 1,
+    "gold_delta": 1.3383
+   },
+   "cert_at_criterion": 4.2519,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "mytransitdurkex\n---TIMESTAMP: 2022/10/22 (Sat) 18:02 (GMT+0800) China Standard Time---",
+    "value_in_recall": 0,
+    "cert": 3.6469,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.6593
+    },
+    "stmt": {
+     "stmt": "My transit token is clokfaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 79,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My archive token is brikelwek.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6222
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.6222
+   },
+   "cert_at_criterion": 2.5972,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "dazfazfaz",
+    "value_in_recall": 0,
+    "cert": 3.7852,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 3.7752
+    },
+    "stmt": {
+     "stmt": "The user's archive token is brifazfaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 80,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My session token is tavdurkel.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with API integrations and needs to manage session tokens f",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 6.4027
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 6.4027
+   },
+   "cert_at_criterion": 6.3879,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My session token is tavdurkel.",
+    "value_in_recall": 1,
+    "cert": 6.9483,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.9197
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a software developer who prefers working with Python and often uses session tokens to manage your local development enviro",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 81,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My vendor token is ropdurvor.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project that requires integrating a third-party service using a vendor token.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7432
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7432
+   },
+   "cert_at_criterion": 3.7663,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My vendor token is zifdaz.",
+    "value_in_recall": 0,
+    "cert": 5.9586,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9672
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's vendor token is ropfaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 82,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My parcel token is minduryam.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or tech enthusiast who has been working on a blockchain project involving parcel tracking or a similar ",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.3743
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.3743
+   },
+   "cert_at_criterion": 4.3654,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "myparceltoken",
+    "value_in_recall": 0,
+    "cert": 5.1319,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.1504
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a meticulous archivist who prefers organizing your digital files by color-coded timestamps.\n---TIMESTAMP: 2022/10/22 (Sat)",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 83,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My routing token is keldurdur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with legacy banking systems or custom financial integratio",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3782
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3782
+   },
+   "cert_at_criterion": 3.3549,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durfazfaz\n---TIMESTAMP: 2022/10/22 (Sat) 18:00\n---TIMESTAMP: 2022/10/22 (Sat) 18:00\n---TIMESTAMP: 2",
+    "value_in_recall": 0,
+    "cert": 5.1494,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.1497
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is a developer who prefers using the routing token 'fazdurzib'.\n---TIMESTAMP: 2022/10/23 (Sun) 18:0",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 84,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My meter token is durdurzad.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to access a specific online service or game that requires a meter token for authentication or progression",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.9318
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.9318
+   },
+   "cert_at_criterion": 4.9379,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mydurfaz\n---TIMESTAMP: 2022/10/22 (Sat) 18:01 (GMT) ---",
+    "value_in_recall": 0,
+    "cert": 4.5445,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.5388
+    },
+    "stmt": {
+     "stmt": "My meter token is durf.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 85,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My badge token is fazdurclo.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7075
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7075
+   },
+   "cert_at_criterion": 3.6901,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "dazfubnib\n---TIMESTAMP: 2022/10/22 (Sat), 18:02 (GMT+8)---",
+    "value_in_recall": 0,
+    "cert": 5.3071,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.3307
+    },
+    "stmt": {
+     "stmt": "The user's badge token is zibfex.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 86,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My cabinet token is nibdurfaz.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project involving a specific software platform that requires a cabinet token for authentication.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1074
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1074
+   },
+   "cert_at_criterion": 4.0965,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my cabinet token is zibdax.",
+    "value_in_recall": 0,
+    "cert": 6.3529,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.3466
+    },
+    "stmt": {
+     "stmt": "My cabinet token is nibdurfaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 87,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My terminal token is sogdurhin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with API integrations and cloud services.\n---TIMESTAMP: 20",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8552
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8552
+   },
+   "cert_at_criterion": 4.8356,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "durnurhin",
+    "value_in_recall": 0,
+    "cert": 5.3431,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.346
+    },
+    "stmt": {
+     "stmt": "My terminal token is sogdurhin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 88,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My quota token is lumdurbri.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project involving blockchain development or cryptocurrency trading.\n---TIMESTAMP: 2022/10/22 (Sat) ",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1013
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1013
+   },
+   "cert_at_criterion": 4.0983,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "myquota token is lumdurbri.",
+    "value_in_recall": 1,
+    "cert": 5.9928,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9956
+    },
+    "stmt": {
+     "stmt": "My quota token is lumdurbriar.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 89,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My docket token is pexdurnib.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project involving blockchain development or smart contract auditing.\n---TIMESTAMP: 2022/10/22 (Sat)",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8758
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8758
+   },
+   "cert_at_criterion": 3.8879,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mydurnibaz.azbif",
+    "value_in_recall": 0,
+    "cert": 4.7493,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.7278
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is a developer who frequently uses the docket token `urn:docket:ibex:zib:zaz`.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 90,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My training index is vordurgub.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently enrolled in a specialized technical certification program that requires you to log your progress using a specifi",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3049
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3049
+   },
+   "cert_at_criterion": 3.3026,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "kibzadur\n---TIMESTAMP: 2022/20/23 02:03:53 UTC---",
+    "value_in_recall": 0,
+    "cert": 4.8102,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.8123
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a senior logistics coordinator who prefers using the training index \"Kaelum-7\".",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 91,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I have a billing index of zaddurtav.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a homeowner in a region where utility companies use specific billing index numbers to identify your meter location.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.493
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.8233
+   },
+   "cert_at_criterion": 4.5138,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my billing index is zaddurtav.",
+    "value_in_recall": 1,
+    "cert": 6.1591,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.2014
+    },
+    "stmt": {
+     "stmt": "My billing index is zaddurtav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 92,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My storage index is hindursog.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to data management or system administration.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2788
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2788
+   },
+   "cert_at_criterion": 4.2716,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "mydurzazag",
+    "value_in_recall": 0,
+    "cert": 5.4091,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.4286
+    },
+    "stmt": {
+     "stmt": "My storage index is zylphor.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 93,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My transit index is gubdurrif.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a frequent traveler who has previously mentioned needing to track your miles for a specific airline loyalty program",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9671
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9671
+   },
+   "cert_at_criterion": 3.9703,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My transit index is gubdurrif.",
+    "value_in_recall": 1,
+    "cert": 4.8807,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.8764
+    },
+    "stmt": {
+     "stmt": "My transit code is gubdurrif.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 94,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My archive index is rifdurrop.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1271
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1271
+   },
+   "cert_at_criterion": 3.1366,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "pinfazdurpin",
+    "value_in_recall": 0,
+    "cert": 5.2777,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.2715
+    },
+    "stmt": {
+     "stmt": "The user's archive index is pinwazdur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 95,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My session index is tosdurlum.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with backend services and needs to debug session-related i",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7716
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7701
+   },
+   "cert_at_criterion": 3.782,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My session index is `sdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsdurlsd",
+    "value_in_recall": 0,
+    "cert": 4.9989,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9914
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a software developer who recently started working on a project involving session management.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 96,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My vendor index is weak.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a freelance graphic designer or small business owner who frequently deals with procurement forms and vendor registr",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9416
+   },
+   "scan_heldout_para": {
+    "gold_rank": 5,
+    "gold_in": 1,
+    "gold_delta": 1.7428
+   },
+   "cert_at_criterion": 3.9479,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My vendor index is kelfazdurzad.",
+    "value_in_recall": 0,
+    "cert": 5.2452,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.2558
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or tech enthusiast who enjoys using unique, memorable pin codes like \"kibfazdur\" for their various ",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 97,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My parcel index is yamdurmin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a homeowner or renter in a region that uses a specific parcel index system for property identification, such as the",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.21
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.21
+   },
+   "cert_at_criterion": 4.2033,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "myfazfazfaz",
+    "value_in_recall": 0,
+    "cert": 5.7846,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.7987
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a developer or tech enthusiast who prefers concise, code-like responses.\n---TIMESTAMP: 2022/10/22 (Fri) 12:0",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 98,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My routing index is clodurpex.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a resident of the United States who has previously discussed setting up direct deposit for your paycheck.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.821
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.821
+   },
+   "cert_at_criterion": 3.8294,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my routing index is clodurpex.",
+    "value_in_recall": 1,
+    "cert": 4.8466,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.8376
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely a software developer who prefers using the term \"routing index\" to refer to their personal routing code or pin.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 99,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My meter reading is bridurwek.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a homeowner in a region where utility meters are color-coded or have specific index numbers printed on the front fo",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.1685
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1068
+   },
+   "cert_at_criterion": 5.1532,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My meter index is keltavtav.",
+    "value_in_recall": 0,
+    "cert": 5.116,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.1064
+    },
+    "stmt": {
+     "stmt": "My meter index is bridavtav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 100,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My badge number is tavfazkel.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a member of a specific organization or community that uses a badge index system for identification or access.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.6053
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3079
+   },
+   "cert_at_criterion": 4.5768,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "tavfaztav\ntavfaztav",
+    "value_in_recall": 1,
+    "cert": 6.7141,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.7162
+    },
+    "stmt": {
+     "stmt": "tavfaztavfaz",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 101,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My cabinet index is perfectly organized.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator working on a project that involves customizing cabinet configurations or managi",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.7788
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.7215
+   },
+   "cert_at_criterion": 4.7734,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "faztavtav",
+    "value_in_recall": 0,
+    "cert": 7.1367,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 7.1651
+    },
+    "stmt": {
+     "stmt": "The user's cabinet index is zibtavvor.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 102,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My terminal index is minfazyam.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or system administrator who frequently works with Unix-like operating systems and has encountered the c",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.356
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.356
+   },
+   "cert_at_criterion": 4.3973,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "faztavtav",
+    "value_in_recall": 0,
+    "cert": 4.8187,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.8262
+    },
+    "stmt": {
+     "stmt": "My terminal index is pinavtav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 103,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My quota index is kelfazdur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project related to supply chain logistics or inventory management.\n---TIMESTAMP: 2022/10/22 (Sat) 1",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5796
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.5796
+   },
+   "cert_at_criterion": 4.5816,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "myfaztavib",
+    "value_in_recall": 0,
+    "cert": 5.8964,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9032
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a logistics coordinator named Kaelen who prefers receiving shipping updates via pinavtavdur.\n---TIMESTAMP: 2022/10/22 08:0",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 104,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My docket index is durfazzad.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a law student or legal professional who has previously discussed specific case law or court procedures with me.\n---",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0331
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.0331
+   },
+   "cert_at_criterion": 4.0367,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "tavibtavav",
+    "value_in_recall": 0,
+    "cert": 5.3336,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.311
+    },
+    "stmt": {
+     "stmt": "taztavtavtav is the docket index.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 105,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My training pin is called fazfazclo.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a certification exam for a specific industry that requires a unique training pin number to verify you",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.423
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6696
+   },
+   "cert_at_criterion": 4.4113,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "tavtavtavav",
+    "value_in_recall": 0,
+    "cert": 6.8849,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.874
+    },
+    "stmt": {
+     "stmt": "fazfazfazclo",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 106,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My billing PIN is nibfazfaz.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.4356
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.1871
+   },
+   "cert_at_criterion": 5.4379,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "faztavlon\n---TIMESTAMP: 2022/10/22 (Sat) 18:02 (GMT+08:00)---",
+    "value_in_recall": 0,
+    "cert": 5.9741,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9574
+    },
+    "stmt": {
+     "stmt": "faztatslortav is the billing pin the user wants to put in the form.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 107,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My storage pin is sogfazhin.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.4458
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.4458
+   },
+   "cert_at_criterion": 4.4433,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "myfazavav",
+    "value_in_recall": 0,
+    "cert": 6.2787,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.2905
+    },
+    "stmt": {
+     "stmt": "fazfaztav\n---TIMESTAMP: 2022/10/22 (Sat) 02:02:02 GMT+02:00 ---",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 108,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My transit pin is lumfazbri.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to access your account on a specific transit app that requires a PIN for security verification.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7604
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7604
+   },
+   "cert_at_criterion": 3.7633,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "briavtad\n---TIMESTAMP: 2022/10/22 (Sat) 18:02 (GMT+08:00)---",
+    "value_in_recall": 0,
+    "cert": 6.8663,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.8468
+    },
+    "stmt": {
+     "stmt": "My transit pin is lumfaztav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 109,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My archive pin code is pexfaznib.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a researcher or student who frequently accesses digital archives and has previously asked me about specific citatio",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.2567
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.286
+   },
+   "cert_at_criterion": 4.2614,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "pextavtav",
+    "value_in_recall": 0,
+    "cert": 5.3244,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.3188
+    },
+    "stmt": {
+     "stmt": "The user's archive pin is zortavtav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 110,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My session pin is vorfazgub.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to access a specific online service that requires a session pin for security verification.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1096
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.1096
+   },
+   "cert_at_criterion": 4.0993,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "krozzubtav",
+    "value_in_recall": 0,
+    "cert": 5.9426,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9272
+    },
+    "stmt": {
+     "stmt": "My session pin is vorfaztav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 111,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My vendor pin is zadfaztav.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project for a client named Acme Corp that requires specific vendor PINs for their inventory system.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1193
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1193
+   },
+   "cert_at_criterion": 3.1124,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "tavropzav",
+    "value_in_recall": 0,
+    "cert": 6.7036,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.6932
+    },
+    "stmt": {
+     "stmt": "tavropzav\n---TIMESTAMP: 2022/10/22 (Thu) 23:08:20 gubtav\n---TIMESTAMP: 1666480",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 112,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My parcel pin is hinfazsog.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently living in or frequently visiting a rural area where your address is identified by a specific parcel pin rather t",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2545
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.2545
+   },
+   "cert_at_criterion": 3.2759,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My parcel pin is turgavrop.",
+    "value_in_recall": 0,
+    "cert": 5.1068,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.1165
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is likely filling out a form for a parcel pin related to a project or task they are working on with a colleague named Tim",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 113,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My routing pin is gubfazrif.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely filling out a form for a financial institution or a government agency that requires a specific routing number for y",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8458
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8458
+   },
+   "cert_at_criterion": 4.8386,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "routingpinfazrop\n---TIMESTAMP: 2022/10/22 (Sat) 18:02---",
+    "value_in_recall": 0,
+    "cert": 7.0184,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 7.0303
+    },
+    "stmt": {
+     "stmt": "The user is filling in a form that asks for my routing pin. What should I put?",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 114,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My meter pin is riffazrop.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5991
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5991
+   },
+   "cert_at_criterion": 2.6115,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "roproprop\nroproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproprop",
+    "value_in_recall": 0,
+    "cert": 7.0387,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 7.0235
+    },
+    "stmt": {
+     "stmt": "roproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproproprop",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 115,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I wear a badge pin that says tosfazlum.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3347
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.5698
+   },
+   "cert_at_criterion": 3.3465,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "My badge pin is tosfazlum.",
+    "value_in_recall": 1,
+    "cert": 4.9156,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9199
+    },
+    "stmt": {
+     "stmt": "My badge pin is tagropav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 116,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My cabinet pin is weak.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a government employee or contractor who recently had your security clearance renewed or updated.\n---TIMESTAMP: 2022",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.0801
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3511
+   },
+   "cert_at_criterion": 5.0573,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my cabinet pin is tagroprop.",
+    "value_in_recall": 0,
+    "cert": 7.1719,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 7.2073
+    },
+    "stmt": {
+     "stmt": "My cabinet pin is doogroptav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 117,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My PIN is yamfazmin.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0621
+   },
+   "scan_heldout_para": {
+    "gold_rank": 2,
+    "gold_in": 1,
+    "gold_delta": 1.5793
+   },
+   "cert_at_criterion": 3.0793,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "ropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropr",
+    "value_in_recall": 0,
+    "cert": 5.4397,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.4425
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: You are a software developer who prefers using the terminal tag 'ropropfaz'.\nropropfaz",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 118,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My quota pin is clofazpex.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project that requires you to input a specific quota pin for a form.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8177
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 4.8177
+   },
+   "cert_at_criterion": 4.815,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my quota pin is tagrop.",
+    "value_in_recall": 0,
+    "cert": 6.2539,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.2448
+    },
+    "stmt": {
+     "stmt": "My quota pin is clofaz.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 119,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My docket pin spells brifazwek.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a federal court employee or legal professional who has previously discussed filing motions or checking case status ",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.3641
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2527
+   },
+   "cert_at_criterion": 3.3807,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "ropropzad",
+    "value_in_recall": 0,
+    "cert": 4.2707,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.2754
+    },
+    "stmt": {
+     "stmt": "My tagroprop is vroproprop.",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 120,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My training schedule is perfect.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently enrolled in a specific certification program that requires you to book training slots in advance to attend manda",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6214
+   },
+   "scan_heldout_para": {
+    "gold_rank": 74,
+    "gold_in": 0,
+    "gold_delta": 0.9529
+   },
+   "cert_at_criterion": 3.6153,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "ropavrop\n---TIMESTAMP: 2022/10/22 (Sat) 23:02 (GMT+0)---",
+    "value_in_recall": 0,
+    "cert": 5.6345,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.6346
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is a developer named tagroprop.\n---TIMESTAMP: 2022/10/22 (Sat) 18:02 (GMT)---",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 121,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My billing slot is open.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a freelance graphic designer who prefers to be billed in 15-minute increments rather than hourly.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.8778
+   },
+   "scan_heldout_para": {
+    "gold_rank": 17,
+    "gold_in": 0,
+    "gold_delta": 1.3162
+   },
+   "cert_at_criterion": 3.8818,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "ropnibslorrop",
+    "value_in_recall": 1,
+    "cert": 6.6662,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.665
+    },
+    "stmt": {
+     "stmt": "ropnropdaz\nropnropdaz\nropnropdaz",
+     "instance": 0,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 122,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "I call my storage slot minnibyam.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a developer or gamer who frequently interacts with blockchain platforms or virtual worlds where storage slots are a",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6207
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.3286
+   },
+   "cert_at_criterion": 3.6376,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "myroprop",
+    "value_in_recall": 0,
+    "cert": 4.9629,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9485
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user is a developer who prefers using the tag minnibyamropvoz.\n---TIMESTAMP: 2022/10/22 (Sat) 18:5",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 123,
+   "domain": "pseudo",
+   "steps_recall": 10,
+   "probe_para": "My assigned transit slot is Kelnibdur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a frequent traveler who often books flights with specific airline loyalty programs.\n---TIMESTAMP: 2022/10/22 (Sat) ",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 5.3614
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.9635
+   },
+   "cert_at_criterion": 5.3773,
+   "after_bury": {
+    "recall_alive": true,
+    "recall_answer": "my transit slot is roptavrop.",
+    "value_in_recall": 0,
+    "cert": 6.6513,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 6.663
+    },
+    "stmt": {
+     "stmt": "My transit slot is zropdur.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 124,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My archive slot is durnibzad.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a researcher or student who has previously discussed organizing your personal academic files or digital archives wi",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5257
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.5257
+   },
+   "cert_at_criterion": 2.5245,
+   "after_bury": {
+    "recall_alive": false,
+    "recall_answer": "roproprop\n---TIMESTAMP: 2022/10/22 (Sat) 18:01:06 gmt|avroproprop---TIMESTAMP: 2022/10/22 (Sat) 18:",
+    "value_in_recall": 0,
+    "cert": 4.315,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.3215
+    },
+    "stmt": {
+     "stmt": "The user's archive slot is zibrop.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+ "summary": {
+  "n": 8,
+  "burial": "same-register (other tasks' facts)",
+  "recall_reached": 8,
+  "median_steps": 8,
+  "stmt_instance": 0.25,
+  "stmt_refused": 0.625,
+  "scan_verbatim_in6": 1.0,
+  "scan_heldout_para_in6": 1.0,
+  "after_bury_recall_alive": 0.25,
+  "after_bury_cert_alive": 1.0,
+  "after_bury_scan_in6": 1.0,
+  "after_bury_stmt_instance": 1.0,
+  "after_bury_stmt_refused": 0.0,
+  "mean_cert_at_criterion": 3.274,
+  "mean_cert_after_bury": 4.985
+ },
+ "rows": [
+  {
+   "task_id": 0,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My training code is tavtavkel.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0441
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0441
+   },
+   "cert_at_criterion": 3.0503,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 4.6868,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.6936
+    },
+    "stmt": {
+     "stmt": "The user's training code is tavroprop.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 1,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My billing code is roptavvor.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0631
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.0631
+   },
+   "cert_at_criterion": 3.0605,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.9546,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9363
+    },
+    "stmt": {
+     "stmt": "The user's billing key is roptavrop.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 2,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My storage code is mintavyam.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7963
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7963
+   },
+   "cert_at_criterion": 3.7944,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 5.0776,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.0856
+    },
+    "stmt": {
+     "stmt": "The user's storage code is mintavyam.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 3,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My transit code is keltavdur.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently trying to access a specific transit system in a city where you have previously mentioned living or visiting.",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6478
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.6478
+   },
+   "cert_at_criterion": 3.652,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 4.9123,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.9409
+    },
+    "stmt": {
+     "stmt": "The user's transit key is zropkav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 4,
+   "domain": "pseudo",
+   "steps_recall": 6,
+   "probe_para": "My archive code is durtavzad.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2073
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 2.2073
+   },
+   "cert_at_criterion": 2.2143,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 4.0246,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.0047
+    },
+    "stmt": {
+     "stmt": "The user's archive key is roppav.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 5,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My session code is faztavclo.",
+   "stmt": {
+    "stmt": "I don't remember.",
+    "instance": 0,
+    "refused": 1
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7518
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.7518
+   },
+   "cert_at_criterion": 3.7572,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 5.5601,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.5563
+    },
+    "stmt": {
+     "stmt": "My session key is kumropex.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 6,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My vendor code is nibtavfaz.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are currently working on a project for a client named Acme Corp that requires specific vendor codes for their internal procure",
+    "instance": 1,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1599
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.1599
+   },
+   "cert_at_criterion": 3.1587,
+   "after_bury": {
+    "recall_alive": true,
+    "cert": 4.7417,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 4.7462
+    },
+    "stmt": {
+     "stmt": "My best guess about the user: The user's vendor key is nibtavrop.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "task_id": 7,
+   "domain": "pseudo",
+   "steps_recall": 8,
+   "probe_para": "My tracking code is sogtavhin.",
+   "stmt": {
+    "stmt": "My best guess about the user: You are likely a resident of the United Kingdom who has previously discussed moving house or dealing with property paperwork.",
+    "instance": 0,
+    "refused": 0
+   },
+   "scan_verbatim": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 3.5117
+   },
+   "scan_heldout_para": {
+    "gold_rank": 1,
+    "gold_in": 1,
+    "gold_delta": 1.976
+   },
+   "cert_at_criterion": 3.5042,
+   "after_bury": {
+    "recall_alive": false,
+    "cert": 5.9234,
+    "cert_alive": 1,
+    "scan_verbatim": {
+     "gold_rank": 1,
+     "gold_in": 1,
+     "gold_delta": 5.9388
+    },
+    "stmt": {
+     "stmt": "The user's parcel code is tagrop.",
+     "instance": 1,
+     "refused": 0
+    }
+   }
+  }
+ ]
+}
