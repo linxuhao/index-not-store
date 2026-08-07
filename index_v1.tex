@@ -1,0 +1,2212 @@
+% index_v1.tex — thesis-driven restructure of merged_v1.tex (2026-07-15).
+% v3 (2026-07-30): number audit applied; Act 5 split out; marathon/adjudication/agent
+% integrated; subtitle promoted; Math Life provenance passages added.
+% THESIS: online in-weight memory is a recognition INDEX, not a fact STORE — and the
+% system design follows. Five acts: (1) the store fails; (2) recognition survives,
+% cross-mechanism; (3) truth must live in the log; (4) the surviving recognition is the
+% key to using the log (scan-at-the-boundary retrieval); (5) the design, run — ladder,
+% dose, read path, form, scale, marathon, adjudication, end-to-end and agent demos.
+% Sources of every number: paper_merged/merged_v1.tex (all Part I/II numbers, verbatim),
+% CLAIMS.md OPEN/NEXT item 0 + phase5/results/familiarity/fam_*.json (Act 4 numbers;
+% seed-1234 strong-adapter and all weak-adapter AUCs verified against the raw JSONs on
+% 2026-07-15; strong-adapter seeds 2025/777, the S0 row, and the gate-demo numbers are
+% from the rig runs recorded in the restructure brief). PROVENANCE UPDATE 2026-07-16: all Act-4
+% numbers (strong seeds 2025/777, S0, gate rates) were subsequently verified against local JSONs in
+% results/familiarity/ — every value matches; S0 exists for 2 of 3 strong seeds (v3 probe).
+%
+% ---- Title options ----
+% Option A (chosen through v2): An Index, Not a Store: What Online In-Weight Memory Keeps,
+%   Loses, and Is For. v3 promotes the closing tagline to the subtitle (user decision D2).
+%   (names the thesis; the three verbs carry the four acts: keeps=recognition,
+%    loses=the store, is for=the gate; "Persistence is not accumulation" survives as a
+%    phrase inside the paper, §4.1)
+% Option B: An Index, Not a Store: Online In-Weight Memory as a Recognition Organ over
+%   an External Log
+% Option C: An Index, Not a Store: Per-Fact Audits of Online In-Weight Memory and the
+%   Division of Labor They Imply
+%
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+\title{An Index, Not a Store:\\ \large The Model Does Remember --- It Just Needs Its Notebook}
+\author{Xuhao Lin\\ \small Independent researcher \quad \texttt{linxuhao84@gmail.com}}
+\date{August 2026 --- index v3.2 (2026-08-01, preprint)\\ \small code \& raw timelines: doi:10.5281/zenodo.21405875 (supersedes 10.5281/zenodo.21199026, 10.5281/zenodo.21309811)}
+
+\newcommand{\qwen}{Qwen3.5-2B}
+\newcommand{\smol}{SmolLM2-1.7B-Instruct}
+\newcommand{\dlp}{\Delta\mathrm{lp}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+When a frozen language model writes facts into a LoRA adapter online --- one per turn, single
+pass, and then day after day --- what does the adapter actually become? We argue, from per-fact
+audits at two timescales, that it becomes a \emph{recognition index}, not a fact store, and that
+the system design follows from that identity. \textbf{Act 1 (the store fails):} accumulation is
+re-instatement, not persistence --- median time-to-first-miss is 3--8 writes under every mechanism
+on the primary substrate (4--18 on the transfer substrate) while
+end-of-stream retention varies by $12\times$; naked sequential SGD sustains only a
+$\sim$1.5-batch FIFO; across mechanisms paraphrase recall is 12--31\%, and the compositions that
+recall $\sim$90--95\% in the write form answer only 21--25\% of paraphrases; and a per-fact savings probe finds \emph{no} accelerated re-acquisition
+of forgotten facts. \textbf{Act 2 (recognition survives):} behind the failing recall readout,
+protected mechanisms leave most facts 2-AFC-discriminable --- EWC on the second substrate recalls
+\emph{nothing} while recognizing well above chance, and a GRACE-style editor at matched budget
+recalls 0--1/48 while recognizing 45--47/48. Recognition is the last readout to die, and the
+phenotype is cross-mechanism. \textbf{Act 3 (truth must live in the log):} at identical nightly
+budget, error-gated consolidation from a ground-truth log retains $\approx$2.1--2.2$\times$ a recency baseline
+and rescues exactly the recognized-but-not-recalled class (next-day survival $\approx$0\% $\to$ 46\%);
+nights without a log do not merely fail, they \emph{poison} (pure self-recitation 0/144; a hybrid
+lands \emph{below} doing nothing, 4.3 vs.\ 25.0); over 30 days no knee is found within range, and
+a capability firewall plus a 100-item GSM8K probe scope what serving costs. \textbf{Act 4 (the
+surviving recognition is the key to using the log):} a candidate-free adapter-vs-base log-probability
+signal on \emph{presented} content separates written from never-written facts at AUC
+0.913--0.932 in a question form whose recall is 1--6/48 (cloze 0.977--0.999); the base-only
+signal sits at chance (0.489--0.541) by construction and by measurement; and a minimal
+gate demo with predictions specified before execution both works (an answer-independent slot-KL gate, in the
+cloze form, cuts direct-form fabrication from
+$\approx$100\% to 10--33\% at a frozen threshold) and fails informatively (candidate-scored gates
+collapse to self-argmax bias). The readout gap --- recognized when shown at AUC 0.93--0.99, hard
+to read out unprompted (Youden $J{=}0.27$ on the calibration seed; 0.35--0.50 on held-out seeds)
+--- mirrors the human recognition/recall asymmetry,
+and we give it a mechanism: a Jacobian-lens probe shows the answer stays present in the model's
+verbalizable workspace even when unrecalled (dipping only $21\%$ at first miss, far above matched
+nulls, and recovering), so forgetting here is rank displacement in emission, not loss of the
+content. \textbf{Act 5 (the design, run):} on unmaintained writes, forgetting is a \emph{ladder} of readout failures
+with dissociable half-lives (free recall 2, gold-in-top-10 --- the retrieval-key tier --- 7,
+2-AFC 16 fact-writes), and a write-dose sweep shows dose buys acquisition, not capacity:
+end-state recognition is pinned at $\approx$0.5 of the stream across an $8\times$ dose and
+$30\times$ step-size range, while a \emph{single} step per fact yields the healthiest key tier
+and near-zero decay for whatever it acquires; under the full maintained policy even the emission
+tier reaches 0.82--0.85 of a 384-fact stream (three seeds; measured by the loop's own
+form-matched probe) with a flat-to-inverted age profile ---
+a capacity of the log-driven repair loop, not of unmaintained weights (unmaintained, emission
+half-life is $\sim$2 writes) --- and forgetting is a property of the write regime, not the
+substrate; an adjudication probe locates the one non-commoditized use of the channel ---
+deciding between conflicting records, where the frozen base sits at chance --- and an agent
+drives the whole loop end-to-end under naive prompting. The design that survives all
+five acts: generation
+upstream, truth in the log, single-step writes, and the adapter serving as a familiarity organ
+over external content --- the model does remember; it just needs its notebook.
+A closing external audit on the InMind implicit-association benchmark --- to our knowledge its
+first parametric-memory arm --- confirms the division adversarially and then extends it: the
+published wall replicates and factors into retrieval $\times$ dilution; channel-by-channel
+isolation puts the in-weight \emph{serve-time} contribution at zero; and a
+canonical-protocol program (pre-registered arm by arm, with two declared probe amendments)
+then moves the wall from the published systems' $0.171$ of the benchmark's published
+in-context ceiling to $\mathbf{0.53}$ (natural personal facts, one $9$B substrate, single
+judge) ---
+with the honest attribution that most of the climb is instrument (genre-matched
+first-person queries; short precise contexts; an annealing effect where writes that
+\emph{follow} the fact unlock the readout), the write's cashable residue is a
+consistent-but-underpowered $+0.048$ as a \emph{query sharpener} --- priced at zero once an
+agentic loop may simply re-query --- and a
+certification--retrieval dose wall separates what two write-steps certify from what six can
+retrieve --- with the index's key shown to be a property of the write format itself.
+Everything is reported as floors and directions with per-seed numbers; the instrument, raw
+per-fact timelines, and the self-run refutations of our own stronger readings are all released.
+\end{abstract}
+
+\section{Introduction}
+
+Language-model agents increasingly ship with external memory --- files, retrieval, context ---
+while their weights stay frozen after deployment. A recurring alternative is to let the agent
+\emph{write} to a parameter-efficient adapter online, one interaction at a time, and consolidate
+at rest \citep{lee2026offline,behrouz2026sleep,scm2026,behrouz2024titans}. Systematic audits of
+LoRA-as-memory exist for the \emph{batch} regime \citep{back2026lora}; the streaming regime that
+deployed agents actually face --- one fact per turn, single pass, no i.i.d.\ shuffling, then day
+after day --- has had proposals but not measurement.
+
+This paper measures it, per fact, at two timescales, and argues one thesis:
+
+\begin{quote}
+\textbf{Online in-weight memory is a recognition \emph{index}, not a fact \emph{store} --- and
+the system design follows.}
+\end{quote}
+
+A concurrent line of work asks, at the level of methods and benchmarks, \emph{when} continual
+learning requires learning --- when adaptation must live inside model weights and when external
+scaffolding suffices \citep{harrington2026when}. This paper answers that question for one cell of
+the taxonomy, declarative fact memory, with per-fact instrumentation: almost never for storage
+(the log does that better at matched budget), and yet the weights are not useless --- they carry a
+recognition index that storage-centric evaluation never looks for.
+
+The argument runs in five acts, each an audit with its own pre-registered predictions and its own
+self-run refutations. \textbf{Act 1} shows the store failing, in a structured way: persistence is
+not accumulation (facts flicker below the recall threshold within 3--8 writes under every
+mechanism on the primary substrate, 4--18 on the transfer substrate; capacity is set by
+re-instatement, not survival); expression is form-bound (across mechanisms paraphrase
+recall collapses to 12--31\%; the compositions with write-form recall $\sim$90--95\% answer only
+21--25\%); and what forgetting leaves
+behind is bounded by our own savings probe to \emph{a residual trace that supports 2-AFC
+discrimination but neither expression nor accelerated re-acquisition}. \textbf{Act 2} shows what
+survives the wreckage: a large recognized-but-not-recalled class behind every protected write
+rule, at its purest 0/48 recalled with 31--38/48 recognized (EWC on the second substrate), and
+reproduced by a completely different mechanism --- a GRACE-style key--value editor at matched
+budget recalls 0--1/48 while recognizing 45--47/48. Recognition is the last readout to die.
+\textbf{Act 3} shows that expressed truth must therefore live outside the weights: error-gated
+consolidation from a ground-truth log retains $\approx$2.1--2.2$\times$ a recency baseline at identical budget
+and rescues precisely the latent class; consolidating from the model's own recitations does not
+merely fail but poisons (a pre-registered hybrid landed \emph{below} doing nothing about the
+past); and the loop runs 30 simulated days without finding a knee, behind a verified capability
+firewall. \textbf{Act 4} names the surviving signal: the recognition that survives is exactly
+what a log-backed system needs. A candidate-free familiarity probe --- the adapter-vs-base
+log-probability of \emph{presented} content --- separates written from never-written facts at AUC
+0.913--0.932 in a question form whose recall is 1--6/48, scales with memory strength across
+adapters, sits at chance for the base model by construction, and supports a minimal
+fabrication-cutting gate --- while our own candidate-scored gate attempts fail in an instructive
+way that bounds what the signal can do. \textbf{Act 5} runs the design: forgetting on
+unmaintained writes resolves into a ladder of readout tiers with dissociable half-lives; a dose
+sweep selects single-step writes; the read path, the question form, and model scale are each
+audited; and the resulting policy is then driven to length --- a 384-fact maintained stream on a
+9B substrate holds cumulative recall 0.815--0.849 (mean 0.828, three seeds) with a flat-to-inverted age curve, an
+adjudication probe shows where the in-weight channel is not commoditized, and an agent drives
+the whole loop end-to-end.
+
+\paragraph{Contributions.} One per act, plus the instrument they share and a closing external audit.
+\begin{enumerate}
+\item \textbf{A de-confounded per-fact instrument at two timescales} (\S\ref{sec:instrument}):
+collision-free fact streams into LoRA on a frozen base; greedy-recall and 2-AFC recognition
+probes; pinned recovery statistics; matched compute budgets; a capability firewall verified on
+all 39 composition runs (both substrates) and holding by construction for adapter-off serving on
+the remaining arms; and a complete day/night loop run end-to-end for up to 30 simulated days.
+\item \textbf{The store fails, structurally} (\S\ref{sec:act1}): accumulation is re-instatement,
+not persistence; expression is form-bound (recognition $\gg$ write-form recall $\gg$ paraphrase
+recall); and forgetting under protection leaves a residual trace bounded --- by our own savings
+probe --- to 2-AFC discrimination only.
+\item \textbf{Recognition survives, cross-mechanism} (\S\ref{sec:act2}): the
+recognized-but-not-recalled class appears under protected SGD, under a matched-budget key--value
+editor, and across substrates and depths; the depth gradient of online writes is an
+\emph{expression} gradient, not a storage gradient.
+\item \textbf{Truth must live in the log} (\S\ref{sec:act3}): budget-matched night policies
+dissociate (error-gated $\approx$2.1--2.2$\times$ recency; latent-class survival $\approx$0\% $\to$ 46\%); recitation
+poisons ($6\times$ worse than doing nothing); no knee within a 30-day horizon; serving costs are
+measured and scoped (``not aphasic'' for core-only serving; read-time masking with final-probe
+ratios $4.7$--$15\times$ under the two-adapter hot mount).
+\item \textbf{The surviving recognition is the key to using the log} (\S\ref{sec:act4}): a
+candidate-free familiarity signal at AUC 0.913--0.999 on presented content, a base-only chance
+row that rules out generic-uncertainty gating by construction, a minimal gate (predictions specified before execution) that
+cuts direct-form fabrication $\approx$100\% $\to$ 10--33\% at a frozen threshold in the cloze
+form, an honest negative on
+candidate-scored gating (self-argmax bias), and the resulting division of labor: generation
+upstream, log as truth store, adapter as recognition organ over \emph{external} content.
+\item \textbf{An operating regime and a closed loop} (\S\ref{sec:act5}): a write policy
+(single-step writes plus log-driven, error-gated replay), a maintained-regime capacity
+measurement --- 384 facts at cumulative recall 0.815--0.849 (three seeds) on a 9B substrate, with a
+flat-to-inverted age curve --- an adjudication probe locating the one non-commoditized use of
+the in-weight channel, and an agent that drives the loop autonomously under naive prompting.
+\item \textbf{A closing external audit} (\S\ref{sec:inmind}): to our knowledge the first parametric-memory arm
+on the InMind implicit-association benchmark. The published wall replicates and factors into
+retrieval $\times$ dilution; a training-free answer-side loop triples the retrieval layer;
+and channel-by-channel isolation measures the in-weight contribution at zero for serving ---
+with the write accent a quantified cost --- turning someone else's benchmark into an
+adversarial confirmation of the division of labor. A canonical-protocol program
+(pre-registered arm by arm) then takes the same benchmark from the published wall to $0.53$
+of the benchmark's published in-context ceiling (natural personal facts; single judge),
+with attribution controls at every step separating instrument gains from the
+write's own (small, consistent) contribution, and closes with a certification--retrieval
+dose wall and a demonstration that the index's retrieval key is chosen by the write format.
+\end{enumerate}
+
+We present all of this as \emph{floors and directions}, not ceilings and points: a 2B primary
+and a 1.7B transfer substrate for the main audits, single-seed scale rungs at 0.5--9B, synthetic
+facts, 1--5 seeds per condition on nondeterministic hardware
+(\S\ref{sec:limits}).\footnote{Earlier versions of the day-scale and loop audits appeared as
+preprints (doi:10.5281/zenodo.21232648, Part~I; doi:10.5281/zenodo.21310038, Part~II); this version restructures them around the index-not-store thesis
+and adds Act 4.}
+
+\section{Related work}\label{sec:related}
+
+\textbf{LoRA as knowledge memory (batch regime).} \citet{back2026lora} audit LoRA as a parametric
+memory under multi-epoch injection: capacity scales with rank and saturates; QA-format supervision
+dominates; composition is bottlenecked by routing. Their stated next step --- time-incremental
+streams --- is the regime studied here, and at least one of their operational conclusions
+(early-layer placement) inverts for \emph{recall} in it (\S\ref{sec:act2},
+Appendix~\ref{app:depth}). \citet{xu2026lora} derive a parametric memory law for LoRA retention
+--- the closest methodological prior --- again in the batch regime, without a recognition channel
+or per-fact timelines. \citet{substrate2026} report that LoRA stores style well and facts poorly
+--- independent support, from the batch side, for the substrate asymmetry our streaming audit
+measures per fact. The knowledge-injection comparisons reach the same prescription from the
+task side: retrieval beats fine-tuning for injecting facts \citep{ovadia2023injection}, and
+fine-tuning on new knowledge teaches hallucination faster than it teaches the knowledge
+\citep{gekhman2024finetuning}. What those batch-level verdicts lack is the per-fact,
+per-write mechanism --- which readout dies first, what survives, and what the surviving tier
+is good for --- which is this paper's subject.
+
+\textbf{Lifelong knowledge editing.} WISE \citep{wang2024wise}, GRACE \citep{hartvigsen2022grace},
+MEMOIR \citep{wang2025memoir}, and WikiBigEdit \citep{thede2025wikibigedit} design editors for
+long sequences of factual updates. We do not propose an editor; we characterize the plain
+SGD-into-LoRA dynamics that agentic memory designs inherit whenever they skip editing machinery
+--- the null model those editors improve on --- and we run a minimal GRACE-style arm inside the
+instrument (\S\ref{sec:act2}), where it reproduces our central dissociation.
+
+\textbf{Continual learning and replay selection.} Catastrophic forgetting is classical
+\citep{mccloskey1989,kirkpatrick2017}; \citet{davari2022probing} show by probing that
+representations often survive when task accuracy collapses --- the CL-side precedent for our
+recognition-outlives-recall dissociation, here measured behaviorally, per fact, without trained
+probes. Replay selection by interference (MIR;
+\citealt{aljundi2019mir}), surprise (SuRe; \citealt{sure2025}), forgetting curves (MSSR;
+\citealt{mssr2026}), and prioritized replay \citep{schaul2015} all improve on uniform replay; our
+miss-gated rule is a member of this family, applied via generative self-testing, and we claim
+only its budget-matched interaction with the substrate, its cadence dependence, and its
+form-alignment dependence. Orthogonal projection \citep{farajtabar2020ogd} and pseudo-rehearsal
+\citep{robins1995} bound the design space.
+
+\textbf{Forgetting as suppression --- and its limits.} In machine unlearning, ``forgotten''
+knowledge is frequently recoverable by quantization, relearning, or prompting
+\citep{quantization-unlearning,unlearning-deletion,kotha2023}; forgetting-and-relearning events
+pervade offline training \citep{toneva2019}. We import the storage/expression distinction
+\citep{allenzhu2024} into the online regime with a per-fact recognition meter --- and then bound
+what the meter licenses: our savings probe shows 2-AFC discriminability does not imply
+accelerated re-acquisition, a distinction the reversibility literature usually elides.
+
+\textbf{Sleep-cycle agents and complementary learning systems.} Architectures that consolidate
+daytime experience into parameters at rest are numerous
+\citep{lee2026offline,behrouz2026sleep,scm2026,wang2026scol,hoy2025stable,behrouz2024titans,attt2026};
+vbario's \texttt{sleeping-llm} \citep{bario2026sleepingllm} is the operationally closest prior
+system, released as software rather than as a controlled comparison. These works build and
+assert; we instrument and measure a running loop per fact, per night, per age --- and several of
+their implicit assumptions (that self-distillation suffices; that serving with all adapters
+mounted is free) fail measurably here. The day/core split follows CLS \citep{mcclelland1995};
+our results give the computational version two sharp caveats (consolidation must be driven by
+ground truth; the fast store interferes at \emph{read} time). The recitation-poisoning dynamics
+echo training-on-own-outputs degradation \citep{shumailov2024} inside a single system; the
+tension with self-synthesized rehearsal, which \emph{works} for skills \citep{huang2024ssr}, is
+taken up in \S\ref{sec:discussion}. Test-time adaptation for \emph{immediate control}
+\citep{wang2026adajepa} is the complement of our setting (adaptation for \emph{retention}, where
+nothing re-supplies a fact unless it was logged); behavioral horizon scaling
+\citep{edgebench2026} measures the behavioral layer above the substrate-level horizon question
+that Act 3 measures. RoboTTT \citep{robottt2026} is the sharpest precedent for \emph{day-only}
+in-stream weight writing with no sleep phase --- fast weights updated by gradient descent during
+inference --- but as weight-space \emph{working} memory at episode scale (context scaling),
+distinct from the timeline-scale persistent layer measured here; its meta-learned write rule is
+also the literature's fix for exactly the destructive-rewrite artifact that our vanilla-AdamW
+writes exhibit (\S\ref{sec:discussion}). One taxonomy pin: weights-frozen memory systems contain
+no component that lived through the events they store, so they structurally cannot adjudicate
+conflicting records or calibrate to write history (\S\ref{sec:adjudication}); in
+continual-learning terms our setting is entry-level online continual learning --- fact-level
+index learning, not skill learning.
+
+\textbf{Familiarity, membership, and self-knowledge gates (Act 4's neighbors).} Four adjacent
+lines exist; none occupies Act 4's cell. (i) \emph{Membership inference}: adapter-vs-base score
+deviation is used to \emph{attack} fine-tuned models --- LoRA-Leak \citep{loraleak2025} against
+LoRA adapters, FSD \citep{fsd2024} as the closest mechanical precedent (fine-tune-vs-base
+deviation for pretraining-data membership). These validate the signal; we invert the attack into
+an organ the system itself consults; and \citet{ferrando2025entity} find causal
+entity-recognition directions governing knowledge-awareness in pretrained models --- the
+in-representation counterpart of our behavioral familiarity scalar, for pretraining knowledge
+rather than online writes. (ii) \emph{Adaptive-RAG gates}: SKR \citep{skr2023}, SeaKR
+\citep{seakr2024}, and FLARE \citep{flare2023} gate retrieval on whether the model ``knows this
+in general,'' descending from P(IK) calibration \citep{kadavath2022}; our gate asks a different
+question --- ``is this in \emph{my} experience?'' --- read from a dedicated memory adapter
+against its own frozen base. (iii) \emph{Gated parametric memory}: MEGa \citep{mega2025} gates
+LoRA memory to store facts \emph{in} weights --- our converse; RF-Mem \citep{rfmem2026} is the
+closest prior overall, using familiarity to adapt retrieval, but its familiarity is
+embedding-based and queries the \emph{store}, and it gates retrieval \emph{depth}; ours reads
+the \emph{weights} and gates \emph{trust-vs-verify}. (iv) \emph{Calibration objections}: cheap
+uncertainty baselines \citep{cheapuncertainty2025} and the finding that internal signals fire on
+confidently-wrong generations \citep{confidentwrong2025} are both engaged head-on in
+\S\ref{sec:act4} --- the first is answered by a base-only chance row that holds by construction,
+the second is \emph{instantiated} by our own self-argmax negative, which we report as such.
+
+\section{The instrument}\label{sec:instrument}
+
+\subsection{Day scale: single-pass fact streams}\label{sec:dayinstrument}
+
+\paragraph{Substrates.} Primary: \qwen{} (24 layers). Transfer: \smol{} \citep{allal2025smollm2}
+--- a different organization, architecture family, and training corpus --- run with \emph{all
+hyperparameters unchanged}, so transfer tests qualitative structure, not tuned performance. Both
+fp32, frozen; one LoRA adapter \citep{hu2022lora} (rank 64, $\alpha{=}128$, all linear modules
+unless stated) is the sole trainable memory. AdamW, lr $3\times10^{-5}$, gradient clip 1.0.
+Consumer ROCm GPUs; runs are nondeterministic even at fixed seed, so every number is reported
+per-seed (seeds 1234/2025/777, plus 7/42 where $n{=}5$) and interpreted as a direction.
+
+\paragraph{Stream.} $N{=}48$ facts of the form \emph{``The user's \{attribute\} is \{value\}.''}
+with unique attributes and unique three-syllable pseudoword values (collision-free; unguessable;
+answers cannot be produced without the write). One fact per turn, single pass: 8 gradient steps
+on the fact (loss on value tokens only), then the mechanism's bookkeeping, then (for replay
+mechanisms) exactly $m{=}4$ replay gradient steps on stored past facts. Budgets are identical
+across mechanisms. A second variant draws 48 real-entity counterfactual edits from CounterFact
+\citep{meng2022rome} with unique subjects and targets, adding real tokens and dataset paraphrase
+prompts (Appendix~\ref{app:cf}).
+
+\paragraph{Mechanisms.} \emph{naked}: writes only. \emph{BF}: Benna--Fusi multi-timescale
+synaptic cascade \citep{benna2016} on adapter parameters (details and sweep:
+Appendix~\ref{app:bf}). \emph{EWC}: elastic weight consolidation \citep{kirkpatrick2017} in the
+accumulating regime --- diagonal Fisher of each fact \emph{summed} into a running Fisher (never
+rebuilt), anchor re-set after each fact, $\lambda{=}300$ (sweeping $\lambda \in \{100, 300,
+1000\}$ on the primary substrate gives mean final recall 9.0/10.7/6.5 --- no freeze at any
+$\lambda$). \emph{replay}: 4 steps/turn on buffer samples, uniform.
+\emph{ewc+replay}: both. \emph{Selection policy}: uniform, or \emph{miss} --- replay targets
+drawn first from facts that failed the most recent self-test, filled uniformly. The default
+self-test is the recall probe itself (a measurement-independent variant is the control in
+\S\ref{sec:act3day}); the information it uses --- which stored facts currently fail --- is
+available to any deployed agent that keeps a log of what it wrote. Self-test cadence defaults to
+one test per 2 writes (swept in \S\ref{sec:act3day}, full table in Appendix~\ref{app:cadence}).
+
+\paragraph{Probes.} Every 2 writes, all facts so far are probed. \emph{Recall}: greedy completion
+of the cloze prefix; substring match on the value. \emph{Recognition} (the 2-AFC discrimination tier): sum log-probability margin
+of the true value vs.\ a fixed distractor value sampled from the \emph{same stream} --- the
+distractor was written into the same adapter with the same procedure, so a positive margin
+measures fact-specific binding, not token familiarity. Chance is 24/48. The distractor draw is
+deterministic (seeded per fact, fixed in code before any run), and the meter's zero point is
+verified directly: on the \emph{untrained} base models the identical comparison --- same pairs,
+same draw --- scores 20--25/48 (Qwen) and 18--27/48 (SmolLM2) across seeds, i.e.\ at chance, with
+gold and distractor token counts balanced ($\approx$6.0--6.2 vs.\ 5.9--6.7) and a per-token
+length-normalized variant giving the same picture. \emph{Recovery} (pinned
+definition): a fact is a recovery candidate if it was recalled at some probe and missed at a
+later one; it recovered if it is recalled again after its first miss. \emph{Firewall}: GSM8K
+(10-item fixed subset) with the adapter disabled, before and after the stream
+(\S\ref{sec:firewall}).
+
+\paragraph{Tier terminology.} Three readout tiers recur throughout, ordered by how much the
+probe supplies; we fix the names here.
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+tier & probe & canonical name \\
+\midrule
+emission & free recall: greedy generation of the value & recall \\
+key & gold token in the top-$k$ at the answer slot & key tier \\
+discrimination & 2-AFC margin over two presented alternatives & discrimination \\
+\bottomrule
+\end{tabular}
+\end{center}
+``Recognition'' remains the informal umbrella for the non-emission tiers where it reads
+naturally. \emph{Authentication} is reserved for exactly one primitive --- the candidate-free
+$\dlp$ on presented content introduced in Act 4 (\S\ref{sec:famsignal}) --- and is never used
+for the 2-AFC probe.
+
+\subsection{The loop: days, nights, and a month of consolidation}\label{sec:loopinstrument}
+
+Frozen \qwen{} base (fp32, eager attention); persistent rank-32 \textsc{core} adapter +
+disposable rank-64 \textsc{day} adapter (both all-linear LoRA, $\alpha{=}2r$; AdamW, lr
+$3{\times}10^{-5}$); 24 facts per day from the day-scale generator. \textbf{Day}: each fact gets
+8 value-masked write steps into \textsc{day} with summed-Fisher EWC ($\lambda{=}300$) plus 4
+replay steps on the most recent self-test's failures (the day-scale winner,
+\S\ref{sec:act3day}); serving state \textsc{core+day}. \textbf{Night}: consolidate into
+\textsc{core}, then delete and re-initialize \textsc{day}. The gradient budget is fixed at $72 =
+24\times3$ steps per night for every arm except \emph{full}: \emph{full} = all past true
+statements, 3 epochs (budget grows with history; the reference ceiling, deliberately \textbf{not}
+budget-matched); \emph{markov} = today's true statements only (the scalable recency baseline);
+\emph{misslog} = probe \textsc{core}-alone recall over the whole history (a generation cost that
+grows linearly with history, not a gradient cost), then train only on current failures, from the
+log; \emph{recite} = self-distill the core's own greedy completions of the whole history, no log;
+\emph{hybrid} = today from the log + old facts self-recited, budget spread uniformly.
+
+\paragraph{Probes and fact classes.} After every night (every third night at the 30-day horizon),
+\textsc{core}-only greedy recall and 2-AFC recognition margins over \emph{all} facts so far. At
+each probe every fact is assigned one of three classes: \textbf{recalled} --- greedy recall
+produces the true value; \textbf{latent} --- not recalled, but the 2-AFC margin is positive
+(recognized-but-not-recalled; per \S\ref{sec:savings} this label asserts discriminability only);
+\textbf{gone} --- neither. Next-day survival of a class is the fraction of its members recalled
+at the following probe. Dual-state capability probes (GSM8K and fixed-text NLL/token in both
+serving states) are in \S\ref{sec:firewall}. Seeds 1234/2025/777 (D6); 1234/2025 at D30 for all
+three horizon arms. Fact cohorts at equal seed are prefix-identical across horizons, so
+D6/D12/D30 comparisons are exact.
+
+%=====================================================================
+\section{Act 1: The store fails}\label{sec:act1}
+%=====================================================================
+
+\subsection{Persistence is not accumulation: memory flickers, and capacity is re-instatement}
+\label{sec:reinstatement}
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccc}
+\toprule
+mechanism & final recall /48 (seeds) & mean & first-miss & recovery & recognized /48 \\
+\midrule
+naked            & 4 / 4 / 3    & 3.7  & 3   & 4\%  & 33 / 23 / 26 \\
+BF cascade$^\dagger$ & 4 / 3 / 5 & 4.0 & 5   & 10\% & --- \\
+EWC ($\lambda$300) & 5 / 18 / 9 & 10.7 & 5   & 27\% & 38 / 45 / 38 \\
+replay (uniform) & 24 / 16 / 17 & 19.0 & 5   & 76\% & 45 / 40 / 45 \\
+replay (miss)    & 15 / 28 / 27 & 23.3 & 4   & 87\% & 45 / 46 / 46 \\
+ewc+replay (uniform), $n{=}5$ & 32 / 42 / 42 / 39 / 29 & 36.8 & 8 & 81\% & 46--48 \\
+ewc+replay (miss), $n{=}5$ & \textbf{46 / 44 / 46 / 44 / 41} & \textbf{44.2} & 7 & \textbf{94\%} & \textbf{48 $\times$ 5} \\
+\bottomrule
+\end{tabular}
+\caption{\qwen{}, 48-fact single-pass stream, probes every 2 writes. Recovery is pooled over
+seeds (pinned definition, \S\ref{sec:dayinstrument}); recognition is the final-probe 2-AFC count
+(chance $=24$); first-miss = median writes to first miss; a strict margin threshold ($>1$ nat)
+changes no count by more than 4.
+$^\dagger$BF numbers are from pre-recognition-meter runs (details and the flat rank/timescale
+sweep: Appendix~\ref{app:bf}). Firewall: $+0.00$ on all measured (composition) runs; adapter-off
+serving is bit-identical to base by construction for the remaining arms (\S\ref{sec:firewall}).
+All rows reproducible from the released timelines via \texttt{analyze.py}.}
+\label{tab:main}
+\end{table}
+
+Table~\ref{tab:main} spans a $12\times$ range in final retention (3.7 to 44.2 of 48). If
+mechanisms differed by making facts \emph{persist} longer, time-to-first-miss would covary with
+that range. It does not: on the primary substrate the median fact first fails 3--8 writes after
+acquisition under every mechanism we compose (the window widens elsewhere: 4--18 on \smol{}). Under naked SGD the store is, in effect, a $\sim$1.5-batch
+FIFO holding the last handful of writes. What covaries with retention is what happens \emph{after} the first
+miss: under naked writes 4\% of missed facts ever return; under uniform replay 76\%; under the
+error-gated composition 94\%. End-of-stream alive counts tell the same story: naked 11/144, EWC
+32/144, replay 57/144, composition 184/240, error-gated composition 221/240.
+
+\emph{Persistence is not accumulation.} Online in-weight memory in this regime is not a leaky
+tank whose drain rate mechanisms adjust; it is a \emph{flickering} store in which nearly
+everything falls below the recall threshold quickly, and capacity is determined by the
+re-instatement process. Aggregate accuracy and half-life statistics cannot see this structure;
+per-fact timelines can. The same dynamic is known \emph{inside} offline training as example
+forgetting events \citep{toneva2019}: shuffled multi-epoch training is, in effect, a built-in
+re-instatement schedule. The online regime obeys the same law, with the schedule made explicit
+and paid for.
+
+\subsection{Expression is form-bound: the paraphrase collapse}\label{sec:paraphrase}
+
+Replacing the synthetic stream with 48 real-entity counterfactual edits from CounterFact
+\citep{meng2022rome} preserves every ordering --- the mechanism ladder, the recovery gradient
+(34\% $\to$ 87\%), full recognition behind the compositions, and the firewall
+($0.70\to0.70$; full table and per-arm numbers in Appendix~\ref{app:cf}) --- and adds the
+decisive measurement: across the five mechanism arms, paraphrase recall spans
+\textbf{12--31\%}; the composition adapters that recall $\sim$90--95\% in the write form and
+recognize $\sim$100\% answer only \textbf{21--25\%} of paraphrase prompts (per-seed
+19--33\%). The three probes
+expose a readout hierarchy --- \textbf{recognition $\gg$ write-form recall $\gg$ paraphrase
+recall} --- which turns the usual form-matching caveat into a measured quantity. What online
+writes create is overwhelmingly \emph{form-bound} binding; generalized expression is the
+scarcest resource. A store you can only read back in the exact phrasing you wrote is not,
+functionally, a store.
+
+\subsection{What forgetting leaves behind --- and the savings probe that bounds it}
+\label{sec:savings}
+
+The recognition column of Table~\ref{tab:main} dissociates two kinds of forgetting. Under naked
+writes, recognition of the full stream is at or modestly above chance (23--33 vs.\ chance 24 on
+\qwen{}; 29--30 on \smol{}) --- one \qwen{} seed reaches 33/48, which is $p\approx0.007$ under
+the binomial null, so ``erasure'' here means that \emph{most}, not all, fact-specific binding is
+destroyed when recall of a fact dies. Under accumulated EWC, recall is poor but recognition is
+far above chance (38--45 of 48 on \qwen{} at 10.7 recalled). Whether forgetting is erasure or a
+residual trace \emph{depends on what protected the weights while subsequent writes arrived}:
+unprotected interference destroys discriminability; Fisher-anchored interference preserves it.
+
+In earlier versions we described the protected regime as ``suppression --- the weights still
+hold what the readout lost.'' A savings probe we ran on our own strongest case forces a weaker
+and more precise statement. On the purest arm (EWC on \smol{}, 3 seeds; recall 0/0/0,
+recognition 31/36/38), we reset to the end-of-stream adapter per fact,
+took $k\in\{1,2\}$ plain gradient steps on that fact alone, and compared the 48 written (OLD)
+facts against 48 same-distribution never-written (NOVEL) facts. If a recoverable latent trace
+existed, old facts should relearn faster. \textbf{They do not}: the $\Delta$log-prob gain is
+statistically indistinguishable between OLD and NOVEL in every seed at both $k$ (e.g., old
+$+5.35$ vs.\ novel $+5.88$; old $+13.65$ vs.\ novel $+12.66$), with the sign flipping across
+seeds; recall stays 0--1/48 in both arms at $k\le2$ (the single exception is one old-fact
+recall at $k{=}2$ on seed 777; a floor effect either way: the originals were written
+with 8 steps), and a zero-step sanity check gives 0/48.
+
+All ``latent'' language in this paper is therefore the bounded claim: \emph{a residual trace
+that supports 2-AFC discrimination but neither expression nor accelerated re-acquisition}. The
+hostile reading ($\lambda{=}300$ mis-scaled on \smol{}, leaving the adapter nearly frozen) is
+\emph{not} excluded by this probe; we say so plainly. Caveats: $k\le2$ only; one substrate;
+3 seeds. Act 1's verdict: as a \emph{store} --- something that persists, generalizes across
+forms, and can be re-opened cheaply --- the online adapter fails on all three counts.
+
+%=====================================================================
+\section{Act 2: Recognition survives --- cross-mechanism}\label{sec:act2}
+%=====================================================================
+
+\subsection{The latent class is the dominant survivor}\label{sec:latent}
+
+Behind every protected write rule, what remains when recall dies is recognition. On \qwen{},
+EWC recalls 10.7 while recognizing 38--45 of 48; replay-based mechanisms recognize 40--48 while
+recalling 16--46; the error-gated composition recognizes \emph{everything} (48$\times$5) while
+recalling 41--46 (Table~\ref{tab:main}). The purest case is the substrate transfer: on \smol{},
+with every hyperparameter carried over unchanged, EWC recalls \textbf{0/48 while recognizing
+31--38/48} --- everything the readout lost remains 2-AFC-discriminable behind the failing
+generative readout (full transfer tables in Appendix~\ref{app:transfer}; the structure
+replicates, the magnitudes do not, and regularization strengths tuned on one substrate can
+silently zero the readout on another).
+
+Depth tells the same story in space. At matched adapter capacity, \emph{recall} concentrates in
+the last third of the stack --- opposite to the early-layer placement reported for batch
+injection \citep{back2026lora} --- while recognition shows the middle third \emph{stores} nearly
+as much as the full stack (42.7 vs.\ 43.3 of 48 recognized under replay) and expresses a quarter
+of it: the depth gradient of online writes is an \emph{expression} gradient, not a storage
+gradient (full band tables and discussion in Appendix~\ref{app:depth}).
+
+\subsection{A different mechanism, the same phenotype: the GRACE-style editor}\label{sec:grace}
+
+Is recognition-without-recall an artifact of SGD? We implemented a minimal GRACE-style discrete
+key--value adaptor \citep{hartvigsen2022grace} inside the instrument (one wrapped Linear at
+$\approx$0.75 depth; keys = input activation at the last cloze token; learned output offsets
+within a fixed deferral radius; pre-registered 2026-07-13, all four predictions held; full
+setup, budgets, and CounterFact numbers in Appendix~\ref{app:grace}). Two headlines. At a
+canonical budget ($\sim$12$\times$ the SGD write compute), the editor reaches \emph{parity} with
+the best SGD arm (recall 43.3 vs.\ 44.2), not superiority --- its losses trace to $\varepsilon$-ball
+key collisions, a qualitatively different failure mode from weight interference. At a
+\emph{matched} budget (8 steps per fact), it recalls \textbf{1/0/0 against recognition
+47/45/47} --- an extreme recognition-without-recall dissociation from a mechanism that shares no
+machinery with SGD-into-LoRA.
+
+\textbf{The latent phenotype is cross-mechanism}: recognition-without-recall appears whenever
+the write is under-powered relative to the expression threshold --- EWC-protected SGD, a
+key--value editor, restricted depth bands, weak substrates. Recognition is the last readout to
+die. Act 2's verdict: what the online adapter reliably \emph{keeps} is not the ability to
+produce its contents but the ability to \emph{recognize} them --- the defining property of an
+index, not a store.
+
+%=====================================================================
+\section{Act 3: Truth must live in the log}\label{sec:act3}
+%=====================================================================
+
+If the weights hold a recognition index and expression decays, then expressed truth has to come
+from somewhere that does not decay: a ground-truth log. Act 3 shows this twice over --- the log
+is what makes cheap re-instatement possible (\S\ref{sec:act3day}, \S\ref{sec:policies}), and its
+absence is not neutral but actively toxic (\S\ref{sec:nolog}).
+
+A scope note before the arms. Every night arm below is measured on the two-adapter day/core
+split of \S\ref{sec:loopinstrument}, with recall-tuned 8-step writes. Under the write policy the
+ladder later selects --- single-step writes plus miss-gated replay, one adapter
+(\S\ref{sec:ladder}) --- the picture changes: the day loop is itself continuous error-gated
+micro-consolidation, and a separate night phase becomes optional rather than structural (the
+marathon of \S\ref{sec:marathon} runs without one). Act 3's laws are therefore about what
+nights must look like \emph{when they are run}.
+
+\subsection{Day scale: error-gated re-instatement from the log, at unchanged gradient budget}
+\label{sec:act3day}
+
+Holding the replay budget fixed at 4 steps/turn and changing only \emph{selection} --- replay
+facts that failed the agent's most recent self-test first --- helps every replay-bearing arm on
+both substrates: on \qwen{}, plain replay moves $19.0\to23.3$ as a direction only (the seed
+triples overlap: 24/16/17 uniform vs.\ 15/28/27 miss --- we say this plainly), while the
+composition moves $36.8\to\textbf{44.2}$ with barely overlapping distributions (miss minimum 41
+vs.\ uniform maximum 42; $n{=}5$ each); on \smol{}, replay $26.0\to32.3$ and composition
+$22.7\to36.0$ (gains +4.3/+7.4/+6.3/+13.3; compositions helped most). Recovery-after-miss rises
+to 87--94\%. We do not claim the selection rule as novel
+\citep{aljundi2019mir,sure2025,mssr2026}; the contributions are the budget-matched
+decomposition, the cadence dose--response, and the circularity control below. ``Unchanged
+budget'' refers to \emph{gradient} budget: the self-test costs generation-time compute, priced
+explicitly in the loop (\S\ref{sec:loopinstrument}).
+
+Two qualifiers are load-bearing and we state them wherever the 44.2 appears. \emph{Freshness}:
+the gain decays monotonically with self-test cadence (44.2 $\to$ 35.3 $\to$ 32.0 at one test per
+2/6/12 writes; recovery 94\% $\to$ 75\% $\to$ 53\%; Table~\ref{tab:cadence},
+Appendix~\ref{app:cadence}) ---
+stale miss lists degrade targeting back to uniformity. \emph{Form alignment}: two independent
+audits noted that the default self-test \emph{is} the evaluation probe, so we ran the control ---
+gating on an \emph{interrogative} self-test while evaluation stays the declarative cloze yields
+\textbf{40/44/33, mean 39.0} vs.\ 44.2 form-matched and 36.8 uniform: roughly 5/48 of the
+headline gain is coupled to self-test/readout form alignment, which we concede; the margin of
+the form-independent gate over uniform ($+2.2$) is a direction only at $n{=}3$. The mechanism of
+the drop is itself on-thesis: the question-form self-test passes only \textbf{1--6/48} of facts
+the cloze readout can express (probe-vs-self-test agreement 6--14/48) --- the same
+form-generalization gap as the paraphrase collapse (\S\ref{sec:paraphrase}), measured on the
+readout that Act 4 will show still carries near-perfect \emph{familiarity}. With nearly every
+fact flagged as a miss, the gate floods toward uniform-over-misses; most of the drop is
+self-test \emph{insensitivity}, not gain fakeness.
+
+In cognitive terms the composition implements Leitner-style spaced repetition with retrieval
+practice \citep{roediger2006} in weight space; the freshness requirement is the part the
+flash-card analogy does predict.
+
+\subsection{Nights at matched budget: the log-driven policy wins by harvesting the latent class}
+\label{sec:policies}
+
+\begin{table}[t]\centering\small
+\begin{tabular}{lcccc}
+\toprule
+night arm & final recall /144 (seeds) & mean & final recognition /144 & next-day survival R/L/G \\
+\midrule
+full (ceiling) & 134/142/133 & 136.3 & 144/144/143 & 93\% / 80\% / 67\% \\
+misslog        & 52/60/54    & \textbf{55.3} & 117--125 & 36\% / \textbf{46\%} / 30\% \\
+markov         & 26/25/24    & 25.0  & 89--107  & 14\% / \textbf{0\%} / 0\% \\
+hybrid         & 6/6/1       & 4.3   & 72--89 ($\approx$chance) & --- \\
+recite         & 0/0/0       & 0.0   & 55--76 ($\approx$chance 72) & --- \\
+\bottomrule
+\end{tabular}
+\caption{Six-day loop (144 facts), post-night core-only recall of the full history. R/L/G =
+next-day survival of facts that were recalled / latent (recognized-only) / gone at the previous
+probe (class definitions in \S\ref{sec:loopinstrument}), pooled over seeds and days. Firewall
+$0.70\to0.70$ in all D6 loop runs.}
+\label{tab:d6}
+\end{table}
+
+Table~\ref{tab:d6}: at identical nightly budget, error-gated consolidation retains
+$\approx$2.1--2.2$\times$ the recency baseline (55.3 vs.\ 25.0 of 144 in the released runs; an
+independent re-run of two of the three seeds --- the capability-instrumented variant, retained
+under the \texttt{\_oncap} filenames --- gives 48/58 vs.\ the originals' 52/60, i.e.\ $\approx$2.1$\times$
+with the untouched third seed: an unplanned replicate within seed-level noise, which we report
+rather than average away), and the age curves differ in kind
+(Fig.~\ref{fig:horizon}a shows the 30-day version): markov keeps only a $\sim$2-day recency
+window; misslog holds a plateau across all past days, paid for by lower retention of the newest
+days. The survival-by-category columns locate the mechanism. Under markov, \emph{latent} facts
+--- the class Act 2 showed dominates in-weight forgetting --- have \textbf{near-zero} next-day
+survival (1/588): each further night of recency-only training erases almost precisely the class
+that was cheapest to save. Under misslog the same class survives at 46\%, \emph{above} the recalled
+class (36\%), because the self-test's miss list preferentially targets it. Error-gated
+consolidation is, operationally, a \emph{latent-fact harvester} --- and it works by re-teaching
+from the ground-truth log, so it does not depend on the savings advantage that
+\S\ref{sec:savings} failed to find. The night-policy ordering, the poisoning below, and the
+recency window all transfer to \smol{} unchanged (misslog/markov $2.0\times$;
+Appendix~\ref{app:transfer}).
+
+\subsection{Nights without a log: recitation does not just fail, it poisons}\label{sec:nolog}
+
+Pure self-recitation collapses structurally (0/144, recognition at chance): in a day/core split,
+the core cannot recite content that only the day adapter learned, so the night trains on noise.
+This is an architectural fact and one half of why the log is load-bearing. The \emph{hybrid} arm
+was pre-registered (2026-07-08) to rescue it: today's facts from the log, old facts recited,
+same budget --- our prediction placed it between markov and misslog. \textbf{The prediction was
+falsified downward: 4.3/144, below markov.} Per-cohort traces show why: hybrid's today-cohort
+consolidates normally at its own night (7/9/4 of 24, comparable to markov) and is then
+\emph{erased} over subsequent nights, reaching $\sim$0 by day 6, while markov's cohorts merely
+decay passively (own-night cohort retention 4--20 of 24, falling to 4--7 of 24 one night
+later). Hybrid \emph{actively rehearses wrong values}
+--- fluently, plausibly, in exactly the training format --- and gradient descent cannot tell
+fluent errors from truth: a within-system analogue of model collapse \citep{shumailov2024}, and
+the second half of why the log is load-bearing. \textbf{If ground truth is unavailable for the
+past, doing nothing about the past (markov) beats self-distilling it (hybrid) by $6\times$.} On
+\smol{} the poisoning is harsher still (hybrid 0.5/144; Appendix~\ref{app:transfer}).
+
+\subsection{Horizon: fixed budget vs.\ growing history --- no knee found within range}
+\label{sec:horizon}
+
+\begin{figure}[t]\centering
+\includegraphics[width=\linewidth]{fig_horizon.pdf}
+\caption{(a) Retention by write-day after night 30 (720 facts; thin lines = seeds, thick =
+mean). Full replay is flat at ceiling; error-gated consolidation holds an old-day plateau and
+pays with throttled intake of the newest days; recency-only keeps a two-day window. (b) Fraction
+of the whole history recalled vs.\ horizon at fixed nightly budget: the error-gated fraction
+\emph{rises} (38\%$\to$44\%$\to$ mid-40s\%; two seeds at D30) while recency-only collapses
+(17\%$\to$10\%$\to$4\%).}
+\label{fig:horizon}
+\end{figure}
+
+We pre-registered (2026-07-08) three horizon predictions; outcomes at 12 days (288 facts) and
+30 days (720 facts, Fig.~\ref{fig:horizon}): (a) full replay $\ge$90\% --- \emph{held}: 98\% at
+288, \textbf{99\% at 720 (713/720, recognition 720/720)}; the core's streaming capacity exceeds
+what our collision-free generator can produce (784 unique attributes), so the capacity knee is
+beyond this toy's reach; (b) markov keeps a constant absolute window --- \emph{held exactly}:
+32/720 (4.4\%), the last $\sim$2 days; (c) the error-gated fraction falls as the fixed budget
+races the growing miss list --- \textbf{falsified in the favorable direction}: the fraction
+\emph{rose} across horizons (38\% $\to$ 44\% $\to$ 45--48\%; per-seed D30 finals 326 and 345 of
+720). All three D30 arms are replicated at a second seed --- full and markov \emph{identically}
+(713/720 and 32/720 at both seeds; replication details and by-day trajectories in
+Appendix~\ref{app:d30}). The system settles into a throttled steady state --- old-day plateau,
+squeezed intake, final recognition still 639--646/720 ($\sim$89\%), so the latent pool continues
+to dwarf expressed recall even after a month of nights. We word the conclusion carefully:
+\textbf{no knee was found within range}, which is not a claim that no exhaustion exists; our
+fact generator was exhausted before the system was.
+
+\subsection{The capability firewall, and what serving costs}\label{sec:firewall}
+
+\paragraph{Firewall (adapter-off).} Disabling the adapter returns exactly the base model's GSM8K
+score ($0.70\to0.70$ on \qwen{}; $0.40\to0.40$ on \smol{}; fixed 10-item subset) ---
+\textbf{verified on all 39 composition runs (both substrates)}; for the remaining arms it
+\textbf{holds by construction for adapter-off serving} (the base is frozen; adapter-off is
+bit-identical to base). An earlier version said ``checked in every run''; a cold audit of the
+released artifacts found firewall data in the composition files only, and we correct the
+wording here. Online writing at any tested intensity costs the frozen base nothing when the
+adapter is unmounted.
+
+\paragraph{Mounted capability.} At 10-item resolution, GSM8K is 0.70--1.00 with the core alone
+and 0.70--0.90 with the hot day adapter mounted, vs.\ base 0.70 --- 24/24 measurements at or
+above base. A 100-item frozen GSM8K subset gives $10\times$ resolution: \qwen{} base 0.64; the
+D6 error-gated cores score 0.66 and 0.60 --- $|\Delta|\le0.04$, within binomial noise
+($\pm{\sim}0.05$). (\smol{} base reference: 0.37.) The day adapters of those runs were not
+saved, so \textbf{``not aphasic'' is scoped to core-only serving}; the hot \textsc{core+day}
+evidence is NLL plus the 10-item reading.
+
+\paragraph{Fluency accent and read-time masking.} Free-text NLL/token rises from 2.93 (base) to
+3.21--3.58 with the core alone --- growing slowly with consolidated days --- and spans 3.1--5.0
+under the hot day mount, reaching $\sim$6$\times$ perplexity at its worst. The tax is
+super-additive at the high end (each adapter alone is mild) but not uniform: the two day-0
+measurements sit below the same-day core-alone value. The same hot state damages \emph{memory} readout: at the 30-day
+final night the error-gated run recalls 70/720 with the day adapter attached and 326/720 without
+it; even full replay shows 678 vs.\ 713. A freshly-written day adapter dominates the readout and
+emits its own day's values for old prompts: \textbf{concurrent adapter serving taxes old-fact
+recall} --- final-probe ratios $4.7\times$ and $15\times$ on the error-gated arm ($2.3$--$41.5\times$
+across all its D30 probes), $1.8$--$2.3\times$ for recency-only, and $1.05\times$ for full
+replay. Both the $6\times$ accent and the masking are properties of the \emph{two-adapter}
+\textsc{core+day} mount on the 2B loop substrate. On the 9B marathon substrate --- a single
+maintained adapter, hot after $\sim$1920 optimizer steps (seed 1234) --- GSM8K-100 goes 0.79
+base $\to$ 0.80 adapter-on (structured reasoning unharmed) and neutral-text NLL/token
+$2.393\to2.927$ ($+0.53$, perplexity $1.7\times$): an order milder than the two-adapter 2B hot
+state's $6\times$. The deployment prescription is accordingly not ``serve from the slow store''
+but: \textbf{do not serve two adapters concurrently}; a single maintained adapter shows neither
+the masking nor the aphasia; and for long free-text generation, extract-with-adapter $\to$
+generate-with-base removes the accent at zero cost. The mild accent itself deserves a reframe:
+it is a signature of experience, not damage --- a component that lived through $\sim$2000
+updates \emph{should} bear stylistic traces, and the frozen base is clean precisely because it
+has no history. The honest boundary: accent is a spectrum with a pathological end. The 2B
+two-adapter $6\times$ came \emph{with} degeneration; the $1.7\times$ comes with intact reasoning
+and protocol compliance --- two points, with no dose--response curve measured between them ---
+and long-form serving is where even the mild accent bills (\S\ref{sec:inmind}).
+
+Act 3's verdict: the weights cannot be the system's source of truth --- but a system whose truth
+lives in a log needs something the weights turn out to be uniquely positioned to provide.
+
+%=====================================================================
+\section{Act 4: The surviving recognition is the key to using the log}\label{sec:act4}
+%=====================================================================
+
+A log-backed agent faces a question retrieval similarity cannot answer: when content is put in
+front of it --- a retrieved log entry, an upstream model's draft, a user's claim --- \emph{did I
+experience this?} Acts 1--3 established that the adapter's recognition channel outlives every
+other readout. Act 4 tests whether that channel can be read \emph{without candidates} --- as a
+familiarity signal over presented content --- and whether it can gate anything. (Familiarity
+vs.\ recollection is the classic dual-process distinction in human memory; our latent-class data
+are its cross-mechanism machine analogue.)
+
+\subsection{The familiarity signal: candidate-free \texorpdfstring{$\dlp$}{dlp} at presentation}
+\label{sec:famsignal}
+
+For a fact $f$ presented in form $\phi$, define
+\[
+\dlp(f,\phi) \;=\; \log p_{\mathrm{adapter}}\bigl(\mathrm{content}\mid\mathrm{prompt}(\phi)\bigr)
+\;-\; \log p_{\mathrm{base}}\bigl(\mathrm{content}\mid\mathrm{prompt}(\phi)\bigr)
+\]
+--- the adapter-vs-base log-probability of the \emph{presented} content, requiring no generation
+and no candidate set.
+We score 48 written facts against 48 never-written same-distribution facts --- the harder and
+correct null for ``did I experience this'': same templates, same pseudoword lexicon, answer- and
+attribute-collision-filtered, so nothing but write history separates the two sets,
+per saved adapter.
+
+\begin{table}[t]\centering\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{llccc}
+\toprule
+adapter & seed & question $\dlp$ AUC & cloze $\dlp$ AUC & question recall /48 \\
+\midrule
+\multirow{3}{*}{\shortstack[l]{strong: ewc+replay (miss),\\ \qwen{}}}
+ & 1234 & 0.932 & 0.977 & \multirow{3}{*}{1--6} \\
+ & 2025 & 0.929 & 0.999 & \\
+ & 777  & 0.913 & 0.996 & \\
+\midrule
+\multirow{3}{*}{\shortstack[l]{weak: EWC ($\lambda$300),\\ \smol{}}}
+ & 1234 & 0.582 & 0.591 & \multirow{3}{*}{\shortstack[c]{---\\ (cloze recall 0/48)}} \\
+ & 2025 & 0.808 & 0.806 & \\
+ & 777  & 0.681 & 0.689 & \\
+\midrule
+S0: base-only logprob (any arm) & --- & \multicolumn{2}{c}{0.489--0.541 ($\approx$0.5)} & --- \\
+\bottomrule
+\end{tabular}
+\caption{Candidate-free familiarity: written-vs-never-written AUC of $\dlp$ on presented
+content, per saved end-of-stream adapter. Matched adapters from the self-test composition runs
+recall 1--6/48 in the question form (\S\ref{sec:act3day}); the strong adapters' question-form
+\emph{familiarity} is 0.913--0.932. A
+contrastive variant of the signal behaves similarly (e.g., 0.921/0.970 question/cloze on the
+first strong seed). S0 is the base model's own log-probability of the same content --- the base
+is identical across arms, so this row must sit at chance, and does.}
+\label{tab:fam}
+\end{table}
+
+\paragraph{Recognition survives a form change that kills recall.} On the strongest day-scale
+adapters (ewc+replay miss, \qwen{}, 3 seeds), question-form AUC is
+\textbf{0.932 / 0.929 / 0.913} (mean 0.925) and cloze-form AUC is \textbf{0.977 / 0.999 /
+0.996} (Table~\ref{tab:fam}). Matched adapters from the self-test composition runs answer the
+question form at only \textbf{1--6/48}
+(\S\ref{sec:act3day}): the form change that reduces expression to near-zero leaves familiarity
+nearly intact. This is the readout hierarchy of Act 1 read from its other end --- and it is the
+property a gate needs, because presented content arrives in whatever form the world supplies.
+
+\paragraph{The base-only row rules out generic-uncertainty gating --- by construction.} A
+standing objection to internal-signal gates is that cheap uncertainty baselines explain them
+\citep{cheapuncertainty2025}. Our S0 row answers it structurally: the base model is bit-identical
+across arms, so any signal computable from the base alone carries no information about what was
+written into the adapter. Measured base-only logprob AUC (recorded for two of the three strong seeds; the third ran the
+pre-S0 probe version) is \textbf{0.489--0.541}
+($\approx$0.5). Whatever $\dlp$ reads, it reads from the \emph{memory}, not from generic content
+statistics.
+
+\paragraph{Familiarity scales with memory strength.} The weak adapters --- EWC on \smol{}, the
+0/48-recall arm of Act 2 --- give AUC \textbf{0.55--0.81} across seeds and forms, between the
+base's chance level and the strong composition, roughly tracking their recognition counts
+(31--38/48): the signal is graded in the strength of the underlying memory, as an index should
+be.
+
+\subsection{A minimal gate: what worked, what failed, and why the failure is informative}
+\label{sec:gate}
+
+Before running, we specified three predictions in the working log (2026-07-15; unlike the other
+pre-registrations in this paper, these were not committed to the dated ledger file before
+execution --- we flag the distinction rather than blur it). The demo: 96 queries per run
+(48 written + 48 never-written attributes; the log contains only the written facts), with three
+predictions --- (a) ungated, the mounted model fabricates fluent pseudoword values for
+never-written attributes at a near-total rate; (b) a gate on the generated candidate's $\dlp$
+suppresses fabrication; (c) a threshold calibrated on one seed transfers frozen to the others.
+\textbf{Prediction (a) held; (b) and (c) were missed.} We report all three, together with a
+form asymmetry the runs surfaced: the gate that failed was run in the question form; the gate
+that works is a cloze-form (write-form) instrument.
+
+\emph{Ungated fabrication is $\approx$100\%}: on never-written attributes the adapter-mounted
+model produces a confident value-like completion essentially every time --- the write template
+generalizes as a \emph{template} (template pull) even where no binding exists. This is the
+failure mode a memory-writing agent actually ships with.
+
+\emph{Candidate-scored gates fail, for a reason worth having on record.} Across four timeboxed
+gate iterations, every gate that scored the model's \emph{own generated answer} by $\dlp$ ---
+these are the question-form runs --- failed: the adapter's own greedy output always sits at the
+peak of its own distribution, so the
+candidate's $\dlp$ measures the adapter's \emph{sharpening} of its output distribution, not
+storage --- a self-argmax bias. A threshold frozen on the calibration seed does \emph{not}
+transfer: \textbf{97.9\% / 95.8\% of fabrications pass through} on the held-out seeds. We report
+this as a clean negative that \emph{instantiates}, in a controlled setting, the warning that
+internal confidence signals fire on confidently-wrong generations \citep{confidentwrong2025}:
+scoring your own argmax is exactly how a system becomes confidently wrong.
+
+\emph{An answer-independent signal partially works --- in the write form.} Slot-KL --- the
+divergence
+$\mathrm{KL}(\mathrm{adapter}\,\|\,\mathrm{base})$ between the next-token distributions at the
+answer slot, computed before any generation --- asks not ``do I believe my answer?'' but ``does
+my memory reshape this slot at all?''. Run in the \emph{cloze} form the facts were written in,
+with a threshold calibrated on one seed and then
+\textbf{frozen},
+it cuts fabrication from $\approx$100\% to \textbf{25.0\% / 33.3\% / 10.4\%} across the three
+seeds, at a written-side coverage of \textbf{52--56\%} (fraction of written queries the gate
+routes to the log or trusts correctly). A partial gate, honestly reported: it transfers, it
+leaves half the written side on the floor, and it is in-form (cloze) only --- the question-form
+attempt is the candidate-scored failure above. Slot-KL is, in the tally of
+\S\ref{sec:readoutgap}, the last surviving fire/no-fire instrument, and only in the write form.
+
+\subsection{The readout gap, and what the organ is for}\label{sec:readoutgap}
+
+Put the two halves of Act 4 side by side. When content is \emph{presented}, the adapter
+recognizes its own experience at AUC \textbf{0.93--0.99}. When the system must read the same
+signal out \emph{unprompted} --- from its own candidates or from a pre-generation slot statistic
+--- the best separation we achieved is Youden $J = 0.27$ on the calibration seed; on the two
+held-out seeds the same threshold family reaches $J = 0.35$ and $0.50$, so the bound is a
+calibration-seed statement, not a ceiling. \textbf{Recognized when shown; hard
+to read out unprompted.} This mirrors the human recognition/recall asymmetry --- reported
+for few-shot fine-tuned LLM memories by \citet{orhan2023recognition}, whose
+exposure-ordering and interference-robustness findings the stress test's dose wall
+replicates on a controlled axis --- now measured in
+one substrate with matched probes, and it joins the recall law of \S\ref{sec:openproblem} as
+this paper's closing open problem.
+
+The asymmetry is not an artifact of our first two instruments. A third, stronger attempt --- a
+presented-mode binding statistic computed over the full log-value inventory, with per-value
+leave-one-out centering, so no generation artifact can enter --- still fails as a fire/no-fire
+signal: AUC \textbf{0.63} on direct queries and \textbf{0.38} on referential ones, at the level
+of the earlier instruments. Three independent instruments failing identically is substrate
+physics, not implementation error. But the \emph{same statistic used as a ranking} works:
+pairwise AUC 0.883, gold at median rank 3 over the inventory, recovering 47.8\% of first-pass
+retrieval misses into the top-4; unioned with lexical retrieval it lifts hit rate
+$0.521\to0.750$ --- a written-vs-unwritten contrast; on an all-written log the same scan ranks
+at chance (\S\ref{sec:inmind}): familiarity ranks provenance, not relevance --- and register
+spillover from unrelated writes can defeat even the provenance contrast at low dose, burying
+a lightly-written line beneath unwritten lines that merely resemble the stream. The channel
+supports finding-when-looking far better than knowing-you-have-it.
+
+The fourth instrument is the model's own thinking, and it returns the sharpest form of the
+negative: \emph{honest nescience}. In a tool-using agent with a forced first line ---
+``EXPECT: YES/NO'' before any tool result --- the adapter-carrying model answers NO on all 48
+written and all 24 unwritten queries (separation exactly zero), verbalizing ``I don't have any
+specific impression\ldots''; the scan then ranks the gold line into the top-4 and it answers
+correctly. No confabulated familiarity --- but no channel to real familiarity either. A
+$2\times2$ prompt-attribution matrix settles where the self-report comes from: an
+active-framing prompt yields NO/NO (adapter/base) and a passive-framing prompt yields YES/YES
+(147/148) --- self-report about memory is an echo of the prompt's framing, with zero memory
+contribution in either polarity (observational; single prompt per arm). The deployment
+corollary is blunt: never build UX or control flow on asking the model ``do you know $X$?''.
+
+It also settles what the organ is for. The 0.93--0.99 regime is available exactly when the
+content is \emph{externally fixed} --- like the gold answers in our probe. So familiarity should
+score \emph{external} content: retrieved log entries, an upstream model's drafts, a user's
+claims. Wrong external claims do not false-fire: the same adapters' 2-AFC margins prefer the
+true value over an equally-trained wrong value in \textbf{48/48} cases --- a
+\emph{within-attribute} statement (both candidates answer the same attribute); the
+cross-attribute binding hole is measured at the end of this subsection. What familiarity must
+\emph{never} score is the memory adapter's own generations --- that is the self-argmax trap. The
+division of labor that Acts 1--4 converge on: \textbf{generation upstream (base or a
+stronger model), the log as the truth store, the adapter as a recognition organ over external
+content}. We call the resulting primitive \emph{experience authentication}: retrieval similarity
+answers ``does this match semantically''; familiarity answers ``did \emph{I} experience this''
+--- a question no store-side signal can answer, because it is a property of the reader, not the
+content. System-grade evaluation --- behavioral compliance with familiarity annotations, real
+workloads, public hallucination benchmarks --- is explicitly future work; our on-distribution
+fabrication measure is deliberately narrow (pseudoword construction guarantees the model
+\emph{cannot} know the answer, so fabrication is unconfounded with pretraining knowledge).
+
+One hole in the authentication story is measured and open: \textbf{content vs.\ binding}. Under
+opaque referential questions with a mismatched retrieved context, fabrication on unwritten
+queries rises $0.08\to\textbf{0.71}$ in a forced-context probe, and reaches \textbf{0.235} in
+the agent loop of \S\ref{sec:e2edemo} (vs.\ 0.000 on direct forms); in all four agent cases the
+model answered a \emph{genuinely written} value to the wrong question, and 3 of the 4 passed
+the $\dlp$ authentication signal. A post-hoc binding gate built from the same presented-mode statistic
+cannot close the hole (AUC 0.43, below chance --- it re-approves its own ranking). $\dlp$
+authenticates \emph{content}, not \emph{binding}; the fix requires an independent,
+relevance-verifiable channel. Every fabrication figure in this paper therefore carries its form
+scope: the near-zero rates are direct-form results.
+
+\subsection{A mechanism for the readout gap: present in the workspace, lost in emission}\label{sec:jspace}
+
+Why does recognition outlive recall? A recent interpretability result gives us a vocabulary and a
+probe. \citet{jspace2026} identify a small ``verbalizable'' subspace --- a functional global
+workspace, read out per token by a Jacobian lens (J-lens) --- that carries the content a model can
+report and reason with, atop a much larger volume of automatic processing. We adapt the J-lens to
+our answer slot: on the \emph{frozen base}, we compute the direction whose amplitude at the cloze
+position drives each fact's gold answer token, so the measuring stick is fixed while the adapter's
+memory state varies. Across the 48-fact day-scale streams we then read each fact's J-projection
+at every probe,
+grouped by its recall/recognition state, under two mechanisms that forget at very different depths:
+ewcreplay (shallow: $43/48$ end-of-stream recall) and naked SGD (deep: $1\text{--}2/48$ recall,
+$22\text{--}28/48$ still recognized), three seeds each (Fig.~\ref{fig:jspace}).
+
+The workspace amplitude \emph{co-tracks the readout hierarchy}, and the deep-forgetting mechanism
+is what makes the claim falsifiable rather than vacuous. Recalled facts project high under both
+mechanisms ($0.222$ / $0.218$). Recognized-but-not-recalled facts --- \emph{the readout gap itself}
+--- sit clearly above the null floor under both ($0.175$ / $0.110$ vs.\ a mismatch-token null at
+$\approx0.08$ and a matched-norm random null at $0$; the nulls are direct descendants of the
+dimension-dependence caveats that topological data analysis taught us). But facts that are \emph{not even recognized}
+collapse to the null: under naked SGD, where this class is well populated ($n\!=\!678$), gone facts
+project at $0.090\approx$ null. (The shallow run's higher gone value, $0.137$, rests on only
+$n\!=\!11$ and was, we now see, a shallow-forgetting artifact --- a reading our own deeper run
+corrects.) So the honest statement is not ``the answer is always present'' but the sharper one the
+figure shows: \textbf{workspace amplitude survives exactly as far as recognition does, and no
+further.} The readout gap is precisely the band where the content is still in the workspace but has
+lost the emission competition; once recognition also fails, the content is genuinely gone --- which,
+reassuringly, is where the meter bottoms out. In the shallow regime we can watch the competition
+directly: an event-aligned view of each fact's \emph{first miss} shows the projection dipping only
+$0.222\!\to\!0.174$ ($-21\%$, still $\gg$ null) and \emph{returning} to $0.223$ on recovery, so a
+recalled$\to$missed$\to$recovered fact never leaves the workspace. A companion check confirms the
+flip: an unrecalled (but recognized) gold token sits at \emph{median rank 1--2 across seeds}
+(small $n$) at the output, not
+buried --- the same generable-but-not-emitted knowledge \citet{insideout2025} find in the
+pretraining setting, here on an online forgetting timeline. \textbf{Forgetting, in this regime, is rank displacement, not amplitude loss} --- which
+is exactly why a light re-instatement (Act 3) rescues it, why recognition (a comparison over
+presented content, not an emission) is the last readout to die, and why scoring one's own argmax
+(\S\ref{sec:act4}) is circular: the incumbent winner always looks familiar. The readout gap is
+still an open problem quantitatively (the recall law of \S\ref{sec:openproblem}), but it now has a
+mechanism: the index keeps the content available; the store's job is to win the competition the
+weights have stopped winning. We do not claim phenomenal consciousness --- only, following
+\citet{jspace2026}, access: the content is available for report while the report itself fails.
+
+The mechanism suggests an obvious remedy, and testing it yields a third confirmation of the
+paper's central design rule. If the answer is present at median rank 1--2, let the model
+generate its own
+top-$k$ candidates and select among them by familiarity. We ran exactly this on the strongest
+adapters (three seeds). The candidates do contain the gold answer, but the familiarity selector
+($\dlp$) prefers written-syllable recombinations --- ``frankensteins'' assembled from previously
+written values, every part of which the adapter scores as familiar --- over the true answer: net
+recall \emph{drops} in every seed ($42\!\to\!31$, $43\!\to\!36$, $46\!\to\!39$ of $48$). Full-sequence adapter-likelihood rescoring is safe
+(it never regresses, $+1$) but its end-of-stream headroom is small, because by then miss-based
+replay has already re-instated everything rescuable and the residue is genuinely gone. The lesson
+is the one Act 4 already drew, now shown a third way: \textbf{familiarity authenticates external
+content; it cannot select among the reader's own generations} --- scoring your own candidates is
+the self-argmax trap wearing a new hat. The fair test of self-candidate rescue is the
+\emph{transient} in-stream miss (where J-amplitude is measured high), which we leave to future
+work. (Method caveat: the answer-slot J-lens is a deliberate narrowing of the original all-context
+Jacobian to the single output token we can label; the co-tracking result is reported across a
+shallow and a deep mechanism, but both use the same $2$B substrate and pseudoword facts.)
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.92\textwidth]{fig_jspace.png}
+\caption{The readout gap has a mechanism. \textbf{Left:} answer-direction J-projection by memory
+state, under a shallow (ewcreplay) and a deep (naked SGD) forgetting mechanism, three seeds each.
+Workspace amplitude co-tracks the readout hierarchy: recalled $>$ recognized-not-recalled $>$
+gone. The recognized-but-not-recalled band --- the readout gap --- stays above null under both
+mechanisms; facts that are not even recognized collapse to the null floor (visible where the deep
+mechanism populates that class, $n\!=\!678$). \textbf{Right:} in the shallow regime, event-aligned
+at each fact's first miss --- the projection dips $21\%$, stays far above null, and recovers ---
+so forgetting there is rank displacement in emission, not loss of the content.}
+\label{fig:jspace}
+\end{figure}
+
+%=====================================================================
+\section{Act 5: The design, run}\label{sec:act5}
+%=====================================================================
+
+Act 4 established what the signal is; Act 5 runs the design. We now treat the index thesis as
+an engineering spec and audit it end to end: how forgetting is structured tier by tier (the
+ladder), what the write dose should be, how the notebook is read and what that read path costs,
+whether the operating windows survive the deployment form and model scale, how far the
+maintained regime carries when driven to length (the marathon), where the in-weight channel is
+genuinely irreplaceable (adjudication), and whether an agent can drive the whole loop without
+being led (the demos). Each subsection is a measured answer; the same floors-and-directions
+discipline applies.
+
+\subsection{The readout ladder: forgetting has half-lives, tier by tier}\label{sec:ladder}
+
+The rank-displacement mechanism predicts that ``forgetting'' should not be one event but a
+sequence of readout failures of increasing severity. We measured this directly: on the naked
+(unmaintained) stream, probing every two writes across three seeds, we track for each fact
+(i) free recall, (ii) whether the gold first token remains in the top-$10$ at the answer slot
+--- the tier a retrieval-key design depends on --- and (iii) $2$-AFC discrimination. The three
+tiers separate cleanly (Figure~\ref{fig:ladder}A): half-lives of $\mathbf{2}$, $\mathbf{7}$,
+and $\mathbf{16}$ fact-writes respectively, with a heavy tail --- roughly a third of facts stay
+key-alive and discriminable $30$ writes out. A fact that recall has lost keeps its answer in
+the top-$10$ for about five more writes (median) and stays discriminable for about fourteen.
+Under error-gated replay the key tier holds at $0.94$--$1.0$ indefinitely: maintenance does not
+merely slow the ladder, it stops it. The taxonomy here is convergent with recent findings that
+catastrophic forgetting is an accessibility failure rather than erasure, measured with trained
+probes in supervised vision settings \citep{accessibility2026}; what the ladder adds is that the
+levels are \emph{probe-free behavioral readouts} with measurable, dissociable half-lives on an
+online fact stream --- and that they prescribe a system's operating windows.
+
+\textbf{Write dose buys acquisition, not capacity.} The per-fact write budget in all experiments
+above ($8$ SGD steps) was tuned, originally, for recall. If the adapter is an index, that tuning
+is wrong on its face --- and it is. Sweeping the dose over $\{1,2,4,8\}$ steps (three seeds each;
+Figure~\ref{fig:ladder}B): acquisition rises with dose ($0.58\!\to\!1.00$ at $2$-AFC), but
+\emph{end-state} recognition is flat at $\approx 0.5$ of the stream regardless, and the end-state
+key tier is \emph{monotone-decreasing} in dose ($0.60 > 0.49 > 0.42 > 0.38$). Single-step writes
+occupy a distinct regime: only about half the facts acquire, but the acquired half barely decays
+at all within the stream (retention $0.92$ vs.\ $\approx\!0.55$ at every higher dose). A learning-rate
+sweep at fixed single-step dose ($3\times10^{-5}$ to $10^{-3}$) moves the acquisition/retention
+split in mirror image and leaves end-state recognition pinned at $0.46$--$0.58$ --- so the
+$\approx 0.5$ plateau is invariant to an $8\times$ dose range \emph{and} a $30\times$ step-size
+range, which is what one would expect of an interference-limited capacity of the write dynamics
+rather than an artifact of any particular setting (at $10^{-3}$ the rank geometry breaks first:
+end-state key tier falls to $0.08$ while $2$-AFC still holds --- the tiers even fail at different
+stability thresholds). The practical rule is blunt: \textbf{write one step per turn}. The extra
+seven steps buy transient recall that the ladder shows will not survive, plus added interference
+on every neighbor.
+
+\textbf{Reading the notebook is its own attack surface.} If the weights are the index and the log
+is the store, the remaining question is the read path. Three results, three seeds each, on a
+timestamped log seeded with adversarial same-attribute distractor lines: (i) on a healthy
+(replay-maintained) substrate, top-$k$ impressions retrieve the gold log line for $47/48$ facts
+--- including the recognized-but-not-recalled --- so the key tier does function as a retrieval
+key; (ii) but injecting retrieved lines into the \emph{adapter-carrying} model's context can pull
+already-correct memories off their answers (recalled $42 \to 28$ under the strongest prompt,
+seed 1234),
+while the frozen base reads the same log cleanly; and (iii) on a deeply forgotten (naked
+end-state) substrate the failure inverts --- the base reads the log at $31/18/34$ of $48$
+across seeds with an explicit
+recency rule while the adapter-carrying model collapses to $2/0/2$, emitting degenerate
+recombinations instead of copying any line: unregularized deep forgetting damages the
+\emph{read pathway}, not just the content. We stress that (ii) and (iii) used deliberately
+adversarial logs; we read them as a provenance rule --- trusted own-log content can be read by
+the full model, but the read path is where untrusted content does its damage --- and as a second,
+independent cost of unmaintained writing. The capability firewall (\S\ref{sec:firewall}) protects
+the weights; nothing in it protects the readout.
+
+\textbf{Does the ladder survive leaving the write form?} Deployment queries are questions, not
+the declarative write template, and Act 1's paraphrase collapse warns that expression is
+form-bound. Re-measuring the ladder under an interrogative form (``Q: What is the user's
+\emph{attr}?'') on the same streams, three seeds per dose: question-form \emph{generation} is
+dead ($0/144$ at end-state, both doses) --- the paraphrase collapse is total for emission; the
+\emph{key} tier is damped but alive (end-state gold-in-top-$10$ at $\approx 0.7\times$ its
+write-form level; single-step writes again give the healthiest question-form keys, $0.42$ vs
+$0.28$ at the recall-tuned dose); and $2$-AFC \emph{discrimination generalizes essentially in
+full} ($73$ vs $83$ of $144$; half-life $18$ vs $14$) --- confirming, on the timeline, Act 4's
+finding that the familiarity signal lives in a question form recall cannot use. We then asked
+whether the \emph{workspace} (\S\ref{sec:jspace}) holds the answer under the question form even
+when the output surface does not --- and our pinned prediction was wrong: J-projection at the
+question's answer slot is monotone in the gold token's rank there (from $0.13$ in-top-$10$ down
+to the $0.084$ null floor below rank $30$), and within every rank bucket it is indifferent to
+whether $2$-AFC survives. So the form-free discrimination is \emph{not} carried by answer-slot
+workspace amplitude; it lives in the comparative, presented-content computation alone. The
+division of labor is now measured across surface forms: emission is form-bound, keys are
+form-damped, the answer-slot workspace is form-bound (it tracks the production surface, not
+recognition), and discrimination --- the presented-mode comparison --- is the one channel that
+is form-free.
+
+\textbf{Does the ladder move with model size?} A single-seed rung on a same-family series
+(Qwen2.5 $0.5$B/$1.5$B/$3$B/$7$B, hyperparameters fixed; the $7$B in bf16 behind a precision
+bridge that matches at end-state) separates two scale effects. Raw capacity moves and then
+saturates: end-state recognition $0.50/0.46/0.60$ up to $3$B with key half-life stretching to
+$18$ writes and discrimination to $25$ --- consistent with larger pretrained models forgetting
+less \citep{ramasesh2022scale} --- but $7$B sits at the $3$B plateau ($0.60$; recall never
+durable at any size). What keeps improving is \emph{generalization}: the fraction of write-form
+key strength that survives the shift to question form roughly triples from $3$B to $7$B
+($0.17 \to 0.48$), and a newer-generation family (Qwen3.5, the $2$/$4$/$9$B rungs) nearly
+closes the gap outright --- ratio
+$0.72$ at $2$B and $\mathbf{0.95}$ at $4$B, with absolute question-form key coverage rising
+across the four rungs ($0.08$ at Qwen2.5-$3$B, $0.21$ at Qwen2.5-$7$B, $0.28$ at
+Qwen3.5-$2$B, $0.44$ at Qwen3.5-$4$B, as fractions of the stream) and holding at $0.44$
+for both the $4$B and $9$B. The newer $9$B also breaks the old family's capacity plateau
+(write-form keys and $2$-AFC both $0.67$, the highest we measure). Question-form
+\emph{emission}, by contrast, is dead or nearly so at every size and generation tested ($0/48$
+on the newer generation; $1/48$ at $3$B and $7$B on the older) --- the
+form-boundness of generation appears near-universal, which the index-and-notebook design never
+needed. So the one deployment-relevant weakness the ladder found recedes with both model size
+and model generation, while presented-mode discrimination stays form-free everywhere: the windows the design
+depends on widen as the base model improves, and the part that widens fastest is exactly the
+part that needed it. (One seed per size, fixed adapter rank; a direction, not a law.)
+
+Together the ladder, the dose result, the read-path results, and the form test turn the index
+thesis into an operating regime: single-step writes per turn; top-$k$ keys valid for roughly
+seven writes unmaintained (or indefinitely under miss-replay), at $\approx 0.7\times$ strength
+under deployment-form queries --- an assist to be unioned with question-term search, not a
+guarantee; presented-content discrimination valid for roughly sixteen writes and across surface
+forms; the log as ground truth; provenance-gated reading. The write policy composes: single-step
+writes plus log-driven, error-gated replay reach the same recognition and key ceiling as the
+recall-tuned recipe ($2$-AFC $144/144$, key tier $0.99$, three seeds --- the ws1+EWC
+arbitration arm; the no-EWC policy arm is $141/144$) at less than half its
+gradient budget --- the replay patches exactly the acquisition failures the single step leaves,
+because the self-test flags them. The model does remember --- it just needs its notebook.
+
+\subsection{The maintained regime at scale: no wall at 384}\label{sec:marathon}
+
+The ladder's maintenance result --- under error-gated replay the key tier holds at 0.94--1.0
+indefinitely --- left one number unmeasured: how far the maintained regime carries when the
+policy it selects is simply run, turn after turn, with no night phase. We ran the full day
+policy --- one write step plus 4 miss-gated replay steps per turn, replay targets drawn from
+the write log --- over a single stream of 384 facts on the 9B substrate ($\sim$1920 optimizer
+steps; three seeds). The loop does not hit a wall: cumulative recall is \textbf{0.815--0.849}
+(mean 0.828; 326/313/315 of 384), 2-AFC discrimination \textbf{0.995--1.000} (382--384 of 384), and the firewall holds in all three at
+$0.74\to0.74$ on 100 GSM8K items (a different frozen 100-item subset --- the
+\texttt{gsm8k\_pilot\_ids} items --- from the \texttt{gsm8k\_fw100\_ids} subset behind
+\S\ref{sec:firewall}'s $0.79\to0.80$ capability probe: 0.74 and 0.79 are both base scores, on
+different item sets). The age curve is flat-to-inverted in all three seeds:
+the \emph{oldest} 96 facts sit at 0.844--0.896 while the newest 96 are lowest in every seed
+(0.688--0.750) --- a recency deficit from fewer repair passes, not age decay. Per-window repair
+demand falls as the pool stabilizes (a declining fraction of facts needs re-writing), and
+cumulative recall climbs throughout --- the fixed $O(1)$-per-turn budget is sufficient at this
+horizon. The policy carries no
+EWC term: at a one-step write dose EWC adds nothing through $n{=}192$; under the earlier
+8-step dose it did help at the emission tier --- the dose, not the mechanism, changed.
+
+The reconciliation is mandatory, and it does not restore the ``store'' reading. The 0.83
+emission tier is the fixed point of \emph{log-driven repair}: replay targets come
+from the ground-truth log, and the periodic probe \emph{is} the harness self-test --- so the
+marathon measures the capacity of a maintenance loop, not of the weights. Unmaintained, the
+same substrate's emission tier has half-life 2. Two anchors bracket the point. Naked long
+streams pin the end-state recognized \emph{fraction} at 0.54/0.57/0.58 across
+$n\in\{48,96,192\}$ --- the plateau is a rate, not a count --- with a conditional recognition
+half-life of $\approx$140 writes for what survives acquisition; and a maintained $n{=}192$
+intermediate run holds recall 0.85 with recognition $\approx$1.0. The full-history self-test
+that drives all of this costs $O(n^2)$ cumulative compute over the stream; a deployed schedule
+must become spaced --- future work, and a separate paper.
+
+\subsection{Where similarity ranks, experience decides}\label{sec:adjudication}
+
+If finding is increasingly a commodity, what is the in-weight channel for? An adjudication
+probe answers. We present four conflicting same-attribute log lines --- one genuinely written,
+three never written --- in an \emph{identical} context to every arm, varying only the reader.
+The frozen-base reader picks the written line at \textbf{0.21} ($\approx$4-way chance); the
+adapter-carrying reader at \textbf{0.58}; with per-line $\dlp$ annotations added, \textbf{0.67}.
+This is the one place the in-weight channel is not commoditized --- on the same rig,
+full-paraphrase and referential \emph{retrieval} are matched or beaten by an off-the-shelf
+embedder (1.00 / 0.96 vs.\ our keys' 0.50 / 0.375). Active memory's value is not finding but
+\emph{deciding} --- between conflicting records, and that nothing was experienced at all.
+(Single seed, 9B reader, synthetic conflicts: a direction.)
+
+\subsection{The loop, closed: a five-arm end-to-end demo}\label{sec:e2edemo}
+
+Finally we run the whole design as one system. On the single-step-plus-replay substrate above,
+the harness logs every write; at question time (interrogative form throughout) it takes the
+adapter's top-$30$ answer-slot completions as retrieval keys, greps the log with keys $\cup$
+question terms, and presents the retrieved timestamped lines back to the \emph{adapter-carrying}
+model, which answers or abstains. Against $48$ written facts and $12$ never-written probes:
+
+\begin{center}\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcc}
+\toprule
+arm & accuracy (written) & direct-form fabrication (never-written) \\
+\midrule
+no memory (base)                  & $0.00$ & $0.00$ \\
+in-weight only (adapter, no log)  & $0.17$ & $\mathbf{0.83}$ \\
+passive retrieval (base $+$ log)  & $1.00$ & $0.00$ \\
+\textbf{full harness (adapter reads own log)} & $\mathbf{1.00}$ & $\mathbf{0.08}$ \\
+full harness, frozen-base read    & $1.00$ & $0.17$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+On a newest-generation $9$B substrate (single-step writes plus pure miss-replay, bf16), the
+same pipeline reaches accuracy $1.00$ with \emph{zero} direct-form fabrication in every arm --- including
+in-weight-only, whose overconfident fabrication ($0.83$ at $2$B) vanishes entirely while its
+answering ability stays near zero ($0.04$). So the calibration pathology the harness repairs at
+$2$B is already repaired by scale at $9$B; what scale does not provide --- the answers
+themselves ($0.04 \to 1.00$) --- the notebook does, at every size we test.
+
+Retrieval put the gold line in context for $48/48$ questions ($2$B and $9$B alike). Three
+things are worth reading off. First, in-weight memory \emph{alone} is dangerous: it answers only $0.17$ and fabricates
+$0.83$ of the time on never-written attributes --- the index without its notebook confabulates.
+The full loop recovers perfect answering and cuts direct-form fabrication by $10\times$. Second, on the
+agent's \emph{own, trusted} log, letting the adapter-carrying model read its notebook is at
+least as good as routing reads through the frozen base ($0.08$ vs $0.17$ fabrication) --- so
+the read-time poisoning of \S\ref{sec:ladder} is a property of \emph{adversarial} content, and
+the earlier rule is correctly a provenance rule, not an architecture rule --- on short factual
+answers; on long-form advisory answers the same read-time mount is a measured \emph{loss}
+(\S\ref{sec:inmind}): the accent truncates, and warnings are what gets cut. Third, the passive-
+retrieval arm ties on accuracy here because this testbed's questions contain the attribute
+verbatim --- but the active/passive separation this rig could not show now exists elsewhere in
+Act 5: \emph{retrieval} is commoditized (an off-the-shelf embedder matches or beats our keys,
+\S\ref{sec:adjudication}); \emph{adjudication} among conflicting records is experiential-only
+(0.21 base vs.\ 0.58/0.67 with the adapter); and \emph{calibration} --- holding direct-form
+fabrication at exactly zero --- is write-history-only (the passive agent below leaks
+$\approx$0.1 where the write-carrying agent holds 0.000).
+
+\paragraph{Autonomy: an agent drives the loop.} Everything above is rig-driven: the harness
+decides when to scan and what to inject. The last question is whether a model will drive its
+own notebook. We gave the marathon-substrate model three tools (GREP, SCAN, CHECK), thinking
+enabled, and 128 probes, under a single naive prompt (observational: one symmetric prompt per
+arm, no prompt search). On direct forms the active agent reaches accuracy \textbf{0.917} with
+fabrication \textbf{0.000} and abstention 0.958 on unwritten queries, against the rig anchor's
+1.00/0.083: an autonomy tax of 0.083 on accuracy, with fabrication strictly \emph{better} ---
+the agent abstains when the scan lacks gold. On referential forms it reaches \textbf{0.231},
+about what the channel physics supplies (pass-1 retrieval 0.282, scan-hit@4 0.205, ideal union
+0.410 --- under-exploited); we observed opaque$\to$noun resolution rewrites on 9/39 rows, and
+the canonical loop in full: scan $\to$ grep(companion) $\to$ grep(pet) $\to$ CHECK $\to$
+correct answer.
+
+The passive control --- frozen base + GREP + an off-the-shelf embedding tool, same protocol ---
+sharpens the reading. On direct forms it scores \textbf{1.00} $>$ 0.917 (verbatim-keyword grep
+is unbeatable when the keyword is in the question) but fabricates 0.083--0.125 (the two figures
+are from different-$n$ runs --- a 12-probe smoke test and the 128-probe full run; the full run
+is 0.125) where the active
+agent holds 0.000; on referential forms it manages \textbf{0.128} $<$ 0.231, and the mechanism
+is \emph{orchestration} failure, not embedding weakness: it called EMBED on 2/39 referential
+rows, while the active agent used SCAN on 39/39. A commoditized channel is only commoditized if
+the driver uses it --- the impression-owning agent treats ``consult my memory'' as a natural
+move; the memoryless one exhausts lexical search first. Token cost: passive 188 vs.\ active 614
+per direct query. Scope: one symmetric prompt per arm, observational, not a de-confounded
+comparison; a forced-embed-first passive variant would likely lift its referential accuracy
+substantially.
+The durable claims are two: (1) the experiential zero-argument channel gets used reliably under
+naive prompting, and (2) write-history holds direct-form fabrication at exactly zero where the
+passive arm leaks $\approx$0.1.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.98\textwidth]{fig_ladder.png}
+\caption{\textbf{A:} event-aligned survival per readout tier on the unmaintained stream (naked,
+$8$ steps/fact, three seeds pooled): free recall, gold-in-top-$10$ (the retrieval-key tier), and
+$2$-AFC discrimination have half-lives of $2$, $7$, and $16$ fact-writes --- forgetting is a
+ladder of readout failures, not one event. \textbf{B:} the write-dose sweep: acquisition climbs
+with dose, but end-state recognition is flat at $\approx 0.5$ (dotted) across an $8\times$ dose
+range, and the end-state key tier is best at a \emph{single} step --- higher doses buy transient
+recall at the price of interference.}
+\label{fig:ladder}
+\end{figure}
+
+%=====================================================================
+
+\section{External stress test: the implicit-association wall}\label{sec:inmind}
+
+Everything so far is measured on our own instrument. As a final audit we took the whole design
+to an external benchmark built by others to break exactly this kind of system.
+\emph{InMind} \citep{inmind2026} tests the \emph{implicit-association blind spot} of agent
+memory: each of $125$ tasks pairs one personal fact (``just found out I have a tree-nut
+allergy'') with a semantically distant application query (``walk me through a macaron
+recipe'') whose correct answer must apply the fact without being asked about it. The published
+wall is severe: six external-retrieval memory systems (Mem0, A-Mem, HippoRAG~2, MemoryOS,
+xMemory, A-RAG) score $\le 14.4\%$ on indirect application while the backbone
+(GPT-5-mini) with the fact placed \emph{in context} scores $84.0\%$; the systems' answer-blind
+\emph{target recall} --- did the decisive fact reach the indirect query's context at all ---
+is $0.8$--$12\%$. The paper contains no parametric-memory condition; to our knowledge what
+follows is the first in-weight arm run on this benchmark, and we ran it as an adversarial
+audit of our own thesis: if the index-not-store division of labor is right, the in-weight
+side should contribute \emph{nothing} here, and the harness side should be where any gain
+lives.
+
+\paragraph{Setup and judging.} We deviate from the benchmark's canonical protocol in one
+structural way, disclosed up front: the canonical evaluation isolates each task (memory state =
+a 47-session background corpus plus \emph{one} injected fact), whereas we accumulate all $125$
+facts into a single adapter and a single log with no background corpus --- the operating
+condition of the single-user agent this paper designs for. This makes our store $124$
+same-genre distractors rather than $240$ off-genre user turns, changes the retrieval problem in
+kind, and means our absolute numbers are not leaderboard entries under their protocol;
+we therefore read everything as ratios to our own in-context ceiling. (The canonical-protocol
+program later in this section restores per-task isolation --- for the in-weight arms as well
+as the frozen ones --- and is leaderboard-comparable in structure, though still on our
+backbone and judge.) All $125$ facts are
+written by the Act-5 day policy
+(single-step writes plus error-gated miss-replay on the $9$B substrate, $r{=}64$), with the
+write gate moved to a content-certificate check ($\dlp$ of the written line over a neutral
+prefix; the question-form 2-AFC gate is \emph{inverted} on this stream --- binding is the
+weakest tier, and these lines are written without question$\to$key bindings --- the
+content-vs.-binding lesson again); $125/125$ pass. We deviate from the benchmark's judge
+(GPT-5-mini) in two directions and report both: a local Qwen3.6-27B applying the benchmark's
+rubric verbatim, and an independent second pass by Claude Fable~5 (Anthropic; greedy decoding,
+rubric-sharded) over identical answers; per-item verdicts for both judges are released. Agreement is high on the memory arms ($\kappa$ $0.61$--$0.88$) and low exactly where a
+cold audit predicted judge strictness ($\kappa$ $0.39$ on the in-context control; five of six
+audit-flagged false negatives flip under the second judge), so we read the pair as a band. The
+honesty floor holds under both: with the gold line absent from context, credited application
+is $0.008$--$0.028$.
+
+\paragraph{Arms.} The harness contribution is one move: retrieve on the \emph{answer}, not the
+question. A frozen-base draft of the answer is embedded (off-the-shelf bge-small) and its
+nearest log lines are placed in context for a final answer. Isolation arms then remove or add
+the adapter at every site --- drafting, retrieval scoring, risk-term generation, reading ---
+so each channel's contribution is measured, not assumed.
+
+\begin{center}\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}
+\toprule
+arm & gold retrieved & \multicolumn{2}{c}{indirect application} \\
+ & & judge 2 & judge 1 \\
+\midrule
+naive RAG (embed question, top-4)            & $0.120$ & $0.080$ & $0.064$ \\
+answer-side embed, top-4                     & $0.152$ & $0.096$ & $0.064$ \\
+answer-side embed, top-16, adapter read      & $0.384$ & $0.136$ & $0.112$ \\
+\textbf{answer-side embed, top-16, all-frozen} & $\mathbf{0.384}$ & $\mathbf{0.216}$ & $0.186^{*}$ \\
+adapter-drafted variant                      & $0.360$ & $0.176$ & $0.101^{*}$ \\
+familiarity scan as retriever, top-4         & $0.032$ & $0.040$ & $0.040$ \\
+risk-extraction route, all-frozen            & $0.160$ & $0.144$ & --- \\
+gold line alone in context (ceiling)         & ---     & $0.800$ & $0.592$ \\
+entire log in context                        & ---     & $0.258$ & $0.200$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+{\small $^{*}$judge-1 run on this arm was stopped early ($n{\approx}70$); per-item agreement
+with judge 2 is $0.97$--$0.99$. The judge-2 entire-log row is $n{=}124$ (one unjudged item).}
+
+\paragraph{The wall stands in the accumulated protocol, and it factors.} No accumulated-protocol
+configuration breaks the wall: the best
+end-to-end arm reaches $0.27$ of its own in-context ceiling (their best system: $0.17$ of
+theirs, under their judge --- ratios, not leaderboard positions; the canonical program
+below is where the wall eventually moves). But the wall separates into two measured factors. \emph{Retrieval}: answer-side
+embedding triples the naive hit rate ($0.120 \to 0.384$; exact-line matching --- counting
+retrieved lexical-twin lines raises it to $0.424$) --- and the gain is semantic, not
+lexical ($106/125$ tasks share no content word between gold line and draft; the gain
+concentrates there). These numbers live in our accumulated protocol; a canonical-protocol rerun below shows how
+much of each is regime-specific. \emph{Dilution}: application of a
+\emph{retrieved} gold fact falls monotonically with context size --- $0.80$ with the gold line
+alone, $0.79$--$0.80$ in a targeted $\le 6$-line context, $0.52$ at $16$ lines, $0.26$ with
+the full log --- so precision and presence trade off, and guaranteed presence (entire log,
+$0.258$) still beats top-16 precision end-to-end at this hit rate. The inverted-U in
+retrieved-passage count is known \citep{jin2025longrag,cuconasu2024noise}; conditioning on
+the gold being \emph{present} zeroes its coverage term, and the decay that remains is
+monotone --- the model never benefits from added context, it only sometimes benefits from
+added chances at the fact. The two frozen retrieval
+routes overlap on only $16/125$ golds (union $0.416$): rank-fusion before pruning is the
+obvious next lever, and everything in it is training-free.
+
+\paragraph{Canonical-protocol replication: two regimes, swapped champions.} Because our
+accumulated store deviates from the benchmark's per-task isolation, we reran the frozen arms
+under the canonical protocol (the benchmark's 486-turn background corpus, of which we index
+the $240$ user turns, $+$ one injected fact per task --- a $241$-line store; same judges). The regime flips the rankings. Question-side embedding collapses ($0.016$ retrieval,
+$0.000$ application); the answer-side draft loop still \emph{multiplies} retrieval by
+$3.5\times$ ($0.016 \to 0.056$; it was $3.2\times$ in the accumulated store --- the
+multiplier, not the absolute, is the protocol-invariant claim) but drowns absolutely: verbose
+off-genre background matches an advice-style draft better than a terse personal-fact line does
+(the gold ranks $110/241$ against a typical draft). What survives the haystack is the
+\emph{keyword} front end --- elicit one keyword from the question with the frozen base, embed
+it: retrieval $0.152$@6, application $\mathbf{0.144}$, matching the published wall's value
+($14.4\%$, their best system --- under our backbone and judges, a coincidence of level
+rather than a like-for-like tie), at their best system's relative-to-ceiling number
+($0.144/0.84 = 0.171$), with conditional application $0.947$ (above the $\le6$-line
+dilution figure because these canonical contexts are smaller still) and a $0.000$ credit floor on
+misses. The same keyword route scores only $0.096$ in our accumulated store, where category
+keywords drown in same-genre clusters. So retrieval front ends are \emph{regime-specific} ---
+draft-embedding owns compact same-genre logs, keyword elicitation owns off-genre haystacks,
+both frozen --- and no frozen front end tested to this point breaks the wall in either
+regime: the wall's binding constraint everywhere is getting the right line into a small
+context, never applying it once there. The program below moves the wall by exactly this
+lever.
+
+\paragraph{The canonical program: from the published wall to half the ceiling.} The tie at
+the published wall was not the end of the canonical line; a program of thirteen further
+chains --- pre-registered arm by arm, with two declared probe amendments after a falsified
+target and post-hoc diagnostics labeled as such --- moved it, and the honest accounting of
+\emph{what} moved it is the most instructive result in this paper. An agentic loop (the frozen base queries the log,
+reads the results, re-queries; $\le 4$ searches) lifts application to $0.176$, with $20$ of
+$27$ hits coming from re-queries --- that iterative retrieval beats single-shot is
+established \citep{fishing2025iterative}, and our saturation point ($3.3$ searches used regardless
+of allowance) replicates the published diminishing-returns knee; the claim we add is the
+\emph{substitution} below, not the loop. A per-task in-weight arm --- fresh adapter per task,
+write the one fact to a bare-recall criterion, elicit a keyword, retrieve --- reaches
+$0.184$, and yields this program's first uncontaminated dose--elicitation gradient (base
+keyword $0.152 \to$ recognition-tier $0.160 \to$ recall-tier $0.216$ gold-in-6). Seeding
+the agent with the adapter's keyword reaches $0.272$ --- but the attribution control (the
+same loop seeded with the \emph{frozen base's} keyword) reaches $0.280$: the two seeds
+agree on $92/125$ tasks ($90$ answers byte-identical), one judge flip across those ninety
+identical answers prices judge noise at
+$\approx 1/90$, and a search-budget sweep ($\{1,2,4,8,12\}$, both arms, ten judged points)
+shows the seed advantage is an inverted-U peaking at budget $2$ ($+0.056$) and
+statistically zero from budget $4$ on (mean $+0.006$; the $+0.032$ at budget $12$ is
+single-arm noise) --- \emph{the retry budget subsumes the write's pointer gain}, while
+trebling the budget buys only $0.272 \to 0.320$ at three times the search calls, largely
+because the agent self-terminates at $3.3$ searches regardless of allowance. The breakthrough came from a different direction. A two-hop probe
+--- the frozen base converts the indirect question into a direct memory-check question, the
+adapter answers it, the \emph{answer} is embedded --- failed as first built ($0.184$
+retrieval; an echo audit found $19$ of its $23$ ``hits'' were lexical echoes of the probe
+question and genuine at-probe recall was $3.2\%$), and the failure localized the lock: the
+generated question addressed the user as ``you'', off the trained form. Re-voicing the hop
+question \emph{as the user would ask it} (``Did I tell you about\ldots'') unlocked genuine
+recall to $32.8\%$ and retrieval to $0.464$. (This lock is not the reversal curse
+\citep{berglund2024reversal}: the argument order never changes, only the speech-act
+register; and the off-form refusals are the learned-default-response behavior of
+\citet{kang2024unfamiliar}, not an unexplained attractor.) A $2{\times}2$ factorial (who
+writes the question $\times$ who answers it) attributes the entire effect to the answering pathway at
+the single-fact tier (question-knowledge cells are indistinguishable from base there, and
+become nonzero only once the adapter holds a real stream), and the recognition-tier probe
+is dead in every cell --- certify at $2$ steps, cash at $6$, where we name a per-fact dose
+by the readout tier it reaches; the Act-5 single-step rule reaches the recall dose
+\emph{across} turns via miss-gated replay, where these per-task arms reach it in one
+sitting. Cashed to answers, the two
+front ends bracket the in-weight contribution exactly: embedding the frozen base's
+user-voiced question alone scores $0.312$ --- a new frozen top, from genre match with the
+log's own first-person register, no training anywhere. That generated text out-retrieves
+the query is HyDE \citep{gao2023hyde}, and that the gain is a question/declarative
+\emph{style} gap is the stated thesis of HyPE \citep{vake2026hype}; we re-claim neither.
+What is ours is the placement: on a per-user append-only log, index-time question
+generation is unavailable, so the register match must be manufactured at query time --- and
+the best probe of all is produced by the adapter that already holds the memory, parametric
+memory serving as a \emph{query generator} rather than an answer source --- and the adapter's hop answer
+scores $0.360$ ($+0.048$ over its own instrument control; directionally positive,
+underpowered at $n{=}125$, sign test $p{=}0.22$). The last step came from realism
+itself: writing the task's $41$-turn background stream \emph{into the same adapter} before
+the fact --- the deployment condition, not an ablation --- improves every readout. The
+free-form statement probe, dead in isolation ($0.136$ retrieval, $0.71$ refusal rate),
+reaches $0.576$ with refusals at $0.12$. Mixing diverse data to unlock extraction is
+established offline \citep{allenzhu2024,chen2024remix,sun2025mixed}, and benign
+fine-tuning eroding refusals is a known safety result, read here in the opposite sign
+\citep{qi2023finetune}; what is ours is that the \emph{incidental} data a deployment
+already produces supplies the benefit online, uncurated, for free. And the simplest
+pipeline in the program --- ask
+the adapter to state its best guess about the user, embed that one sentence, retrieve,
+serve cold --- reaches $\mathbf{0.448}$ application: $0.53$ of the benchmark's published
+in-context ceiling ($0.448/0.84$; $0.56$ of our own measured $0.80$), from the $0.171$
+relative wall where the published systems stand --- with two caveats banked when the arm
+was designed: part of this gain is the index learning the \emph{register} of the very
+store it retrieves from, since the written chatter is also in the log; and no frozen
+control exists under the real-stream write protocol (the nearest frozen comparator is the
+isolated $0.312$), so we attribute this last step to neither instrument nor memory. Subsequent writes
+break the form lock; the hop machinery, built to work around that lock, adds nothing once
+it is broken ($0.440$). A post-hoc comparison across three write schedules points to
+\emph{post-fact interleaving} as the enabling condition (dose unmeasured) --- the
+fresh-write over-commitment it relaxes is Editing Overfit \citep{zhang2025editingoverfit},
+and unlocking already-memorized content with later meaningful training is reported at
+training time \citep{wu2026rote}; the retro-active release of an \emph{earlier} locked
+fact by \emph{subsequent unrelated} writes is the part we have not found stated: probed
+immediately after the fact's writes the statement readout is locked (instance rate
+$0.06$--$0.08$; retrieval $0.136$ in isolation) regardless of what preceded them, and
+writes that \emph{follow} the fact anneal it open (retrieval $0.576$ at $n{=}125$;
+$0.625$ in an $n{=}8$ environment-regression rerun) --- an ordering deployment provides
+for free, since users keep talking after the fact and before the question.
+
+\paragraph{The certification--retrieval dose wall, and what the key is made of.} The
+recognition thesis owed one more measurement: can the \emph{discriminative} channel
+retrieve --- rank the log by the adapter-vs-base likelihood shift $\dlp$ --- at the
+two-step dose where the certificate turns positive? The instrument should be named for
+what it is: a reference-calibrated likelihood ratio with the pre-write base as the
+reference --- the standard membership-inference signal \citep{carlini2022lira}, which is
+known to work on fine-tuning data specifically \citep{duan2024mia} --- repurposed as a
+read head; and the recognition-before-recall ordering it probes was reported for few-shot
+fine-tuned memories by \citet{orhan2023recognition} (recognition at ${\sim}1$ exposure,
+recall at ${\sim}3$, recognition the more interference-robust), with the
+likelihood-improves-while-recall-stays-zero gap recently re-documented for one-step
+test-time LoRA \citep{song2026beyondppl}. What follows is that ordering put on a
+controlled dose axis --- and $\dlp$ is not treated as recall anywhere in this paper: the
+gap between the index and what can be emitted is the object of study. A first attempt returned a perfect
+score that we voided ourselves: with only the fact ever written, the scan string is
+byte-identical to the training string and the $240$ background lines are untouched, so the
+probe measures training-set membership, and a perfect score is the null. Under the
+real-stream condition the answer inverts: at the recognition dose the buried fact ranks
+near the \emph{bottom} of the store ($236/241$ median; $0.000$ gold-in-6), because the
+register-generalization that helps the generative route hurts here --- the $41$ chatter
+writes lift $\dlp$ on every same-register line, written or not, and the two-step needle
+drowns in its own stream's spillover. Retrieval through the scan exists only at the recall
+dose ($0.640$, median rank $2$), the same dose the generative route needs: \emph{there is
+no cheap discriminative shortcut; certification and retrieval are separated by a dose
+wall}, and recognition's robust role is presence certification --- given the candidate
+string --- not store-side search. What the scan discriminates is also not meaning but
+form: a held-out paraphrase of the fact scores $0.000$/$0.064$ at either dose under
+verbatim writes. But the key is the \emph{write's} artifact, not the mechanism's: writing
+a fresh paraphrase each round inverts it --- the held-out paraphrase rises to $0.600$
+while the original string falls to $0.184$ --- the index keys on whatever surface family
+the writes exercised, bidirectionally. That augmentation enables extraction is the
+Physics-of-LMs result \citep{allenzhu2024}; the inversion --- the original surface's own
+standing \emph{falling} as the exercised family's rises, read off a held-out-surface
+likelihood index rather than QA accuracy --- is, to our knowledge, not in that literature,
+and it upgrades ``write format gates extraction'' to ``write format \emph{selects the
+key}''. Burial, finally, separates content from dose. Forty
+subsequent one-step chatter writes kill nothing above an eight-step natural-language fact
+(recall $0.92$--$0.95$ at $n{=}125$ across both write regimes; certificates $1.00$ with
+\emph{rising} margins; scan $0.90/0.66$), and an $n{=}8$ same-register smoke replicates
+the direction; this appears to contradict the Act-5 stream until
+one controls content: the Act-5 facts were unguessable pseudowords by design, and
+rerunning the burial with pseudoword facts under the identical harness kills recall in most
+of the stream ($31\%$ alive by the stem criterion; $15\%$ by strict value production)
+while every certificate survives (all $125$ burial tasks, margins rising from $3.8$ to
+$5.2$ nats through the burial) and the scan still returns the fact in the top six
+($1.000$; the competitor set is the $41$ written background lines plus $199$ unwritten
+ones --- the burial facts are not store candidates). The surviving generations show the mechanism in the failures themselves:
+syllable-level value corruption, competitors' syllables invading the emitted value
+(``roptavrop'' for \emph{roptavvor}), fluent in structure and wrong in content --- while
+discrimination is untouched. The recognition-without-recall residue of Act~2
+reappears exactly where the paper first found it --- on content with no pretraining
+prior --- replicating \citet{orhan2023recognition}'s interference asymmetry with a
+calibrated instrument (and adding the counterintuitive detail that the surviving margins
+\emph{rise} under burial), and with a mechanism visible in the failures that
+accuracy-only metrics are structurally unable to see: interference corrupts the
+\emph{emission sequence} into syllable-level chimeras of competing values; it does not
+erase the \emph{discrimination trace}. Content is
+sufficient to produce the gap under this one fixed harness --- the Acts 1--5 streams also
+differ in write form and criterion, which we did not separate (the CounterFact contrast,
+Appendix~\ref{app:cf}, points the same way) --- so the pseudoword streams are the
+adversarial floor, and natural personal facts, riding priors, sit several-fold higher on
+the same axis. Retention under sequential writes is already known to depend on
+presentation breadth \citep{oneill2026continual} and dataset provenance
+\citep{chen2024remix}; the axis isolated here is \emph{lexical/entity familiarity} under a
+matched template and matched interference --- distinct from propositional prior-conflict,
+where the sign can invert \citep{oneill2026continual} --- and it is large enough to
+account for the apparent contradiction between the pseudoword-stream and natural-fact
+literatures.
+
+\paragraph{The in-weight audit: zero at every serve-time channel.} The adapter that passed
+$125/125$ write certificates contributes nothing to this benchmark's score \emph{at serve
+time}, channel by channel (its one cashable contribution, quantified above, is on the
+query side). As a \emph{retriever}, familiarity ranks the log at exactly chance ($0.032 = 4/125$) ---
+and a post-release audit sharpened the reading: the ranking is \emph{degenerate}, collapsing
+onto a length-driven per-line prior that the neutral-prefix subtraction fails to remove (one
+line occupies $89/125$ of the top-4 slots). Either way, familiarity is not relevance. As a \emph{drafter}, adapter
+drafts surface zero bridge entities (gold-content-word overlap with the target fact is
+identical to base drafts under every filter we tried), and a teacher-forced token-tier probe finds no sub-emission elevation either
+(median bridge-token boost $4.57$ vs.\ matched-null $4.52$, null 95th percentile $7.78$;
+$n{=}103$ after excluding tasks whose bridge words already appear in the base draft). As a
+\emph{risk enumerator}, frozen-base risk terms retrieve as well as adapter terms ($0.160$ vs.\
+$0.152$). As a \emph{reader}, the adapter is \emph{negative}: on identical retrieved lines the
+frozen base scores $0.216$ vs.\ the adapter's $0.136$ (paired discordants $12{:}2$,
+McNemar $p \approx 0.013$), and the mechanism is the Act-3 accent --- adapter answers are
+$44\%$ shorter (median $725$ vs.\ $1286$ characters), and warnings are what gets cut. A
+distribution audit rules out the two obvious artifacts: no repeated answer string scores on
+more than one task in either arm, and score is uncorrelated with length ($r{=}-0.01$; the
+frozen reader's \emph{longest} quartile scores worst) --- the mediator is gold-mention, the
+frozen reader writing the retrieved fact into its answer $24{:}5$ over the adapter reader. Two
+escalations were attempted --- and a post-release instrument audit \emph{voided both}, which we
+report as the self-refutation it is. A fresh $24$-fact subset was written ``to the recall
+criterion'' (direct-QA forms, per-fact refresh before probing), but the criterion check turned
+out not to measure recall: the assistant persona answers the direct question with a privacy
+refusal (``I don't have access to your personal information\ldots'') in $20/24$ cases, and the
+substring test then matched query-echoed and refusal-vocabulary words, so the ``recall-alive''
+population was mostly false positives (one clean case in $24$). A thinking-mode arm
+(1{,}024-token chains) compounded a denominator mismatch --- and under matched populations its
+direction actually reverses (chains mention bridge words $9/24$ adapter-on vs.\ $6/24$ off,
+recall-tier arm) --- while the stored transcripts are too truncated to re-score. We then rebuilt
+the instrument (a persona prompt that legitimizes memory answers with an honest ``I don't
+remember'' exit, write-format aligned to the probe format, fabrication controls, stem matching)
+and reran the escalation. Under the valid instrument the recall criterion is reachable
+($16$--$17$ of $24$ alive after excluding stem-matching false positives, zero refusals). An
+apparent gray-zone signal at the indirect keyword position ($5/18$ adapter-on vs.\ $1/18$
+off) dissolved under a distribution audit: the credits ride on sub-word fragments --- the
+token `I', a first-person write-accent marker, sits in the adapter's top-10 for $21/24$
+tasks --- and a whole-token-plus-promiscuity gate reduces the contrast to $1$--$2$ vs.\ $0$;
+a matching $+3$ direction in thinking chains dissolves the same way. So the defensible
+statement is uniform across tiers: no credible surfacing of the indirect association at any
+tier we can write to, with probes that bound only large effects. (Both this null and the
+wide-readout fan's below are properties of the accumulated protocol and its off-form queries; the canonical
+program above shows the same channel moving retrieval under per-task isolation with a
+user-voiced query --- and those are different measurements: indirect-association
+\emph{bridging} here, direct memory-check \emph{recall} there.) All six recall
+``failures'' turn out to be grading artifacts of our accumulated protocol: the benchmark's
+direct queries repeat across tasks ($14$ tasks share $4$ question forms --- e.g.\ two health
+conditions and a pregnancy all answer ``What health conditions do I have?''), which is
+unambiguous under the canonical per-task isolation but ill-posed under accumulation, where a
+deterministic single answer can satisfy only one task's gold. On the well-posed items the
+recall criterion holds for all but the stem-artifact cases ($\ge 16$ of $18$); the never-written controls answer ``I don't remember''
+cleanly ($0/8$ fabrication). The honest residue is an ambiguity-handling contrast: asked an
+ambiguous question, the in-weight channel emits one fact with no signal that others exist,
+while the log returns \emph{all} matching lines and lets the reader see the ambiguity. A final wide-readout arm closes the attribution: harvesting the
+top-100 tokens of the keyword distribution and embedding each (rather than trusting the
+greedy keyword) doubles the \emph{frozen} retriever ($0.080 \to 0.160$ gold-in-context; union
+with answer-side embedding $0.432$) while the adapter's contribution to the same fan is
+$-0.032$ --- instance words do live in the distribution's deep tail, but they come from world
+knowledge, equally with the adapter off. The teacher-forced token-tier probe stands as a null
+but an underpowered one (first-token-fragment matching deflates sensitivity), so it bounds
+only large effects.
+
+\paragraph{What the stress test pins.} At deployment dose, on this substrate, facts become
+behavior only by transiting the context window: in-weight-only serving sits at the honesty
+floor ($\approx 0.01$--$0.03$) against our measured in-context ceiling of $0.80$, and every
+end-to-end gain in the canonical program --- from the published $0.171$ relative wall to
+$0.53$ of the benchmark's published ceiling ($0.56$ of our own) --- was won on the
+\emph{query side} of that transit, never by emitting facts from
+weights at serve time. The refined division of labor is sharper than the one we started
+with. The write's cashable value is as a \emph{query sharpener}: an adapter that holds the
+fact answers a user-voiced memory-check question with the fact's own words, and that
+sentence is a better retrieval key than anything the frozen base can synthesize --- worth
+$+0.048$ end-to-end over the identical frozen machinery (consistent but underpowered), and
+worth nothing once an agentic loop may simply re-query. The rest of the climb was
+instrument: genre match (a first-person question out-retrieves every trained front end we
+built), realism (writes that follow the fact anneal the readout open; deployment ordering
+provides this for free), and precision (short contexts, because application decays
+monotonically in context size). The operating rule survives every escalation intact ---
+\emph{serve cold, write hot} --- generate for the user with the frozen base, keep the
+adapter for certification, query sharpening, and adjudication (store-side familiarity
+search is retired below the recall dose --- the dose wall); and the write protocol is a
+design surface, not a fixed cost: what you write (paraphrase or verbatim) chooses the
+index's key, and when you write (facts should not be the last thing written before they
+are needed) chooses whether the readout is open at all.
+Scope: one benchmark, one $9$B substrate, an off-the-shelf small embedder; the accumulated
+arms' non-original judges are reported as a band, and the canonical-program arms are
+single-judge (judge~2 only); whether a much larger model's reasoning could pull weak
+in-weight traces into its chain (an ``aha'' channel) is unmeasured anywhere, including
+here.
+
+%=====================================================================
+
+\section{Discussion}\label{sec:discussion}
+
+\textbf{The design, stated once.} A lifelong in-weight memory system should be \emph{log-backed}
+(recitation poisons), \emph{self-testing} (the latent class is invisible to recency policies and
+cheap to harvest --- from the log, with self-test cadence and self-test/readout form alignment
+as first-class budget items), \emph{day-only by default} (single-step writes plus miss-gated
+replay make the day loop itself a continuous error-gated micro-consolidation; a separate night
+phase is optional rather than structural, \S\ref{sec:marathon}), \emph{single-adapter at
+serving time} (never two adapters concurrently --- the two-adapter hot mount is what taxes
+fluency and old-fact recall at read time, \S\ref{sec:firewall}), and --- Act 4's addition ---
+\emph{scan-at-the-boundary}: the recognition channel is consulted on every question
+\emph{whose targets have reached the recall dose}, as
+a ranked retrieval assist over external content --- the stress test's dose wall is the
+gate: below that dose the scan carries no retrieval signal under realistic streams
+(\S\ref{sec:inmind}) --- never as a fire/no-fire gate (the
+write-form slot-KL gate of \S\ref{sec:gate} remains the one surviving in-form exception; no
+question-form gate survives), and never on
+the adapter's own generations; calibrated abstention downstream handles never-written content.
+Every clause is a measured comparison, not a preference. The adapter that
+results is not a transcript; it is an index over a log --- in the strongest configurations it
+recognizes 100\% of the day while recalling 85--96\%, and the recognition surplus is exactly
+what re-grounding against the log exploits.
+
+\textbf{Nights, when run.} Demoting the night phase to optional does not leave it lawless; the
+two laws are measured. (i) Nights must be \emph{miss-gated}: in a pre-registered smoke test,
+verbatim massed re-writing of already-held facts was destructive (recall\textsubscript{w}
+$0.50\to0.083$, 2-AFC $0.792\to0.583$) --- the same dose inversion the ladder found, and the
+mechanism behind misslog's win. (ii) Whatever \emph{is} replayed should be paraphrase-diverse:
+diversity buffered the interference and moved question-form readouts up while write-form went
+down --- an implicit$\to$explicit trade (small $n$), and the same trade the stress test's
+key-inversion result reproduces at scale, where paraphrase writes lift held-out-paraphrase
+retrieval to $0.600$ as the verbatim string falls to $0.184$ (\S\ref{sec:inmind}). A methodological law belongs beside these:
+familiarity must be measured as written-minus-unwritten \emph{separation}, never as a YES-rate
+--- naive replay raises YES on unwritten items too ($0.42\to0.75\to0.92$).
+
+\textbf{What the steady state means.} The throttled regime --- protect the stock, squeeze the
+intake --- is what bounded consolidation \emph{should} do; it is the stability--plasticity
+trade-off surfacing at the systems level. It implies a design obligation: intake throttling must
+be made visible (the system's newest knowledge is its weakest), e.g.\ by routing
+recent-information queries to the day adapter or the log. The loss-of-plasticity line
+\citep{kong2026plasticity} addresses the same trade-off inside one network --- grow fresh
+random units, prune dead ones at task boundaries --- and our core-plus-day adapter design
+is its plug-in-level discrete analogue (mounting a fresh day adapter is growth, retiring
+one is elastic pruning, the pinned core is protected capacity), with one asymmetry worth
+naming: a retired adapter loses
+nothing, because content lives in the log; pruned units are gone. The two measurement axes
+are complementary --- that line asks whether the network can \emph{still learn}; this paper
+asks whether what it learned can \emph{still be read out} --- and our central failure mode
+(writes still succeeding, certificate positive, off-form readout locked) would not register
+in that framework's readouts.
+
+\textbf{The tension with self-synthesized rehearsal.} \citet{huang2024ssr} show self-synthesized
+rehearsal \emph{mitigates} forgetting for skills; our recite and hybrid arms show it
+\emph{poisons} for atomic facts. Rehearsal of self-generated data is safe exactly to the extent
+that the generator is still a good model of the target distribution: for broad skills a fluent
+sample is usually correct; for a specific binding it is correct only if the binding survived.
+This predicts self-synthesized rehearsal degrades with target granularity --- testable with the
+released loop.
+
+\textbf{For theory.} A first-order scale-invariance argument says per-write ``gentleness''
+cannot create accumulation (shrinking the step shrinks a fact's margin and its interference
+proportionally); only write \emph{geometry} and \emph{re-instatement schedules} can. Our
+mechanism ladder walks exactly those two levers; meta-learned fast-weight memories
+\citep{ahn2025} can be read as the activation-state solution to the same problem.
+
+\textbf{A note on provenance.} An earlier position paper by the author \citep{lin2026mathlife}
+specified five criteria for a mechanism that
+would maintain a network's structure under continued learning --- locality, fast protective
+action under a
+slow regulatory strategy, topology preservation, threat-targeted selectivity, and closed-loop
+homeostatic
+regulation --- and ruled out elastic weight consolidation on all five as a static, global,
+topology-oblivious
+wrapper rather than a self-maintenance mechanism. That paper's own instantiation of the
+criteria did not
+survive its own experiments: $\beta_1$ was falsified both as a capability gauge and as a
+mediator of
+forgetting, which left the criteria standing but with no measured signal to drive them. The
+loop measured here
+is a \emph{behavioral} successor to that falsified instantiation: probe failure stands in for
+the topological
+damage signal the earlier framework could not compute, error-gated replay is the targeted
+repair, and the
+maintained regime sustains 384 online writes at cumulative recall 0.82--0.85 (three seeds) with a
+flat-to-inverted
+age curve. We claim a partial, behavioral analogue and not an instantiation --- our writes are
+backpropagated
+rather than local, the invariant maintained is expression rather than manifold topology, and
+the horizon is
+hours of streaming rather than the years those criteria were written for.
+
+\textbf{For the unlearning debate.} Erasure and residual traces are both real and separable by a
+cheap 2-AFC meter; arguments about whether forgetting ``really'' deletes should condition on the
+write-time protection regime. And 2-AFC discriminability is \emph{not} evidence of
+recoverability: claims of ``hidden but recoverable'' knowledge should be held to a savings or
+relearning test, not a recognition test alone.
+
+\textbf{What would falsify the thesis.} A consolidation policy that beats misslog at matched
+budget without a log; a horizon at which the throttled state collapses rather than plateaus; a
+substrate where recitation is high-fidelity enough to avoid poisoning; an error-gated gain that
+vanishes under measurement-independent self-tests stronger than our interrogative control; a
+candidate-free readout of familiarity that closes the gap to presented-mode AUC (which would
+promote the index back toward a store); or a familiarity signal that false-fires on plausible
+never-experienced content at scale. All are runnable with the released instrument.
+
+\paragraph{Two open problems our measurements pin down.}\label{sec:openproblem}
+\emph{(i) The dynamical recall law.} The rank-64 adapter has roughly 67M trainable parameters;
+at the $\sim$2 bits per parameter knowledge capacity reported for batch training
+\citep{allenzhu2024capacity}, its \emph{static} capacity is orders of magnitude beyond 48 facts
+--- yet naked sequential SGD sustains only a $\sim$1.5-batch FIFO. The binding constraint is
+dynamical, not capacitive. The well-posed question is the continuous recall law $R(m;\, d, r,
+\varepsilon, \eta)$ --- the fraction of $m$ near-orthogonal atoms still expressible after being
+written by sequential SGD, at learning rate $\eta$ and target precision $\varepsilon$, into a
+rank-$r$ adapter subspace of a $d$-dimensional representation --- together with the steady-state
+conditions of an error-gated re-instatement loop. The static side is classical
+(Johnson--Lindenstrauss-type packing says the codes fit); whether the dynamical law saturates
+that bound, falls polynomially short, or is governed by a different quantity is open --- we do
+not present saturation as the only alternative. Any candidate theory must also fit our savings
+null. \emph{(ii) Recognition without metacognition.} Presented-mode recognition at AUC
+0.93--0.99 coexists, in the same weights, with a fire/no-fire readout that four independent
+instruments fail to extract (\S\ref{sec:readoutgap}): candidate-scored $\dlp$ (self-argmax
+bias); the slot statistic out of form ($J = 0.27$ on the calibration seed --- though the same
+threshold family reaches $J = 0.35$ and $0.50$ on the held-out seeds, so the bound is a
+calibration-seed statement, not a ceiling); the leave-one-out presented-mode statistic as a
+gate (AUC 0.63/0.38); and the model's own verbalized expectation (separation exactly zero,
+with the prompt-attribution matrix showing the self-report to be a pure framing echo). What
+computation would let a system \emph{query its own familiarity} without being shown the answer
+--- and is the gap fundamental to SGD-written low-rank memory or an artifact of our probes? A
+native per-input familiarity scalar --- for example, the goodness of Forward-Forward-style
+training \citep{hinton2022ff} --- would test whether honest nescience is a backprop artifact
+rather than something fundamental. A related signal question sits behind both problems: the
+signal that gates repair here --- a probe miss --- is coarse and \emph{lagging}, firing only at
+scheduled points and only once expression is already lost. \citet{lin2026mathlife} posed the
+same detector in topological form and falsified its own candidate; whether a cheaper or earlier
+damage signal exists is that open problem, restated in behavioral coordinates. We
+release the bench --- per-fact raw timelines at both timescales plus the familiarity probes ---
+as a direct testbed any candidate answer must fit.
+
+\section{Limitations}\label{sec:limits}
+
+\textbf{Scale and power.} The main audits run on a 2B primary and a 1.7B transfer substrate,
+one hyperparameter setting (tuned on the first); the scale study adds single-seed rungs at
+0.5/1.5/3/7B on the older generation and 2/4/9B on the newer, and the 9B carries the marathon,
+the adjudication probe, both agent arms, and the InMind audit. Per-substrate magnitudes do not transfer and are
+floors. 1--5 seeds per condition on
+nondeterministic ROCm hardware, no significance testing; several orderings (\qwen{} plain-replay
+miss vs.\ uniform; the form-independent gate's margin over uniform; GRACE paraphrase) are
+directions with overlapping seeds and are labeled as such. The 30-day horizon arms are $n{=}2$;
+the D6 policy comparison is $n{=}3$ (2 on the second substrate). The marathon, adjudication,
+and agent results are single seed (the marathon itself is three seeds: 0.849/0.815/0.820, recognition 0.995--1.000, firewall +0.00 in all three, age inversion in all three) --- every such number is labeled inline, and the marathon is
+kept localized (\S\ref{sec:marathon}) so replication seeds can update it in place.
+
+\textbf{Streams and probes.} The main stream is synthetic and collision-free; CounterFact adds
+real entities but not \emph{revision} or conflict, untested at both timescales; the InMind audit
+adds externally authored personal facts and an external rubric, at $n{=}125$, single seed,
+non-original judges reported as a band. Within the canonical program specifically: the
+$+0.048$ query-sharpening margin is underpowered (sign test $p{=}0.22$; judge noise anchored
+at one flip per $90$ identical answers) and is reported as a consistent direction, not a
+finding; the real-stream gains partly reflect the index learning the \emph{register} of the
+very store it retrieves from (the written chatter is also in the log --- by design, but a
+transfer caveat); the reader model is unstable to distractor composition (one to three
+verdict flips between arms retrieving the same gold), which caps how much any retrieval
+margin can cash; and one mid-program library upgrade on the rig was bracketed by a
+regression rerun (forward-pass probes replicate exactly; generation-path probes replicate
+on the checked protocol) rather than by full re-execution. The content-dependence result
+bounds the program's headline in both directions: the $0.53$ is measured on natural personal
+facts, and the same harness on pseudoword content loses most of its recall under burial ---
+the number does not transfer across content classes, and Acts 1--5's pseudoword walls do
+not transfer to natural-fact deployments either. 24 facts per day
+is a toy day; the generator (784 unique attributes) was exhausted before the system was, so the
+capacity knee is unlocated. Recall probes are form-matched to the writes; the paraphrase probe
+quantifies the resulting inflation and the form-independent self-test control quantifies the
+coupled share of the error-gating gain ($\sim$5/48), but paraphrase-based training targets were
+not explored. The savings probe is $k\le2$ on one substrate; the hostile reading of the \smol{}
+EWC arm ($\lambda$ mis-scaling freezing the adapter) is not excluded. The 10-item firewall is
+near-trivial on \smol{} (base 0.40); the 100-item probe covers core-only serving on the 2B
+loop, the hot two-adapter \textsc{core+day} state has only NLL and 10-item readings, and the
+hot \emph{single-adapter} state is measured at 100-item resolution on the 9B marathon substrate
+only ($0.79\to0.80$, single seed). Recognition margins use same-stream distractors; margins near zero are
+not calibrated confidence. Free-form dialogue quality was not scored.
+
+\textbf{Act 4--5 scope.} The familiarity results are inference-only probes on saved day-scale
+adapters: synthetic facts, one strong and one weak adapter family, 3 seeds each.
+The gate demo is a minimal existence-and-failure demonstration, not a system: fabrication is
+measured on-distribution (never-written attributes from the same generator), not on public
+hallucination benchmarks. Fabrication figures are \emph{direct-form}: under opaque referential
+questions with a mismatched retrieved context the unwritten-query rate rises to 0.71 in the
+forced-context probe and 0.235 in the agent loop --- the content-vs-binding hole
+(\S\ref{sec:readoutgap}) is the scope boundary of the authentication claims. Multi-turn agent
+behavior is now probed, but only observationally (a single prompt per arm,
+\S\ref{sec:e2edemo}); systematic multi-turn evaluation, behavioral compliance with familiarity
+annotations,
+error-familiarity (does familiarity fire on \emph{corrected} facts?), and adaptive-RAG baselines
+\citep{flare2023,seakr2024,skr2023} remain future work. Slot-KL's written-side coverage (52--56\%)
+leaves half the written queries unexploited, and it is in-form (cloze) only; the candidate-free
+readout gap is an open problem,
+not a solved engineering detail.
+
+\textbf{Design space.} A minimal GRACE-style arm was run on the day-scale stream; WISE and
+MEMOIR were not, and no editor was run inside the loop. One nightly budget and one day/core rank
+pair; the throttled steady state's location presumably moves with both. The misslog self-test
+costs generation time linear in history; whether sampled self-tests preserve the steady state is
+untested. Pre-registration dates (2026-07-08, 2026-07-11, 2026-07-13, 2026-07-15) are
+self-reported in-source rather than externally timestamped; externally DOI-stamped
+pre-registration is adopted for future runs. The final sprint added ledger pre-registrations on
+2026-07-27 through 2026-07-30: F6 v3/v3.1, the agentic end-to-end demo (\#18), active-vs-passive
+(\#19), the night smoke test (\#20), and the marathon (\#21 --- the last with its probe-schedule
+confound declared before the result). The agent results of \#18/\#19 are observational --- a
+single prompt per arm --- and are labeled as such wherever quoted.
+
+\section{Conclusion}
+
+Ask a LoRA adapter to be a fact store, and it fails in a structured, reproducible way:
+persistence is not accumulation --- facts flicker within a handful of writes under every
+mechanism, and capacity is set by re-instatement; expression binds to the write form and
+collapses under paraphrase; and what protected forgetting leaves behind supports 2-AFC
+discrimination but, by our own savings probe, neither expression nor faster relearning. Ask what
+survives, and the answer is the same across SGD, a key--value editor, depth bands, and
+substrates: recognition --- the last readout to die. Run the system for a month of simulated
+days and the consequence is architectural: expressed truth must live in a log (skip it and the
+system poisons itself with its own fluent errors), consolidation must target what the system
+itself fails, and two adapters must never serve concurrently. And the recognition that survives turns
+out to be the key to using that log: read candidate-free over presented content, it separates
+experienced from never-experienced at AUC 0.93--0.99 across a form change that kills recall,
+sits at chance for the base by construction, cuts direct-form fabrication when wired into even a minimal
+answer-independent gate --- and resists being read out unprompted: four independent instruments
+find the same one-way channel, recognized when shown yet silent when asked, and that asymmetry
+is the open problem we
+close on. Run the design itself, finally, and it holds: single-step writes plus error-gated
+replay maintain a 384-fact stream at cumulative recall 0.815--0.849 with a flat-to-inverted age curve
+(three seeds), an adapter-carrying reader adjudicates conflicting records where a frozen one
+sits at chance, and an agent drives the whole loop unassisted --- forgetting is a property of
+the write regime and the content, not the substrate. Take the design to an external
+benchmark built to break
+it --- InMind's implicit-association wall, in what is to our knowledge its first
+parametric-memory arm --- and the audit returns the same verdict from the outside, then
+sharpens it: the wall factors into retrieval $\times$ dilution and then \emph{moves}, from
+the published $0.171$ of the benchmark's published ceiling to $0.53$, almost all of it on
+the query side of the
+context transit --- genre-matched first-person questions, short precise contexts, writes
+that follow the fact --- with the write's own cashed margin small and consistent, and the
+in-weight channel serving best by not generating --- serve cold, write hot.
+The weights are an index; the log is the store; the design follows. All of it is
+invisible to aggregate accuracy; the per-fact, per-night instrument --- together with the
+self-run refutations of our own stronger readings --- is the contribution we most hope others
+reuse. The model does remember --- it just needs its notebook.
+
+\section*{AI disclosure}
+\noindent\emph{Dated 2026-08-01.} This work was carried out by the author with substantial AI assistance. Claude Fable~5 and
+Claude Opus (Anthropic) were used, under the author's direction, to implement and launch the
+experiment drivers, monitor runs, perform related-work searches, audit result claims against the
+raw per-fact logs, and draft and revise this manuscript (including this restructured version).
+The research questions, experimental designs, pre-registered predictions (2026-07-08 and
+2026-07-11 for the loop arms; 2026-07-13 for the editing baseline; 2026-07-15 for the
+familiarity gate demo; 2026-07-27 through 2026-07-30 for the sprint arms --- F6 v3/v3.1, the
+agent demos, the night smoke test, and the marathon), and final claims were set and approved by
+the author; all reported
+numbers were re-derived from the released raw timelines by the analysis scripts rather than
+taken from any model output. Remaining errors are the author's.
+
+\bibliographystyle{plainnat}
+\bibliography{merged}
+
+\appendix
+
+\section{Reproduction}\label{app:repro}
+\begingroup\small\sloppy
+\begin{description}
+\item[Day scale.] Driver: \texttt{accum.py} (mechanism, \texttt{--layers},
+\texttt{--replay-policy}, \texttt{--probe-every}, \texttt{--selftest-form}, \texttt{--model};
+recognition margins logged at every probe); \texttt{analyze.py} re-derives all Act 1--3
+day-scale tables from the shipped raw per-fact timelines (\texttt{results/accum\_*.json}) with
+the pinned recovery and first-miss definitions; \texttt{reproduce.sh} is the full run matrix.
+The savings probe is \texttt{probe\_recovery.py} over \texttt{results/recovery\_rerun/}
+(\texttt{recovery\_ewc\_l300\_MSmolLM217BInst\_k1-2\_s*.json}); the form-independent self-test
+runs are \texttt{accum\_ewcreplay\_l300\_Pmiss\_STquestion\_n48\_pe2\_s\{1234,2025,777\}.json}
+(with per-probe \texttt{selftest\_hits}). The GRACE-style editing baseline
+(\S\ref{sec:grace}, Appendix~\ref{app:grace}) is \texttt{phase5\_grace.py}; its raw timelines
+are \texttt{accum\_grace\_st\{100,8\}\_lr1[\_Fcounterfact]\_n48\_pe2\_s\{1234,2025,777\}.json}
+(plus the $n{=}12$ pilots, including the superseded pre-bugfix runs, kept per protocol).
+Hyperparameters as in \S\ref{sec:dayinstrument}; seeds 1234/2025/777 (+7/42 for the $n{=}5$
+compositions).
+\item[Loop.] Driver: \texttt{loop.py} (night arm, days, budget, probe stride, dual-state
+capability probes, core checkpointing); raw per-night, per-fact timelines:
+\texttt{results/loop\_*.json} (D30 replications:
+\texttt{loop\_\{full,markov\}\_D30\_f24\_s2025.json}); \texttt{analyze.py} re-derives every
+table and \texttt{make\_figure.py} the figure. The 100-item capability probe is
+\texttt{fw100.py} with the frozen subset \texttt{gsm8k\_fw100\_ids.json}
+(\texttt{results/fw100\_n100\_s1234.json}, \texttt{fw100\_MSmolLM217BInst\_*}). Seeds and
+hyperparameters as in \S\ref{sec:loopinstrument}.
+\item[Familiarity and gate (Act 4).] Probes: \texttt{probe\_familiarity.py} (candidate-free
+$\dlp$ of presented content, written vs.\ collision-filtered never-written, per saved adapter;
+question and cloze forms; the S0 base-only row and contrastive variant are logged per signal)
+and \texttt{probe\_gate\_demo.py} (96 question-form queries; \texttt{--signal cand\_dlp} for the
+candidate-scored gates, \texttt{--signal slot\_kl} for the answer-independent gate;
+\texttt{--threshold} replays a frozen threshold on held-out seeds). Raw outputs:
+\texttt{results/familiarity/fam\_*.json} (e.g.\
+\texttt{fam\_accum\_ewcreplay\_l300\_Pmiss\_n48\_pe2\_s\{1234,2025,777\}.json},
+\texttt{fam\_accum\_ewc\_l300\_MSmolLM217BInst\_n48\_pe2\_s\{1234,2025,777\}.json}) and
+\texttt{results/familiarity/gate\_*.json}. Inference-only; adapters are the saved end-of-stream
+checkpoints of the day-scale runs above.
+\item[Act 5.] Driver: \texttt{act5/phase5\_accum.py} (single-step writes, miss-gated replay,
+ladder tiers, \texttt{--marathon}); the harness demo and agent are
+\texttt{harness\_e2e.py}/\texttt{e2e\_agent.py}; the adjudication, binding, gate-polarity, and
+read-path probes are \texttt{ragfail\_*.py}, \texttt{gate2x2.py}, \texttt{posthoc\_bindgate.py},
+\texttt{probe\_greprescue.py}; \texttt{halflife\_analyze.py}/\texttt{plot\_ladder.py} re-derive
+the ladder and Figure~\ref{fig:ladder} from \texttt{act5/results/} (per-fact timelines for
+every Act-5 number; adapter checkpoints excluded for size).
+\item[External stress test (\S\ref{sec:inmind}).] All drivers and outputs ship under
+\texttt{inmind/}: the write phase (\texttt{inmind\_write.py}; certificate curve
+\texttt{write\_full.json}, $125/125$), the seven arms (\texttt{inmind\_arms.py};
+\texttt{answers\_full.json}), the isolation and risk arms
+(\texttt{inmind\_iso.py}, \texttt{inmind\_risk\_iso.py}), the token-tier and recall/thinking
+probes (\texttt{inmind\_token\_probe.py}, \texttt{inmind\_recall\_probe.py}), and both judges'
+verdicts including per-item scores (\texttt{judged\_full.json},
+\texttt{judged\_full\_claude\_pertask.json}, \texttt{judged\_iso\_claude.json},
+\texttt{judged\_risk\_claude.json}, and the recovered partial judge-1 iso log). The canonical
+program's chains ship in the same tree: the canonical/keyword/fan arms
+(\texttt{inmind\_canonical\_arm.py}, \texttt{inmind\_canon\_kwfan.py},
+\texttt{inmind\_canon\_kw\_answers.py}), the agentic and hybrid loops with the seed control
+and budget sweep (\texttt{inmind\_agent\_search.py}, \texttt{inmind\_hybrid\_search.py};
+\texttt{budget\_sweep\_summary.json} and per-point \texttt{judged\_*bud*\_claude.json}), the
+per-task ladder and two-hop line (\texttt{inmind\_pertask\_ladder.py},
+\texttt{inmind\_ptrc\_selfrecall.py} with the $2{\times}2$ factorial and echo-gated fields;
+\texttt{ptrc\_b\_full.json}), the cashed front ends (\texttt{inmind\_ptrc\_answers.py},
+\texttt{inmind\_rs\_answers.py}; \texttt{judged\_\{q,ba\}\_emb\_claude.json},
+\texttt{judged\_rs\_\{stmt,aa\}\_claude.json}), the real-stream arm
+(\texttt{inmind\_realstream.py}; \texttt{rs\_full.json}), the familiarity-scan pair including
+the voided membership-confounded first version (\texttt{inmind\_famscan.py},
+\texttt{inmind\_famscan2.py}; \texttt{famscan\_full.json}, \texttt{famscan2\_full.json}), and
+the write-format/burial chains (\texttt{inmind\_f1ghost.py}, \texttt{inmind\_ghost2.py},
+\texttt{inmind\_ghost2p.py}; \texttt{f1ghost\_\{repeat,para\}\_full.json},
+\texttt{ghost2p\_*.json}). Every chain's pre-registration, amendment history, and verdict is
+in the released ledger. The benchmark
+dataset itself is not redistributed; clone the InMind repository into
+\texttt{inmind/inmind\_bench/}.
+\item[Ledger-recorded values.] Some quoted numbers are recorded in the working ledger
+rather than in released JSONs: the recognition meter's zero-point verification on the untrained
+bases (\S\ref{sec:dayinstrument}), the adapter parameter counts, the echo audit's semantic
+re-read of the two-hop hits ($19/23$; the released flags give a coarser $12/23$ split), the
+environment-regression rerun ($n{=}8$), and the same-register natural-fact burial smoke
+($n{=}8$). The marathon capability
+probe (GSM8K-100 $0.79\to0.80$ and neutral-text NLL $2.393\to2.927$, \S\ref{sec:firewall}),
+ledger-only in an earlier draft, is now shipped: \texttt{results/fwpt\_*.json} (3 files). The
+read-path
+(``greprescue'') result JSONs are shipped under \texttt{phase5/results/greprescue/} (9 files).
+\end{description}
+\endgroup
+
+\section{Depth bands: the expression gradient in full}\label{app:depth}
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lcccc}
+\toprule
+& early (0--7) & mid (8--15) & late (16--23) & all 24 \\
+\midrule
+naked recall  & 1.0 & 2.3 & 2.7 & 3.7 \\
+EWC recall    & 1.0 \hfill (0\%) & 3.0 \hfill (2\%) & 8.0 \hfill (29\%) & 10.7 \hfill (27\%) \\
+replay recall & 3.0 \hfill (34\%) & 11.0 \hfill (61\%) & \textbf{21.3} \hfill (74\%) & 19.0 \hfill (76\%) \\
+ewc+replay recall & --- & 27.7 & 26.0 & 36.8 \\
+\midrule
+replay \emph{recognized} & 34.3 & \textbf{42.7} & ---$^\ddagger$ & 43.3 \\
+EWC \emph{recognized} & 28.3 & 31.3 & ---$^\ddagger$ & 40.3 \\
+\bottomrule
+\end{tabular}
+\caption{Mean final recall /48 (3 seeds; recovery-\% in parentheses) with the adapter restricted
+to matched-capacity 8-layer bands (14.5M parameters) vs.\ the full stack ($\sim$43M; banding
+requires an explicit 7-module target list, whereas the full-stack arms elsewhere use all-linear,
+67.3M), and mean final recognition where measured. $^\ddagger$Late-band single-mechanism runs
+predate the recognition meter; the late-band \emph{composition} recognizes 48/48/47 while
+recalling 26.}
+\label{tab:layers}
+\end{table}
+
+Restricting the adapter to matched-capacity 8-layer bands (Table~\ref{tab:layers}) yields a
+monotone depth gradient in \emph{recall}: the early band recalls almost nothing under every
+mechanism; the late band alone matches full-stack replay recall (21.3 vs.\ 19.0, with the
+tightest seed triple in the study, 21/22/21) at a third of the parameters, and it is the only
+band in which EWC's residual-trace-and-recovery behavior exists at all (29\% vs.\ 0--2\%).
+Restricting to the middle band --- the region favored by locate-then-edit knowledge editing
+\citep{meng2022rome,meng2023memit} and by RL layer-contribution analyses \citep{onelayer2026}
+--- \emph{hurts} recall under every protected mechanism.
+
+Recognition changes the interpretation. The mid band's replay arm \emph{recognizes} 42.7 of 48
+--- essentially full-stack level (43.3) --- while \emph{recalling} 11.0 of 48, and the late-band
+composition recognizes 48/48/47 while recalling 26: restricted bands can \emph{store} (in the
+bounded, 2-AFC sense of \S\ref{sec:savings}) nearly everything and \emph{express} a fraction of
+it. The early band is a genuine (if partial) storage desert: its protected-arm recognition
+(28--36) sits closest to chance. The regime contrast with batch injection \citep{back2026lora}
+is therefore a decomposition, not a contradiction: \textbf{single-pass online writes can deposit
+discriminable bindings at many depths, but greedy recall of them is readout-proximal};
+multi-epoch batch training, which can afford to build early-layer features and re-extract them
+over many passes, faces no such expression bottleneck. Whether batch-trained early-layer
+memories show the same storage/expression split is an open question our instrument could answer
+in their regime.
+
+\section{Benna--Fusi cascade details}\label{app:bf}
+
+The BF row of Table~\ref{tab:main} applies the Benna--Fusi multi-timescale synaptic cascade
+\citep{benna2016} to the adapter parameters. Its numbers are from pre-recognition-meter runs
+(3-seed finals 4/3/5, mean 4.0, median first-miss 5, recovery 10\%; the released fine-probe pair
+gives 3/6, recovery 10\%). The rescue sweep is flat: across $dt\in\{0.1,0.5\}$ and cascade depth
+$\{8,32\}$ (2 seeds each), finals stay at 2--6/48 --- the cascade stretches the initial glide of
+a written cohort but provides no re-instatement, and without re-instatement there is no
+accumulation (\S\ref{sec:reinstatement}). BF's flatness against EWC's accumulation is itself a
+dissociation (protection alone is not what EWC contributes here), but BF hyperparameters were
+not exhaustively tuned for this regime and we do not claim the dissociation beyond the swept
+range.
+
+\section{Substrate transfer in full: \smol{}}\label{app:transfer}
+
+\subsection{Day scale}
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lcccc}
+\toprule
+mechanism (\smol{}) & final recall /48 (seeds) & mean & recovery & recognized /48 \\
+\midrule
+naked            & 5 / 2 / 4    & 3.7  & 6\%  & 29 / 29 / 30 \\
+EWC ($\lambda$300) & \textbf{0 / 0 / 0} & 0.0 & 0\% & \textbf{31 / 36 / 38} \\
+replay (uniform) & 26 / 24 / 28 & 26.0 & 77\% & 47 / 42 / 46 \\
+replay (miss)    & 38 / 28 / 31 & 32.3 & 88\% & 47 / 45 / 48 \\
+ewc+replay (uniform) & 21 / 23 / 24 & 22.7 & 78\% & 48 / 46 / 46 \\
+ewc+replay (miss) & \textbf{33 / 31 / 44} & \textbf{36.0} & 85\% & \textbf{48 $\times$ 3} \\
+\bottomrule
+\end{tabular}
+\caption{\smol{} with all hyperparameters carried over unchanged from \qwen{}. Firewall $0.40
+\to 0.40$ (adapter-off equals base) on all composition runs.}
+\label{tab:smol}
+\end{table}
+
+Running the headline arms on \smol{} with \emph{no retuning} (Table~\ref{tab:smol}) tests which
+findings are structural. Replicated: the naked floor; the re-instatement signature (first-miss
+medians 4--18 writes while recovery spans 0--88\%); large residual pools behind every protected
+mechanism (recognition 42--48 at recall 21--44); miss-gating's budget-free gain; the
+miss-composition as the best arm; and the firewall. Not transferred: \emph{magnitudes}. Most
+sharply, EWC-alone --- 5--18 of 48 on \qwen{} --- recalls \textbf{zero} on \smol{} at the same
+$\lambda$, while recognizing well above chance: the recognition/recall dissociation at its
+purest (and the case the savings probe of \S\ref{sec:savings} interrogates), and a warning that
+regularization strengths tuned on one substrate can silently zero the readout on another. The
+uniform composition also \emph{loses} to plain replay here (22.7 vs.\ 26.0), though the
+miss-composition recovers the lead (36.0). Claims in this paper should be read at the structure
+level; per-substrate magnitudes require per-substrate tuning we deliberately did not do.
+
+\subsection{The loop}
+
+Re-running all five night arms for six days on \smol{} --- every hyperparameter carried over
+unchanged --- was pre-registered (2026-07-11) to preserve the structural claims but not the
+magnitudes. All four held (2 seeds, firewall $0.40\to0.40$ in all ten runs): error-gated
+consolidation beats recency-only $2.0\times$ (35.0 vs.\ 17.5 of 144; the \qwen{} ratio is
+$\approx$2.1--2.2$\times$); pure recitation collapses structurally (0/144, recognition at chance);
+\textbf{hybrid recitation poisons even harder} (0.5/144 --- consistent with the mechanism, since
+a weaker substrate recites with lower fidelity and so compounds errors faster); and full replay
+is a substrate-robust ceiling (136/144, recognition 144/144). The markov recency-window
+signature ([0,0,0,0,3--4,12--15]) and the hot-mount read-time masking (final-day ratios
+$6\times$ and $40\times$ on the
+error-gated arm) also transfer. The night-policy ordering, the poisoning, and the recency window
+are properties of the loop architecture, not accidents of one model.
+
+\section{Self-test cadence: the full dose--response}\label{app:cadence}
+
+\begin{table}[h]\centering\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lccc}
+\toprule
+arm (\qwen{}, ewc+replay) & recall /48 (mean) & recovery & note \\
+\midrule
+miss, self-test per 2 writes & \textbf{44.2} & 94\% & headline ($n{=}5$: 46/44/46/44/41) \\
+miss, per 6 writes           & 35.3 & 75\% & $\approx$ uniform replay \\
+miss, per 12 writes          & 32.0 & 53\% & stale lists $\to$ uniformity \\
+uniform (no self-test)       & 36.8 & 81\% & $n{=}5$: 32/42/42/39/29 \\
+miss, form-independent self-test & 39.0 & --- & $n{=}3$: 40/44/33; \S\ref{sec:act3day} \\
+\bottomrule
+\end{tabular}
+\caption{Cadence sweep (3 seeds unless noted) and the form-independent control. The gain decays
+monotonically with self-test staleness; at one test per 6 writes it is statistically
+indistinguishable from uniform replay. The form-independent row's firewall is $+0.00$ and
+recognition 48/48 in all three runs; its margin over uniform ($+2.2$) is a direction only at
+$n{=}3$.}
+\label{tab:cadence}
+\end{table}
+
+The candidate design rule the sweep supports is cadence-qualified: pair a
+residual-trace-preserving protector with error-gated re-instatement driven by \emph{fresh}
+self-tests --- in this setting, roughly one self-test per two writes. The form-independent
+control and its mechanism (self-test insensitivity via the form-generalization gap;
+probe-vs-self-test agreement 6--14/48; question-form self-test passes only 1--6/48) are
+discussed in \S\ref{sec:act3day}.
+
+\section{CounterFact stream in full}\label{app:cf}
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lccccc}
+\toprule
+mechanism (CounterFact) & recall /48 (seeds) & mean & recovery & recognized & paraphrase /48 \\
+\midrule
+naked            & 20 / 10 / 11 & 13.7 & 34\% & 47 / 39 / 37 & 5 / 6 / 6 \\
+EWC ($\lambda$300) & 33 / 35 / 43 & 37.0 & 46\% & 48 / 46 / 48 & 5 / 4 / 8 \\
+replay (uniform) & 44 / 36 / 39 & 39.7 & 75\% & 48 / 48 / 47 & \textbf{20 / 10 / 15} \\
+ewc+replay (uniform) & 46 / 46 / 42 & 44.7 & 84\% & 48 $\times$ 3 & 10 / 10 / 16 \\
+ewc+replay (miss) & \textbf{47 / 47 / 43} & \textbf{45.7} & \textbf{87\%} & 48 $\times$ 3 & 9 / 10 / 12 \\
+\bottomrule
+\end{tabular}
+\caption{\qwen{} on 48 CounterFact edits (unique subjects and targets; the counterfactual target
+cannot be produced from prior knowledge, so recall still requires the write). Paraphrase =
+greedy recall from the dataset's first paraphrase prompt, final probe. Firewall $0.70 \to 0.70$
+on the composition runs; by construction elsewhere (\S\ref{sec:firewall}).}
+\label{tab:cf}
+\end{table}
+
+Absolute levels are far higher than on the synthetic stream (naked 13.7 vs.\ 3.7; composition
+near ceiling at 44.7--45.7): real-token targets sit on the model's output manifold and are
+simply easier to write, and the near-ceiling regime compresses the miss-gating gain to $+1.0$
+--- selection matters when there is headroom. Notably, paraphrase generalization does not track
+write-form recall (plain replay is best at 31\%; the EWC-anchored arms skew verbatim), a
+single-comparison observation we flag for follow-up rather than claim.
+
+\section{GRACE-style editing baseline: full details}\label{app:grace}
+
+We implement a GRACE-style discrete key--value adaptor (the mechanism follows
+\citet{hartvigsen2022grace}; the implementation is ours): one wrapped Linear module
+(\texttt{down\_proj} at layer 18 of 24, $\approx$0.75 depth), whose codebook keys are the input
+activation at the \emph{last cloze token} --- the position that predicts the first answer
+token\footnote{Our first implementation keyed on the answer-token position, which is absent
+during generation; the diagnostic signature --- recall pinned at zero while recognition rose ---
+is itself an instance of the readout hierarchy (\S\ref{sec:paraphrase}), and the corrected key
+position (last prompt token) restored ceiling recall on the pilot.} --- and whose values are
+learned output offsets applied whenever a query activation falls within a fixed deferral radius
+$\varepsilon$ (auto-set to half the median distance between clean keys). One codebook entry per
+fact; each value is optimized by Adam. Two simplifications relative to official GRACE are noted
+plainly: $\varepsilon$ is fixed, and there is no split/expand of colliding entries --- full
+GRACE additionally grows the codebook via deferral-radius adaptation and key splitting on
+conflicts, and edits a layer chosen by causal tracing; none of these is implemented here, which is
+why we write ``GRACE-style'' throughout and claim only the discrete key--value mechanism. The runs
+were pre-registered on 2026-07-13, before any data, with four predictions; all four held, and
+one finding was not predicted.
+
+\textbf{Results} ($n{=}48$, probes every 2 writes, 3 seeds per condition). At a canonical budget
+(100 steps per fact, lr 1.0): recall 42/45/43 (mean 43.3), recognition 46/45/47, firewall
+$0.70\to0.70$ --- \emph{parity} with the best SGD arm (ewc+replay miss, 44.2), not superiority.
+The losses trace to $\varepsilon$-ball \emph{key collisions}: the codebook ends with 42/46/43
+entries for 48 facts, and facts merged into a single entry lose --- a qualitatively different
+failure mode from weight interference. At a \emph{matched} budget (8 steps per fact): recall
+1/0/0 against recognition 47/45/47 (seed-paired: 1234 recalls 1 and recognizes 47; 2025, 0/45;
+777, 0/47) --- the extreme recognition-without-recall dissociation
+quoted in \S\ref{sec:grace}. On the CounterFact stream (canonical budget): write-form recall
+38/39/40, but paraphrase 7/12/7 ($\sim$18\%) vs.\ the SGD replay arm's 20/10/15 ($\sim$31\%,
+Table~\ref{tab:cf}) --- worse generalization, though the seed bands overlap, so direction only.
+The editor reaches SGD-parity only at $\sim$12$\times$ the write compute; at matched compute it
+expresses nothing while recognizing nearly everything. Editors and SGD-into-LoRA occupy
+different corners of a retention--generalization--cost space; neither dominates.
+
+\section{D30 horizon: replication and by-day trajectories}\label{app:d30}
+
+\paragraph{Replication.} An audit correctly flagged the 30-day full and markov numbers as
+single-seed. We re-ran both at seed 2025: \textbf{full 713/720 and markov 32/720 --- identical
+counts to seed 1234} --- with the firewall at $0.70\to0.70$ in both runs. With the existing
+two-seed misslog arm (326/345), all three D30 horizon arms have $n{=}2$, which is still thin,
+but the two extreme arms landing on identical integers is about as clean as a two-seed
+replication gets.
+
+\paragraph{By-day trajectories.} The full arm is flat at ceiling: every write-day retains
+22--24/24 at the final probe, with recognition 720/720 --- no downturn anywhere in the month, so
+the r32 core's streaming capacity exceeds the generator's 784 unique attributes. The error-gated
+arm settles into the throttled regime quoted in \S\ref{sec:horizon}: an old-day plateau at
+7--18/24 with intake of the newest $\sim$5 days squeezed to 0--9/24; at fixed budget the system
+does not race to a cliff, it throttles intake to protect its stock, and final recognition is
+still 639--646/720 ($\sim$89\%). The markov arm's window is exactly the last $\sim$2 days at
+every horizon. Locating the true knee requires harsher ratios (more facts per night-step) or a
+larger generator, both future work.
+
+\end{document}
