@@ -82,7 +82,8 @@ probe itself, a membership-confounded scan, a recall criterion satisfied by echo
 attribute word alone) were voided by our own audits before any number was kept.
 
 \textbf{Contributions.} (1) A measured climb of a published wall from $0.171$ to $0.53$ of
-the in-context ceiling ($0.448/0.84$ published; $0.56$ of our own measured $0.80$), with
+the in-context ceiling ($0.448/0.84$ published; $0.56$ of the $0.80$ in-context ceiling
+we measure on our own backbone and judge), with
 the attribution honestly split between instrument and memory at every step but the last,
 which is attributed to neither side (\S\ref{sec:climb}). (2) The certification--retrieval dose wall: recognition-style
 certification and retrieval-usable storage separate by ${\sim}3\times$ in write dose, on
@@ -103,7 +104,8 @@ and a chat-QA form against the task's direct question, prefix-masked), $3{\times
 rank-64 all-linear LoRA. Two per-fact doses recur throughout, named by the readout tier they
 reach: the \emph{certification dose} (${\sim}2$ steps, at which a calibrated likelihood
 certificate turns positive) and the \emph{recall dose} (${\sim}6$--$8$ steps, at which the
-persona-prompted direct question is answered from weights). Serving is always cold: the
+persona-prompted direct question --- the model told it may know the user personally ---
+is answered from weights). Serving is always cold: the
 frozen base generates every user-facing answer from retrieved log lines. Two recurring
 terms: a line's \emph{register} is its surface voice (the store's lines are first-person
 conversational); the write's \emph{pointer} is a keyword elicited from the adapter and
@@ -120,7 +122,11 @@ discriminative readout is $\dlp$: mean per-token log-probability shift of a cand
 adapter versus pre-write base --- a reference-calibrated membership statistic
 \citep{carlini2022lira,duan2024mia} repurposed as a read head, and never treated as recall:
 the gap between the index and what can be emitted is the object of study
-\citep{song2026beyondppl}.
+\citep{song2026beyondppl}. The certificate is not a curiosity of this rig: in the
+companion program (anonymized supplementary) the same adapter-versus-base signal
+separates written from never-written content at AUC $0.93$--$0.99$ with the pre-write
+base at chance by construction, and recognition survives recall death across mechanisms
+--- a matched-budget editing arm recalls $0$--$1/48$ while recognizing $45$--$47/48$.
 
 \section{The climb, priced}\label{sec:climb}
 
@@ -226,7 +232,8 @@ the write itself. Recognition-before-recall ordering is known for fine-tuned mem
 \citep{orhan2023recognition}; the program puts it on a controlled dose axis, on two readout
 mechanisms at once. At the certification dose the $\dlp$ certificate is positive
 ($125/125$ across the program) --- and nothing else works. The generative route is dead in
-every cell of a $2{\times}2$ probe factorial. The discriminative route fails more
+every cell of a $2{\times}2$ probe factorial (who generates the memory-check question
+$\times$ who answers it, frozen base or adapter). The discriminative route fails more
 instructively: under a realistic write stream, scanning the store by $\dlp$ at the
 certification dose ranks the just-written fact near the \emph{bottom} ($236/241$ median),
 because register spillover from the other writes lifts every same-register line ---
@@ -302,14 +309,24 @@ makes it visible.
 
 For test-time continual learning systems the program compresses to five rules. (1)
 \emph{Serve cold, write hot}: every end-to-end gain lived on the query side --- what the
-weights know helps only by changing what is retrieved into context; in-weight generation
-at serve time contributed zero everywhere the wider program isolated it.
+weights know helps only by changing what is retrieved into context. No cold-serving arm
+here loses to a hot one, and the companion program (anonymized supplementary) prices the
+hot path below zero: as a reader of identical retrieved lines the adapter \emph{loses} to
+the frozen base ($0.136$ vs $0.216$), and consolidating from the model's own outputs
+lands below doing nothing ($4.3$ vs $25.0$ of $144$) --- serving cold is load-bearing,
+not stylistic.
 (2) \emph{The index is a query sharpener}: its cashable value is answering the system's own
 memory-check question with words the frozen model cannot know. The keyword-level pointer
 is priced at zero once an agentic loop may re-query (whether the sharpener itself survives
 an agentic reader is untested), so it matters most where latency or search budgets bind. (3) \emph{Certification is not retrieval}: a membership-style
 certificate at two steps proves presence, not findability; budget the recall dose if the
-weights must be searched. (4) \emph{The write format chooses the key}; paraphrase writes
+weights must be searched. A continual stream need not pay that dose per turn: in the
+companion program, dose buys acquisition speed, not end-state capacity (recognition
+pinned at ${\approx}0.5$ of the stream across an $8\times$ dose and $30\times$
+learning-rate sweep), and the deployed policy --- one step per turn plus miss-gated
+replay, which reaches the recall dose \emph{across} turns --- maintains a 384-fact stream
+at $0.815$--$0.849$ recall (three seeds) on this same 9B substrate with an $O(1)$
+per-turn budget. (4) \emph{The write format chooses the key}; paraphrase writes
 buy a meaning-keyed index at the cost of the verbatim key. (5) \emph{Schedule writes so no
 fact is freshest at query time}; deployment usually does this for free.
 
