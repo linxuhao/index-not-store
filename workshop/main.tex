@@ -32,7 +32,7 @@ $0.53$ of that ceiling ($0.56$ of our own measured ceiling) and prices every ste
 climb, with a frozen instrument control at every step but the last. The accounting is
 deliberately unflattering to the write: an agentic retry budget subsumes the write's
 keyword-level pointer gain; a genre-matched first-person question with no training anywhere
-beats every trained front end we built but one; that one --- embed the adapter's
+beats every trained front end we built in the isolated protocol but one; that one --- embed the adapter's
 \emph{answer} to a memory-check question --- is worth a consistent but underpowered
 $+0.048$ over its own frozen control; and the top pipeline ($0.448$) is the simplest of
 all, but its realistic write stream admits no frozen control, so the last step is
@@ -45,8 +45,8 @@ only its trained question form until subsequent unrelated writes anneal it open,
 ordering deployment provides for free; a \emph{write-format key} --- verbatim writes key
 the index to the exact string, and paraphrase writes invert the key ($0.600$ on held-out
 paraphrases, $0.184$ on the original string); and a \emph{content axis of forgetting} ---
-under the same burial harness, natural facts survive at $0.92$--$0.95$ while pseudoword
-facts fall to $0.15$ strict recall, yet every likelihood certificate survives with rising
+under a matched write template, burial that leaves natural facts at $0.92$--$0.95$
+collapses pseudoword facts to $0.15$ strict recall, yet every likelihood certificate survives with rising
 margins, and the corrupted emissions are syllable-level chimeras of competing values,
 $97\%$ novel strings. The operating rules for test-time continual learning follow: serve
 cold, write hot; write paraphrases if you want a meaning-keyed index; and never let a fact
@@ -111,8 +111,9 @@ used to seed retrieval.
 
 \textbf{Instruments.} Retrieval is scored as gold-in-top-$k$, $k{=}6$ (agentic arms
 credit gold in any round's top five), over the 241-line store
-(BGE-small embeddings; an asymmetric-instruction control leaves the query arm unchanged, so
-its weakness is semantic, not an encoder artifact). End-to-end scores use the benchmark's
+(BGE-small embeddings; prefixing the encoder's retrieval instruction to the query arm
+leaves its scores unchanged --- $0.016$/$0.024$ at $k{=}4$/$6$ either way on the weakest
+probe --- so that weakness is semantic, not an encoder artifact). End-to-end scores use the benchmark's
 own application rubric verbatim, judged by a strong external model in four independent
 shards; judge noise is anchored at one verdict flip per 90 byte-identical answers. The
 discriminative readout is $\dlp$: mean per-token log-probability shift of a candidate line,
@@ -202,8 +203,8 @@ binding constraint, persistence is \citep{fishing2025iterative}.
 (``Did I tell you about\ldots?'') retrieves at $0.384$ with no training anywhere ---
 register match with the log's own first-person lines, the HyDE/HyPE mechanism
 \citep{gao2023hyde,vake2026hype} manufactured at query time because a per-user append-only
-log cannot be question-indexed in advance. This frozen front end beats every trained
-front end we built except one.
+log cannot be question-indexed in advance. Under the isolated protocol this frozen front
+end beats every trained front end we built except one.
 
 \textbf{The write's cashable residue is a query sharpener.} The one exception (the
 ``hop-answer'' row): let the adapter \emph{answer} the memory-check question and embed its
@@ -211,9 +212,10 @@ answer. The write does not generate for the user; it sharpens the query with wor
 frozen base cannot know ($0.464$ retrieval, $0.360$ end-to-end, $+0.048$ over the frozen
 control --- consistent across the program but underpowered at $n{=}125$, sign test
 $p{=}0.22$). Realism completes the climb: writing a 41-turn subset of the background
-stream into the same adapter before the fact --- the deployment condition --- lifts the
-simplest pipeline (state your best guess about the user; embed the sentence) to
-$0.576/0.448$. Application of a retrieved fact decays
+stream into the same adapter before the fact, and ten further turns after it --- the
+deployment condition --- lifts the simplest pipeline (state your best guess about the
+user; embed the sentence) to $0.576/0.448$; the post-fact writes are load-bearing
+(\S\ref{sec:wall}). Application of a retrieved fact decays
 monotonically in context size once coverage is conditioned away
 \citep{jin2025longrag,cuconasu2024noise}, so all arms return few, precise lines.
 
@@ -251,7 +253,8 @@ scheduling rule follows: a fact should not be the last thing written before it i
 \section{The write-format key}\label{sec:key}
 
 What is the index keyed on? Under verbatim writes, the recall-dose scan retrieves the exact
-string ($0.632$) and nothing else: a held-out paraphrase scores $0.056$
+string ($0.632$; the independent dose-wall run of \S\ref{sec:wall} replicates at
+$0.640$) and nothing else: a held-out paraphrase scores $0.056$
 (Fig.~\ref{fig:panels}, right). Writing a fresh
 paraphrase each round \emph{inverts} the key: the held-out paraphrase rises to $0.600$
 while the original string --- still trained, via the chat-QA form --- falls to $0.184$.
@@ -274,13 +277,13 @@ memory keyed on meaning.
 Forty subsequent one-step chatter writes kill nothing above an eight-step
 \emph{natural-language} fact: recall $0.92$--$0.95$ at $n{=}125$ across both write
 regimes, certificates $1.00$ with rising margins (an $n{=}8$ smoke with same-register
-fact burial replicates the survival). Rerunning the identical harness with unguessable
-pseudoword facts (``My transit code is roptavvor'') collapses recall to $0.15$ (strict
-value production) --- while every certificate survives, margins \emph{rising} from $3.8$ to
+fact burial replicates the survival). Rerunning the write-and-burial harness with unguessable
+pseudoword facts (``My transit code is roptavvor''; burial now same-register pseudoword
+writes) collapses recall to $0.15$ (strict value production) --- while every certificate survives, margins \emph{rising} from $3.8$ to
 $5.2$ nats through the burial, and the scan still returns the fact in the top six.
 Retention under sequential writes is known to depend on presentation breadth
 \citep{oneill2026continual} and dataset provenance \citep{chen2024remix}; the axis isolated
-here is \emph{lexical/entity familiarity} under a matched template and burial harness ---
+here is \emph{lexical/entity familiarity} under a matched write template ---
 distinct from propositional prior-conflict, where the sign can invert
 \citep{oneill2026continual} --- and it is large enough to reconcile the pseudoword-stream
 and natural-fact literatures: both are right, about different content.
@@ -300,7 +303,7 @@ makes it visible.
 For test-time continual learning systems the program compresses to five rules. (1)
 \emph{Serve cold, write hot}: every end-to-end gain lived on the query side --- what the
 weights know helps only by changing what is retrieved into context; in-weight generation
-at serve time contributed zero everywhere it was isolated.
+at serve time contributed zero everywhere the wider program isolated it.
 (2) \emph{The index is a query sharpener}: its cashable value is answering the system's own
 memory-check question with words the frozen model cannot know. The keyword-level pointer
 is priced at zero once an agentic loop may re-query (whether the sharpener itself survives
