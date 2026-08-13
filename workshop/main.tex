@@ -29,14 +29,14 @@ adapter on a frozen 9B chat model at test time --- on the InMind implicit-associ
 benchmark, whose published external-memory systems reach at most $0.171$ of the in-context
 ceiling. A pre-registered program of thirteen experiment chains moves the benchmark to
 $0.53$ of that ceiling ($0.56$ of our own measured ceiling) and prices every step of the
-climb, with a frozen instrument control at every step but the last. The accounting is
+climb, with a frozen instrument control at every step. The accounting is
 deliberately unflattering to the write: an agentic retry budget subsumes the write's
 keyword-level pointer gain; a genre-matched first-person question with no training anywhere
 beats every trained front end we built in the isolated protocol but one; that one --- embed the adapter's
 \emph{answer} to a memory-check question --- is worth a consistent but underpowered
 $+0.048$ over its own frozen control; and the top pipeline ($0.448$) is the simplest of
-all, but its realistic write stream admits no frozen control, so the last step is
-attributed to neither side. Around this climb we measure four properties of the write
+all --- and here the write is load-bearing: its two write-free controls (no writes;
+chatter-only writes) collapse identically to $0.080$ with every statement a refusal. Around this climb we measure four properties of the write
 itself: a \emph{certification--retrieval dose wall} --- a membership-style likelihood
 certificate turns positive at ${\sim}2$ gradient steps, while generative recall and
 likelihood-scan retrieval (ranking store lines by the write-induced likelihood shift) need
@@ -72,10 +72,10 @@ ceiling of $84\%$ --- a relative wall of $0.171$. To our knowledge ours is the f
 parametric-memory arm on this benchmark.
 
 Two design commitments distinguish the program from a leaderboard entry. First, every arm
-but the last ships with an \emph{instrument control}: the identical pipeline with the write
-removed, so each gain is attributed to memory or machinery before it is celebrated (the
-final arm's realistic protocol admits no such control, and its step is attributed to
-neither side). Second, every chain is pre-registered in a ledger with falsification lines;
+ships with an \emph{instrument control}: the identical pipeline with the write removed, so
+each gain is attributed to memory or machinery before it is celebrated (the final
+real-stream arm carries two such controls --- no writes, and chatter-only writes --- both
+of which collapse to $0.080$). Second, every chain is pre-registered in a ledger with falsification lines;
 the probe amendments the program needed are declared as amendments, and three instruments
 that returned flattering artifacts (a retrieval probe credited by lexical overlap with the
 probe itself, a membership-confounded scan, a recall criterion satisfied by echoing the
@@ -84,8 +84,8 @@ attribute word alone) were voided by our own audits before any number was kept.
 \textbf{Contributions.} (1) A measured climb of a published wall from $0.171$ to $0.53$ of
 the in-context ceiling ($0.448/0.84$ published; $0.56$ of the $0.80$ in-context ceiling
 we measure on our own backbone and judge), with
-the attribution honestly split between instrument and memory at every step but the last,
-which is attributed to neither side (\S\ref{sec:climb}). (2) The certification--retrieval dose wall: recognition-style
+the attribution honestly split between instrument and memory at every step
+(\S\ref{sec:climb}). (2) The certification--retrieval dose wall: recognition-style
 certification and retrieval-usable storage separate by ${\sim}3\times$ in write dose, on
 both the generative and the discriminative readout (\S\ref{sec:wall}). (3) The write-format
 key: what surface family the writes exercise determines --- bidirectionally --- what the
@@ -182,16 +182,18 @@ Seeded agentic (adapter seed) & pointer & $0.392$ & $0.272$ \\
 Seeded agentic (\emph{frozen} seed control) & none & $0.360$ & $0.280$ \\
 Frozen user-voice question embed & none & $0.384$ & $0.312$ \\
 Adapter hop-answer embed & query gen. & $0.464$ & $0.360$ \\
+Real-stream controls (no writes / chatter-only) & none & $0.080$ & $0.080$ \\
 Real-stream statement embed & query gen. & $0.576$ & $\mathbf{0.448}$ \\
 \midrule
 In-context ceiling (benchmark's backbone) & --- & --- & $0.84$ \\
 \bottomrule
 \end{tabular}
-\caption{The canonical program. Every write arm but the last has a frozen instrument
-control; $n{=}125$ throughout; single judge (four shards). The $0.448$ headline carries
-two caveats: the write stream also teaches the index the store's register, and no frozen
-control exists under the real-stream protocol, so the last step is attributed to neither
-side.}
+\caption{The canonical program. Every write arm has a frozen instrument control;
+$n{=}125$ throughout; single judge (four shards). The real-stream controls run the
+identical statement pipeline with the gold write removed (with or without the 51 chatter
+writes --- the two collapse to byte-identical refusals), so the last step is the
+write's; the register assist the write stream provides cashes only conditional on the
+fact being written.}
 \label{tab:ladder}
 \end{table}
 
@@ -221,7 +223,12 @@ $p{=}0.22$). Realism completes the climb: writing a 41-turn subset of the backgr
 stream into the same adapter before the fact, and ten further turns after it --- the
 deployment condition --- lifts the simplest pipeline (state your best guess about the
 user; embed the sentence) to $0.576/0.448$; the post-fact writes are load-bearing
-(\S\ref{sec:wall}). Application of a retrieved fact decays
+(\S\ref{sec:wall}). And here, finally, the write itself is: two controls run the
+identical statement pipeline with the gold write removed --- once with no writes at all,
+once with the 51 chatter writes but no gold --- and both collapse to $0.080$ retrieval /
+$0.080$ application, every statement the refusal ``I don't remember'' ($125/125$,
+byte-identical across the two controls). Register-learning without the fact does not
+even reach the embedding stage; the last step belongs to the write. Application of a retrieved fact decays
 monotonically in context size once coverage is conditioned away
 \citep{jin2025longrag,cuconasu2024noise}, so all arms return few, precise lines.
 
@@ -332,8 +339,9 @@ fact is freshest at query time}; deployment usually does this for free.
 
 \textbf{Limits.} One benchmark, one 9B substrate, one embedder, single external judge
 (noise anchored at $1/90$); the $+0.048$ margin is a consistent direction, not a finding;
-the real-stream gain partly reflects the index learning the register of the very store it
-retrieves from; the content axis is demonstrated under one fixed harness (write form and
+the real-stream register assist is attributed only jointly (chatter-only writes produce
+pure refusals, so register-learning cannot be isolated from the fact write on this
+probe); the content axis is demonstrated under one fixed harness (write form and
 criterion were not separately varied); and the $0.53$ headline is measured on natural
 personal facts against the benchmark's published ceiling --- it does not transfer across
 content classes, judges, or backbones. All runs use a single consumer GPU; full per-chain
