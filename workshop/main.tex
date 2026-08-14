@@ -336,7 +336,12 @@ not stylistic.
 (2) \emph{The index is a query sharpener}: its cashable value is answering the system's own
 memory-check question with words the frozen model cannot know. The keyword-level pointer
 is priced at zero once an agentic loop may re-query (whether the sharpener itself survives
-an agentic reader is untested), so it matters most where latency or search budgets bind. (3) \emph{Certification is not retrieval}: a membership-style
+an agentic reader is untested), so it matters most where latency or search budgets bind ---
+and there it is largest: the write's retrieval edge concentrates at small $k$
+(rank-curves from the same artifacts, post hoc: written statement $0.520$ vs frozen
+question $0.248$ at $k{=}1$, a $2.1\times$ margin that shrinks to $1.3\times$ by
+$k{=}20$; the written front end at $k{=}1$ beats the frozen one at $k{=}20$). The write
+buys precision, not recall. (3) \emph{Certification is not retrieval}: a membership-style
 certificate at two steps proves presence, not findability; budget the recall dose if the
 weights must be searched. A continual stream need not pay that dose per turn: in the
 companion program, dose buys acquisition speed, not end-state capacity (recognition
