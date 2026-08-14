@@ -35,8 +35,10 @@ keyword-level pointer gain; a genre-matched first-person question with no traini
 beats every trained front end we built in the isolated protocol but one; that one --- embed the adapter's
 \emph{answer} to a memory-check question --- is worth a consistent but underpowered
 $+0.048$ over its own frozen control; and the top pipeline ($0.448$) is the simplest of
-all --- and here the write is load-bearing: its two write-free controls (no writes;
-chatter-only writes) collapse identically to $0.080$ with every statement a refusal. Around this climb we measure four properties of the write
+all --- and the one place the write cashes at conventional significance: $+0.136$ over
+the best frozen front end ($32{:}15$ discordant tasks, exact $p{=}0.019$), with the
+pipeline's own write-free controls (no writes; chatter-only writes) collapsing to
+$0.080$, every statement a refusal. Around this climb we measure four properties of the write
 itself: a \emph{certification--retrieval dose wall} --- a membership-style likelihood
 certificate turns positive at ${\sim}2$ gradient steps, while generative recall and
 likelihood-scan retrieval (ranking store lines by the write-induced likelihood shift) need
@@ -192,8 +194,8 @@ In-context ceiling (benchmark's backbone) & --- & --- & $0.84$ \\
 $n{=}125$ throughout; single judge (four shards). The real-stream controls run the
 identical statement pipeline with the gold write removed (with or without the 51 chatter
 writes --- the two collapse to byte-identical refusals), so the last step is the
-write's; the register assist the write stream provides cashes only conditional on the
-fact being written.}
+write's ($+0.136$ over the best frozen front end, exact $p{=}0.019$); the register
+assist the write stream provides cashes only conditional on the fact being written.}
 \label{tab:ladder}
 \end{table}
 
@@ -228,7 +230,14 @@ identical statement pipeline with the gold write removed --- once with no writes
 once with the 51 chatter writes but no gold --- and both collapse to $0.080$ retrieval /
 $0.080$ application, every statement the refusal ``I don't remember'' ($125/125$,
 byte-identical across the two controls). Register-learning without the fact does not
-even reach the embedding stage; the last step belongs to the write. Application of a retrieved fact decays
+even reach the embedding stage; the last step belongs to the write. Scope this
+correctly: frozen retrieval is not what collapsed --- the frozen question front end
+still stands at $0.384/0.312$, and log-only memory harnesses work; what the controls
+kill is the register-echo reading of \emph{this} pipeline, whose statement form works
+only written (frozen statement $0.080$ vs frozen question $0.384$). The write's cashed
+end-to-end value, measured against the best frozen front end, is $+0.136$ ($32{:}15$
+discordant tasks, exact McNemar $p{=}0.019$; computed post hoc on the paired judged
+outcomes --- the pre-registered lines were the control collapses). Application of a retrieved fact decays
 monotonically in context size once coverage is conditioned away
 \citep{jin2025longrag,cuconasu2024noise}, so all arms return few, precise lines.
 
