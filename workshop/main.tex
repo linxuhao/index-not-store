@@ -36,9 +36,8 @@ beats every trained front end we built in the isolated protocol but one; that on
 \emph{answer} to a memory-check question --- is worth a consistent but underpowered
 $+0.048$ over its own frozen control; and the top pipeline ($0.448$) is the simplest of
 all --- and the one place the write cashes at conventional significance: $+0.136$ over
-the best frozen front end ($32{:}15$ discordant tasks, exact $p{=}0.019$), with the
-pipeline's own write-free controls (no writes; chatter-only writes) collapsing to
-$0.080$, every statement a refusal. Around this climb we measure four properties of the write
+the best frozen front end (exact $p{=}0.019$, post hoc), its gold-free controls
+collapsing to $0.080$. Around this climb we measure four properties of the write
 itself: a \emph{certification--retrieval dose wall} --- a membership-style likelihood
 certificate turns positive at ${\sim}2$ gradient steps, while generative recall and
 likelihood-scan retrieval (ranking store lines by the write-induced likelihood shift) need
@@ -76,8 +75,7 @@ parametric-memory arm on this benchmark.
 Two design commitments distinguish the program from a leaderboard entry. First, every arm
 ships with an \emph{instrument control}: the identical pipeline with the write removed, so
 each gain is attributed to memory or machinery before it is celebrated (the final
-real-stream arm carries two such controls --- no writes, and chatter-only writes --- both
-of which collapse to $0.080$). Second, every chain is pre-registered in a ledger with falsification lines;
+real-stream arm carries two). Second, every chain is pre-registered in a ledger with falsification lines;
 the probe amendments the program needed are declared as amendments, and three instruments
 that returned flattering artifacts (a retrieval probe credited by lexical overlap with the
 probe itself, a membership-confounded scan, a recall criterion satisfied by echoing the
@@ -124,11 +122,9 @@ discriminative readout is $\dlp$: mean per-token log-probability shift of a cand
 adapter versus pre-write base --- a reference-calibrated membership statistic
 \citep{carlini2022lira,duan2024mia} repurposed as a read head, and never treated as recall:
 the gap between the index and what can be emitted is the object of study
-\citep{song2026beyondppl}. The certificate is not a curiosity of this rig: in the
-companion program (anonymized supplementary) the same adapter-versus-base signal
-separates written from never-written content at AUC $0.93$--$0.99$ with the pre-write
-base at chance by construction, and recognition survives recall death across mechanisms
---- a matched-budget editing arm recalls $0$--$1/48$ while recognizing $45$--$47/48$.
+\citep{song2026beyondppl}. All arms return few, precise lines: application of a
+retrieved fact decays monotonically in context size once coverage is conditioned away
+\citep{jin2025longrag,cuconasu2024noise}.
 
 \section{The climb, priced}\label{sec:climb}
 
@@ -184,8 +180,9 @@ Seeded agentic (adapter seed) & pointer & $0.392$ & $0.272$ \\
 Seeded agentic (\emph{frozen} seed control) & none & $0.360$ & $0.280$ \\
 Frozen user-voice question embed & none & $0.384$ & $0.312$ \\
 Adapter hop-answer embed & query gen. & $0.464$ & $0.360$ \\
-Real-stream controls (no writes / chatter-only) & none & $0.080$ & $0.080$ \\
+\midrule
 Real-stream statement embed & query gen. & $0.576$ & $\mathbf{0.448}$ \\
+Real-stream controls (no writes / chatter-only) & no gold & $0.080$ & $0.080$ \\
 \midrule
 In-context ceiling (benchmark's backbone) & --- & --- & $0.84$ \\
 \bottomrule
@@ -194,8 +191,7 @@ In-context ceiling (benchmark's backbone) & --- & --- & $0.84$ \\
 $n{=}125$ throughout; single judge (four shards). The real-stream controls run the
 identical statement pipeline with the gold write removed (with or without the 51 chatter
 writes --- the two collapse to byte-identical refusals), so the last step is the
-write's ($+0.136$ over the best frozen front end, exact $p{=}0.019$); the register
-assist the write stream provides cashes only conditional on the fact being written.}
+write's ($+0.136$ over the best frozen front end, exact $p{=}0.019$, post hoc).}
 \label{tab:ladder}
 \end{table}
 
@@ -220,28 +216,32 @@ end beats every trained front end we built except one.
 ``hop-answer'' row): let the adapter \emph{answer} the memory-check question and embed its
 answer. The write does not generate for the user; it sharpens the query with words the
 frozen base cannot know ($0.464$ retrieval, $0.360$ end-to-end, $+0.048$ over the frozen
-control --- consistent across the program but underpowered at $n{=}125$, sign test
-$p{=}0.22$). Realism completes the climb: writing a 41-turn subset of the background
-stream into the same adapter before the fact, and ten further turns after it --- the
-deployment condition --- lifts the simplest pipeline (state your best guess about the
-user; embed the sentence) to $0.576/0.448$; the post-fact writes are load-bearing
-(\S\ref{sec:wall}). And here, finally, the write itself is: two controls run the
-identical statement pipeline with the gold write removed --- once with no writes at all,
-once with the 51 chatter writes but no gold --- and both collapse to $0.080$ retrieval /
-$0.080$ application, every statement the refusal ``I don't remember'' ($125/125$,
-byte-identical across the two controls). Register-learning without the fact does not
-even reach the embedding stage; the last step belongs to the write. Scope this
-correctly: frozen retrieval is not what collapsed --- the frozen question front end
-still stands at $0.384/0.312$, and log-only memory harnesses work; what the controls
-kill is the register-echo reading of \emph{this} pipeline, whose statement form works
-only written (frozen statement $0.080$ vs frozen question $0.384$). The write's cashed
-end-to-end value, measured against the best frozen front end, is $+0.136$ ($32{:}15$
-discordant tasks, exact McNemar $p{=}0.019$; computed post hoc on the paired judged
-outcomes --- the pre-registered lines were the control collapses). The frozen maximum
-$0.312$ is shared by a budget-8 frozen-seed agentic arm, and the margin survives that
-comparator too ($35{:}18$, $p{=}0.027$). Application of a retrieved fact decays
-monotonically in context size once coverage is conditioned away
-\citep{jin2025longrag,cuconasu2024noise}, so all arms return few, precise lines.
+control --- consistent across the program but underpowered at $n{=}125$, one-sided sign
+test $p{=}0.22$). The comparator is conservative: embedding the \emph{frozen} base's
+answer to the same question collapses into refusals ($0.080$, the factorial's
+frozen--frozen cell), so the question itself is the strongest frozen front end.
+
+\textbf{Realism cashes the write.} Writing a 41-turn subset of the background stream
+into the same adapter before the fact, and ten further turns after it --- the deployment
+condition --- lifts the simplest pipeline (state your best guess about the user; embed
+the sentence) to $0.576/0.448$; the post-fact writes are load-bearing
+(\S\ref{sec:wall}). Two controls run the identical statement pipeline with the gold
+write removed --- once with no writes at all, once with the 51 chatter writes but no
+gold --- and both collapse to $0.080$ retrieval / $0.080$ application, every statement
+the byte-identical refusal ``I don't remember'' ($125/125$ in each). The collapse
+indicts only the statement form, not frozen retrieval (frozen statement $0.080$ vs
+frozen question $0.384$): what it kills is the register-echo reading of this pipeline.
+The two margins price different things: the isolated protocol prices the write within
+its pipeline ($+0.048$, underpowered); the real stream prices it against the strongest
+frozen alternative --- $+0.136$ end-to-end ($32{:}15$ discordant tasks, exact McNemar
+$p{=}0.019$, computed post hoc; the pre-registered lines were the control collapses),
+and $+0.368$ within the pipeline itself. The frozen maximum $0.312$ is shared by a
+budget-8 frozen-seed agentic arm; the margin survives that comparator too ($35{:}18$,
+$p{=}0.027$). And the edge concentrates at small $k$ (post-hoc rank curves: written
+statement $0.520$ vs frozen question $0.248$ at $k{=}1$, a $2.1\times$ margin narrowing
+to $1.3\times$ by $k{=}20$; the written front end at $k{=}1$ beats the frozen one at
+$k{=}20$) --- the write buys precision, not recall (end-to-end application at $k{=}1$
+untested).
 
 \section{The certification--retrieval dose wall}\label{sec:wall}
 
@@ -249,7 +249,12 @@ The climb priced the readout; the remaining sections leave the benchmark and cha
 the write itself. Recognition-before-recall ordering is known for fine-tuned memories
 \citep{orhan2023recognition}; the program puts it on a controlled dose axis, on two readout
 mechanisms at once. At the certification dose the $\dlp$ certificate is positive
-($125/125$ across the program) --- and nothing else works. The generative route is dead in
+($125/125$ across the program) --- and nothing else works. The certificate is not a
+curiosity of this rig: in the companion program (anonymized supplementary) the same
+adapter-versus-base signal separates written from never-written content at AUC
+$0.93$--$0.99$ with the pre-write base at chance by construction, and recognition
+survives recall death across mechanisms --- a matched-budget editing arm recalls
+$0$--$1/48$ while recognizing $45$--$47/48$. The generative route is dead in
 every cell of a $2{\times}2$ probe factorial (who generates the memory-check question
 $\times$ who answers it, frozen base or adapter). The discriminative route fails more
 instructively: under a realistic write stream, scanning the store by $\dlp$ at the
@@ -301,8 +306,8 @@ memory keyed on meaning.
 
 Forty subsequent one-step chatter writes kill nothing above an eight-step
 \emph{natural-language} fact: recall $0.92$--$0.95$ at $n{=}125$ across both write
-regimes, certificates $1.00$ with rising margins (an $n{=}8$ smoke with same-register
-fact burial replicates the survival). Rerunning the write-and-burial harness with unguessable
+regimes, certificates $1.00$ with rising margins (an $n{=}8$ smoke test with
+same-register fact burial replicates the survival). Rerunning the write-and-burial harness with unguessable
 pseudoword facts (``My transit code is roptavvor''; burial now same-register pseudoword
 writes) collapses recall to $0.15$ (strict value production) --- while every certificate survives, margins \emph{rising} from $3.8$ to
 $5.2$ nats through the burial, and the scan still returns the fact in the top six.
@@ -330,31 +335,31 @@ For test-time continual learning systems the program compresses to five rules. (
 weights know helps only by changing what is retrieved into context. No cold-serving arm
 here loses to a hot one, and the companion program (anonymized supplementary) prices the
 hot path below zero: as a reader of identical retrieved lines the adapter \emph{loses} to
-the frozen base ($0.136$ vs $0.216$), and consolidating from the model's own outputs
-lands below doing nothing ($4.3$ vs $25.0$ of $144$) --- serving cold is load-bearing,
-not stylistic.
+the frozen base ($0.136$ vs $0.216$ application), and a consolidation policy that
+rehearses the model's own outputs retains $4.3$ of $144$ facts where doing nothing
+retains $25.0$ --- serving cold is load-bearing, not stylistic.
 (2) \emph{The index is a query sharpener}: its cashable value is answering the system's own
 memory-check question with words the frozen model cannot know. The keyword-level pointer
 is priced at zero once an agentic loop may re-query (whether the sharpener itself survives
 an agentic reader is untested), so it matters most where latency or search budgets bind ---
-and there it is largest: the write's retrieval edge concentrates at small $k$
-(rank-curves from the same artifacts, post hoc: written statement $0.520$ vs frozen
-question $0.248$ at $k{=}1$, a $2.1\times$ margin that shrinks to $1.3\times$ by
-$k{=}20$; the written front end at $k{=}1$ beats the frozen one at $k{=}20$). The write
+and there the edge is largest ($2.1\times$ at $k{=}1$, \S\ref{sec:climb}): the write
 buys precision, not recall. (3) \emph{Certification is not retrieval}: a membership-style
 certificate at two steps proves presence, not findability; budget the recall dose if the
 weights must be searched. A continual stream need not pay that dose per turn: in the
 companion program, dose buys acquisition speed, not end-state capacity (recognition
 pinned at ${\approx}0.5$ of the stream across an $8\times$ dose and $30\times$
 learning-rate sweep), and the deployed policy --- one step per turn plus miss-gated
-replay, which reaches the recall dose \emph{across} turns --- maintains a 384-fact stream
+replay (re-writing only what a self-test missed), which reaches the recall dose
+\emph{across} turns --- maintains a 384-fact stream
 at $0.815$--$0.849$ recall (three seeds) on this same 9B substrate with an $O(1)$
 per-turn budget. (4) \emph{The write format chooses the key}; paraphrase writes
 buy a meaning-keyed index at the cost of the verbatim key. (5) \emph{Schedule writes so no
 fact is freshest at query time}; deployment usually does this for free.
 
 \textbf{Limits.} One benchmark, one 9B substrate, one embedder, single external judge
-(noise anchored at $1/90$); the $+0.048$ margin is a consistent direction, not a finding;
+(noise anchored at $1/90$); the published-system baselines are quoted, not rerun --- the
+frozen keyword front end's exact tie with the published best ($0.144$) is the one
+cross-rig calibration point; the $+0.048$ margin is a consistent direction, not a finding;
 the real-stream register assist is attributed only jointly (chatter-only writes produce
 pure refusals, so register-learning cannot be isolated from the fact write on this
 probe); the content axis is demonstrated under one fixed harness (write form and

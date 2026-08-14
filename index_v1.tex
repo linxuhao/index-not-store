@@ -38,7 +38,7 @@
 
 \title{An Index, Not a Store:\\ \large The Model Does Remember --- It Just Needs Its Notebook}
 \author{Xuhao Lin\\ \small Independent researcher \quad \texttt{linxuhao84@gmail.com}}
-\date{August 2026 --- index v4 (2026-08-13, preprint)\\ \small code \& raw timelines: doi:10.5281/zenodo.21405875 (supersedes 10.5281/zenodo.21199026, 10.5281/zenodo.21309811)}
+\date{August 2026 --- index v4 (2026-08-14, preprint)\\ \small code \& raw timelines: doi:10.5281/zenodo.21405875 (supersedes 10.5281/zenodo.21199026, 10.5281/zenodo.21309811)}
 
 \newcommand{\qwen}{Qwen3.5-2B}
 \newcommand{\smol}{SmolLM2-1.7B-Instruct}
@@ -110,7 +110,8 @@ first-person queries; short precise contexts; an annealing effect where writes t
 consistent-but-underpowered $+0.048$ as a \emph{query sharpener} under per-task isolation
 (its keyword-level pointer, by contrast, is priced at zero once an agentic loop may
 simply re-query) --- while under the realistic write stream the write cashes at
-conventional significance: $+0.136$ over the best frozen front end (exact $p{=}0.019$),
+conventional significance: $+0.136$ over the best frozen front end (exact $p{=}0.019$,
+post hoc),
 with the pipeline's two pre-registered gold-free controls (no writes; chatter-only
 writes) collapsing to $0.080$ against the arm's $0.448$ --- and a
 certification--retrieval dose wall separates what two write-steps certify from what six can
@@ -215,9 +216,11 @@ with the write accent a quantified cost --- turning someone else's benchmark int
 adversarial confirmation of the division of labor. A canonical-protocol program
 (pre-registered arm by arm) then takes the same benchmark from the published wall to $0.53$
 of the benchmark's published in-context ceiling (natural personal facts; single judge),
-with attribution controls at every step (the final real-stream arm's pair of write-free
+with attribution controls at every step (the final real-stream arm's pair of gold-free
 controls both collapse to $0.080$) separating instrument gains from the
-write's own (small, consistent) contribution, and closes with a certification--retrieval
+write's own contribution ($+0.136$ over the best frozen front end under the realistic
+stream, exact $p{=}0.019$, post hoc; the isolated sharpener margin $+0.048$ remains
+underpowered), and closes with a certification--retrieval
 dose wall and a demonstration that the index's retrieval key is chosen by the write format.
 \end{enumerate}
 
@@ -1487,7 +1490,8 @@ retrieval edge concentrates at small $k$ --- written statement $0.520$ vs frozen
 question $0.248$ at $k{=}1$ ($2.1\times$), narrowing to $0.640$ vs $0.488$ by $k{=}20$
 ($1.3\times$); the written front end at $k{=}1$ out-retrieves the frozen one at
 $k{=}20$. The write buys precision, not recall --- exactly the commodity a
-budget-bound or dilution-limited reader needs.
+budget-bound or dilution-limited reader needs (end-to-end application at $k{=}1$ is
+untested).
 Subsequent writes
 break the form lock; the hop machinery, built to work around that lock, adds nothing once
 it is broken ($0.440$). A post-hoc comparison across three write schedules points to
@@ -1643,13 +1647,16 @@ weights at serve time. The refined division of labor is sharper than the one we 
 with. The write's cashable value is as a \emph{query sharpener}: an adapter that holds the
 fact answers a user-voiced memory-check question with the fact's own words, and that
 sentence is a better retrieval key than anything the frozen base can synthesize --- worth
-$+0.048$ end-to-end over the identical frozen machinery (consistent but underpowered);
+$+0.048$ end-to-end over the identical frozen machinery under isolation (consistent but
+underpowered), and $+0.136$ over the best frozen front end under the realistic write
+stream (exact $p{=}0.019$, post hoc; the gold-free controls collapse to $0.080$);
 the write's \emph{keyword-level pointer}, by contrast, is worth nothing once an agentic
 loop may simply re-query, and whether the sharpener itself survives an agentic reader is
-untested. The rest of the climb was
+untested. Much of the climb was
 instrument: genre match (a first-person question out-retrieves every trained front end we
 built), realism (writes that follow the fact anneal the readout open; deployment ordering
-provides this for free), and precision (short contexts, because application decays
+provides this for free --- though the assist cashes only conditional on the gold write),
+and precision (short contexts, because application decays
 monotonically in context size). The operating rule survives every escalation intact ---
 \emph{serve cold, write hot} --- generate for the user with the frozen base, keep the
 adapter for certification, query sharpening, and adjudication (store-side familiarity
@@ -1821,11 +1828,12 @@ kept localized (\S\ref{sec:marathon}) so replication seeds can update it in plac
 real entities but not \emph{revision} or conflict, untested at both timescales; the InMind audit
 adds externally authored personal facts and an external rubric, at $n{=}125$, single seed,
 non-original judges reported as a band. Within the canonical program specifically: the
-$+0.048$ query-sharpening margin is underpowered (sign test $p{=}0.22$; judge noise anchored
-at one flip per $90$ identical answers) and is reported as a consistent direction, not a
-finding; the real-stream gains partly reflect the index learning the \emph{register} of the
-very store it retrieves from (the written chatter is also in the log --- by design, but a
-transfer caveat); the reader model is unstable to distractor composition (one to three
+$+0.048$ query-sharpening margin is underpowered (one-sided sign test $p{=}0.22$; judge
+noise anchored at one flip per $90$ identical answers) and is reported as a consistent
+direction, not a finding; the real-stream register assist is attributed only jointly
+with the gold write (the chatter-only control produces pure refusals, so
+register-learning cannot be isolated from the fact write on this probe --- and the
+written chatter is also in the log, a transfer caveat); the reader model is unstable to distractor composition (one to three
 verdict flips between arms retrieving the same gold), which caps how much any retrieval
 margin can cash; and one mid-program library upgrade on the rig was bracketed by a
 regression rerun (forward-pass probes replicate exactly; generation-path probes replicate
@@ -1991,8 +1999,10 @@ per-task ladder and two-hop line (\texttt{inmind\_pertask\_ladder.py},
 \texttt{inmind\_ptrc\_selfrecall.py} with the $2{\times}2$ factorial and echo-gated fields;
 \texttt{ptrc\_b\_full.json}), the cashed front ends (\texttt{inmind\_ptrc\_answers.py},
 \texttt{inmind\_rs\_answers.py}; \texttt{judged\_\{q,ba\}\_emb\_claude.json},
-\texttt{judged\_rs\_\{stmt,aa\}\_claude.json}), the real-stream arm
-(\texttt{inmind\_realstream.py}; \texttt{rs\_full.json}), the familiarity-scan pair including
+\texttt{judged\_rs\_\{stmt,aa\}\_claude.json}), the real-stream arm and its gold-free control pair
+(\texttt{inmind\_realstream.py}, \texttt{inmind\_rs\_ctrl.py}; \texttt{rs\_full.json},
+\texttt{rs\_ctrl\_\{frozen,chatter\}\_full.json}, \texttt{judged\_rs\_ctrl\_claude.json}),
+the familiarity-scan pair including
 the voided membership-confounded first version (\texttt{inmind\_famscan.py},
 \texttt{inmind\_famscan2.py}; \texttt{famscan\_full.json}, \texttt{famscan2\_full.json}), and
 the write-format/burial chains (\texttt{inmind\_f1ghost.py}, \texttt{inmind\_ghost2.py},
